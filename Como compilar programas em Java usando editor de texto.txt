@@ -1,0 +1,27 @@
+Centro Universitário UniFanap
+Curso de Análise e Desenvolvimento de Sistemas
+Programação Orientada a Objetos II
+Professor: George Mendes Marra
+Data: 17/08/2023
+
+1) Como compilar programas em Java usando editor de texto “nano” no Apple Mac OS?
+
+1.1) No Apple Mac OS, abra um terminal;
+1.2) Digite nano <nome do programa em java>. Exemplo: nano ImprimirFrase.java
+1.3) Digite ou cole seu código
+1.4) Control+O
+1.5) Control+X
+1.6) No prompt, digite: javac ImprimirFrase.java
+1.7) Para executar o programa, digite: java ImprimirFrase
+
+2) Como compilar programas em Java usando editor de texto Bloco de notas no Ms-Windows?
+
+2.1) Abra o editor de texto Bloco de notas;
+2.2) Digite ou cole seu código
+2.3) Salve o arquivo com o nome da classe principal. Exemplo: ImprimirFrase.java
+2.4) No prompt, digite javac ImprimirFrase.java
+2.5) Para executar o programa, digite: java ImprimirFrase
+
+
+Powered by LibreOffice Writer 7.0.3.1
+
