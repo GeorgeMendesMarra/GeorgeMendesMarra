@@ -1,0 +1,6 @@
+Avaliação na disciplina Programação Orientada a Objetos II
+N1 - Pelo menos 2 Formulários em Java usando a biblioteca JavaFX
+N2 - Pelo menos 2 Formulários em Java usando a biblioteca JavaFX com acesso ao SGBD MySQL
+N2- Identificar no seu código os seguintes elementos do paradigma orientado a objetos: abstração, herança, encapsulamento, polimorfismo, classes e objetos, métodos e mensagens, 
+associação e agregação, métodos construtores.
+Projeto extra: criar um componente JavaBeans. Não é obrigatório mas quem fizer ganhará pontos extras.
