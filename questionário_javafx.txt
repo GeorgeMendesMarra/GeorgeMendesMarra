@@ -1,0 +1,89 @@
+**Questão 1**
+
+O que é JavaFX?
+
+* A) Uma biblioteca de gráficos e mídia para Java
+* B) Um framework para desenvolvimento de aplicações desktop
+* C) Uma plataforma para desenvolvimento de aplicativos móveis
+* D) Todas as alternativas estão corretas
+
+**Questão 2**
+
+Quais são as principais classes da API JavaFX?
+
+* A) `Application`, `Scene` e `Stage`
+* B) `Node`, `Layout` e `Control`
+* C) `Image`, `Text` e `Button`
+* D) Todas as alternativas estão corretas
+
+**Questão 3**
+
+Como criar um formulário JavaFX?
+
+* A) Estendendo a classe `Application`
+* B) Criando um objeto da classe `Scene`
+* C) Adicionando componentes à classe `Stage`
+* D) Todas as alternativas estão corretas
+
+**Questão 4**
+
+Como adicionar um evento a um componente JavaFX?
+
+* A) Usando a interface `EventHandler`
+* B) Usando o método `addEventFilter()`
+* C) Usando o método `setOnAction()`
+* D) Todas as alternativas estão corretas
+
+**Questão 5**
+
+Como conectar um formulário JavaFX a um banco de dados?
+
+* A) Usando o driver JDBC
+* B) Usando a API JDBC
+* C) Usando a biblioteca MySQL Connector/J
+* D) Todas as alternativas estão corretas
+
+**Questão 6**
+
+Como criar uma animação JavaFX?
+
+* A) Usando a classe `Timeline`
+* B) Usando a classe `KeyFrame`
+* C) Usando a classe `Interpolator`
+* D) Todas as alternativas estão corretas
+
+**Questão 7**
+
+Como criar um gráfico JavaFX?
+
+* A) Usando a classe `LineChart`
+* B) Usando a classe `BarChart`
+* C) Usando a classe `PieChart`
+* D) Todas as alternativas estão corretas
+
+**Questão 8**
+
+Como criar um jogo JavaFX?
+
+* A) Usando a biblioteca JavaFX Scene Builder
+* B) Usando a biblioteca JavaFX 3D
+* C) Usando a biblioteca JavaFX WebGL
+* D) Todas as alternativas estão corretas
+
+**Questão 9**
+
+Quais são as principais vantagens de usar JavaFX?
+
+* A) É uma biblioteca leve e eficiente
+* B) É uma biblioteca multiplataforma
+* C) É uma biblioteca fácil de aprender
+* D) Todas as alternativas estão corretas
+
+**Questão 10**
+
+Quais são as principais desvantagens de usar JavaFX?
+
+* A) Não é tão popular quanto outras bibliotecas de gráficos
+* Não é tão flexível quanto outras bibliotecas de gráficos
+* Não é tão poderoso quanto outras bibliotecas de gráficos
+* Todas as alternativas estão corretas
