@@ -1,0 +1,2 @@
+1) Crie 5 classes em Java com atributos e métodos;
+2) Defina: classes, tipos, objetos e variáveis de instância;
