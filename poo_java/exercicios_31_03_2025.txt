@@ -1,5 +1,6 @@
 Regras básicas:
 
+- Valor: 1,5 p;
 - Todos os programas devem conter o máximo de comentários possível;
 - Os programas devem ser enviados para o e-mail: trabalhos.george@gmail.com
 - Assunto do e-mail: POO-Java-ADS-Seu nome;
