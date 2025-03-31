@@ -1,0 +1,10 @@
+1) Crie um programa que imprima "Olá, Mundo!" em 10 linhas no console;
+2) Escreva um programa que peça dois números ao usuário e exiba a soma deles;
+3) Peça um número ao usuário e informe se ele é par ou ímpar;
+4) Peça um número ao usuário e calcule seu fatorial;
+5) Peça um número e exiba sua tabuada de 1 a 10;
+6) Escreva um programa que verifique se um número é primo;
+7) Peça uma palavra ao usuário e exiba ela invertida;
+8) Peça uma frase e conte quantas vogais existem nela;
+9) Peça ao usuário três notas e calcule a média;
+10) O programa escolhe um número aleatório de 1 a 100, e o usuário deve adivinhar;
