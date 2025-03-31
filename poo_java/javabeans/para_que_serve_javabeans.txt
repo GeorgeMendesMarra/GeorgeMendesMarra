@@ -1,12 +1,12 @@
 JavaBeans é uma convenção em Java usada para criar classes reutilizáveis que seguem um padrão específico. Eles são usados principalmente para encapsular dados e facilitar a manipulação desses dados em aplicações Java.  
 
-### **Principais usos do JavaBeans:**  
-1. **Encapsulamento de dados** – JavaBeans armazenam informações em propriedades privadas acessíveis por métodos `getters` e `setters`.  
-2. **Facilidade de integração** – São usados em frameworks como JavaServer Pages (JSP) e Java Enterprise Edition (Java EE) para manipulação de dados de forma padronizada.  
-3. **Reutilização de código** – Como seguem uma estrutura bem definida, JavaBeans podem ser reaproveitados em diferentes partes de uma aplicação.  
-4. **Compatibilidade com ferramentas** – Ferramentas de desenvolvimento, como IDEs e frameworks, reconhecem JavaBeans e podem manipulá-los automaticamente.  
+Principais usos do JavaBeans:
+1. Encapsulamento de dados – JavaBeans armazenam informações em propriedades privadas acessíveis por métodos `getters` e `setters`.  
+2. Facilidade de integração – São usados em frameworks como JavaServer Pages (JSP) e Java Enterprise Edition (Java EE) para manipulação de dados de forma padronizada.  
+3. Reutilização de código – Como seguem uma estrutura bem definida, JavaBeans podem ser reaproveitados em diferentes partes de uma aplicação.  
+4. Compatibilidade com ferramentas – Ferramentas de desenvolvimento, como IDEs e frameworks, reconhecem JavaBeans e podem manipulá-los automaticamente.  
 
-### **Características de um JavaBean:**  
+Características de um JavaBean:
 - Deve ter um **construtor sem argumentos**.  
 - Deve usar **métodos getters e setters** para acessar e modificar propriedades.  
 - Deve ser **serializável** (implementar a interface `Serializable`).  
