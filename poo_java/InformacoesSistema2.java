@@ -116,7 +116,10 @@ public class InformacoesSistema2 {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { //Sou o método principal. Observe que abaixo estão as invocações dos métodos declarados acima.
+    
+    //Você pode mudar a sequência das invocações dos métodos abaixo. Não precisa ser na mesma ordem em que foram declarados acima.
+        obterVersaoJava();
         obterNomeSistemaOperacional();
         obterVersaoSistemaOperacional();
         obterArquiteturaSistemaOperacional();
@@ -125,7 +128,6 @@ public class InformacoesSistema2 {
         obterDiretorioHomeUsuario();
         obterNomeUsuario();
         obterDiretorioTrabalhoAtual();
-        obterVersaoJava();
         obterFornecedorJava();
         obterTotalRAM();
         obterMaxRAM();
