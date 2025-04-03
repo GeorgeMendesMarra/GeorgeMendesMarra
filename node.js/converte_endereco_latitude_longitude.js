@@ -1,4 +1,6 @@
 // converter um endereço em latitude e longitude
+// http://localhost:3000/geocode?address=São Paulo, Brasil
+
 const express = require("express");
 const axios = require("axios");
 require("dotenv").config();
