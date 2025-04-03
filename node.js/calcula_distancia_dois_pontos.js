@@ -1,3 +1,6 @@
+// Calcular Distância entre Dois Pontos
+// http://localhost:3000/distancia?lat1=-23.5505&lon1=-46.6333&lat2=-22.9068&lon2=-43.1729
+
 const geolib = require("geolib");
 
 app.get("/distancia", (req, res) => {
