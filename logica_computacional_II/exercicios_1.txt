@@ -1,3 +1,6 @@
+Valor: 1,5
+E-mail: trabalhos.george@gmail.com
+
 1. O que é Prolog e para que ele é usado?
 2. Qual a principal diferença entre Prolog e linguagens de programação tradicionais como Python ou Java?
 3. O que são fatos, regras e consultas em Prolog?  
