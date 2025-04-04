@@ -1,4 +1,4 @@
 1) Como instalar a biblioteca mip no Google Colab?
-2) Identifique o problema no código: Maximizar Z = 3x + 5y;
+2) Identifique a função no código: Maximizar Z = 3x + 5y;
 3) Identifique as restrições no código: 2x + 8y ≤ 13, 5x + 2y ≤ 11, x, y ≥ 0;
 4) Teste o programa programacao_linear_PuLP.py no Google Colab;
