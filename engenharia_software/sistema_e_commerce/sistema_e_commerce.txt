@@ -84,3 +84,20 @@ Ciclo SCRUM
 | Daily Scrum        | Google Meet + Kanban do Jira      |
 | Sprint Review      | Apresentação via Notion ou PDF    |
 | Retrospectiva      | Notion + Checklist de melhorias   |
+
+Template inicial para o projeto de sistema de e-commerce
+
+GitHub (estrutura de projeto)
+
+- `README.md` com escopo, funcionalidades e tecnologias
+- `docs/` com requisitos e diagramas
+- `frontend/` com base HTML/CSS/JS
+- `backend/` com Java (estrutura Maven)
+- `tests/` para testes automatizados
+- `.gitignore` e `docker-compose.yml` básicos
+
+Notion:
+- Tabela com backlog do produto
+- Kanban para sprints
+- Páginas com requisitos, modelagem e decisões técnicas
+- Modelos de reuniões Scrum
