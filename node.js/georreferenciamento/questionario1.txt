@@ -1,5 +1,7 @@
 Questionário Discursivo – Georreferenciamento
 
+Colocar as perguntas e respostas em um item de menu no seu blog pessoal chamado "georreferenciamento".
+
 1. O que é georreferenciamento e qual sua importância nas atividades agrárias e urbanas?
 
 2. Explique a diferença entre georreferenciamento e cartografia tradicional.
