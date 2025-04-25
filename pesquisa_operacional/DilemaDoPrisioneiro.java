@@ -1,80 +1,106 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class DilemaDoPrisioneiro {
 
     public static void main(String[] args) {
-        // Cria um objeto Scanner para receber entrada do usuário
         Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
 
-        // Inicializa os jogadores com seus respectivos nomes
-        Jogador jogador1 = new Jogador("Prisioneiro A");
-        Jogador jogador2 = new Jogador("Prisioneiro B");
+        System.out.println("Bem-vindo ao Dilema do Prisioneiro em Java!");
 
-        // Inicia um loop infinito para permitir múltiplas rodadas do jogo
+        // Loop principal para permitir múltiplas rodadas
         while (true) {
-            // Solicita a escolha do Prisioneiro A
-            System.out.println("\n" + jogador1.getNome() + ", deseja colaborar (c) ou trair (t)?");
-            char escolha1 = scanner.next().toLowerCase().charAt(0);
+            System.out.println("\n--- Nova Rodada ---");
 
-            // Solicita a escolha do Prisioneiro B
-            System.out.println("\n" + jogador2.getNome() + ", deseja colaborar (c) ou trair (t)?");
-            char escolha2 = scanner.next().toLowerCase().charAt(0);
+            // Escolha do Jogador 1 (Humano)
+            String escolhaJogador1 = obterEscolhaHumana(scanner, "Jogador 1");
 
-            // Define a escolha do Jogador 1 com base na entrada do usuário
-            if(escolha1 == 'c'){
-                jogador1.escolha = "colaborar";
-            } else {
-                jogador1.escolha = "trair";
-            }
+            // Escolha do Jogador 2 (Computador - Aleatório)
+            String escolhaJogador2 = obterEscolhaComputadorAleatorio(random);
+            System.out.println("Jogador 2 escolheu: " + (escolhaJogador2.equals("colaborar") ? "colaborar (c)" : "trair (t)"));
 
-            // Define a escolha do Jogador 2 com base na entrada do usuário
-            if(escolha2 == 'c'){
-                jogador2.escolha = "colaborar";
-            } else {
-                jogador2.escolha = "trair";
-            }
+            // Determina as sentenças com base nas escolhas
+            determinarSentencas(escolhaJogador1, escolhaJogador2, "Jogador 1", "Jogador 2");
 
-            // Determina o resultado do jogo com base nas escolhas de ambos os jogadores
-            if(jogador1.escolha.equals("colaborar") && jogador2.escolha.equals("colaborar")){
-                System.out.println("\nAmbos escolheram colaborar. Ambos recebem 2 anos de prisão.");
-            } else if(jogador1.escolha.equals("colaborar") && jogador2.escolha.equals("trair")){
-                System.out.println("\n" + jogador1.getNome() + " colaborou e " + jogador2.getNome() + " traiu. " + jogador1.getNome() + " recebe 10 anos e " + jogador2.getNome() + " sai livre.");
-            } else if(jogador1.escolha.equals("trair") && jogador2.escolha.equals("colaborar")){
-                System.out.println("\n" + jogador1.getNome() + " traiu e " + jogador2.getNome() + " colaborou. " + jogador2.getNome() + " recebe 10 anos e " + jogador1.getNome() + " sai livre.");
-            } else {
-                System.out.println("\nAmbos escolheram trair. Ambos recebem 5 anos de prisão.");
-            }
-
-            // Informa aos jogadores as escolhas que cada um fez
-            System.out.println("\n" + jogador1.getNome() + " escolheu: " + jogador1.escolha);
-            System.out.println(jogador2.getNome() + " escolheu: " + jogador2.escolha);
-
-            // Pergunta aos jogadores se eles querem jogar novamente
-            System.out.println("\nJogar novamente? (s/n)");
-            char jogarNovamente = scanner.next().toLowerCase().charAt(0);
-
-            // Se a resposta não for 's', o loop é interrompido e o jogo termina
-            if(jogarNovamente != 's'){
+            // Pergunta se deseja jogar novamente
+            if (!desejaJogarNovamente(scanner)) {
                 break;
             }
         }
-        // Fecha o objeto Scanner para liberar recursos
+
+        System.out.println("\nObrigado por jogar!");
         scanner.close();
     }
-}
 
-// Classe que representa um jogador no Dilema do Prisioneiro
-class Jogador {
-    String nome; // Nome do jogador
-    String escolha; // Escolha do jogador (colaborar ou trair)
-
-    // Construtor da classe Jogador que recebe o nome como parâmetro
-    public Jogador(String nome) {
-        this.nome = nome;
+    /**
+     * Obtém a escolha do jogador humano (colaborar ou trair) através da entrada do scanner.
+     *
+     * @param scanner O objeto Scanner para leitura da entrada do usuário.
+     * @param nomeJogador O nome do jogador.
+     * @return A escolha do jogador ("colaborar" ou "trair").
+     */
+    public static String obterEscolhaHumana(Scanner scanner, String nomeJogador) {
+        String escolha;
+        while (true) {
+            System.out.println(nomeJogador + ", deseja colaborar (c) ou trair (t)?");
+            String entrada = scanner.next().toLowerCase();
+            if (entrada.equals("c")) {
+                escolha = "colaborar";
+                break;
+            } else if (entrada.equals("t")) {
+                escolha = "trair";
+                break;
+            } else {
+                System.out.println("Escolha inválida. Digite 'c' para colaborar ou 't' para trair.");
+            }
+        }
+        return escolha;
     }
 
-    // Método para obter o nome do jogador
-    public String getNome() {
-        return nome;
+    /**
+     * Obtém a escolha do computador de forma aleatória.
+     *
+     * @param random O objeto Random para gerar a escolha aleatória.
+     * @return A escolha do computador ("colaborar" ou "trair").
+     */
+    public static String obterEscolhaComputadorAleatorio(Random random) {
+        return random.nextBoolean() ? "colaborar" : "trair";
+    }
+
+    /**
+     * Determina e exibe as sentenças para ambos os jogadores com base em suas escolhas.
+     *
+     * @param escolhaJogador1 A escolha do Jogador 1.
+     * @param escolhaJogador2 A escolha do Jogador 2.
+     * @param nomeJogador1 O nome do Jogador 1.
+     * @param nomeJogador2 O nome do Jogador 2.
+     */
+    public static void determinarSentencas(String escolhaJogador1, String escolhaJogador2, String nomeJogador1, String nomeJogador2) {
+        System.out.println("\n--- Resultados da Rodada ---");
+        System.out.println(nomeJogador1 + " escolheu: " + (escolhaJogador1.equals("colaborar") ? "colaborar (c)" : "trair (t)"));
+        System.out.println(nomeJogador2 + " escolheu: " + (escolhaJogador2.equals("colaborar") ? "colaborar (c)" : "trair (t)"));
+
+        if (escolhaJogador1.equals("colaborar") && escolhaJogador2.equals("colaborar")) {
+            System.out.println("Ambos colaboraram. Ambos recebem 2 anos de prisão.");
+        } else if (escolhaJogador1.equals("colaborar") && escolhaJogador2.equals("trair")) {
+            System.out.println(nomeJogador1 + " colaborou e " + nomeJogador2 + " traiu. " + nomeJogador1 + " recebe 10 anos e " + nomeJogador2 + " sai livre.");
+        } else if (escolhaJogador1.equals("trair") && escolhaJogador2.equals("colaborar")) {
+            System.out.println(nomeJogador1 + " traiu e " + nomeJogador2 + " colaborou. " + nomeJogador2 + " recebe 10 anos e " + nomeJogador1 + " sai livre.");
+        } else { // Ambos traíram
+            System.out.println("Ambos traíram. Ambos recebem 5 anos de prisão.");
+        }
+    }
+
+    /**
+     * Pergunta ao jogador se ele deseja jogar novamente.
+     *
+     * @param scanner O objeto Scanner para leitura da entrada do usuário.
+     * @return true se o jogador deseja jogar novamente, false caso contrário.
+     */
+    public static boolean desejaJogarNovamente(Scanner scanner) {
+        System.out.println("\nDeseja jogar novamente? (s/n)");
+        String resposta = scanner.next().toLowerCase();
+        return resposta.equals("s");
     }
 }
