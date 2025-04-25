@@ -1,5 +1,9 @@
 N2 - Processual - parte 1
 Valor: 0,5
+E-mail: trabalhos.george@gmail.com
+Assunto: Processual-Parte 1-Pesquisa-Operacional-Seu nome
+Prazo: até o dia da prova
+
 Pesquisa Operacional o otimização
 
 1) Execute o programa DilemaPrisioneiroNaoCooperativo.java 5 vezes e registre as respostas;
