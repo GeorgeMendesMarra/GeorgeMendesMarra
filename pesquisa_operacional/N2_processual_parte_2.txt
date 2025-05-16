@@ -7,3 +7,4 @@ Prazo: até o dia da prova
 
 1) Execute o programa ExemploRandomInteiro.java 5 vezes e registre as respostas;
 2) Execute o programa exemplo_random.py 5 vezes e registre as respostas;
+3) Qual a importância de gerar números aleatórios?
