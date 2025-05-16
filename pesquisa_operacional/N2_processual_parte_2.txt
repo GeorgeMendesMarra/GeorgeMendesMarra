@@ -10,4 +10,5 @@ Prazo: até o dia da prova
 3) Qual a importância de gerar números aleatórios?
 4) Execute o programa MonteCarloSimples.java
 5) Execute o programa montecarlosimples.py
-6) 
+6) Em que consiste a simulação de Monte Carlo?
+
