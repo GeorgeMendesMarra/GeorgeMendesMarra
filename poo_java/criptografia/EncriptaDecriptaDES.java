@@ -1,10 +1,18 @@
+// Importa a classe InvalidKeyException do pacote java.security, que sinaliza uma chave inválida (formato incorreto, etc.).
 import java.security.InvalidKeyException;
+// Importa a classe NoSuchAlgorithmException do pacote java.security, que sinaliza que um algoritmo de criptografia solicitado não está disponível no ambiente.
 import java.security.NoSuchAlgorithmException;
+// Importa a classe BadPaddingException do pacote javax.crypto, que sinaliza que o padding dos dados de entrada é impróprio.
 import javax.crypto.BadPaddingException;
+// Importa a classe Cipher do pacote javax.crypto, que fornece a funcionalidade de criptografia e descriptografia.
 import javax.crypto.Cipher;
+// Importa a classe IllegalBlockSizeException do pacote javax.crypto, que sinaliza que o tamanho do bloco de dados não é apropriado para a operação de criptografia.
 import javax.crypto.IllegalBlockSizeException;
+// Importa a classe KeyGenerator do pacote javax.crypto, que é usada para gerar chaves secretas para algoritmos simétricos.
 import javax.crypto.KeyGenerator;
+// Importa a classe NoSuchPaddingException do pacote javax.crypto, que sinaliza que um esquema de padding solicitado não está disponível.
 import javax.crypto.NoSuchPaddingException;
+// Importa a interface SecretKey do pacote javax.crypto, que representa uma chave secreta (usada em algoritmos simétricos).
 import javax.crypto.SecretKey;
 
 public class EncriptaDecriptaDES {
