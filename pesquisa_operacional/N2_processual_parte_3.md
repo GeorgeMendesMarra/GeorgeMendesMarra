@@ -1,3 +1,5 @@
+N2 - Processual - parte 3 e 4 Valor: 1,0 E-mail: trabalhos.george@gmail.com Trabalho individual Assunto: Processual-Parte 3-4-Pesquisa-Operacional-Seu nome Prazo: até o dia da prova
+
 Questões sobre o Método de Monte Carlo
 
     O método de Monte Carlo é utilizado principalmente para:
