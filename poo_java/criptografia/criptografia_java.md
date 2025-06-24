@@ -1,4 +1,4 @@
-A criptografia em Java é facilitada pelo **Java Security API**, que inclui a **Java Cryptography Architecture (JCA)** e a **Java Cryptography Extension (JCE)**. Esses frameworks fornecem um conjunto abrangente de classes e interfaces para implementar diversas operações criptográficas.
+A criptografia em Java é facilitada pelo Java Security API, que inclui a Java Cryptography Architecture (JCA) e a Java Cryptography Extension (JCE). Esses frameworks fornecem um conjunto abrangente de classes e interfaces para implementar diversas operações criptográficas.
 
 Arquitetura e Componentes Principais:
 
