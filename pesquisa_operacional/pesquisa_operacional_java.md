@@ -2,11 +2,11 @@ O Papel da Tecnologia Java na Pesquisa Operacional e Otimização
 
 A pesquisa operacional e a otimização são áreas fundamentais para resolver problemas complexos em diversas indústrias, como logística, finanças, produção e saúde. A tecnologia Java desempenha um papel essencial nessas áreas devido à sua robustez, portabilidade e ao suporte de bibliotecas avançadas para modelagem matemática e otimização.  
 
-*1. Java e a Pesquisa Operacional
+1. Java e a Pesquisa Operacional
 
-A pesquisa operacional envolve a aplicação de métodos matemáticos para auxiliar na tomada de decisões. Problemas como **alocação de recursos, roteamento de veículos, planejamento de produção e escalonamento de tarefas** podem ser modelados e resolvidos utilizando técnicas de otimização. Java oferece um ambiente adequado para esse tipo de modelagem devido à sua ampla adoção, performance eficiente e suporte a bibliotecas especializadas.  
+A pesquisa operacional envolve a aplicação de métodos matemáticos para auxiliar na tomada de decisões. Problemas como alocação de recursos, roteamento de veículos, planejamento de produção e escalonamento de tarefas podem ser modelados e resolvidos utilizando técnicas de otimização. Java oferece um ambiente adequado para esse tipo de modelagem devido à sua ampla adoção, performance eficiente e suporte a bibliotecas especializadas.  
 
-*2. Bibliotecas de Otimização em Java
+2. Bibliotecas de Otimização em Java
 
 Java possui diversas bibliotecas que facilitam a implementação de modelos de otimização e pesquisa operacional. Algumas das mais utilizadas incluem:  
 
@@ -17,7 +17,7 @@ Java possui diversas bibliotecas que facilitam a implementação de modelos de o
 
 Essas bibliotecas permitem que desenvolvedores modelem problemas complexos e encontrem soluções eficientes para questões do mundo real.  
 
-*3. Aplicações Práticas da Pesquisa Operacional com Java
+3. Aplicações Práticas da Pesquisa Operacional com Java
 
 🔹 Otimização de Rotas em Logística
 Com Java, é possível implementar algoritmos para *roteamento de veículos*, garantindo a entrega de produtos no menor tempo e com o menor custo possível.  
@@ -31,7 +31,7 @@ Usando ferramentas como *OptaPlanner*, empresas podem criar *escalas de funcion�
 🔹 Finanças e Investimentos
 Java também é usado na *otimização de carteiras de investimento*, garantindo a melhor distribuição de ativos com base no risco e retorno.  
 
-*4. Vantagens de Usar Java para Pesquisa Operacional
+4. Vantagens de Usar Java para Pesquisa Operacional
 
 ✔ Portabilidade – Java roda em diferentes plataformas, facilitando a implementação em sistemas empresariais.  
 ✔ Eficiência – Com a JVM otimizada e bibliotecas avançadas, Java oferece bom desempenho para cálculos complexos.  
