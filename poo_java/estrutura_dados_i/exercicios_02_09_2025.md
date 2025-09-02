@@ -8,7 +8,9 @@ Em seguida, use uma estrutura de controle **`if-else`** para verificar o valor d
 3) Crie um programa em Java que declare e inicialize um **vetor de inteiros** chamado `notas` com os seguintes valores: `85, 92, 78, 95, 88`.
 
 Em seguida, utilize um **laço de repetição `for`** para percorrer todos os elementos do vetor. Dentro do laço, imprima cada nota no console, acompanhada de sua respectiva posição (por exemplo: "Nota 1: 85", "Nota 2: 92", e assim por diante).
+
 4) Crie um programa em Java que declare e inicialize um **vetor de números decimais** (`double`) chamado `precos`, com os seguintes valores: `1.50, 2.75, 5.00, 3.25`.
 
 Em seguida, use um **laço de repetição `for`** para percorrer todos os elementos do vetor, calculando a soma total dos valores. Ao final do programa, imprima o resultado da soma no console.
+
 5) 
