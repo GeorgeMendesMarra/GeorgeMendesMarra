@@ -13,4 +13,10 @@ Em seguida, utilize um **laço de repetição `for`** para percorrer todos os el
 
 Em seguida, use um **laço de repetição `for`** para percorrer todos os elementos do vetor, calculando a soma total dos valores. Ao final do programa, imprima o resultado da soma no console.
 
-5) 
+5) Crie um programa em Java que declare e inicialize um **vetor de `Strings`** chamado `frutas` com os valores "Maçã", "Banana", "Laranja" e "Uva".
+
+Em seguida, o programa deve realizar as seguintes ações:
+
+1.  Imprimir o valor da **primeira posição** do vetor.
+2.  **Alterar** o valor da segunda posição para "Morango".
+3.  Imprimir o **novo valor** da segunda posição no console.
