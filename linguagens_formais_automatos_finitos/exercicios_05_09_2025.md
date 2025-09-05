@@ -8,7 +8,7 @@
    
 3. O que é o **bytecode** e qual é a sua principal função no processo de compilação do Java?
 
-4. Qual é o papel da **Máquina Virtual Java (JVM)** na execução de um programa Java, e por que o arquivo `.class` não é executado diretamente pelo sistema operacional?
+4. Qual é o papel da **Máquina Virtual Java (JVM)** na execução de um programa Java, e por que o arquivo ".class" não é executado diretamente pelo sistema operacional?
 
 5. O que é o compilador **JIT** e como ele melhora o desempenho dos programas em Java?
 
