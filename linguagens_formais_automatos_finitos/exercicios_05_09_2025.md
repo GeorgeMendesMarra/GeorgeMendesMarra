@@ -12,8 +12,6 @@
 
 5. O que é o compilador **JIT** e como ele melhora o desempenho dos programas em Java?
 
----
-
 ### Questões sobre Linguagens Formais em Java
 
 6. Qual é a aplicação mais comum e direta das linguagens formais em Java, e para que ela é utilizada?
