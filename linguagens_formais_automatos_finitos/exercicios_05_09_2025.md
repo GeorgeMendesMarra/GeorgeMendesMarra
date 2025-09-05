@@ -1,7 +1,6 @@
 ---
 
 ### Questões sobre o Processo de Compilação em Java
-
 1. Qual é a principal diferença entre o processo de compilação em Java e o de linguagens C++?
 
 2. Explique o que acontece em cada uma das três fases de análise do compilador **javac**: Análise Léxica, Análise Sintática e Análise Semântica.
