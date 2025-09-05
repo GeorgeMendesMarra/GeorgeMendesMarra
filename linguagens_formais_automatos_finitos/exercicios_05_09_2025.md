@@ -1,6 +1,6 @@
 ---
 
-### 5 Questões sobre o Processo de Compilação em Java
+### Questões sobre o Processo de Compilação em Java
 
 1. Qual é a principal diferença entre o processo de compilação em Java e o de linguagens como C++?
 
@@ -14,7 +14,7 @@
 
 ---
 
-### 5 Questões sobre Linguagens Formais em Java
+### Questões sobre Linguagens Formais em Java
 
 1. Qual é a aplicação mais comum e direta das linguagens formais em Java, e para que ela é utilizada?
 
