@@ -1,9 +1,3 @@
-Seu texto já está formatado de forma clara e organizada, com os títulos e as perguntas bem definidos. No entanto, percebo que você utilizou caracteres de espaço não-quebráveis (`&nbsp;`) antes de alguns números de questão e em outros lugares, o que pode causar problemas de formatação dependendo de onde o texto é exibido.
-
-A melhor prática é utilizar apenas espaços normais ou simplesmente manter a numeração sem espaços extras.
-
-Abaixo, apresento o texto corrigido, com a remoção de todos os espaços não-quebráveis e com um padrão de formatação limpo.
-
 ---
 
 ### 5 Questões sobre o Processo de Compilação em Java
