@@ -13,3 +13,17 @@
 5.  O que é o compilador **JIT** e como ele melhora o desempenho dos programas em Java?
 
 ---
+
+### 5 Questões sobre Linguagens Formais em Java
+
+1.  Qual é a aplicação mais comum e direta das linguagens formais em Java, e para que ela é utilizada?
+
+2.  No processo de compilação de um código Java, como as linguagens formais são usadas nas fases de Análise Léxica e Análise Sintática?
+
+3.  O que é uma **Máquina de Estado Finito (FSM)** e como ela pode ser usada em Java?
+
+4.  Como as linguagens formais se relacionam com os schemas de validação de documentos, como os usados para **XML** e **JSON**?
+
+5.  De acordo com o texto, qual é a principal utilidade de ferramentas como o **ANTLR** no contexto de linguagens formais em Java?
+
+---
