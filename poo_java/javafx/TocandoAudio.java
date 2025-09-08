@@ -21,7 +21,7 @@ public class TocandoAudio extends Application {
         clip.play();
 
         StackPane raiz = new StackPane();
-        raiz.getChildren().add(new Text("Tocando M�sica "));
+        raiz.getChildren().add(new Text("Tocando Música "));
 
         Scene cena = new Scene(raiz, 600, 100);
         palco.setTitle("Tocando Audio em JavaFX");
