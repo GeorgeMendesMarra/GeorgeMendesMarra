@@ -1,5 +1,3 @@
-// Para facilitar o entendimento de cada parte do código, adicionei comentários detalhados que explicam a função de cada bloco, as variáveis e as transições de estado. O código continua em um único arquivo, pronto para ser compilado e executado.
-
 public class ExemploFSM {
 
     // 1. Definição dos Estados do Semáforo
