@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Tocador de Áudio - MiniPlayer</title>
+<style>
+  :root{
+    --bg: #0f1724;
+    --card:#0b1220;
+    --accent:#06d6a0;
+    --muted:#9fb1c9;
+    --glass: rgba(255,255,255,0.03);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    min-height:100vh;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    background: linear-gradient(180deg,#07101a 0%, #0b1520 100%);
+    color:#e6eef8;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+  }
+
+  .player {
+    width:100%;
+    max-width:920px;
+    display:grid;
+    grid-template-columns: 1fr 320px;
+    gap:18px;
+  }
+
+  .card {
+    background:var(--card);
+    border-radius:12px;
+    padding:14px;
+    border:1px solid rgba(255,255,255,0.03);
+  }
+
+  /* main player */
+  .now {
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .track-info {
+    display:flex;
+    gap:12px;
+    align-items:center;
+  }
+  .cover {
+    width:90px;height:90px;border-radius:8px;background:linear-gradient(135deg,var(--accent), #2dd4bf); display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;
+  }
+  .meta { flex:1; }
+  .title { font-size:18px; font-weight:800; }
+  .artist { color:var(--muted); font-size:13px; margin-top:4px; }
+
+  .controls { display:flex; align-items:center; gap:8px; }
+  .big {
+    background:linear-gradient(90deg,var(--accent), #2dd4bf);
+    color:#021018;
+    border:none;
+    padding:12px 16px;
+    border-radius:10px;
+    font-weight:800;
+    cursor:pointer;
+  }
+  .btn {
+    background:var(--glass);
+    border:none;
+    padding:8px 10px;
+    border-radius:8px;
+    color:var(--muted);
+    cursor:pointer;
+  }
+
+  .progress-wrap {
+    display:flex;
+    gap:8px;
+    align-items:center;
+  }
+  .time { font-size:13px; color:var(--muted); width:58px; text-align:center; }
+  .progress {
+    flex:1;
+    height:10px;
+    background: rgba(255,255,255,0.03);
+    border-radius:999px;
+    overflow:hidden;
+    position:relative;
+    cursor:pointer;
+  }
+  .progress .bar {
+    position:absolute; left:0; top:0; bottom:0; width:0%; background:linear-gradient(90deg,var(--accent), #2dd4bf);
+  }
+
+  .extras { display:flex; gap:8px; align-items:center; margin-top:8px; flex-wrap:wrap; }
+
+  /* playlist */
+  .playlist {
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    max-height:560px;
+    overflow:auto;
+    margin-top:8px;
+  }
+  .pl-item {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:8px;
+    padding:8px;
+    border-radius:8px;
+    cursor:pointer;
+  }
+  .pl-item:hover{ background: rgba(255,255,255,0.02); }
+  .pl-item.active { outline:2px solid rgba(255,255,255,0.04); background: linear-gradient(90deg, rgba(6,214,160,0.06), transparent); }
+
+  .upload {
+    border:2px dashed rgba(255,255,255,0.03);
+    padding:10px;
+    border-radius:8px;
+    display:flex;
+    gap:8px;
+    align-items:center;
+    justify-content:space-between;
+  }
+  input[type="file"]{ display:none; }
+
+  /* responsive */
+  @media (max-width:900px){
+    .player{ grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+  <div class="player">
+    <div class="card now" aria-live="polite">
+      <div class="track-info">
+        <div class="cover" id="cover">♫</div>
+        <div class="meta">
+          <div class="title" id="trackTitle">—</div>
+          <div class="artist" id="trackArtist">MiniPlayer</div>
+        </div>
+        <div>
+          <button id="downloadBtn" class="btn" title="Baixar faixa">⬇︎</button>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="prevBtn" class="btn" aria-label="Anterior">⟲</button>
+        <button id="playBtn" class="big" aria-label="Play/Pause">▶</button>
+        <button id="nextBtn" class="btn" aria-label="Próximo">⟳</button>
+
+        <div style="flex:1"></div>
+
+        <button id="shuffleBtn" class="btn" title="Embaralhar">🔀</button>
+        <button id="loopBtn" class="btn" title="Repetir">🔁</button>
+      </div>
+
+      <div class="progress-wrap">
+        <div class="time" id="timeCurrent">00:00</div>
+        <div class="progress" id="progress" aria-label="Barra de progresso">
+          <div class="bar" id="progressBar"></div>
+        </div>
+        <div class="time" id="timeTotal">00:00</div>
+      </div>
+
+      <div class="extras">
+        <div style="display:flex;gap:8px;align-items:center;">
+          <label for="volume" style="font-size:13px;color:var(--muted)">Volume</label>
+          <input id="volume" type="range" min="0" max="1" step="0.01" value="1" />
+          <button id="muteBtn" class="btn" title="Mudo">🔈</button>
+        </div>
+
+        <div style="margin-left:auto;display:flex;gap:8px;align-items:center;">
+          <div style="font-size:13px;color:var(--muted)">Atalhos: Espaço ▶/⏸ • ←/→ seek • m mudo</div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="card" aria-label="Playlist e Upload">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <strong>Playlist</strong>
+        <div>
+          <button id="btnClear" class="btn">Limpar</button>
+        </div>
+      </div>
+
+      <div class="upload" id="uploadArea" title="Arraste arquivos de áudio aqui">
+        <div style="flex:1">
+          <small style="color:var(--muted)">Arraste/solte ou selecione arquivos (mp3, wav, ogg)</small>
+        </div>
+        <div>
+          <label class="btn" for="fileInput">Selecionar</label>
+          <input id="fileInput" type="file" accept="audio/*" multiple />
+        </div>
+      </div>
+
+      <div class="playlist" id="playlist" role="list" aria-live="polite"></div>
+    </aside>
+  </div>
+
+  <!-- elemento de áudio oculto (controlamos via JS) -->
+  <audio id="audio" preload="metadata"></audio>
+
+<script>
+(() => {
+  const audio = document.getElementById('audio');
+  const playBtn = document.getElementById('playBtn');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const shuffleBtn = document.getElementById('shuffleBtn');
+  const loopBtn = document.getElementById('loopBtn');
+  const timeCurrent = document.getElementById('timeCurrent');
+  const timeTotal = document.getElementById('timeTotal');
+  const progress = document.getElementById('progress');
+  const progressBar = document.getElementById('progressBar');
+  const volume = document.getElementById('volume');
+  const muteBtn = document.getElementById('muteBtn');
+  const playlistEl = document.getElementById('playlist');
+  const fileInput = document.getElementById('fileInput');
+  const uploadArea = document.getElementById('uploadArea');
+  const btnClear = document.getElementById('btnClear');
+  const cover = document.getElementById('cover');
+  const trackTitle = document.getElementById('trackTitle');
+  const trackArtist = document.getElementById('trackArtist');
+  const downloadBtn = document.getElementById('downloadBtn');
+
+  const STORAGE_KEY = 'mini_audio_playlist_v1';
+
+  let playlist = []; // {id, title, artist, src, duration}
+  let index = 0;
+  let isShuffle = false;
+
+  // samples públicos (exemplos)
+  const samples = [
+    { id: genId(), title: 'SoundHelix Song 1', artist: 'SoundHelix', src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
+    { id: genId(), title: 'SoundHelix Song 2', artist: 'SoundHelix', src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' }
+  ];
+
+  // Utils
+  function genId(){ return Math.random().toString(36).slice(2,9); }
+  function fmt(s){ if (!isFinite(s) || s <= 0) return '00:00'; const m = Math.floor(s/60).toString().padStart(2,'0'); const sec = Math.floor(s%60).toString().padStart(2,'0'); return `${m}:${sec}`; }
+
+  // Persistence
+  function save(){
+    // Save only user-added items (not blob URLs) and samples? We'll save full playlist but blob URLs won't persist across sessions.
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(playlist.map(p => ({...p, isBlob: p.isBlob||false }))));
+  }
+  function load(){
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) {
+      try {
+        const arr = JSON.parse(raw);
+        playlist = [...samples];
+        for (const p of arr) {
+          // blob URLs won't be valid across sessions; but keep entries that are remote
+          if (p.src && (p.src.startsWith('http') || !p.isBlob)) playlist.push(p);
+        }
+      } catch(e){ playlist = [...samples]; }
+    } else {
+      playlist = [...samples];
+    }
+  }
+
+  // Render playlist
+  function render(){
+    playlistEl.innerHTML = '';
+    playlist.forEach((t, i) => {
+      const div = document.createElement('div');
+      div.className = 'pl-item' + (i === index ? ' active' : '');
+      div.dataset.index = i;
+      div.innerHTML = `<div style="display:flex;flex-direction:column">
+          <strong style="font-size:14px">${t.title}</strong>
+          <small style="color:var(--muted)">${t.artist || ''}</small>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <button class="btn pl-play" title="Tocar">▶</button>
+          <button class="btn pl-remove" title="Remover">✕</button>
+        </div>`;
+      // click to play
+      div.addEventListener('click', (e) => {
+        if (e.target.closest('.pl-remove') || e.target.closest('.pl-play')) return;
+        playIndex(i);
+      });
+      // play button
+      div.querySelector('.pl-play').addEventListener('click', (ev) => { ev.stopPropagation(); playIndex(i); });
+      // remove
+      div.querySelector('.pl-remove').addEventListener('click', (ev) => {
+        ev.stopPropagation();
+        const removeIndex = i;
+        const wasActive = removeIndex === index;
+        playlist.splice(removeIndex,1);
+        if (removeIndex < index) index--;
+        if (wasActive) {
+          if (playlist.length === 0) { audio.pause(); audio.src=''; index=0; updateInfo(); }
+          else playIndex(Math.min(index, playlist.length-1));
+        }
+        save(); render();
+      });
+      playlistEl.appendChild(div);
+    });
+  }
+
+  // Load track into audio element
+  function loadTrack(i){
+    if (!playlist[i]) return;
+    const t = playlist[i];
+    audio.src = t.src;
+    audio.load();
+    trackTitle.textContent = t.title || '—';
+    trackArtist.textContent = t.artist || '';
+    cover.textContent = (t.title && t.title[0]) || '♫';
+    downloadBtn.disabled = !t.src;
+    downloadBtn.onclick = () => {
+      // trigger download
+      const a = document.createElement('a');
+      a.href = t.src;
+      a.download = t.title || 'track';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    };
+  }
+
+  function playIndex(i){
+    if (i < 0 || i >= playlist.length) return;
+    index = i;
+    loadTrack(index);
+    audio.play().catch(()=>{});
+    render();
+  }
+
+  // Controls
+  playBtn.addEventListener('click', () => {
+    if (!audio.src) { if (playlist.length) playIndex(index); return; }
+    if (audio.paused) audio.play(); else audio.pause();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    if (audio.currentTime > 3) { audio.currentTime = 0; return; }
+    if (isShuffle) {
+      playIndex(Math.floor(Math.random()*playlist.length));
+    } else {
+      playIndex((index -1 + playlist.length) % playlist.length);
+    }
+  });
+
+  nextBtn.addEventListener('click', () => {
+    if (isShuffle) playIndex(Math.floor(Math.random()*playlist.length));
+    else playIndex((index +1) % playlist.length);
+  });
+
+  shuffleBtn.addEventListener('click', () => {
+    isShuffle = !isShuffle;
+    shuffleBtn.style.opacity = isShuffle ? '1' : '0.7';
+  });
+
+  loopBtn.addEventListener('click', () => {
+    audio.loop = !audio.loop;
+    loopBtn.style.opacity = audio.loop ? '1' : '0.7';
+  });
+
+  audio.addEventListener('play', () => playBtn.textContent = '⏸');
+  audio.addEventListener('pause', () => playBtn.textContent = '▶');
+
+  // progress
+  audio.addEventListener('timeupdate', () => {
+    timeCurrent.textContent = fmt(audio.currentTime);
+    timeTotal.textContent = fmt(audio.duration);
+    const pct = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
+    progressBar.style.width = pct + '%';
+  });
+
+  // seek on progress click
+  progress.addEventListener('click', (e) => {
+    const rect = progress.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const pct = x / rect.width;
+    if (audio.duration) audio.currentTime = pct * audio.duration;
+  });
+
+  // volume
+  volume.addEventListener('input', () => {
+    audio.volume = Number(volume.value);
+    audio.muted = audio.volume === 0;
+  });
+  muteBtn.addEventListener('click', () => {
+    audio.muted = !audio.muted;
+    if (audio.muted) muteBtn.textContent = '🔇'; else muteBtn.textContent = '🔈';
+  });
+
+  // end -> next
+  audio.addEventListener('ended', () => {
+    if (audio.loop) return; // loop handled by native loop
+    if (isShuffle) playIndex(Math.floor(Math.random()*playlist.length));
+    else {
+      if (index < playlist.length -1) playIndex(index +1);
+      else audio.pause();
+    }
+  });
+
+  // upload handling
+  uploadArea.addEventListener('dragover', e => { e.preventDefault(); uploadArea.style.borderColor='rgba(255,255,255,0.12)'; });
+  uploadArea.addEventListener('dragleave', e => { uploadArea.style.borderColor=''; });
+  uploadArea.addEventListener('drop', e => {
+    e.preventDefault(); uploadArea.style.borderColor=''; handleFiles(Array.from(e.dataTransfer.files));
+  });
+  fileInput.addEventListener('change', (e) => handleFiles(Array.from(e.target.files || [])));
+
+  function handleFiles(files){
+    for (const f of files) {
+      if (!f.type.startsWith('audio')) continue;
+      const url = URL.createObjectURL(f);
+      const item = { id: genId(), title: f.name.replace(/\.[^/.]+$/, ''), artist: '', src: url, isBlob: true };
+      playlist.push(item);
+      // probe duration
+      probeDuration(url).then(d => { item.duration = d; save(); render(); });
+    }
+    save(); render();
+  }
+
+  function probeDuration(src){
+    return new Promise((resolve) => {
+      const a = document.createElement('audio');
+      a.preload = 'metadata';
+      a.src = src;
+      a.addEventListener('loadedmetadata', () => {
+        resolve(a.duration || 0);
+        a.remove();
+      });
+      setTimeout(()=>resolve(0), 3000);
+    });
+  }
+
+  // remove all
+  btnClear.addEventListener('click', () => {
+    if (!confirm('Limpar playlist?')) return;
+    playlist = [...samples];
+    index = 0;
+    audio.pause();
+    audio.src = '';
+    save(); render();
+  });
+
+  // keyboard
+  window.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (e.code === 'Space') { e.preventDefault(); playBtn.click(); }
+    if (e.key === 'm') { muteBtn.click(); }
+    if (e.key === 'ArrowRight') { audio.currentTime = Math.min((audio.duration||0), audio.currentTime + 5); }
+    if (e.key === 'ArrowLeft') { audio.currentTime = Math.max(0, audio.currentTime - 5); }
+  });
+
+  // update UI when metadata loaded
+  audio.addEventListener('loadedmetadata', () => {
+    timeTotal.textContent = fmt(audio.duration);
+  });
+
+  // initial load
+  function init(){
+    load();
+    render();
+    // autoplay first sample if none loaded
+    if (playlist.length) playIndex(0);
+  }
+  init();
+
+  // Expose for debugging if necessário
+  window.MiniAudio = {
+    getPlaylist: () => playlist,
+    addUrl: (url, title='Track') => { playlist.push({ id: genId(), title, artist:'', src: url}); save(); render(); }
+  };
+})();
+</script>
+</body>
+</html>
