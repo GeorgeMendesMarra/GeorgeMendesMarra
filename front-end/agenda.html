@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Agenda - Academia FitLife</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #111, #222);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #e63946;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: #333;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #f1faee;
+      margin-bottom: 10px;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      grid-column: span 2;
+      padding: 12px;
+      background: #06d6a0;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #04b383;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table th, table td {
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #444;
+    }
+
+    table th {
+      background: #1d3557;
+    }
+
+    .no-agenda {
+      text-align: center;
+      margin-top: 10px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agenda Academia FitLife</h1>
+  </header>
+
+  <div class="container">
+    <h2>Agendar Treino</h2>
+    <form id="form-agenda">
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+      </div>
+      <div>
+        <label for="atividade">Atividade:</label>
+        <select id="atividade" required>
+          <option value="">Selecione</option>
+          <option>Musculação</option>
+          <option>Crossfit</option>
+          <option>Yoga</option>
+          <option>Spinning</option>
+          <option>Pilates</option>
+        </select>
+      </div>
+      <div>
+        <label for="data">Data:</label>
+        <input type="date" id="data" required>
+      </div>
+      <div>
+        <label for="hora">Horário:</label>
+        <input type="time" id="hora" required>
+      </div>
+      <button type="submit">Agendar</button>
+    </form>
+
+    <h2>Agendamentos</h2>
+    <table id="tabela-agenda">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Atividade</th>
+          <th>Data</th>
+          <th>Hora</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <p class="no-agenda" id="msg-vazio">Nenhum agendamento ainda.</p>
+  </div>
+
+  <script>
+    const form = document.getElementById('form-agenda');
+    const tabela = document.querySelector('#tabela-agenda tbody');
+    const msgVazio = document.getElementById('msg-vazio');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nome = document.getElementById('nome').value;
+      const atividade = document.getElementById('atividade').value;
+      const data = document.getElementById('data').value;
+      const hora = document.getElementById('hora').value;
+
+      if (!nome || !atividade || !data || !hora) return;
+
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${nome}</td>
+        <td>${atividade}</td>
+        <td>${new Date(data).toLocaleDateString('pt-BR')}</td>
+        <td>${hora}</td>
+      `;
+      tabela.appendChild(row);
+
+      msgVazio.style.display = 'none';
+      form.reset();
+    });
+  </script>
+</body>
+</html>
