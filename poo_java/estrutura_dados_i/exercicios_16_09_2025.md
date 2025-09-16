@@ -9,4 +9,5 @@ Para situações em que você precisa de uma lista de elementos com tamanho din�
 
 Teste o programa: AumentarArray.java
 
-3) 
+3) Arrays Irregulares (ou "Jagged Arrays"). Em Java, arrays multidimensionais não precisam ter um número fixo de colunas em todas as linhas. Você pode ter arrays onde cada "linha" (sub-array) tem um tamanho diferente. Execute o programa ArrayIrregular.java e veja o resultado;
+4) 
