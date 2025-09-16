@@ -1,3 +1,5 @@
+Mostrar todos os programas de todos os exercícios no seu GitHub até hoje (16/09/2025);
+
 1) Transforme a matriz do programa ArrayBidimensional.java para 5 x 5;
 2) Por que não aumentar o array diretamente?
 
