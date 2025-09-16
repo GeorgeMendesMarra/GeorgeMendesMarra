@@ -7,6 +7,6 @@ Alternativa: Use ArrayList
 
 Para situações em que você precisa de uma lista de elementos com tamanho dinâmico, a melhor solução é usar a classe ArrayList. Ela é muito mais prática e eficiente para lidar com coleções que precisam aumentar ou diminuir de tamanho.
 
-Execute para ver o funcionamento do programa: AumentarArray.java
+Teste o programa: AumentarArray.java
 
 3) 
