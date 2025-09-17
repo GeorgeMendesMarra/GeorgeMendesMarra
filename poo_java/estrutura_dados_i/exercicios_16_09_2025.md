@@ -15,4 +15,4 @@ Teste o programa: AumentarArray.java
 4) Adicione 10 elementos no programa ExemploPilhaSimples1.java;
 5) Empilhe 10 elementos no programa ExemploPilhaSimples2.java;
 6) Coloque 5 URLs reais no programa ExemploStack.java;
-7) Qual a função do método Arrays.sort(nomes) no programa OrdenaArray.java?
+7) Qual a função do método Arrays.sort(nomes) no programa ArrayOrdena.java?
