@@ -1,5 +1,3 @@
----
-
 ## A Origem: A Guerra dos Métodos (Início dos Anos 90)
 
 Na primeira metade da década de 1990, o desenvolvimento de *software* orientado a objetos estava em alta, mas havia uma confusão notacional. Diversos especialistas em modelagem criaram seus próprios métodos e linguagens visuais. Os três mais populares eram:
