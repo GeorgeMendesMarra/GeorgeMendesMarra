@@ -1,8 +1,7 @@
 -- ==========================================
 -- 🗃️ MODELO FÍSICO - POSTGRESQL
--- Sistema de Controle de Estoque (DevMedia)
+-- Sistema de Controle de Estoque
 -- Autor: Prof. George Mendes Marra
--- Instituto Federal Goiano – Campus Hidrolândia
 -- ==========================================
 
 CREATE SCHEMA IF NOT EXISTS estoque;
