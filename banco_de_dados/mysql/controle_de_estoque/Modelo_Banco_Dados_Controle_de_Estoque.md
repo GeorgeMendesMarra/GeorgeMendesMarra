@@ -1,12 +1,12 @@
 ---
-title: "Modelo de Banco de Dados – DevMedia"
+title: "Modelo de Banco de Dados"
 author: "Professor George Mendes Marra"
 course: "Banco de Dados – ADS 2025/2"
-institution: "Instituto Federal Goiano – Campus Hidrolândia"
-date: "2025-10-12"
+institution: "UniAlfa"
+date: "12-10-2025"
 ---
 
-# 🗃️ Modelo de Banco de Dados – DevMedia
+# 🗃️ Modelo de Banco de Dados
 
 Baseado na imagem:  
 https://www.devmedia.com.br/arquivos/REVISTAS/sql/imagens/85/1/image001.webp
@@ -224,5 +224,4 @@ CREATE TABLE ItemSaida (
 
 ## ✍️ Autor
 Professor **George Mendes Marra**  
-Disciplina: **Banco de Dados – ADS 2025/2**  
-Instituto Federal Goiano – Campus Hidrolândia
+Disciplina: **Banco de Dados – ADS 2025/2**
