@@ -1,9 +1,9 @@
 ---
-title: "Modelo de Banco de Dados"
-author: "Professor George Mendes Marra"
-course: "Banco de Dados – ADS 2025/2"
-institution: "UniAlfa"
-date: "12-10-2025"
+Título: "Modelo de Banco de Dados"
+Autor: "Professor George Mendes Marra"
+Disciplina: "Banco de Dados – ADS 2025/2"
+Instituição: "UniAlfa"
+Data: "12-10-2025"
 ---
 
 # 🗃️ Modelo de Banco de Dados
