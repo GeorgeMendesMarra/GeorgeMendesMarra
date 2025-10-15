@@ -10,6 +10,7 @@
     d) FOLI (First Out, Last In)
 
 **2. No exemplo, qual será o conteúdo da `filaDeClientes` imediatamente após a execução da linha que processa o segundo cliente (`String atendido2 = filaDeClientes.poll();`)?**
+
     a) `[Alice, Bruno, Carla]`
     b) `[]` (Vazia)
     c) `[Carla]`
