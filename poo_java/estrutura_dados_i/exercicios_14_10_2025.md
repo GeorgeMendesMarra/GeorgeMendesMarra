@@ -4,6 +4,7 @@
 
 **1. Qual princípio fundamental de Estrutura de Dados é estritamente seguido pela `Queue` (Fila), conforme demonstrado no exemplo?**
     a) LIFO (Last In, First Out)
+    
     b) FIFO (First In, First Out)
     c) LILO (Last In, Last Out)
     d) FOLI (First Out, Last In)
