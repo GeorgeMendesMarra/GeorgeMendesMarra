@@ -68,3 +68,18 @@ Na disciplina de **Complexidade de Algoritmos**, analisamos:
 
 ## 6️⃣ Gráfico Conceitual de Crescimento (ASCII)
 
+
+📍 **Dica visual:** quanto mais inclinada a linha, **mais rapidamente o algoritmo se torna inviável** com o aumento de n.
+
+---
+
+## 7️⃣ Resumo Visual
+
+| Medida      | Tempo           | Espaço        | Caso de Entrada        | Exemplo                          |
+|------------|----------------|---------------|----------------------|---------------------------------|
+| Excelente  | O(1), O(log n) | O(1)          | Melhor, Médio, Pior  | Acesso a array, Busca binária   |
+| Boa        | O(n), O(n log n)| O(n)          | Caso médio           | Percorrer lista, Merge Sort     |
+| Ruim       | O(n²)          | O(n²)         | Pior caso            | Bubble Sort, Selection Sort     |
+| Péssima    | O(2ⁿ), O(n!)   | O(2ⁿ), O(n!)  | Pior caso            | Força bruta, Permutações        |
+
+---
