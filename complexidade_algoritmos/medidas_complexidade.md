@@ -96,7 +96,20 @@ Tempo
 └───────────────────────────────► n
 
 
-📍 **Dica visual:** quanto mais inclinada a linha, **mais rapidamente o algoritmo se torna inviável** com o aumento de n.
+
+### Detalhes:
+
+- **Eixo vertical (Tempo):** Quanto mais alto o ponto, maior o tempo de execução.  
+- **Eixo horizontal (n):** Crescimento da entrada, de valores pequenos a maiores.  
+- **Linhas conectadas:** Cada nível de complexidade mostra a **tendência de crescimento** proporcional.  
+- **Emojis para destaque visual:**
+  - 🟢 → Excelente/rápido (O(1), O(log n))  
+  - 🟡 → Aceitável/moderado (O(n), O(n log n))  
+  - 🔴 → Pesado/lento (O(n²), O(2ⁿ))  
+  - 💀 → Inviável/fatorial (O(n!))  
+
+📍 **Observação:** Este gráfico permite comparar rapidamente **como o tempo de execução explode** para algoritmos de alta complexidade conforme a entrada aumenta, enquanto algoritmos eficientes crescem de forma lenta e controlada.
+
 
 ---
 
