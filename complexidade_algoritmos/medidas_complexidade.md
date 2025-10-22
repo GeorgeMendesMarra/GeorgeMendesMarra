@@ -68,6 +68,33 @@ Na disciplina de **Complexidade de Algoritmos**, analisamos:
 
 ## 6️⃣ Gráfico Conceitual de Crescimento (ASCII)
 
+Exemplo:
+
+```text
+Tempo
+│
+│                           O(n!) 💀
+│                           *
+│
+│                        O(2ⁿ) 🔴🔴
+│                        **
+│
+│                     O(n²) 🔴
+│                     ****
+│
+│                O(n log n) 🟡🟡
+│                ******
+│
+│           O(n) 🟡
+│           ********
+│
+│       O(log n) 🟢🟢
+│       ************
+│
+│ O(1) 🟢
+│       ****************
+└───────────────────────────────► n
+
 
 📍 **Dica visual:** quanto mais inclinada a linha, **mais rapidamente o algoritmo se torna inviável** com o aumento de n.
 
