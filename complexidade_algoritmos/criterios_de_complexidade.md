@@ -1,17 +1,7 @@
-* Critérios de complexidade (tempo, espaço, outros);
-* Tabelas de crescimento;
-* Gráficos ASCII de crescimento com escala proporcional;
-* Emojis para visualização rápida;
-* Formato pronto para GitHub, Notion ou PDF.
-
 ---
 
 ````markdown
 # 📊 Complexidade de Algoritmos — Critérios e Crescimento
-
-Autor: **Professor George Mendes Marra**  
-Disciplina: Estrutura de Dados / Engenharia de Software  
-Instituto Federal Goiano – Campus Hidrolândia
 
 ---
 
