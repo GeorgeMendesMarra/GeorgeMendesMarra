@@ -1,6 +1,5 @@
 ---
 
-````markdown
 # 📊 Complexidade de Algoritmos — Critérios e Crescimento
 
 ---
