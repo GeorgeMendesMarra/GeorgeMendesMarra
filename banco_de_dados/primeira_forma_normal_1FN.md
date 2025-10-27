@@ -1,0 +1,8 @@
+A Primeira Forma Normal ($\text{1FN}$) é um conceito fundamental na história dos bancos de dados relacionais e na técnica de **Normalização**.
+
+* **Origem:** O conceito foi introduzido por **Edgar F. Codd** na década de 1970, quando ele propôs o modelo relacional como alternativa aos modelos hierárquicos e de rede da época. A motivação era criar uma abordagem sistemática para organizar os dados, reduzir a redundância e eliminar anomalias.
+* **Definição Central:** A $\text{1FN}$ estabelece a regra mais básica para que uma estrutura de dados possa ser considerada uma **relação** (tabela) em um banco de dados relacional.
+* **Requisito Principal:** Uma tabela está na $\text{1FN}$ se, e somente se, **todos os seus atributos (colunas) contiverem apenas valores atômicos (indivisíveis)**. Isso significa que:
+    1.  Não deve haver **grupos repetidos** (ou atributos multivalorados), onde múltiplos valores são armazenados em uma única célula para o mesmo registro (exemplo: uma coluna de "Telefones" com vários números separados por vírgula).
+    2.  Não deve haver **atributos compostos** onde a informação em uma coluna poderia ser dividida em colunas mais elementares (exemplo: uma coluna de "Endereço Completo" que deveria ser separada em Rua, Cidade, Estado, etc.).
+* **Importância:** A adoção da $\text{1FN}$ formalizou a organização dos dados em tabelas com relacionamentos claros, servindo como a **base** para todas as outras formas normais ($\text{2FN}$, $\text{3FN}$, etc.) e para a criação de sistemas de banco de dados eficientes e consistentes que dominam o cenário atual (como os baseados em $\text{SQL}$).
