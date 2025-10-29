@@ -47,3 +47,7 @@ Essas estruturas estão localizadas no pacote **`java.util`**.
 - **Deque** → Permite inserções e remoções em **ambas as extremidades**.
 
 ---
+
+**Autor:** Professor George Mendes Marra  
+**Disciplina:** Estruturas de Dados em Java  
+**Instituição:** Instituto Federal Goiano – Campus Hidrolândia
