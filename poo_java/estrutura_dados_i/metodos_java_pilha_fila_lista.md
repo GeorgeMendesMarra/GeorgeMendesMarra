@@ -1,53 +1,68 @@
-# 🧱 Métodos em Estruturas de Dados — Java
+# ☕ Estruturas de Dados em Java — Métodos e Exemplos
 
-A tabela abaixo apresenta os principais **métodos utilizados nas estruturas de dados** em Java: **Pilha (Stack)**, **Fila (Queue)** e **Fila Dupla (Deque)**.  
-Essas estruturas estão localizadas no pacote **`java.util`**.
+Este documento apresenta os **principais métodos das estruturas de dados em Java**, abrangendo:
+- **Listas (List, ArrayList, LinkedList)**
+- **Pilhas (Stack)**
+- **Filas (Queue)**
+- **Filas Duplas (Deque)**
 
----
-
-| Estrutura | Classe/Interface | Método | Descrição | Exemplo |
-|------------|------------------|---------|------------|----------|
-| **Pilha (Stack)** | `java.util.Stack<E>` | `push(E item)` | Insere um elemento no topo da pilha. | `pilha.push(10);` |
-| | | `pop()` | Remove e retorna o elemento do topo da pilha. | `pilha.pop();` |
-| | | `peek()` | Retorna (sem remover) o elemento do topo. | `pilha.peek();` |
-| | | `isEmpty()` | Verifica se a pilha está vazia. | `pilha.isEmpty();` |
-| | | `search(Object o)` | Retorna a posição do elemento na pilha (1 = topo). | `pilha.search(10);` |
-| | | `size()` | Retorna o número de elementos. | `pilha.size();` |
+Todas essas estruturas estão disponíveis no pacote `java.util`.
 
 ---
 
-| **Fila (Queue)** | `java.util.Queue<E>` | `add(E e)` | Insere um elemento no final da fila (lança exceção se cheia). | `fila.add(5);` |
-| | | `offer(E e)` | Insere um elemento (retorna `false` se cheia, sem exceção). | `fila.offer(5);` |
-| | | `remove()` | Remove e retorna o primeiro elemento (lança exceção se vazia). | `fila.remove();` |
-| | | `poll()` | Remove e retorna o primeiro elemento (ou `null` se vazia). | `fila.poll();` |
-| | | `element()` | Retorna (sem remover) o primeiro elemento (lança exceção se vazia). | `fila.element();` |
-| | | `peek()` | Retorna (sem remover) o primeiro elemento (ou `null` se vazia). | `fila.peek();` |
-| | | `size()` | Retorna o número de elementos. | `fila.size();` |
+## 📚 1. Listas (`List`, `ArrayList`, `LinkedList`)
+
+A interface `List<E>` representa uma coleção **ordenada e indexada**, onde é possível acessar elementos por posição.  
+Suas principais implementações são **ArrayList** e **LinkedList**.
+
+| Método | Descrição | Exemplo |
+|--------|------------|----------|
+| `add(E e)` | Adiciona elemento ao final da lista. | `lista.add("A");` |
+| `add(int index, E e)` | Insere elemento em uma posição específica. | `lista.add(1, "B");` |
+| `remove(Object o)` | Remove a primeira ocorrência do elemento. | `lista.remove("A");` |
+| `remove(int index)` | Remove o elemento no índice indicado. | `lista.remove(0);` |
+| `get(int index)` | Retorna o elemento do índice informado. | `lista.get(2);` |
+| `set(int index, E e)` | Substitui o elemento no índice. | `lista.set(0, "X");` |
+| `size()` | Retorna a quantidade de elementos. | `lista.size();` |
+| `isEmpty()` | Verifica se a lista está vazia. | `lista.isEmpty();` |
+| `contains(Object o)` | Verifica se a lista contém o elemento. | `lista.contains("B");` |
+| `indexOf(Object o)` | Retorna o índice da primeira ocorrência. | `lista.indexOf("C");` |
+| `clear()` | Remove todos os elementos. | `lista.clear();` |
+| `toArray()` | Converte a lista para array. | `lista.toArray();` |
+| `subList(int from, int to)` | Retorna parte da lista. | `lista.subList(1, 4);` |
+| `sort(Comparator c)` | Ordena a lista. | `lista.sort(null);` |
+| `replaceAll(UnaryOperator op)` | Aplica operação a todos os elementos. | `lista.replaceAll(s -> s.toUpperCase());` |
+| `removeIf(Predicate filter)` | Remove elementos que atendem ao predicado. | `lista.removeIf(s -> s.isEmpty());` |
+
+### ⚙️ Implementações
+- **ArrayList:** acesso rápido por índice (`O(1)`), remoção/inserção mais lenta.  
+- **LinkedList:** remoção/inserção eficiente, acesso mais lento (`O(n)`).
 
 ---
 
-| **Fila Dupla (Deque)** | `java.util.Deque<E>` | `addFirst(E e)` | Adiciona elemento no início da fila. | `deque.addFirst(10);` |
-| | | `addLast(E e)` | Adiciona elemento no final da fila. | `deque.addLast(20);` |
-| | | `removeFirst()` | Remove o primeiro elemento. | `deque.removeFirst();` |
-| | | `removeLast()` | Remove o último elemento. | `deque.removeLast();` |
-| | | `getFirst()` | Retorna (sem remover) o primeiro elemento. | `deque.getFirst();` |
-| | | `getLast()` | Retorna (sem remover) o último elemento. | `deque.getLast();` |
-| | | `offerFirst(E e)` | Insere elemento no início (sem exceção). | `deque.offerFirst(30);` |
-| | | `offerLast(E e)` | Insere elemento no final (sem exceção). | `deque.offerLast(40);` |
-| | | `pollFirst()` | Remove e retorna o primeiro elemento (ou `null`). | `deque.pollFirst();` |
-| | | `pollLast()` | Remove e retorna o último elemento (ou `null`). | `deque.pollLast();` |
-| | | `peekFirst()` | Retorna (sem remover) o primeiro elemento (ou `null`). | `deque.peekFirst();` |
-| | | `peekLast()` | Retorna (sem remover) o último elemento (ou `null`). | `deque.peekLast();` |
+## 🧱 2. Pilha (`Stack`)
 
----
+A classe `Stack<E>` implementa uma **estrutura LIFO** (*Last In, First Out*), onde o último elemento inserido é o primeiro a ser removido.
 
-## 🧠 Dica
-- **Pilha (Stack)** → LIFO (Last In, First Out) → Último que entra é o primeiro que sai.  
-- **Fila (Queue)** → FIFO (First In, First Out) → Primeiro que entra é o primeiro que sai.  
-- **Deque** → Permite inserções e remoções em **ambas as extremidades**.
+| Método | Descrição | Exemplo |
+|--------|------------|----------|
+| `push(E item)` | Insere elemento no topo. | `pilha.push(10);` |
+| `pop()` | Remove e retorna o topo. | `pilha.pop();` |
+| `peek()` | Retorna o topo sem remover. | `pilha.peek();` |
+| `isEmpty()` | Verifica se está vazia. | `pilha.isEmpty();` |
+| `search(Object o)` | Retorna a posição do elemento (1 = topo). | `pilha.search(10);` |
+| `size()` | Retorna a quantidade de elementos. | `pilha.size();` |
 
----
+### 🧠 Exemplo
+```java
+import java.util.Stack;
 
-**Autor:** Professor George Mendes Marra  
-**Disciplina:** Estruturas de Dados em Java  
-**Instituição:** Instituto Federal Goiano – Campus Hidrolândia
+public class Main {
+    public static void main(String[] args) {
+        Stack<Integer> pilha = new Stack<>();
+        pilha.push(5);
+        pilha.push(10);
+        System.out.println(pilha.pop()); // 10
+        System.out.println(pilha.peek()); // 5
+    }
+}
