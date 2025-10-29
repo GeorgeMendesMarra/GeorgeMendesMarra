@@ -149,7 +149,3 @@ public class Main {
 | **Deque** | `LinkedList`, `ArrayDeque` | Bidirecional | Ambas as extremidades | Combina características de pilha e fila. |
 
 ---
-
-**Autor:** Professor George Mendes Marra  
-**Disciplina:** Estruturas de Dados em Java  
-**Instituição:** Instituto Federal Goiano – Campus Hidrolândia
