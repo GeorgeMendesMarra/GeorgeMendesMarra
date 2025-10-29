@@ -1,0 +1,109 @@
+# ☕ Exercícios Simples de Java — Iniciantes
+---
+
+## 🧩 1. Olá, Mundo!
+Crie um programa que exiba na tela a mensagem:
+
+---
+
+## 🧮 2. Soma de Dois Números
+Leia dois números inteiros e exiba a soma deles.
+
+---
+
+## 🔢 3. Média de Três Números
+Leia três números e calcule a média aritmética simples.
+
+---
+
+## 💬 4. Entrada e Saída de Nome
+Peça ao usuário que digite seu nome e exiba:
+
+---
+
+## 🧓 5. Cálculo da Idade
+Peça o ano de nascimento e o ano atual e exiba a idade da pessoa.
+
+---
+
+## 💰 6. Conversão de Dólares
+Peça o valor em reais e a cotação do dólar e exiba o valor convertido.
+
+---
+
+## 📏 7. Área do Retângulo
+Leia a base e a altura de um retângulo e calcule sua área.
+
+---
+
+## ⏱️ 8. Conversão de Minutos
+Leia um valor em minutos e converta para horas e minutos.
+
+---
+
+## 🧮 9. Par ou Ímpar
+Leia um número inteiro e informe se ele é **par** ou **ímpar**.
+
+---
+
+## 🔼 10. Maior de Dois Números
+Leia dois números e mostre qual é o maior.
+
+---
+
+## 🔽 11. Menor de Três Números
+Leia três números e indique qual é o menor.
+
+---
+
+## 🧠 12. Positivo, Negativo ou Zero
+Leia um número e informe se ele é positivo, negativo ou zero.
+
+---
+
+## 📆 13. Dias da Semana
+Leia um número de 1 a 7 e mostre o dia da semana correspondente.
+
+---
+
+## 🧮 14. Tabuada do Número
+Leia um número e mostre sua tabuada de 1 a 10.
+
+---
+
+## 🧱 15. Contagem de 1 a N
+Leia um número N e exiba todos os números de 1 até N.
+
+---
+
+## 🔁 16. Soma de 1 a 100
+Utilize um laço `for` para somar todos os números de 1 a 100 e exibir o resultado.
+
+---
+
+## 📊 17. Fatorial de um Número
+Leia um número e calcule seu fatorial usando `for` ou `while`.
+
+---
+
+## 💡 18. Números Pares de 1 a 50
+Mostre todos os números pares entre 1 e 50.
+
+---
+
+## 🔤 19. Contagem de Letras
+Leia uma palavra e exiba quantas letras ela possui (sem usar funções prontas além de `length()`).
+
+---
+
+## 🚗 20. Cálculo de Consumo de Combustível
+Peça a distância percorrida (em km) e o total de combustível gasto (em litros).  
+Mostre o consumo médio (km/l).
+
+---
+
+## 🧰 Dica
+Use sempre:
+```java
+import java.util.Scanner;
+Scanner sc = new Scanner(System.in);
