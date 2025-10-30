@@ -1,5 +1,3 @@
----
-
 # 🧩 Breve Histórico do Sistema de Arquivos EXT3
 
 O **EXT3 (Third Extended File System)** foi desenvolvido por **Stephen Tweedie** e lançado oficialmente em **novembro de 2001** como uma evolução direta do **EXT2**, o sistema de arquivos padrão do Linux desde 1993.
