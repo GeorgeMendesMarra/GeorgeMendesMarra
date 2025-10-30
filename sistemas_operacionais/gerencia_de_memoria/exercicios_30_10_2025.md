@@ -182,5 +182,3 @@ Ela influencia diretamente:
 Uma má gestão pode causar lentidão, travamentos ou até falhas no sistema.
 
 ---
-
-Deseja que eu gere este conteúdo como **arquivo `.md` para download (gerencia_memoria_completa.md)**, Professor George?
