@@ -43,5 +43,3 @@ O EXT4 marcou uma evolução significativa na história dos sistemas de arquivos
 Com melhorias em desempenho, suporte a grandes volumes e maior integridade de dados, consolidou-se como um dos sistemas mais estáveis e utilizados no mundo open source.
 
 ---
-
-Deseja que eu gere este conteúdo como um **arquivo Markdown (`historico_ext4.md`)** para download?
