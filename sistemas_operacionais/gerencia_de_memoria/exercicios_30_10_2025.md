@@ -1,6 +1,5 @@
 ---
 
-```markdown
 # 💾 Gerência de Memória em Sistemas Operacionais  
 ## 🧠 20 Questões Ampliadas com Respostas Detalhadas
 
