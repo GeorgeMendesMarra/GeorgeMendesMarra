@@ -22,5 +22,3 @@ Mesmo assim, o EXT3 permanece um marco importante na evolução dos sistemas de 
 O EXT3 representou a transição entre a simplicidade do EXT2 e a modernidade do EXT4, consolidando o Linux como um sistema estável para ambientes pessoais e corporativos.
 
 ---
-
-Deseja que eu gere esse texto em um arquivo Markdown (`historico_ext3.md`) pronto para download?
