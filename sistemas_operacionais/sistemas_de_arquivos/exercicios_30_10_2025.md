@@ -1,7 +1,6 @@
 ---
 
 # 📁 Sistemas de Arquivos em Sistemas Operacionais  
-## 🧩 20 Questões com Respostas Detalhadas e Explicativas  
 
 ---
 
