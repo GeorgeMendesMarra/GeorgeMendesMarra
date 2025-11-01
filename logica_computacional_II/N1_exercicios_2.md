@@ -1,5 +1,3 @@
-Primeira atividade formativa 1 (0,5)
-
 Teste os programas abaixo no SWI-Prolog
 
 %Monty Python (http://www.allisons.org/ll/Logic/Prolog/Examples/witch/)
