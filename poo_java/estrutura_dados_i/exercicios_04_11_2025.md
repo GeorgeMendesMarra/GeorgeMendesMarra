@@ -9,7 +9,9 @@
    
    System.out.println("Terceira fruta: " + frutas.get(2));
 7) O que acontece após a execução dos métodos?
+   
    frutas.clear();
+   
    System.out.println(frutas.isEmpty());
 
 
