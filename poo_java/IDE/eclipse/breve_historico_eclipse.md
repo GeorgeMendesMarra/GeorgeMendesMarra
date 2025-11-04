@@ -122,5 +122,3 @@ Seu modelo de **modularidade, código aberto e extensibilidade** influenciou tod
 Mais do que uma simples IDE, o Eclipse é um **símbolo da colaboração entre indústria, academia e comunidade open source** no avanço do desenvolvimento Java.
 
 ---
-
-Deseja que eu gere este histórico do **Eclipse IDE** em **arquivo `.md` (Markdown)** para acompanhar os do **NetBeans** e **IntelliJ IDEA** que já preparamos?
