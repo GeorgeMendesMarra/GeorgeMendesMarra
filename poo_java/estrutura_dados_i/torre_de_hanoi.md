@@ -104,8 +104,6 @@ Criada há mais de um século, continua sendo uma ferramenta essencial para o en
 
 ---
 
-Quer que eu gere essa explicação formatada como um **arquivo `HISTORIA_TORRE_DE_HANOI.md`** para adicionar junto ao repositório dos programas em Java?
-
 ## 📖 Teoria
 
 A **Torre de Hanói** é um problema clássico de recursividade proposto
