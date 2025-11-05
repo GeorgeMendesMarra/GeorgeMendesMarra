@@ -1,6 +1,5 @@
 ---
 
-````markdown
 # 🧩 20 Perguntas — Torre de Hanói em Java
 
 ## 🧠 Parte 1 – Conceitos Gerais
