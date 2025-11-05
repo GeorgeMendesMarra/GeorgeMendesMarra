@@ -173,7 +173,3 @@ Para organizar no GitHub:
      └── README.md
 
 ------------------------------------------------------------------------
-
-**Autor:** Professor George Mendes Marra\
-**Disciplina:** Estrutura de Dados / Programação II\
-**Instituição:** Instituto Federal Goiano - Campus Hidrolândia
