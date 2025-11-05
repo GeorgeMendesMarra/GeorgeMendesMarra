@@ -1,5 +1,3 @@
-# 🧩 Torre de Hanói em Java
-
 A **história da Torre de Hanói** é uma das mais interessantes da computação e da matemática recreativa — mistura **lenda, lógica e ciência**.
 ---
 
