@@ -1,5 +1,3 @@
----
-
 ## ☕ Breve Histórico dos JavaBeans e a Distinção EJB
 
 JavaBeans é uma especificação da linguagem Java, criada pela **Sun Microsystems** (hoje Oracle), que define um **modelo de componentes de software reutilizáveis**.
