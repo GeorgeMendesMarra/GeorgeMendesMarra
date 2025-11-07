@@ -1,5 +1,3 @@
----
-
 # 🏛️ O que é Java EE (Java Platform, Enterprise Edition)
 
 ## 🔹 Conceito geral
