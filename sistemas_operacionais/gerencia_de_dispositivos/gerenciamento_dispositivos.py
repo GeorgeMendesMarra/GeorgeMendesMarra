@@ -1,9 +1,6 @@
----
-
-```python
 """
 Arquivo: gerenciamento_dispositivos.py
-Autor: Professor George
+Autor:
 Data: 07/11/2025
 Versão: 1.0
 Descrição:
@@ -173,37 +170,3 @@ if __name__ == "__main__":
     # Instancia o sistema operacional simulado e executa o gerenciamento
     so = SistemaOperacional()
     so.executar()
-```
-
----
-
-### 🧠 **Resumo dos conceitos aplicados**
-
-| Conceito                          | Representação no código                                         |
-| --------------------------------- | --------------------------------------------------------------- |
-| **Dispositivos de Entrada/Saída** | Classes `DispositivoEntrada` e `DispositivoSaida`               |
-| **Driver de dispositivo**         | Classe `Driver` traduz comandos para operações do dispositivo   |
-| **Buffer de E/S**                 | Classe `Buffer` (usa `deque` para simular uma fila de dados)    |
-| **Interrupções (simuladas)**      | Chamadas dos métodos `operar()` dentro do fluxo principal       |
-| **Sistema Operacional**           | Classe `SistemaOperacional` coordena os dispositivos e o buffer |
-
----
-
-### 💻 **Saída esperada no terminal**
-
-```
-🖥️ Simulação: Gerenciamento de Dispositivos em um Sistema Operacional
-
-🧩 Driver ativando o dispositivo Teclado USB...
-🔹 [Entrada] O dispositivo Teclado USB está capturando dados...
-🗃️ Dado adicionado ao buffer: Comando: Imprimir Relatório
-🧩 Driver ativando o dispositivo Impressora HP...
-🔸 [Saída] O dispositivo Impressora HP está exibindo dados...
-📤 Dado enviado do buffer: Comando: Imprimir Relatório
-
-✅ Gerenciamento concluído com sucesso!
-```
-
----
-
-Quer que eu adicione **tratamento de interrupção com threads** (simulando o hardware notificando o SO automaticamente) em uma versão mais avançada desse código?
