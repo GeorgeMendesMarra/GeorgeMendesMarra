@@ -1,5 +1,3 @@
----
-
 ## 🟢 **Temas Simples (DFA básico)**
 
 1. **Assistente de pedidos de pizza** 🍕
