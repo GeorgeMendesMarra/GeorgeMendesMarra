@@ -1,12 +1,3 @@
-"""
-
-Melhorias:
-- Extração de rota com regex que cobre muitos formatos: 'rota1', 'rota 1', 'rota nº 1', 'rota-1', 'rota.1', etc.
-- Normalização (remoção de pontuação que atrapalha a extração).
-- Detect_state prioriza pedidos por motorista.
-- Testes embutidos com exemplos que demonstram respostas corretas.
-"""
-
 import re
 import sys
 
