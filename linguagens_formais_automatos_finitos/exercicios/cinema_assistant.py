@@ -1,9 +1,3 @@
-"""
-
-Versão do CinemaAssistant com extração e validação de quantidade de ingressos corrigida.
-Roda com: python cinema_assistant_fixed_quantity.py
-"""
-
 import re
 import sys
 
