@@ -1,7 +1,3 @@
-Perfeito, Professor George 👨‍🏫
-
-Aqui está um **texto completo e expandido** sobre o **histórico e as características do servidor Java Undertow**, formatado em **Markdown (MD)** — ideal para trabalhos técnicos, anotações ou documentos acadêmicos.
-
 ---
 
 # ☕ Histórico e Características do Servidor Java Undertow
@@ -62,5 +58,3 @@ Por ser um projeto **mantido pela Red Hat** e **aberto à comunidade**, o Undert
 RED HAT. *Undertow – A Flexible and High Performance Web Server*. Disponível em: [https://undertow.io](https://undertow.io). Acesso em: 9 nov. 2025.
 
 ---
-
-Deseja que eu gere este conteúdo em **arquivo `.md` para download** como os anteriores (Tomcat, Jetty e GlassFish)?
