@@ -75,5 +75,3 @@ ORACLE CORPORATION. *Java Servlet Technology*. Disponível em: [https://www.orac
 SANTOS, Carlos Eduardo dos. *Servidores de Aplicação Java: Um Estudo Comparativo entre Tomcat e GlassFish*. Revista de Tecnologia e Inovação, v. 12, n. 3, p. 45–58, 2022.
 
 ---
-
-Deseja que eu **formate esse texto como um documento `.docx`** (Word) ou **.pdf acadêmico** para inserir no seu TCC ou material de aula? Posso gerar com capa, margens e normas ABNT.
