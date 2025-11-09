@@ -64,16 +64,6 @@ Além disso, o Tomcat serviu como **base de referência** para diversos outros p
 | **2021** | Tomcat 10                      | Transição para Jakarta EE (migração do `javax.*` para `jakarta.*`); otimizações para contêineres Docker. |
 | **2025** | Tomcat 11 (em desenvolvimento) | Suporte ampliado ao Jakarta EE 11 e melhorias para execução em nuvem e microserviços.                    |
 
-💡 Principais Características do Apache Tomcat
-
-O Tomcat não é apenas um servidor, é um Container Web leve e muito eficiente, focado em rodar aplicações web Java.
-Característica	Descrição
-Container de Servlets/JSP	Sua principal função é ser a implementação de referência e motor (Engine) para executar Servlets e JavaServer Pages (JSP), que são a base das aplicações web Java.
-Leve e Rápido	É muito mais leve e rápido de inicializar do que um Servidor de Aplicação Java EE/Jakarta EE completo (como JBoss/WildFly ou GlassFish), o que é ótimo para desenvolvimento, testes e microsserviços.
-Coyote HTTP Connector	Possui seu próprio adaptador HTTP (chamado Coyote) que permite que ele funcione como um servidor web stand-alone, sem depender de um servidor web externo como o Apache HTTP Server.
-Jasper JSP Engine	O módulo responsável por compilar os arquivos JSP (páginas HTML com código Java) em Servlets Java para que possam ser executados pelo container.
-Gerenciamento Web (Tomcat Manager)	Oferece uma interface web de administração (o Tomcat Manager) que permite implantar (deploy), iniciar, parar e remover aplicações (.war files) sem precisar reiniciar o servidor.
-Fácil Configuração (XML)	A configuração principal do servidor é feita através de arquivos XML, principalmente o server.xml e o web.xml (do seu projeto), oferecendo controle granular sobre hosts, portas e contextos.
 ---
 
 ### 📚 **Referência (ABNT)**
