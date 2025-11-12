@@ -1,5 +1,3 @@
----
-
 # 🧩 Diferenças entre Classes Abstratas e Não Abstratas em Java
 
 ## 📘 1️⃣ Conceito Geral
