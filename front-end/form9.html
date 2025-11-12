@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Formulário 9 — Multi-etapas</title>
+  <style>
+    .step { display:none; }
+    .step.active { display:block; }
+  </style>
+</head>
+<body>
+  <h2>9 — Formulário multi-etapas</h2>
+
+  <form id="wizard" action="#" method="post">
+    <!-- Passo 1 -->
+    <div class="step active" data-step="1">
+      <h3>Passo 1 — Dados</h3>
+      <label for="nome">Nome</label>
+      <input id="nome" name="nome" required />
+    </div>
+
+    <!-- Passo 2 -->
+    <div class="step" data-step="2">
+      <h3>Passo 2 — Contato</h3>
+      <label for="email">E-mail</label>
+      <input id="email" name="email" type="email" required />
+    </div>
+
+    <!-- Passo 3 -->
+    <div class="step" data-step="3">
+      <h3>Passo 3 — Confirmação</h3>
+      <p>Reveja os dados e envie.</p>
+    </div>
+
+    <!-- Botões de navegação -->
+    <div>
+      <button type="button" id="prev">Anterior</button>
+      <button type="button" id="next">Próximo</button>
+      <button type="submit" id="submitBtn" style="display:none;">Enviar</button>
+    </div>
+  </form>
+
+  <script>
+    const steps = Array.from(document.querySelectorAll('.step'));
+    let idx = 0;
+
+    // Mostra apenas o passo atual
+    const show = (i) => {
+      steps.forEach((s, si)=> s.classList.toggle('active', si===i));
+      document.getElementById('prev').style.display = i===0 ? 'none' : 'inline-block';
+      document.getElementById('next').style.display = i===steps.length-1 ? 'none' : 'inline-block';
+      document.getElementById('submitBtn').style.display = i===steps.length-1 ? 'inline-block' : 'none';
+    };
+
+    // Avança para o próximo passo
+    document.getElementById('next').addEventListener('click', () => {
+      const inputs = steps[idx].querySelectorAll('input');
+      for (const inp of inputs) {
+        if (!inp.checkValidity()) { inp.reportValidity(); return; }
+      }
+      if (idx < steps.length - 1) idx++;
+      show(idx);
+    });
+
+    // Volta ao passo anterior
+    document.getElementById('prev').addEventListener('click', () => {
+      if (idx>0) { idx--; show(idx); }
+    });
+
+    show(idx);
+  </script>
+</body>
+</html>
