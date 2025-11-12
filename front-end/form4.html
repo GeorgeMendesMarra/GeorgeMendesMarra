@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Formulário 4 — Upload e Preview</title>
+  <style>
+    /* Define o tamanho máximo da imagem de pré-visualização */
+    img.preview { max-width:200px; display:block; margin-top:8px; }
+  </style>
+</head>
+<body>
+  <h2>4 — Upload de imagem com preview</h2>
+
+  <!-- O atributo enctype é necessário para envio de arquivos -->
+  <form action="#" method="post" enctype="multipart/form-data">
+    <label for="avatar">Enviar imagem (jpg/png):</label>
+    <input id="avatar" name="avatar" type="file" accept="image/*" />
+
+    <!-- A imagem é exibida após a seleção -->
+    <img id="preview" class="preview" alt="Pré-visualização" style="display:none;" />
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script>
+    // Obtém o input e a imagem de preview
+    const input = document.getElementById('avatar');
+    const preview = document.getElementById('preview');
+
+    // Quando o usuário escolhe um arquivo
+    input.addEventListener('change', () => {
+      const file = input.files[0]; // pega o primeiro arquivo
+      if (!file) { preview.style.display = 'none'; return; }
+      const url = URL.createObjectURL(file); // cria uma URL temporária
+      preview.src = url; // define a imagem
+      preview.style.display = 'block'; // exibe o preview
+    });
+  </script>
+</body>
+</html>
