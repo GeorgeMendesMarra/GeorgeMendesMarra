@@ -1,5 +1,3 @@
----
-
 # ⚖️ Comparação entre **Classe Abstrata** e **Interface** em Java
 
 ## 🧩 1️⃣ Conceito Básico
