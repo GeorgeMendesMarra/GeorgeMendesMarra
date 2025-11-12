@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Formulário 7 — Fieldset e A11y</title>
+</head>
+<body>
+  <h2>7 — Fieldset e acessibilidade</h2>
+
+  <!-- aria-labelledby associa o título ao formulário -->
+  <form action="#" method="post" aria-labelledby="tituloForm">
+    <h3 id="tituloForm">Cadastro de aluno</h3>
+
+    <fieldset>
+      <legend>Dados pessoais</legend>
+      <label for="nome">Nome completo</label>
+      <input id="nome" name="nome" type="text" required>
+
+      <label for="nascimento">Data de nascimento</label>
+      <input id="nascimento" name="nascimento" type="date" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Contato</legend>
+      <label for="email">E-mail</label>
+      <input id="email" name="email" type="email" aria-describedby="emailHelp">
+      <div id="emailHelp">Usaremos apenas para contato acadêmico.</div>
+    </fieldset>
+
+    <button type="submit">Enviar cadastro</button>
+  </form>
+</body>
+</html>
