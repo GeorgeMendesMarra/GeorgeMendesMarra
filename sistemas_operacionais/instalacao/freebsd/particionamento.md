@@ -63,7 +63,3 @@ GPT (GUID Partition Table)
 - **Usar GPT + UEFI** garante compatibilidade com hardware moderno.
 
 ---
-
-```
-
----
