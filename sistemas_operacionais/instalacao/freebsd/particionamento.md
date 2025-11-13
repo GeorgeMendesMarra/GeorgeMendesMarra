@@ -1,6 +1,3 @@
----
-
-```md
 # 🧩 Tabela Comparativa — Partições do FreeBSD
 
 | **Partição** | **Função Principal** | **Tamanho Recomendado** | **Uso Típico / Observações** |
