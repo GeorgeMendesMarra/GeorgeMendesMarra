@@ -67,6 +67,3 @@ GPT (GUID Partition Table)
 ```
 
 ---
-
-Deseja que eu gere agora a **versão gráfica (diagrama visual)** das partições do FreeBSD — semelhante ao esquema visual que criei para o Linux — mostrando como o **layout em ZFS e UFS** é estruturado?
-Fica ótimo para ilustrar em slides de aulas de **Administração de Sistemas Unix-like**.
