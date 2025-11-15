@@ -1,7 +1,8 @@
+#!/usr/bin/env python3
 import re
 import sys
+import unicodedata
 
-# Estados do autômato (strings simples)
 class State:
     SAUDACAO = "SAUDACAO"
     INFORMAR_ROTA = "INFORMAR_ROTA"
@@ -10,11 +11,10 @@ class State:
     FINALIZAR = "FINALIZAR"
     UNKNOWN = "UNKNOWN"
 
-
 class SchoolTransportChatbot:
     def __init__(self):
         self.current_state = State.SAUDACAO
-        # Dados de exemplo
+
         self.routes = {
             "rota 1": "Rota 1: Bairro A → Bairro B → Escola Central",
             "rota 2": "Rota 2: Condomínio X → Rua 5 → Escola Central",
@@ -31,198 +31,209 @@ class SchoolTransportChatbot:
             "rota 3": "Motorista: Carlos Pereira — (99) 91234-0003",
         }
 
-    # Normaliza a string: deixa em minúsculas e remove pontuação que atrapalha
+        self.last_route = None
+
+        self.driver_name_map = {}
+        for rk, drv_text in self.route_drivers.items():
+            name = drv_text.split("—")[0].replace("Motorista:", "").strip()
+            norm = self._normalize(name)
+            self.driver_name_map[norm] = rk
+
+        self.driver_name_tokens = {}
+        for norm_name, rk in self.driver_name_map.items():
+            tokens = [t for t in re.split(r"\s+", norm_name) if t]
+            self.driver_name_tokens[rk] = tokens
+
+    # ---------------- NORMALIZAÇÃO ----------------
     def _normalize(self, s: str) -> str:
-        s_low = s.lower()
-        # substitui caracteres comuns que podem aparecer (nº, no., etc.) por espaço
-        s_low = s_low.replace("nº", " ").replace("º", " ").replace("no.", " ").replace("n.", " ")
-        # remove acentuação simples se necessário? (omito para manter nomes)
-        # remove pontuação que pode juntar tokens (ponto, vírgula, interrogação, exclamação)
-        s_low = re.sub(r"[.,;:?!()\"']", " ", s_low)
-        # normaliza hífens e barras para espaços
-        s_low = re.sub(r"[-/\\]", " ", s_low)
-        # colapsa múltiplos espaços
-        s_low = re.sub(r"\s+", " ", s_low).strip()
-        return s_low
-
-    # Extração mais poderosa de "rota N" com regex
-    def extract_route_key(self, s: str):
-        """
-        Tenta extrair 'n' de 'rota n' em várias formas:
-        - "rota1", "rota 1", "rota nº 1", "rota-1", "rota.1"
-        Retorna chave padronizada "rota N" (ex.: "rota 1") ou None.
-        """
         if not s:
+            return ""
+        s = s.strip().lower()
+        s = unicodedata.normalize("NFKD", s)
+        s = "".join(ch for ch in s if not unicodedata.combining(ch))
+        s = re.sub(r"[^\w\s:]", " ", s)
+        s = re.sub(r"\brota(\d)\b", r"rota \1", s)
+        s = re.sub(r"\s+", " ", s).strip()
+        return s
+
+    # ---------------- EXTRAÇÕES ----------------
+    def extract_route_key(self, text: str):
+        if not text:
             return None
+        s = self._normalize(text)
 
-        s_norm = self._normalize(s)
-
-        # busca por "rota <numero>"
-        m = re.search(r"\brota\s*(?:n[oº\.\s]*)?(\d{1,2})\b", s_norm)
+        m = re.search(r"\brota\s*(\d{1,2})\b", s)
         if m:
-            num = m.group(1)
-            return f"rota {int(num)}"  # normaliza (sem zeros à esquerda)
+            return f"rota {m.group(1)}"
 
-        # também aceita "rta 1" ou abreviações comuns (opcional)
-        m2 = re.search(r"\brt[ao]?\s*(\d{1,2})\b", s_norm)
+        m2 = re.search(r"\brt\s*(\d{1,2})\b", s)
         if m2:
-            num = m2.group(1)
-            return f"rota {int(num)}"
+            return f"rota {m2.group(1)}"
 
-        # verifica se alguma chave cadastrada aparece no texto (p.ex. "zona rural")
+        if text.strip().isdigit():
+            return f"rota {text.strip()}"
+
         for k in self.routes.keys():
-            if k in s_norm:
+            if k in s:
                 return k
 
         return None
 
-    # Detecção de intenção (prioriza motorista)
-    def detect_state(self, user_input: str) -> str:
-        s_norm = self._normalize(user_input)
+    def extract_showtime(self, text: str):
+        if not text:
+            return None
 
-        # prioridade para pedido de motorista
-        if re.search(r"\bmotorista\b|\bcondutor\b|\bquem.*motorista\b", s_norm):
-            return State.DRIVER
+        s = text.strip()
 
-        # horário
-        if re.search(r"\bhorário\b|\bhorario\b|\bhora\b|\bhoras\b", s_norm):
-            return State.HORARIO
+        m = re.search(r"\b(\d{1,2}:\d{2})\b", s)
+        if m:
+            return m.group(1)
 
-        # rota (qualquer menção)
-        if re.search(r"\brota\b|\brt\b", s_norm) or self.extract_route_key(user_input) is not None:
-            return State.INFORMAR_ROTA
+        m2 = re.search(r"\b(\d{1,2})h(\d{1,2})?\b", s.lower())
+        if m2:
+            hh = int(m2.group(1))
+            mm = int(m2.group(2)) if m2.group(2) else 0
+            return f"{hh:02d}:{mm:02d}"
 
-        return State.UNKNOWN
+        return None
 
-    # Resposta central
-    def respond(self, state: str, user_input: str) -> str:
-        s = user_input or ""
-        s_norm = self._normalize(s)
+    def extract_driver_by_name(self, text: str):
+        if not text:
+            return None
+        s = self._normalize(text)
 
-        if state == State.SAUDACAO:
-            self.current_state = State.INFORMAR_ROTA
-            return ("Olá! Bem-vindo ao atendimento de transporte escolar. "
-                    "Qual rota você precisa — por exemplo 'Rota 1', 'Rota 2' ou 'Rota 3'?")
+        for rk, tokens in self.driver_name_tokens.items():
+            for tok in tokens:
+                if re.search(rf"\b{tok}\b", s):
+                    return rk
+        return None
 
-        if state == State.INFORMAR_ROTA:
-            rk = self.extract_route_key(s)
-            if rk:
-                # se a frase também contém palavra motorista, devolve motorista direto
-                if re.search(r"\bmotorista\b|\bcondutor\b", s_norm):
-                    drv = self.route_drivers.get(rk, "Motorista não cadastrado para essa rota.")
-                    self.current_state = State.HORARIO
-                    return f"{drv} — Deseja também o horário dessa rota?"
-                # caso contrário, devolve a descrição e pergunta se quer horário/motorista
-                desc = self.routes.get(rk, "Descrição da rota indisponível.")
-                self.current_state = State.HORARIO
-                return f"{desc} — Deseja saber o horário ou o nome do motorista?"
-            else:
-                self.current_state = State.INFORMAR_ROTA
-                return "Não identifiquei a rota. Informe como 'Rota 1', 'Rota 2' ou 'Rota 3'."
-
-        if state == State.HORARIO:
-            rk = self.extract_route_key(s)
-            if rk:
-                time = self.route_times.get(rk, "Horário não cadastrado para essa rota.")
-                self.current_state = State.FINALIZAR
-                return f"Horário da {rk}: {time}. Precisa de mais alguma informação ou deseja finalizar?"
-            else:
-                self.current_state = State.HORARIO
-                return "Para qual rota você quer o horário? Informe 'Rota 1', 'Rota 2' ou 'Rota 3'."
-
-        if state == State.DRIVER:
-            rk = self.extract_route_key(s)
-            if rk:
-                drv = self.route_drivers.get(rk, "Motorista não cadastrado para essa rota.")
-                self.current_state = State.HORARIO
-                return f"{drv} — Deseja também o horário dessa rota?"
-            else:
-                # pede a rota se não informada
-                self.current_state = State.INFORMAR_ROTA
-                return "Qual rota você quer saber o motorista? 'Rota 1', 'Rota 2' ou 'Rota 3'?"
-
-        if state == State.FINALIZAR:
-            self.current_state = State.SAUDACAO
-            return "Atendimento finalizado. Obrigado! Se precisar novamente, estou à disposição."
-
-        # UNKNOWN fallback: tenta ainda detectar motorista/rota
-        # se frase contém 'motorista' tenta extrair rota; senão pede clarificação
-        if state == State.UNKNOWN:
-            if re.search(r"\bmotorista\b|\bcondutor\b", s_norm):
-                rk = self.extract_route_key(s)
-                if rk:
-                    drv = self.route_drivers.get(rk, "Motorista não cadastrado para essa rota.")
-                    self.current_state = State.HORARIO
-                    return f"{drv} — Deseja o horário também?"
-                else:
-                    self.current_state = State.INFORMAR_ROTA
-                    return "Qual rota você quer saber o motorista? 'Rota 1', 'Rota 2' ou 'Rota 3'?"
-            # respostas afirmativas
-            if s_norm in ("sim", "ok", "claro", "pode"):
-                self.current_state = State.INFORMAR_ROTA
-                return "Perfeito — informe a rota (ex.: 'Rota 1') para que eu possa ajudar."
-            self.current_state = State.INFORMAR_ROTA
-            return ("Desculpe, não entendi. Posso ajudar com 'rota', 'horário' ou 'motorista'. "
-                    "Qual você deseja?")
-
-        # fallback final
+    # ---------------- HANDLERS ----------------
+    def handle_saudacao(self, user_input: str):
         self.current_state = State.INFORMAR_ROTA
-        return "Algo inesperado ocorreu — por favor informe a rota (ex.: 'Rota 1')."
+        return ("Olá! Bem-vindo ao transporte escolar. "
+                "Qual rota deseja consultar? (Rota 1, Rota 2, Rota 3)")
 
-    # Modo interativo
+    def handle_informar_rota(self, user_input: str):
+        rk = self.extract_route_key(user_input)
+        drv = self.extract_driver_by_name(user_input)
+        time = self.extract_showtime(user_input)
+        norm = self._normalize(user_input)
+
+        if drv and not rk:
+            self.last_route = drv
+            self.current_state = State.HORARIO
+            return f"{self.route_drivers[drv]} — Deseja saber também o horário?"
+
+        if rk:
+            self.last_route = rk
+            desc = self.routes[rk]
+
+            if "motorista" in norm:
+                self.current_state = State.HORARIO
+                return f"{self.route_drivers[rk]} — Deseja saber também os horários?"
+
+            if time:
+                # se o usuário explicitou um horário, validar e responder, mas NÃO finalizar
+                times_for_route = self.route_times.get(rk, "")
+                if time in times_for_route:
+                    self.current_state = State.HORARIO
+                    return f"{desc} — Horário solicitado: {time}. Deseja algo mais?"
+                else:
+                    self.current_state = State.HORARIO
+                    return f"{desc} — Horários disponíveis: {times_for_route}. Qual horário prefere?"
+            self.current_state = State.HORARIO
+            return f"{desc} — Deseja saber o horário ou o motorista?"
+
+        return "Não identifiquei a rota. Tente: Rota 1, Rota 2 ou Rota 3."
+
+    def handle_horario(self, user_input: str):
+        s = self._normalize(user_input)
+        rk = self.extract_route_key(user_input)
+        drv = self.extract_driver_by_name(user_input)
+        time = self.extract_showtime(user_input)
+
+        # se usuário escreveu só "motorista" enquanto estamos em HORARIO, responder com motorista da last_route
+        if "motorista" in s:
+            if self.last_route:
+                self.current_state = State.HORARIO
+                return f"{self.route_drivers[self.last_route]} — Precisa de mais alguma coisa?"
+            return "Informe a rota para consultar o motorista."
+
+        # determinar rota alvo: prioriza rota extraída, depois nome do motorista, depois contexto
+        target = rk or drv or self.last_route
+
+        if target:
+            times = self.route_times.get(target, "Horários indisponíveis.")
+            # se usuário forneceu horário específico e este existe, confirmar, mas manter estado HORARIO
+            if time:
+                if time in times:
+                    self.current_state = State.HORARIO
+                    return f"Horário {time} registrado para {target}. Deseja mais algo?"
+                else:
+                    self.current_state = State.HORARIO
+                    return f"O horário {time} não consta para {target}. Horários disponíveis: {times}."
+            # se usuário apenas pediu "horario" ou a rota, mostrar horários e permanecer no estado HORARIO
+            self.current_state = State.HORARIO
+            return f"Horários da {target}: {times}. Deseja mais alguma informação ou quer finalizar?"
+        # sem contexto: pedir a rota
+        self.current_state = State.INFORMAR_ROTA
+        return "Para qual rota você quer o horário? Informe 'Rota 1', 'Rota 2' ou 'Rota 3'."
+
+    def handle_driver(self, user_input: str):
+        rk = self.extract_route_key(user_input)
+        drv = self.extract_driver_by_name(user_input)
+
+        route = rk or drv or self.last_route
+
+        if route:
+            self.current_state = State.HORARIO
+            return f"{self.route_drivers.get(route, 'Motorista não encontrado.')} — Deseja o horário também?"
+        return "Informe a rota para consultar o motorista."
+
+    def handle_finalizar(self, user_input: str):
+        self.current_state = State.SAUDACAO
+        self.last_route = None
+        return "Atendimento finalizado. Obrigado!"
+
+    # ---------------- DISPATCHER ----------------
+    def respond(self, user_input: str):
+        if self.current_state == State.SAUDACAO:
+            return self.handle_saudacao(user_input)
+        if self.current_state == State.INFORMAR_ROTA:
+            return self.handle_informar_rota(user_input)
+        if self.current_state == State.HORARIO:
+            return self.handle_horario(user_input)
+        if self.current_state == State.DRIVER:
+            return self.handle_driver(user_input)
+        if self.current_state == State.FINALIZAR:
+            return self.handle_finalizar(user_input)
+        return "Não entendi. Tente novamente."
+
+    # ---------------- LOOP ----------------
     def run(self):
         print("Atendimento de Transporte Escolar — digite 'sair' para encerrar.")
-        print("Bot:", self.respond(State.SAUDACAO, ""))
+        print("Bot:", self.respond(""))
 
         while True:
             try:
                 user_input = input("\nVocê: ").strip()
             except (KeyboardInterrupt, EOFError):
-                print("\nBot: Encerrando atendimento. Até logo!")
+                print("\nBot: Encerrando. Até logo!")
                 sys.exit(0)
 
-            if not user_input:
-                print("Bot: Por favor, digite sua pergunta ou 'sair' para encerrar.")
-                continue
-
-            if user_input.lower() in ("sair", "finalizar", "tchau", "fim", "exit"):
-                print("Bot: Obrigado! Atendimento encerrado.")
+            if user_input.lower() in ("sair", "tchau", "finalizar", "exit"):
+                print("Bot: Atendimento encerrado.")
                 break
 
-            detected = self.detect_state(user_input)
-            reply = self.respond(detected, user_input)
-            print("Bot:", reply)
+            if not user_input:
+                print("Bot: Por favor, digite algo.")
+                continue
 
-        print("Bot: Sessão finalizada.")
+            # manter fluxo guiado pelo estado atual
+            print("Bot:", self.respond(user_input))
 
-
-# ---------- Pequeno bloco de testes / demonstração ----------
-def run_samples():
-    bot = SchoolTransportChatbot()
-    samples = [
-        "Quem é o motorista da Rota 1?",
-        "Motorista rota2",
-        "Qual o horário da rota 3?",
-        "rota1 motorista",
-        "Quem dirige a rota nº 2?",
-        "Motorista da rota-3?",
-        "Rota 2",
-        "horario rota1",
-        "Quem é o motorista?",        # pede rota de volta
-        "motorista da escola",        # sem rota: pede clarificação
-    ]
-    print("\n=== Testes automáticos ===")
-    print("Bot:", bot.respond(State.SAUDACAO, ""))  # saudação
-    for q in samples:
-        state = bot.detect_state(q)
-        print(f"\nVocê: {q}")
-        print("detected state:", state)
-        print("Bot:", bot.respond(state, q))
-
+        print("Bot: Sessão encerrada.")
 
 if __name__ == "__main__":
-    # se quiser modo interativo: descomente a linha abaixo
     SchoolTransportChatbot().run()
-
-    # Por padrão executamos os exemplos de teste para você ver as respostas
-    #run_samples()
