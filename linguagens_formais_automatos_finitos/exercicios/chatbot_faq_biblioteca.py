@@ -1,5 +1,4 @@
 """
-library_faq_chatbot.py
 
 Chatbot de FAQ de biblioteca implementado como um autômato de estados finitos.
 
@@ -8,7 +7,7 @@ como um estado. O chatbot detecta o tipo de pergunta, responde de acordo e
 retorna ao estado inicial (IDLE) após cada resposta.
 
 Uso:
-    python library_faq_chatbot.py
+    python chatbot_faq_biblioteca.py
 
 Autor:
 Data: 2025
