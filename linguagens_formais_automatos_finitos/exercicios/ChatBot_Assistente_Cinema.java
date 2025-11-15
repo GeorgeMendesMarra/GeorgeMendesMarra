@@ -15,7 +15,7 @@ import java.util.*;
  *
  * O programa usa palavras-chave simples e muda de estado conforme a entrada do usuário.
  */
-public class CinemaAssistant {
+public class ChatBot_Assistente_Cinema {
 
     // Enumeração que representa os estados do autômato
     enum State {
