@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PizzabotDFA {
+public class ChatBot_Pizza {
     
     // Enumeração que define todos os estados possíveis do DFA
     enum State { 
