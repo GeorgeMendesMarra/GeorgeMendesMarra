@@ -21,7 +21,7 @@
 import java.util.Locale;
 import java.util.Scanner;
 
-public class LibraryFAQChatbot {
+public class ChatBot_Faq_Biblioteca {
 
     /**
      * Estados do autômato — cada categoria de FAQ é um estado.
