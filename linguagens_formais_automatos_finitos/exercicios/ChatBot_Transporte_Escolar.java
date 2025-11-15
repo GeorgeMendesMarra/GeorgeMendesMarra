@@ -15,7 +15,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Scanner;
 
-public class SchoolTransportChatbot {
+public class ChatBot_Transporte_Escolar {
 
     /**
      * Enumeração com os estados possíveis do autômato.
