@@ -1,5 +1,3 @@
----
-
 # **Histórico do Manifesto Ágil**
 
 O **Manifesto Ágil**, publicado em **2001**, representa um marco decisivo na evolução das práticas de desenvolvimento de software. Antes de seu surgimento, a indústria vivia um cenário marcado por metodologias tradicionais, rígidas e pesadas — especialmente os modelos sequenciais, como o **Waterfall**, que exigiam documentação extensiva, longos ciclos de desenvolvimento e pouca flexibilidade para mudanças ao longo do processo. Esse contexto gerava atrasos crônicos, projetos custosos e grande insatisfação entre clientes e equipes.
