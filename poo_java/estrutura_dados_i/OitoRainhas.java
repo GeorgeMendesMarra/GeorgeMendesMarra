@@ -1,5 +1,5 @@
 /**
- * EightQueens
+ * Oito Rainhas
  *
  * Resolve o problema das 8 rainhas (n-queens) por backtracking.
  * O programa imprime todas as soluções possíveis e conta quantas foram encontradas.
