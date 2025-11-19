@@ -1,6 +1,4 @@
----
-
-# 🧩 Diferenças entre `public class` e `static class` em Java — Versão Ampliada
+# 🧩 Diferenças entre `public class` e `static class` em Java
 
 Em Java, `public class` e `static class` representam **conceitos completamente diferentes**:
 
@@ -282,7 +280,7 @@ Java **não permite**.
 
 ---
 
-# 📝 7. Conclusão ampliada
+# 📝 7. Conclusão
 
 * `public class` controla **onde a classe pode ser acessada**.
 * `static class` controla **como a classe se comporta dentro de outra**.
@@ -293,12 +291,3 @@ Java **não permite**.
   * `static` → **contexto / instância**
 
 ---
-
-Professor George, se quiser posso gerar também:
-
-📌 uma lista de exercícios sobre o tema
-📌 um PDF formatado
-📌 uma versão resumida para slides do IF Goiano
-📌 diagramas UML comparativos
-
-É só pedir!
