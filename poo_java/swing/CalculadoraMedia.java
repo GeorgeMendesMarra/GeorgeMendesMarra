@@ -100,7 +100,7 @@ public class CalculadoraMedia {
                         + "Trabalho: " + notaTrabalho + "\n"
                         + "--------------------------------\n"
                         + "Média Final: " + mediaFormatada + "\n" // Exibe a média formatada
-                        + "Resultado: " + **resultadoFinal**; // Exibe o resultado (APROVADO/REPROVADO)
+                        + "Resultado: " + resultadoFinal; // Exibe o resultado (APROVADO/REPROVADO)
         
         // Exibe o resultado final em uma caixa de diálogo informativa
         JOptionPane.showMessageDialog(
