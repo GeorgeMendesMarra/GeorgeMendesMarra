@@ -79,8 +79,8 @@ public class CalculadoraMediaSimples {
                         + "Prova 2: " + notaProva2 + "\n"
                         + "Trabalho: " + notaTrabalho + "\n"
                         + "--------------------------------\n"
-                        + "Média Final: " + **mediaFormatada** + "\n" // Média formatada
-                        + "Resultado: " + **resultadoFinal**; // Status final do aluno
+                        + "Média Final: " + mediaFormatada + "\n" // Média formatada
+                        + "Resultado: " + resultadoFinal; // Status final do aluno
         
         // Exibe o resultado final em uma caixa de diálogo informativa
         JOptionPane.showMessageDialog(
