@@ -1,6 +1,6 @@
 ---
 
-# # 🏛️ Arquitetura SNA da IBM — Histórico Completo e Detalhado
+# # 🏛️ Arquitetura SNA da IBM
 
 A **Systems Network Architecture (SNA)** é uma das arquiteturas de rede mais importantes e influentes da história da computação. Lançada pela IBM em **1974**, ela serviu como um framework proprietário, hierárquico e extremamente detalhado para comunicação em redes corporativas, dominando o ambiente de *mainframes* por décadas antes da consolidação do TCP/IP.
 Além de padronizar a comunicação em redes IBM, o SNA também influenciou conceitos posteriores como o modelo OSI e práticas de redes corporativas.
