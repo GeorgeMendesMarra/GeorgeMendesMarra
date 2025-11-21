@@ -1,6 +1,6 @@
 ---
 
-# 🌐 **Histórico Completo das Redes de Computadores (Versão Ampliada)**
+# 🌐 **Histórico das Redes de Computadores**
 
 As redes de computadores são hoje fundamentais para praticamente todas as atividades humanas, mas sua evolução foi lenta, incremental e cheia de marcos tecnológicos que transformaram o modo como o mundo se comunica. A seguir, uma linha histórica ampliada, desde os primeiros experimentos até as tecnologias emergentes atuais.
 
