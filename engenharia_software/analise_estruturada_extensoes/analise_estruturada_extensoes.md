@@ -1,6 +1,6 @@
 ---
 
-# 📘 **Histórico Ampliado da Análise Estruturada e Suas Extensões (Versão Estendida)**
+# 📘 **Histórico da Análise Estruturada e Suas Extensões**
 
 A **Análise Estruturada** constitui uma das bases históricas da Engenharia de Software. Surgida nos anos 1970 durante a Crise do Software, ela buscou formalizar o desenvolvimento de sistemas, trazendo rigor, documentação e decomposição funcional. Seu foco é **compreender o sistema por meio da análise de processos, fluxos de dados e modelos lógicos**, aplicando notações sistemáticas.
 
