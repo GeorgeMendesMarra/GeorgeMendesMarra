@@ -1,5 +1,3 @@
----
-
 # 📘 **Histórico do Projeto Orientado ao Fluxo de Dados (DFD)**
 
 ## **1. Origens (década de 1960–1970)**
