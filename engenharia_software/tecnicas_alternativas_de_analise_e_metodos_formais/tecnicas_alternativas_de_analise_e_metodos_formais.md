@@ -1,6 +1,6 @@
 ---
 
-# 🧠 **Histórico Completo das Técnicas Alternativas de Análise e dos Métodos Formais**
+# 🧠 **Histórico das Técnicas Alternativas de Análise e dos Métodos Formais**
 
 ### (Versão longa, expandida e com linha do tempo)
 
