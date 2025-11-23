@@ -1,5 +1,3 @@
----
-
 # 🧠 **Histórico da Análise Orientada a Objetos e da Modelagem de Dados**
 
 A Análise Orientada a Objetos (OOA) e a Modelagem de Dados surgiram como respostas à complexidade crescente dos sistemas de software nas décadas finais do século XX. Ambas evoluíram ao longo do tempo, cada uma com raízes em áreas distintas: a OOA deriva da programação orientada a objetos, enquanto a modelagem de dados tem origem no mundo dos bancos de dados e na organização lógica das informações.
