@@ -256,5 +256,3 @@ O planejamento evoluiu em **cinco estágios principais**:
 Com isso, o planejamento deixou de ser apenas uma previsão e passou a ser uma **disciplina estratégica**, determinante para o sucesso de projetos em todas as áreas.
 
 ---
-
-É só pedir!
