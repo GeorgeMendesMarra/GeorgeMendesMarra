@@ -1,6 +1,6 @@
 ---
 
-# 🧠 **Histórico Ampliado dos Princípios Fundamentais da Análise de Requisitos**
+# 🧠 **Histórico dos Princípios Fundamentais da Análise de Requisitos**
 
 A **análise de requisitos** é um dos pilares mais importantes da Engenharia de Software. Sua evolução acompanha diretamente o crescimento da complexidade dos sistemas computacionais e a necessidade de garantir que softwares atendam às expectativas de usuários, empresas e contextos operacionais.
 
