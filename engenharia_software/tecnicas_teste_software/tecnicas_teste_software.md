@@ -1,6 +1,6 @@
 ---
 
-# 🧪 **Histórico das Técnicas de Teste de Software (Versão Estendida)**
+# 🧪 **Histórico das Técnicas de Teste de Software**
 
 O teste de software, como disciplina formal, evoluiu ao longo de mais de sete décadas, acompanhando a complexidade crescente dos sistemas computacionais. No início da computação, até meados dos anos 1950, o teste era visto apenas como um processo simples de depuração, cujo objetivo era identificar e corrigir erros evidentes. No entanto, conforme os softwares passaram a ser usados em contextos mais críticos e de alto risco, tornou-se necessário incorporar metodologias científicas, técnicas sistemáticas e processos estruturados.
 
