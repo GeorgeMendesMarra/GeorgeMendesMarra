@@ -1,6 +1,6 @@
 ---
 
-# 🧭 **Histórico Estendido da Engenharia de Software Auxiliada por Computador (CASE)**
+# 🧭 **Histórico da Engenharia de Software Auxiliada por Computador (CASE)**
 
 A Engenharia de Software Auxiliada por Computador (CASE — *Computer-Aided Software Engineering*) representa o conjunto de ferramentas, métodos e ambientes computacionais criados para dar suporte ao desenvolvimento de software de forma sistemática, padronizada e produtiva. Ela nasce da necessidade de controlar a crescente complexidade dos sistemas, reduzir erros e aumentar a produtividade das equipes.
 
