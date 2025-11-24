@@ -2,7 +2,6 @@
 
 # 📘 **Histórico dos Métodos de Projeto Orientados a Dados (Data-Oriented Design)**
 
-### **Versão Estendida**
 
 Os métodos de **projeto orientados a dados** surgiram como uma resposta à crescente complexidade dos sistemas de informação a partir da década de **1960**, quando bancos de dados comerciais começaram a se popularizar. Antes disso, a maior parte dos softwares era fortemente acoplada à lógica de processamento, com pouco foco no modelo dos dados. A necessidade de estruturar, padronizar e controlar o fluxo de informações levou ao desenvolvimento de metodologias baseadas em dados.
 
