@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de pH e pOH</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input, button {
+            font-size: 16px;
+            margin: 5px;
+            padding: 5px;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de pH e pOH</h1>
+
+    <p>Digite a concentração:</p>
+    <input type="number" id="concH" placeholder="[H⁺] (mol/L)">
+    <input type="number" id="concOH" placeholder="[OH⁻] (mol/L)">
+    <br>
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        function calcular() {
+            const concH = parseFloat(document.getElementById("concH").value);
+            const concOH = parseFloat(document.getElementById("concOH").value);
+            let resultado = "";
+
+            function ph(valorH) {
+                return -Math.log10(valorH);
+            }
+
+            function poh(valorOH) {
+                return -Math.log10(valorOH);
+            }
+
+            if (concH > 0) {
+                const pH = ph(concH).toFixed(2);
+                const pOH = (14 - pH).toFixed(2);
+                resultado += `[H⁺] = ${concH} mol/L → pH = ${pH}, pOH = ${pOH}<br>`;
+            }
+
+            if (concOH > 0) {
+                const pOHval = poh(concOH).toFixed(2);
+                const pHval = (14 - pOHval).toFixed(2);
+                resultado += `[OH⁻] = ${concOH} mol/L → pOH = ${pOHval}, pH = ${pHval}<br>`;
+            }
+
+            if ((concH <= 0 || isNaN(concH)) && (concOH <= 0 || isNaN(concOH))) {
+                resultado = "Digite pelo menos uma concentração válida de H⁺ ou OH⁻.";
+            }
+
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>
