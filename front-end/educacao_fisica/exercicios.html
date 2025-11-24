@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auxiliar Educação Física</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #e0f7fa;
+      padding: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #00796b;
+      color: white;
+    }
+    button:hover {
+      background-color: #004d40;
+    }
+    #exercises {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Programa de Educação Física</h1>
+  <p>Clique no botão para receber um exercício aleatório!</p>
+  <button onclick="generateExercise()">Gerar Exercício</button>
+  <button onclick="resetExercises()">Resetar Lista</button>
+  
+  <div id="exercises"></div>
+
+  <script>
+    const exerciseList = [
+      { name: "Corrida no lugar", duration: 2 },
+      { name: "Polichinelos", duration: 1 },
+      { name: "Agachamentos", duration: 1 },
+      { name: "Flexões de braço", duration: 1 },
+      { name: "Pular corda", duration: 2 },
+      { name: "Alongamento de braços", duration: 1 },
+      { name: "Alongamento de pernas", duration: 1 },
+      { name: "Abdominais", duration: 1 }
+    ];
+
+    let selectedExercises = [];
+
+    function generateExercise() {
+      const randomIndex = Math.floor(Math.random() * exerciseList.length);
+      const exercise = exerciseList[randomIndex];
+      selectedExercises.push(exercise);
+
+      displayExercises();
+    }
+
+    function displayExercises() {
+      let html = "<h2>Lista de Exercícios:</h2><ul>";
+      let totalTime = 0;
+
+      selectedExercises.forEach((ex, index) => {
+        html += `<li>${index + 1}. ${ex.name} - ${ex.duration} min</li>`;
+        totalTime += ex.duration;
+      });
+
+      html += `</ul><p><strong>Tempo total recomendado: ${totalTime} minutos</strong></p>`;
+      document.getElementById("exercises").innerHTML = html;
+    }
+
+    function resetExercises() {
+      selectedExercises = [];
+      document.getElementById("exercises").innerHTML = "";
+    }
+  </script>
+</body>
+</html>
