@@ -1,6 +1,6 @@
 ---
 
-# 🧭 **Histórico Estendido do Gerenciamento de Configuração de Software (GCS)**
+# 🧭 **Histórico do Gerenciamento de Configuração de Software (GCS)**
 
 O **Gerenciamento de Configuração de Software (GCS)** — também chamado de *Software Configuration Management (SCM)* — é a disciplina responsável por controlar, organizar e manter a integridade de artefatos de software ao longo de todo o ciclo de vida. Ele envolve controle de versões, mudanças, baselines, auditorias, integridade e rastreabilidade.
 Sua evolução acompanha diretamente os desafios crescentes de desenvolvimento de sistemas desde os anos 1950 até os pipelines modernos DevOps.
