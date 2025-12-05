@@ -1,5 +1,3 @@
----
-
 # 📘 **Resumo — Classificação de Programas em Java pela Complexidade de Algoritmos**
 
 ## 🔹 1. O que é Complexidade de Algoritmos?
