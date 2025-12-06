@@ -1,9 +1,3 @@
-Avaliação processual - Parte 1
-Valor: 0,5
-E-mail: trabalhos.george@gmail.com
-Assunto: Processual-Parte 1-Lógica_computacional-Seu nome
-Prazo: até o dia da prova
-
 Lógica Computacional II
 
 1) Tabelas de Verdade: Construa as tabelas verdade para as seguintes fórmulas proposicionais:
