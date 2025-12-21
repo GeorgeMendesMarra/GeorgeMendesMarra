@@ -72,5 +72,3 @@ Quando o TCP/IP "venceu" a guerra das redes, milhares de empresas ainda tinham b
 | **Propriedade** | Proprietário (IBM) | Aberto (RFCs/IETF) |
 
 O SNA é o "dinossauro" mais bem-sucedido da computação: embora raramente visto na superfície, ele ainda processa a maioria das transações de cartão de crédito e reservas de voos que você faz hoje.
-
-**Você gostaria de ver um exemplo de como uma "tela verde" de terminal 3270 era mapeada dentro das camadas do SNA?**
