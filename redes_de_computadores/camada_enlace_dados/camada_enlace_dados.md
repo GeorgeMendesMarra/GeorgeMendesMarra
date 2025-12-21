@@ -1,5 +1,3 @@
----
-
 ## Histórico da Camada de Enlace de Dados no Modelo TCP/IP
 
 ### 1. **Origem e Contexto**
