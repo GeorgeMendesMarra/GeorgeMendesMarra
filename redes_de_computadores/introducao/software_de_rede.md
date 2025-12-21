@@ -40,5 +40,3 @@ Hoje, o software de rede está se "desconectando" do hardware físico.
 * **Nuvem e Microsserviços:** Softwares modernos (como Docker e Kubernetes) gerenciam redes virtuais complexas que surgem e desaparecem em segundos para suportar aplicativos globais como Netflix ou Spotify.
 
 ---
-
-**Você gostaria de saber mais sobre como um protocolo específico funciona (como o HTTP que usamos agora) ou sobre a "guerra dos navegadores" nos anos 90?**
