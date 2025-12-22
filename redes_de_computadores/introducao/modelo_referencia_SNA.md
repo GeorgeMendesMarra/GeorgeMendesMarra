@@ -1,74 +1,198 @@
-Para aprofundar o entendimento sobre a **SNA (Systems Network Architecture)**, é preciso visualizar como a IBM desenhou uma rede capaz de suportar as operações críticas de bancos e governos em uma era onde não existia a Internet. A SNA não era apenas um protocolo, mas uma estratégia completa de gerenciamento de dados corporativos.
+---
 
-Abaixo, detalho os componentes avançados, a filosofia de controle e o legado técnico dessa arquitetura.
+# # 🏛️ Arquitetura SNA da IBM
+
+A **Systems Network Architecture (SNA)** é uma das arquiteturas de rede mais importantes e influentes da história da computação. Lançada pela IBM em **1974**, ela serviu como um framework proprietário, hierárquico e extremamente detalhado para comunicação em redes corporativas, dominando o ambiente de *mainframes* por décadas antes da consolidação do TCP/IP.
+Além de padronizar a comunicação em redes IBM, o SNA também influenciou conceitos posteriores como o modelo OSI e práticas de redes corporativas.
 
 ---
 
-## 1. A Filosofia do Controle Hierárquico
+# ## 🕰️ 1. Histórico e Contexto
 
-Diferente do modelo TCP/IP, onde cada computador é um "par" (*peer*) com autonomia, o SNA clássico operava em uma estrutura de **Mestre/Escravo**.
+## ### 1.1. O Cenário Pré-SNA
 
-* **Centralização Extrema:** No topo da pirâmide estava o Mainframe (geralmente rodando o sistema VTAM - *Virtual Telecommunications Access Method*). Ele era o único que conhecia a topologia completa da rede.
-* **Previsibilidade:** Por ser centralizado, o administrador da rede sabia exatamente qual era a carga de cada cabo e dispositivo. Isso permitia uma estabilidade que o TCP/IP demorou décadas para alcançar.
-* **Determinismo:** No SNA, não havia "colisão" de dados. O controle de tráfego (pacing) era tão rígido que era impossível um dispositivo congestionar a rede sem autorização do mestre.
+Antes de 1974, as redes eram compostas por soluções desconexas, pouco padronizadas e altamente dependentes de hardware e software específicos. Isso produzia:
 
----
+* Redes **ad-hoc** e incompatíveis.
+* Terminais IBM que só funcionavam com protocolos próprios.
+* Configurações complexas e caras para cada novo dispositivo.
+* Falta de interoperabilidade e baixa escalabilidade.
 
-## 2. Componentes Estruturais (Nós e Unidades)
-
-A arquitetura SNA define tipos específicos de "Nós" para organizar a hierarquia física:
-
-### Tipos de Nós (Node Types)
-
-* **Nó Tipo 5:** O Mainframe. Contém o **SSCP** (Ponto de Controle de Serviços do Sistema), que ativa e desativa a rede.
-* **Nó Tipo 4:** Processadores de Comunicação (FEP - *Front End Processors*). Eram hardwares dedicados apenas a gerenciar as linhas de transmissão, aliviando o processador principal do Mainframe.
-* **Nó Tipo 2.0 / 2.1:** Controladores de terminais ou PCs. O Tipo 2.1 foi um marco, pois permitiu o início da comunicação sem a intervenção direta do Mainframe (o nascimento do APPN).
-
-### Unidades Lógicas (LU) e Sessões
-
-A comunicação no SNA ocorre através de **Sessões entre LUs**. As LUs são "portas" de software:
-
-* **LU 2:** Usada para terminais de vídeo (as famosas telas verdes 3270).
-* **LU 3:** Usada para impressoras.
-* **LU 6.2 (APPC):** A mais avançada. Permitia que dois programas conversassem entre si (programa-a-programa). Foi a base para o processamento distribuído muito antes dos Web Services modernos.
+A crescente necessidade de conectar **milhares de terminais remotos** (como a família **IBM 3270**) a *mainframes* centrais levou a IBM a criar uma arquitetura unificada para comunicação.
 
 ---
 
-## 3. O Protocolo SDLC (O Coração da Camada Física/Enlace)
+## ### 1.2. O Lançamento da SNA (1974)
 
-O **SDLC (Synchronous Data Link Control)** foi o protocolo de baixo nível da SNA. Ele foi tão eficiente que serviu de base para o padrão internacional **HDLC**, usado em redes X.25 e Frame Relay.
+A IBM lançou oficialmente a SNA para:
 
-* Ele permitia o uso de linhas telefônicas de longa distância com alta confiabilidade.
-* Introduziu o conceito de "verificação de redundância cíclica" (CRC) para garantir que os dados não sofressem interferência eletromagnética durante o trajeto.
+* **Padronizar** as comunicações entre terminais, controladores e mainframes.
+* **Unificar** protocolos e metodologias.
+* **Centralizar** a administração da rede.
+* Oferecer **alta confiabilidade** — essencial para bancos, governo e grandes corporações.
 
----
+### 🔑 Princípios-chave da SNA:
 
-## 4. APPN e HPR: A Resposta à Descentralização
+* Primeira arquitetura proprietária de rede baseada em um **modelo de camadas**, antecipando o modelo OSI.
+* Separação entre funções de **aplicação**, **transporte**, **controle** e **link físico**.
+* Controle centralizado pelo mainframe via **SSCP (System Services Control Point)**.
 
-Nos anos 80 e 90, a IBM percebeu que a hierarquia rígida estava morrendo. Ela introduziu:
+### 🖥️ Primeira implementação:
 
-* **APPN (Advanced Peer-to-Peer Networking):** Permitiu o roteamento dinâmico. Se um caminho caísse, o APPN encontrava outro automaticamente, eliminando a necessidade de o administrador definir cada rota manualmente.
-* **HPR (High Performance Routing):** Uma evolução que permitia velocidades muito maiores e priorização de tráfego, competindo diretamente com a eficiência do roteamento IP.
+* O software **ACF/VTAM** (Advanced Communications Function / Virtual Telecommunications Access Method).
+* Para OS/VS1 e MVS.
 
----
-
-## 5. Legado e Coexistência (AnyNet e Enterprise Extender)
-
-Quando o TCP/IP "venceu" a guerra das redes, milhares de empresas ainda tinham bilhões de linhas de código rodando em SNA. A solução não foi substituir tudo, mas integrar:
-
-1. **Encapsulamento (Tunneling):** Os pacotes SNA são colocados "dentro" de pacotes TCP/IP. Para o Mainframe, a rede ainda parece SNA; para os roteadores da Cisco/Juniper, parece apenas tráfego de Internet comum.
-2. **Enterprise Extender (EE):** É a tecnologia atual. Ela mapeia os níveis de prioridade do SNA diretamente nos campos de QoS (Qualidade de Serviço) do protocolo IP.
+Assim, a SNA se tornou a base das redes corporativas IBM nos anos seguintes.
 
 ---
 
-## Comparação Técnica de Resumo
+# ## 🧱 2. Arquitetura Aprofundada
 
-| Característica | SNA Clássico | TCP/IP |
-| --- | --- | --- |
-| **Administração** | Centralizada (VTAM) | Descentralizada |
-| **Endereçamento** | Dependente da topologia física | Endereços IP lógicos e flexíveis |
-| **Confiabilidade** | Extremamente Alta (Garantida em HW/SW) | Melhor Esforço (Best Effort) |
-| **Configuração** | Estática e Manual | Dinâmica (DHCP/OSPF/BGP) |
-| **Propriedade** | Proprietário (IBM) | Aberto (RFCs/IETF) |
+A arquitetura SNA define com rigor:
 
-O SNA é o "dinossauro" mais bem-sucedido da computação: embora raramente visto na superfície, ele ainda processa a maioria das transações de cartão de crédito e reservas de voos que você faz hoje.
+* Como os dados são transmitidos;
+* Como os recursos devem se comportar;
+* Como as sessões são estabelecidas;
+* Como a rede é administrada.
+
+Sua estrutura é altamente padronizada e hierárquica.
+
+---
+
+## ### 2.1. Modelo de Camadas da SNA (7 níveis)
+
+Apesar de não idêntica ao OSI, a SNA possui um modelo de camadas que cumpre funções equivalentes — tendo sido criada *antes* do OSI.
+
+|          Camada SNA         | Função Principal                                                | Equiv. OSI |
+| :-------------------------: | :-------------------------------------------------------------- | :--------: |
+|        **Transação**        | Serviços de aplicação como arquivos, impressão, consultas, etc. |      7     |
+|       **Apresentação**      | Conversão de formatos (como EBCDIC) e sintaxe de dados.         |      6     |
+|    **Controle de Fluxo**    | Controle fim-a-fim, sincronização e gerenciamento de diálogo.   |      5     |
+| **Controle de Transmissão** | Estabelecimento/interrupção de sessões LU-LU; criptografia.     |      4     |
+|   **Controle de Caminho**   | Roteamento, endereçamento e controle de tráfego.                |      3     |
+|   **Controle de Ligação**   | Comunicação no enlace físico, detecção/correção de erros.       |      2     |
+|          **Física**         | Especificações elétricas e mecânicas.                           |      1     |
+
+---
+
+## ### 2.2. Componentes Principais
+
+| Elemento                | Descrição                                                                                   |
+| :---------------------- | :------------------------------------------------------------------------------------------ |
+| **Node (Nó)**           | Dispositivo participante da rede SNA (host, controlador, gateway).                          |
+| **LU (Logical Unit)**   | Ponto de acesso lógico para aplicações e terminais. Ex: LU 2 (3270), LU 6.2 (peer-to-peer). |
+| **PU (Physical Unit)**  | Representa o hardware que controla a comunicação física (ex: controladores 37x5).           |
+| **CD (Control Domain)** | Nó central gerenciado pelo mainframe via VTAM/NCP.                                          |
+| **Sessões LU-LU**       | Diálogo lógico entre terminais e aplicações.                                                |
+
+As LUs foram um conceito inovador ao permitir diferentes tipos de interação sobre a mesma arquitetura.
+
+---
+
+# ## 📈 3. A Consolidação da SNA (anos 1970–1980)
+
+Após seu lançamento, a SNA rapidamente se tornou o padrão dominante para redes corporativas IBM. Os principais fatores para isso foram:
+
+* **Confiabilidade extrema** para operações críticas.
+* **Padronização completa** entre todos os dispositivos IBM.
+* **Controle centralizado**, adequando-se ao modelo de computação com *mainframes*.
+
+### Ampliação tecnológica:
+
+* Definição das **LUs**, incluindo o revolucionário **LU6.2**, que permitiu comunicação peer-to-peer entre aplicações.
+* Crescimento das redes de grande porte, exigindo melhores métodos de roteamento.
+
+Assim, durante os anos 1980, a SNA era praticamente onipresente em bancos, seguradoras, órgãos governamentais e grandes indústrias.
+
+---
+
+# ## 🧬 4. Evolução: APPN e HPR (1980–1990)
+
+## ### 4.1. APPN (Advanced Peer-to-Peer Networking)
+
+Nos anos 80, as redes se tornaram mais distribuídas, afastando-se da rigidez hierárquica da SNA Subarea. Para acompanhar essa modernização, a IBM criou a arquitetura **APPN (1986)**.
+
+### Melhorias:
+
+* Comunicação **peer-to-peer**.
+* Descoberta automática de recursos.
+* Roteamento dinâmico (sem tabelas estáticas).
+* Menor dependência do mainframe.
+
+APPN modernizou o SNA e permitiu topologias mais flexíveis.
+
+---
+
+## ### 4.2. HPR (High Performance Routing)
+
+Introduzido nos anos 90, o HPR elevou o desempenho da SNA em redes WAN:
+
+* Roteamento baseado na origem (*source routing*).
+* Controle de congestionamento (ARBC).
+* Recuperação rápida de falhas.
+* Alta eficiência em redes corporativas espalhadas geograficamente.
+
+---
+
+# ## 🌐 5. O Declínio da SNA e Ascensão do TCP/IP (anos 1990)
+
+Com o avanço da Internet e o crescimento das LANs heterogêneas, o **TCP/IP**, aberto e flexível, tornou-se o padrão mundial.
+
+### Problemas para a SNA:
+
+* Arquitetura rígida.
+* Dependência de hardware IBM.
+* Modelo centralizado.
+
+### Reação da IBM:
+
+A IBM não abandonou o SNA, mas criou **métodos de integração**:
+
+* **SNA over IP (túneis)**.
+* **Encapsulamento via DLSw**.
+* **TN3270** (terminals 3270 via Telnet).
+* **Enterprise Extender (EE)** — solução moderna que transporta SNA sobre IP nativo.
+
+Isso permitiu que corporações mantivessem aplicações críticas, enquanto a infraestrutura migrava para TCP/IP.
+
+---
+
+# ## 🖥️ 6. SNA atualmente
+
+Hoje, a SNA não é mais usada para novos projetos, mas ainda é fundamental em sistemas legados:
+
+* Bancos
+* Seguradoras
+* Governo
+* Grandes indústrias
+* Ambientes z/OS e mainframe IBM
+
+Muitos sistemas corporativos críticos dependem de LU6.2, transações 3270 e integrações com VTAM.
+
+---
+
+# ## 🧩 7. Contribuições e Legado Tecnológico da SNA
+
+A arquitetura SNA deixou um impacto duradouro:
+
+✔ Influenciou o **modelo OSI**.
+✔ Padronizou comunicação em redes de grande porte como nenhuma outra na época.
+✔ Criou conceitos modernos como sessões, controle de fluxo e roteamento estruturado.
+✔ Estabeleceu práticas de confiabilidade e governança que ainda são usadas em mainframes.
+✔ Permitiu a evolução gradual para TCP/IP sem perder aplicações legadas.
+
+---
+
+# ## 📝 8. Resumo Final
+
+A **Systems Network Architecture (SNA)** foi um marco das redes corporativas e moldou décadas de tecnologia. Ela:
+
+* Surgiu em **1974** para unificar redes IBM.
+* Dominou os anos 70 e 80 com sua estrutura hierárquica.
+* Evoluiu com **APPN** e **HPR**.
+* Foi gradualmente substituída pelo **TCP/IP** nos anos 90.
+* Ainda sustenta aplicações legadas críticas em bancos e governos.
+
+Seu legado permanece vivo em conceitos, práticas e tecnologias que continuamos usando hoje.
+
+---
