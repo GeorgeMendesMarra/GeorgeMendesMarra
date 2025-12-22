@@ -136,5 +136,3 @@ Os cabos coaxiais desempenharam um papel fundamental na evolução das redes de 
 
 Embora atualmente tenham sido substituídos em grande parte, os cabos coaxiais permanecem como um importante marco no desenvolvimento das tecnologias de comunicação de dados.
 ```
-
----
