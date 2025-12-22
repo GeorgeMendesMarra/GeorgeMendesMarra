@@ -1,6 +1,3 @@
----
-
-```md
 # Fibra Óptica, Camada Física e os Fundamentos Matemáticos da Transmissão de Dados
 
 A **fibra óptica** representa o meio de transmissão mais avançado utilizado atualmente nas redes de computadores. Seu funcionamento está diretamente relacionado aos conceitos da **Camada Física**, à **Análise de Fourier** e aos limites teóricos impostos pelo **Teorema de Nyquist**, que juntos explicam como os dados digitais podem ser transmitidos de forma eficiente, rápida e confiável.
