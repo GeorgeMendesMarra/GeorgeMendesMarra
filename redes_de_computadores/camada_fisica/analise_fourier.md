@@ -121,10 +121,3 @@ Ela é a base matemática que conecta a **Camada Física**, o **Teorema de Nyqui
 ```
 
 ---
-
-Se quiser, posso:
-
-* Integrar esse trecho com o **capítulo de Nyquist** que você já fez
-* Gerar o **arquivo `.md` final unificado**
-* Converter para **DOCX ou PDF**
-* Ajustar linguagem para **apostila, prova ou TCC**
