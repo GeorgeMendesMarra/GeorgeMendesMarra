@@ -1,6 +1,3 @@
-Perfeito 👍
-Abaixo está **o texto integrado**, em **Markdown puro (compatível)**, unindo **Fibra Óptica + Camada Física + Análise de Fourier + Teorema de Nyquist**, formando um **capítulo completo e coeso**, ideal para **apostila, relatório, TCC ou material didático**.
-
 ---
 
 ```md
