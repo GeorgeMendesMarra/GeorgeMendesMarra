@@ -132,5 +132,3 @@ O cabo de par trançado é um exemplo clássico de como princípios físicos e m
 
 Mesmo diante do avanço da fibra óptica, o par trançado permanece essencial, sustentando a maior parte das redes locais modernas e consolidando seu papel histórico e técnico nas telecomunicações.
 ```
-
----
