@@ -61,5 +61,3 @@ Embora o Gigabit (1000 Mbps) e o 10G tenham assumido o controle dos servidores e
 * **Eficiência Energética:** O Fast Ethernet consome menos energia que o Gigabit, sendo ideal para dispositivos alimentados por bateria ou sensores simples.
 
 ---
-
-**Deseja que eu aprofunde na pinagem dos cabos (diferença entre cabo direto e cruzado) ou gostaria de avançar para a história do Gigabit Ethernet?**
