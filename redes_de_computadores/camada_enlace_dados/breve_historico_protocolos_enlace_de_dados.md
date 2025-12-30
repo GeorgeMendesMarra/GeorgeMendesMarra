@@ -1,5 +1,3 @@
----
-
 # 🌐 Protocolos de Enlace de Dados: Exemplos e Aplicações
 
 A camada de enlace é responsável por organizar a transmissão de dados "ponto a ponto" ou em meios compartilhados. Ela é dividida em duas subcamadas: **LLC** (Logical Link Control), que faz a interface com o software, e **MAC** (Media Access Control), que lida com o hardware.
