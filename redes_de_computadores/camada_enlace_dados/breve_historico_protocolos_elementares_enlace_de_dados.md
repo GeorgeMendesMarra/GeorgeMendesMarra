@@ -1,5 +1,3 @@
----
-
 # 📜 Protocolos Elementares de Enlace: A Fundação da Confiabilidade
 
 A camada de enlace de dados transforma o fluxo bruto de bits da camada física em um canal de comunicação estruturado. Historicamente, o desenvolvimento desses protocolos seguiu uma escala de complexidade para resolver três problemas: **Sincronização**, **Controle de Fluxo** e **Controle de Erros**.
