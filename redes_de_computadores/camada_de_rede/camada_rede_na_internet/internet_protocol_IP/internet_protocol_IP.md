@@ -1,5 +1,3 @@
----
-
 ## 1. A Filosofia do "Best Effort" (Melhor Esforço)
 
 Diferente dos sistemas de telefonia antigos, que reservavam um circuito físico para cada chamada, o IP foi desenhado sob o conceito de **comutação de pacotes**.
