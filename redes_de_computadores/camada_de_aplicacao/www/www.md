@@ -1,5 +1,3 @@
----
-
 ## 1. O Problema da Informação Perdida (1989)
 
 No final dos anos 80, o **CERN** (Organização Europeia para a Pesquisa Nuclear), na Suíça, era um hub de cientistas de todo o mundo. O problema era que as informações estavam presas em diferentes computadores, com diferentes formatos e sistemas de arquivos.
