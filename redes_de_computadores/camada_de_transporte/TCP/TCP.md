@@ -1,5 +1,3 @@
----
-
 ## 1. O Início: O Protocolo Unificado (1973–1974)
 
 Nos primeiros dias da ARPANET, o protocolo utilizado era o NCP (Network Control Program). No entanto, ele era limitado e não lidava bem com redes diferentes interconectadas.
