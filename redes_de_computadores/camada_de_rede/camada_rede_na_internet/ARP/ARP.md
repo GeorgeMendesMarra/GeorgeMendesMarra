@@ -1,5 +1,3 @@
----
-
 ## 1. O Problema da Identidade (Início dos anos 80)
 
 Nos primórdios da rede, os computadores já conseguiam se comunicar via **Internet Protocol (IP)**, mas havia um problema prático: as placas de rede Ethernet não entendem endereços IP (como `192.168.1.1`). Elas só entendem endereços físicos gravados na fábrica, os **MAC Addresses** (como `00:0A:95:9D:68:16`).
