@@ -1,5 +1,3 @@
----
-
 ## 1. A Crise do RIP e o Algoritmo de Dijkstra
 
 Para entender o OSPF, é preciso entender o problema que ele veio resolver. Nos anos 80, o protocolo padrão era o **RIP**. O RIP utilizava apenas a "contagem de saltos" para decidir o caminho: se um caminho tinha 2 roteadores lentos e outro tinha 3 roteadores ultra-rápidos, o RIP escolhia o caminho lento.
