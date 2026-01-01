@@ -1,5 +1,3 @@
----
-
 ## 1. O Sucessor do RARP (1985)
 
 Em meados dos anos 80, o protocolo RARP era usado para dar endereços IP a máquinas sem disco, mas ele tinha um problema grave: não funcionava através de roteadores (limitação de Camada 2).
