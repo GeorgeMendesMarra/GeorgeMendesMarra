@@ -1,5 +1,3 @@
----
-
 ## 1. A Necessidade de Sincronização (Início dos anos 90)
 
 No início da década de 90, os pesquisadores começaram a experimentar com conferências de áudio e vídeo pela Internet. Eles usavam o protocolo UDP, mas enfrentavam problemas graves:
