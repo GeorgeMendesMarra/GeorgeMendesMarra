@@ -205,7 +205,7 @@ class Estatistica {
 //(CLASSE PRINCIPAL)
 // -----------------------------------------------------------------------------
 
-public class Exemplo1 {
+public class Estatistica1 {
     public static void main(String[] args) {
         // Instancia a classe utilitária de Estatística
         Estatistica e = new Estatistica();
