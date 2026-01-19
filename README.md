@@ -8,7 +8,7 @@ Ministro aulas de informática para alunos de diversas idades e níveis, compart
 
 ## Tecnologias
 
-No meu trabalho, utilizo principalmente as tecnologias HTML, CSS, JavaScript, Node.js, Java e Python, explorando suas diversas funcionalidades e aplicações.
+No meu trabalho, utilizo principalmente as tecnologias Java e Python, explorando suas diversas funcionalidades e aplicações.
 
 *   **Java:** Uma linguagem poderosa e versátil, ideal para o desenvolvimento de aplicações robustas e escaláveis.
 *   **Python:** Uma linguagem elegante e de fácil aprendizado, perfeita para prototipagem rápida e desenvolvimento de soluções criativas.
