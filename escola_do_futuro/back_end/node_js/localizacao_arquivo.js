@@ -1,2 +1,2 @@
 // '__filename' é uma variável especial que guarda o caminho completo deste arquivo no disco
-console.log("Este ficheiro está em: " + __filename);
+console.log("Este arquivo está localizado em: " + __filename);
