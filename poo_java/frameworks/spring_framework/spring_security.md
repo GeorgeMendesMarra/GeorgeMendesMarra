@@ -1,7 +1,3 @@
----
-
-# 🔐 Spring Security — visão geral
-
 O **Spring Security** é o framework do Spring responsável por:
 
 * **Autenticação** → quem é o usuário?
