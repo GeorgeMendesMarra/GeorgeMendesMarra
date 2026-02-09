@@ -43,6 +43,6 @@ final: a) Qual foi a média de altura do grupo b) Quantas pessoas pesam mais de
 90Kg c) Quantas pessoas que pesam menos de 50Kg tem menos de 1.60m d)
 Quantas pessoas que medem mais de 1.90m pesam mais de 100Kg.
 18. $$DESAFIO$$
-Vamos melhorar o jogo que fizemos no exercício 32. A partir de agora, o
+Vamos melhorar o jogo. A partir de agora, o
 computador vai sortear um número entre 1 e 10 e o jogador vai ter 4 tentativas para
 tentar acertar.
