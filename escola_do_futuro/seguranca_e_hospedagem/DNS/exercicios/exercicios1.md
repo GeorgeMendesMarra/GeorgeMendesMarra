@@ -39,5 +39,3 @@
 **15.** Cite uma diferença básica entre a configuração de DNS no Windows e no Linux.
 
 ---
-
-Só avisar 😉
