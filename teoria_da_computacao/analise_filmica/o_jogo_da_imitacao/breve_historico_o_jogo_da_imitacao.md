@@ -43,5 +43,3 @@ Apesar do sucesso, historiadores apontam algumas licenças poéticas:
 ### Legado
 
 O filme foi fundamental para pressionar o governo britânico e a opinião pública sobre o legado de Turing. Em 2013 (pouco antes do lançamento oficial em escala global), a Rainha Elizabeth II concedeu um perdão póstumo oficial a Turing, e o filme ajudou a imortalizar sua contribuição: estima-se que o trabalho de sua equipe em Bletchley Park encurtou a guerra em pelo menos dois anos, salvando milhões de vidas.
-
-**Como estamos na disciplina de TCC e Engenharia de Software, gostaria que eu analisasse a "Máquina de Turing" sob o ponto de vista da computabilidade, explicando por que ela é o conceito base de todos os computadores que usamos hoje?**
