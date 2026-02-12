@@ -85,9 +85,3 @@ Se você fosse abrir seu IDE (como IntelliJ ou VS Code) agora, esta seria a arqu
 5. **`EnigmaUI` (Main):** Uma interface (pode ser via Console) para entrada de texto.
 
 ---
-
-**Qual o seu próximo passo?**
-
-1. Posso te passar um **exemplo de código funcional** completo (uma única classe para você testar).
-2. Posso explicar como a **matemática modular** do Java resolve o problema dos rotores.
-3. Ou podemos falar sobre como **Alan Turing** usaria o Java hoje para criar suas "Bombas".
