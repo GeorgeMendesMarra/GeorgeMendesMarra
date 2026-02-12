@@ -47,5 +47,3 @@ A mansão vitoriana no centro do parque servia como sede administrativa e refeit
 ### Curiosidade: O Segredo Pós-Guerra
 
 Ao fim da guerra, Churchill ordenou que quase todas as máquinas e documentos de Bletchley Park fossem destruídos. O mundo só soube da existência dessa estrutura em **1974**, quando o capitão F.W. Winterbotham publicou o livro *The Ultra Secret*.
-
-**Você gostaria de saber mais sobre como o computador Colossus (do Block F) diferia da máquina de Turing, ou prefere detalhes sobre como os relatórios eram enviados aos generais no front?**
