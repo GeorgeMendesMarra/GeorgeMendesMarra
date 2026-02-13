@@ -20,5 +20,3 @@ Imagine um sistema composto por quatro partes principais:
 * **Tese de Church-Turing:** Estabelece que qualquer coisa que consideremos "computável" por meios mecânicos pode ser feita por uma Máquina de Turing.
 
 Apesar de ser um conceito de quase um século atrás, ela ainda é usada para classificar a complexidade de algoritmos e entender a lógica por trás das IAs mais avançadas de hoje.
-
-**Gostaria que eu explicasse a diferença entre uma Máquina de Turing e a arquitetura dos computadores que usamos hoje?**
