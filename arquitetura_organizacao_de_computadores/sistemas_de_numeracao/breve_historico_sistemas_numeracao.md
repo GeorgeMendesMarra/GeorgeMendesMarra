@@ -25,11 +25,3 @@ Diferente da nossa matemática no papel, a aritmética dentro do chip precisa li
 * **Ponto Flutuante (IEEE 754):** Como o computador representa números reais (com vírgula). Erros nessa representação podem causar falhas críticas em sistemas de alta precisão.
 
 ---
-
-### Conexão com sua Planilha de Aula
-
-Conforme seu plano, em janeiro você abordará a **Confidencialidade** e **Integridade**. Entender a aritmética computacional é essencial aqui porque:
-
-1. **Criptografia:** Baseia-se em operações matemáticas complexas (como aritmética modular) sobre representações numéricas dos dados.
-2. 
-**Integridade:** O cálculo de *hashes* (como o SHA-256) para verificar se um arquivo foi alterado é puramente aritmética binária.
