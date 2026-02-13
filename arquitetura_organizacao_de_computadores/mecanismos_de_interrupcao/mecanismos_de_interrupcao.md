@@ -25,13 +25,8 @@ As exceções são interrupções geradas internamente pelo próprio processador
 
 ### 3. Relação Direta com a Cibersegurança
 
-Na sua aula do dia **15/01/26** sobre "Reconhecer riscos relacionados à informação", as interrupções e exceções desempenham um papel defensivo:
-
-* 
 **Proteção de Memória:** Se um programa tenta acessar uma área de memória proibida (comum em ataques de invasão), o processador gera uma **exceção de violação de acesso**, interrompendo o ataque antes que ele comprometa a **Integridade**.
 
-
-* 
 **Disponibilidade:** Um excesso proposital de interrupções (como em um ataque de Negação de Serviço - DoS) pode sobrecarregar o processador, impedindo que ele execute o ciclo de instruções normal, afetando a **Disponibilidade** do sistema.
 
 
