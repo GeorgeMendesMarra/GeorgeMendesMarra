@@ -27,7 +27,3 @@ A matemática nos circuitos tem limites físicos que, se ignorados, tornam-se ve
 * **Operações Lógicas (XOR):** A operação XOR é o pilar de muitas cifras de segurança; sem ela, não existe a proteção de dados em trânsito.
 
 ---
-
-
-
-**Deseja que eu crie uma lista de exercícios práticos de conversão de bases e lógica booleana para sua próxima aula da Turma 34?**
