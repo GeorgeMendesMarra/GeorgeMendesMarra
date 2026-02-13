@@ -1,27 +1,33 @@
-## 1. Breve Histórico da Representação da Informação
+## Representação da Informação e Aritmética Computacional
 
-A humanidade sempre buscou formas de registrar dados, evoluindo de símbolos físicos para sinais eletrônicos:
+### 1. Evolução Histórica e Lógica
 
-* **Antiguidade:** O uso do ábaco e sistemas de contagem em base 10 (decimal) devido aos dez dedos das mãos.
-* **Lógica Booleana (1854):** George Boole criou um sistema lógico onde tudo se resume a **Verdadeiro ou Falso**. Esse é o alicerce da programação moderna e da cibersegurança.
+A humanidade evoluiu de registros físicos para sinais eletrônicos abstratos:
+
+* **Antiguidade:** O uso do ábaco e sistemas decimais (base 10) baseados nos dez dedos das mãos facilitou o comércio e a contabilidade inicial.
+* **Lógica Booleana (1854):** George Boole criou um sistema onde a realidade se resume a **Verdadeiro (1)** ou **Falso (0)**. Este é o alicerce absoluto da programação e da cibersegurança moderna.
+* **Claude Shannon (1937):** Provou que circuitos elétricos poderiam executar essa lógica, definindo o **Bit** como a menor unidade de informação.
+
+### 2. Sistemas de Numeração na Cibersegurança
+
+Para um especialista em segurança, os números são mais que valores; são códigos de diagnóstico:
+
+* **Binário (Base 2):** A linguagem nativa do processador. Essencial para entender permissões de arquivos e máscaras de rede.
+* **Hexadecimal (Base 16):** Utiliza 0-9 e A-F. É o padrão para analisar *dumps* de memória, endereços MAC e chaves criptográficas, simplificando longas cadeias binárias.
+* **Codificação (ASCII/Unicode):** Define como números viram letras. No Back-End, o uso incorreto de codificações (como o UTF-8) pode gerar falhas de segurança e corrupção de dados.
+
+### 3. Aritmética Computacional e Riscos Técnicos
+
+A matemática nos circuitos tem limites físicos que, se ignorados, tornam-se vetores de ataque:
+
+* **Overflow e Underflow:** Ocorre quando um cálculo ultrapassa a capacidade de bits da variável (ex: somar 1 ao limite máximo e o valor retornar a zero). Hackers exploram isso para causar comportamentos inesperados em sistemas.
+* **Aritmética Modular:** É a base da criptografia assimétrica (como o RSA). Compreender o "resto da divisão" é essencial para entender como chaves protegem a **Confidencialidade**.
 
 
-* **Claude Shannon (1937):** Ele provou que a lógica booleana e a aritmética poderiam ser aplicadas a circuitos elétricos (relés), definindo o **Bit** (Binary Digit) como a menor unidade de informação.
-
-## 2. Sistemas de Numeração
-
-Os computadores utilizam sistemas diferentes do nosso cotidiano para otimizar o hardware:
-
-* **Binário (Base 2):** Utiliza apenas **0 e 1**. É a linguagem nativa do processador (presença ou ausência de tensão elétrica).
-* **Hexadecimal (Base 16):** Utiliza números de 0 a 9 e letras de A a F. É amplamente usado no **Back-End** e em redes para representar cores, endereços de memória e chaves criptográficas de forma mais curta que o binário.
-* **Octal (Base 8):** Menos comum hoje, mas importante na história para representar permissões de arquivos em sistemas Unix.
-
-## 3. Aritmética Computacional
-
-Diferente da nossa matemática no papel, a aritmética dentro do chip precisa lidar com limitações físicas:
-
-* **Adição e Subtração Binária:** Seguem regras simples (como , onde o "1" sobe para a próxima casa), mas são a base para qualquer cálculo de algoritmo.
-* **Complemento de Dois:** A técnica genial que os computadores usam para representar **números negativos** e realizar subtrações usando apenas somadores.
-* **Ponto Flutuante (IEEE 754):** Como o computador representa números reais (com vírgula). Erros nessa representação podem causar falhas críticas em sistemas de alta precisão.
+* **Operações Lógicas (XOR):** A operação XOR é o pilar de muitas cifras de segurança; sem ela, não existe a proteção de dados em trânsito.
 
 ---
+
+
+
+**Deseja que eu crie uma lista de exercícios práticos de conversão de bases e lógica booleana para sua próxima aula da Turma 34?**
