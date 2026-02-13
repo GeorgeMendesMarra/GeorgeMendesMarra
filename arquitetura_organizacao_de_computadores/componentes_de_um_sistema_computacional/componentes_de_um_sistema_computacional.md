@@ -1,6 +1,6 @@
 ### 1. Hardware (A Camada Física)
 
-É o conjunto de componentes eletrônicos e mecânicos. o hardware é onde as políticas de controle de acesso físico e integridade de dados começam.
+É o conjunto de componentes eletrônicos e mecânicos. O hardware é onde as políticas de controle de acesso físico e integridade de dados começam.
  
 **Processador (CPU):** O "cérebro" do sistema, responsável por executar cálculos aritméticos e lógicos.
 
