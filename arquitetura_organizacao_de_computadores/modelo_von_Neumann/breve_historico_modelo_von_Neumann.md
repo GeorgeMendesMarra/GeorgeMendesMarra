@@ -11,16 +11,13 @@ De acordo com esta arquitetura, um sistema computacional é dividido em quatro c
 1. 
 **Unidade Central de Processamento (CPU):** Onde ocorre a execução das instruções. Ela se divide em:
 
-
-* 
+ 
 **Unidade Lógica e Aritmética (ULA):** Realiza os cálculos (aritmética computacional) e as decisões lógicas.
 
 
-* 
 **Unidade de Controle (UC):** Gerencia o fluxo de dados, interpretando as instruções da memória.
 
 
-* 
 **Registradores:** Pequenas áreas de memória ultra-rápida dentro da CPU para armazenamento temporário.
 
 
