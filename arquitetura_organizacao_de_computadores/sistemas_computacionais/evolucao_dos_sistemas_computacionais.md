@@ -1,5 +1,3 @@
-Aqui está a divisão clássica por gerações:
-
 ### 1. Era Pré-Computacional (Até 1940)
 
 * **Ábaco e Máquinas Mecânicas:** Ferramentas como a calculadora de Pascal e a Máquina Analítica de Babbage lançaram os conceitos de entrada, processamento e saída.
@@ -42,6 +40,3 @@ Aqui está a divisão clássica por gerações:
 
 
 ---
-
-**Como essa evolução impacta o Back-End?**
-Antigamente, o "código" era físico (cabos); hoje, o Back-End é uma camada lógica complexa que protege a **confidencialidade e integridade** dos dados, temas que você abordará em suas aulas de janeiro e fevereiro.
