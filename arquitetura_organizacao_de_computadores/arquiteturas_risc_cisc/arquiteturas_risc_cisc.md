@@ -24,7 +24,7 @@ A forma como o processador interpreta instruções define sua eficiência e comp
 
 ### 3. Conexão com a Cibersegurança e o Back-End
 
-Integrando esses conceitos ao seu cronograma de 2026 para a **Turma 34**:
+Integrando esses conceitos ao seu cronograma de 2026:
 
 * **Disponibilidade e Paralelismo:** Arquiteturas paralelas permitem que sistemas de Back-End suportem milhares de acessos simultâneos. Se um "nó" falha, outros assumem, garantindo a **Disponibilidade**.
 
