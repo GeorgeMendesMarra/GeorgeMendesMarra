@@ -8,8 +8,7 @@ Antes de Von Neumann, os computadores eram "programados" fisicamente, alterando 
 
 De acordo com esta arquitetura, um sistema computacional é dividido em quatro componentes principais:
 
-1. 
-**Unidade Central de Processamento (CPU):** Onde ocorre a execução das instruções. Ela se divide em:
+1. **Unidade Central de Processamento (CPU):** Onde ocorre a execução das instruções. Ela se divide em:
 
  
 **Unidade Lógica e Aritmética (ULA):** Realiza os cálculos (aritmética computacional) e as decisões lógicas.
@@ -23,16 +22,13 @@ De acordo com esta arquitetura, um sistema computacional é dividido em quatro c
 
 
 
-2. 
-**Memória Principal (RAM):** Um espaço de armazenamento linear onde as instruções do programa e os dados necessários para o processamento são guardados.
+2. **Memória Principal (RAM):** Um espaço de armazenamento linear onde as instruções do programa e os dados necessários para o processamento são guardados.
 
 
-3. 
-**Sistemas de Entrada e Saída (I/O):** Interfaces que permitem a comunicação do computador com o mundo externo, como teclados, monitores e redes.
+3. **Sistemas de Entrada e Saída (I/O):** Interfaces que permitem a comunicação do computador com o mundo externo, como teclados, monitores e redes.
 
 
-4. 
-**Barramentos (Bus):** Os caminhos físicos (fios/circuitos) que transportam os dados, endereços e sinais de controle entre todos os componentes.
+4. **Barramentos (Bus):** Os caminhos físicos (fios/circuitos) que transportam os dados, endereços e sinais de controle entre todos os componentes.
 
 
 
