@@ -39,5 +39,3 @@ Com o lançamento do Intel 4004 (o primeiro microprocessador), toda a CPU foi in
 
 * **Arquitetura:** Refere-se aos atributos de um sistema que são visíveis ao programador (ex: conjunto de instruções, número de bits, tipos de dados).
 * **Organização:** Refere-se a **como** esses atributos são implementados fisicamente (ex: sinais de controle, interfaces entre computador e periféricos, tecnologia da memória).
-
-Dada a sua planilha de aula, você gostaria que eu relacionasse esses conceitos históricos com o papel do Back-End ou da Cibersegurança para os seus alunos?
