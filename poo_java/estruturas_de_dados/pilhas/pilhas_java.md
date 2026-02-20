@@ -119,5 +119,3 @@ public class MinhaPilha {
 * **`pop()`**: Remove e retorna o elemento do topo (lança exceção se estiver vazia).
 * **`peek()`**: Retorna o elemento do topo sem o remover.
 * **`isEmpty()`**: Verifica se a pilha está vazia.
-
-Gostaria de ver como aplicar isto num problema real, como validar parênteses num algoritmo ou inverter uma string?
