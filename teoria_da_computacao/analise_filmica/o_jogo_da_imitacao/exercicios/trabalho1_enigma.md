@@ -118,4 +118,3 @@ Para transformar a brincadeira em uma atividade avaliativa, peça que respondam:
 * **P2:** Por que o **Plugboard** (painel de cabos) aumentava tanto a segurança da máquina? (Dica: Pense na quantidade de combinações extras que 10 cabos criam).
 * **P3:** Se um espião roubasse a máquina Enigma, mas não tivesse o **Livro de Códigos**, ele conseguiria ler as mensagens? Justifique.
 
-**Gostaria que eu gerasse uma lista de frases cifradas baseadas nesse Livro de Códigos para você testar com eles agora mesmo?**
