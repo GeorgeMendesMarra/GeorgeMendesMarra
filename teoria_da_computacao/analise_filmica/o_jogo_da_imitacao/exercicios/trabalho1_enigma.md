@@ -118,3 +118,54 @@ Para transformar a brincadeira em uma atividade avaliativa, peça que respondam:
 * **P2:** Por que o **Plugboard** (painel de cabos) aumentava tanto a segurança da máquina? (Dica: Pense na quantidade de combinações extras que 10 cabos criam).
 * **P3:** Se um espião roubasse a máquina Enigma, mas não tivesse o **Livro de Códigos**, ele conseguiria ler as mensagens? Justifique.
 
+---
+Essa é a grande ironia da história da criptografia: a peça que tornava a Enigma prática e fácil de usar foi exatamente o que a destruiu.
+
+O **Refletor** (ou *Umkehrwalze*) era um disco fixo no final da sequência de rotores. Ele pegava o sinal elétrico e o mandava de volta pelos mesmos rotores por um caminho diferente.
+
+---
+
+### 1. A Vantagem
+
+Graças ao refletor, a máquina era **recíproca**.
+
+* Se você configurasse a máquina e digitasse `A` e saísse `X`, bastava digitar `X` para sair `A`.
+* Isso facilitava a vida dos soldados no campo de batalha, pois eles não precisavam de uma máquina para "cifrar" e outra para "decifrar". Era o mesmo processo.
+
+### 2. A Falha Fatal (O que Turing explorou)
+
+Matematicamente, para que a reciprocidade funcionasse, o refletor trocava as letras em pares. Isso criava uma regra física absoluta: **uma letra nunca poderia ser conectada a si mesma.**
+
+> **A Regra de Ouro de Turing:** Se você pressionasse a tecla `T`, a lâmpada `T` nunca, sob nenhuma circunstância, acenderia.
+
+### 3. Como isso quebrou o código?
+
+Imagine que Turing interceptou a mensagem: `S P J Q Q Z`
+E ele suspeitava (a "Crib") que a palavra original fosse: `W E T T E R` (Tempo, em alemão).
+
+Ele alinhava as duas e fazia uma verificação lógica rápida:
+
+1. `W` coincide com `S`? (Possível)
+2. `E` coincide com `P`? (Possível)
+3. **`T` coincide com `J`?** (Possível)
+4. **`T` coincide com `Q`?** (Possível)
+... e assim por diante.
+
+Mas, se em algum alinhamento a letra da "Crib" coincidisse com a letra cifrada (ex: um `T` da mensagem original alinhado com um `T` da mensagem cifrada), Turing sabia **instantaneamente** que aquela posição e aquela configuração de rotores estavam erradas.
+
+### 4. A Bombe como um "Detetor de Contradições"
+
+A máquina Bombe de Turing era um exército de rotores elétricos que buscava justamente essas colisões.
+
+* Ela testava milhares de posições por segundo.
+* Sempre que a eletricidade tentava completar um circuito onde uma letra "era ela mesma", a máquina descartava aquela opção e passava para a próxima.
+* Quando a máquina **não encontrava** uma contradição, ela parava. Aquela era a chave provável.
+
+---
+
+### Reflexão Final para a Atividade:
+
+Você pode perguntar aos seus alunos:
+*"Vocês notaram que, enquanto digitavam, nenhuma letra que vocês pressionaram resultou nela mesma? Se vocês tivessem que decifrar uma mensagem sem a chave, como usariam essa 'falha' para eliminar as tentativas erradas?"*
+
+Isso fecha o ciclo da atividade, unindo a prática do app com o raciocínio lógico que mudou o curso da Segunda Guerra Mundial.
