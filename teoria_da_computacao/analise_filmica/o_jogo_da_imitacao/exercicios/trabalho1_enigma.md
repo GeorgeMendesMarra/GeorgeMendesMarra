@@ -21,7 +21,9 @@ Faça um programa em Python e outro em Java para auxiliar nos cálculos.
 Atividade: Desenvolver um simulador simplificado em Python e/ou Java.
 
 2.1) Executar o programa maquina_enigma1.py
+
 2.2) Executar o programa maquina_enigma2.py
+
 2.3) Executar o programa enigma.jar
 
 3. Simulação Histórica (História/Interdisciplinar)
