@@ -1,6 +1,6 @@
 Atividades sobre a máquina Enigma
 
-	O uso de um **Enigma Simulator** (seja o app para mobile ou simuladores web) é uma ferramenta pedagógica poderosa para unir **História, Matemática e Ciência da Computação**.
+O uso de um **Enigma Simulator** (seja o app para mobile ou simuladores web) é uma ferramenta pedagógica poderosa para unir **História, Matemática e Ciência da Computação**.
 
 1. Desafio de Criptoanálise (Matemática/Computação)
 
