@@ -256,5 +256,3 @@ Criar sistema simples de:
 
 ---
 
-Qual formato o senhor prefere?
-
