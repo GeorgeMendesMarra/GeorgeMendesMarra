@@ -5,9 +5,13 @@
 ## 🟢 Parte I – Questões Objetivas (1–10)
 
 **1.** Antes do conceito de programa armazenado, os computadores eram programados:
+
 a) Por meio de sistemas operacionais
+
 b) Alterando conexões físicas e chaves
+
 c) Utilizando memória RAM
+
 d) Por meio de compiladores
 
 ---
