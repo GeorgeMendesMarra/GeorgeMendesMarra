@@ -103,8 +103,11 @@ A computação deixou de ser exclusivamente militar e científica, passando a in
 O transistor abriu caminho para:
 
 1️⃣ Circuitos integrados (1960s)
+
 2️⃣ Microprocessadores (1970s)
+
 3️⃣ Computadores pessoais (1980s)
+
 4️⃣ Smartphones e IoT (2000s)
 
 Sem o transistor, não existiria a computação moderna.
