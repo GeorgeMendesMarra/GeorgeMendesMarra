@@ -41,57 +41,85 @@ d) Gerenciar memória secundária
 ---
 
 **4.** A Unidade de Controle (UC) tem como função principal:
+
 a) Executar cálculos matemáticos
+
 b) Armazenar dados permanentemente
+
 c) Interpretar instruções e coordenar a execução
+
 d) Gerenciar dispositivos USB
 
 ---
 
 **5.** Os registradores são:
+
 a) Memórias externas
+
 b) Pequenas memórias ultrarrápidas dentro da CPU
+
 c) Discos rígidos
+
 d) Sistemas de backup
 
 ---
 
 **6.** A memória principal (RAM) armazena:
+
 a) Apenas dados
+
 b) Apenas instruções
+
 c) Dados e instruções
+
 d) Apenas arquivos do sistema
 
 ---
 
 **7.** O barramento de dados é responsável por:
+
 a) Transportar sinais elétricos exclusivamente da fonte
+
 b) Levar dados entre CPU, memória e I/O
+
 c) Armazenar informações temporárias
+
 d) Proteger contra vírus
 
 ---
 
 **8.** O Gargalo de Von Neumann ocorre devido:
+
 a) Ao excesso de registradores
+
 b) À separação física entre CPU e memória
+
 c) À falta de sistemas operacionais
+
 d) Ao uso de discos rígidos
 
 ---
 
 **9.** A memória cache foi criada para:
+
 a) Substituir a RAM
+
 b) Armazenar dados permanentemente
+
 c) Reduzir o impacto do gargalo entre CPU e memória
+
 d) Aumentar o tamanho do HD
 
 ---
 
 **10.** Um ataque que explora o fato de dados e instruções estarem na mesma memória pode:
+
 a) Melhorar o desempenho
+
 b) Executar código malicioso
+
 c) Aumentar a RAM
+
 d) Criar novos registradores
 
 ---
