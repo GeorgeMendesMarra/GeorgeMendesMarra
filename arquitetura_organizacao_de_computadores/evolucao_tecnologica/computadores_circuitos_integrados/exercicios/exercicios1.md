@@ -1,81 +1,121 @@
 ### 🟢 Questões Objetivas
 
 **1.** O circuito integrado marcou qual geração dos computadores?
+
 a) Primeira
+
 b) Segunda
+
 c) Terceira
+
 d) Quarta
 
 ---
 
 **2.** O circuito integrado foi inventado inicialmente por:
+
 a) Alan Turing
+
 b) Jack Kilby
+
 c) John von Neumann
+
 d) Howard Aiken
 
 ---
 
 **3.** Jack Kilby trabalhava na:
+
 a) IBM
+
 b) Microsoft
+
 c) Texas Instruments
+
 d) Intel
 
 ---
 
 **4.** Robert Noyce estava associado à empresa:
+
 a) Fairchild Semiconductor
+
 b) Apple
+
 c) HP
+
 d) Dell
 
 ---
 
 **5.** O principal material usado na fabricação dos circuitos integrados é:
+
 a) Ferro
+
 b) Cobre
+
 c) Silício
+
 d) Alumínio
 
 ---
 
 **6.** A principal vantagem dos circuitos integrados sobre os transistores discretos foi:
+
 a) Aumento de tamanho
+
 b) Maior consumo de energia
+
 c) Miniaturização e maior confiabilidade
+
 d) Uso de válvulas
 
 ---
 
 **7.** O IBM System/360 pertence à geração:
+
 a) Primeira
+
 b) Segunda
+
 c) Terceira
+
 d) Quarta
 
 ---
 
 **8.** SSI significa:
+
 a) Super System Integration
+
 b) Small Scale Integration
+
 c) Standard Silicon Integration
+
 d) Simple System Interface
 
 ---
 
 **9.** VLSI significa:
+
 a) Very Large Scale Integration
+
 b) Virtual Logic System Integration
+
 c) Variable Large Silicon Integration
+
 d) Visual Logic Scale Integration
 
 ---
 
 **10.** A evolução dos circuitos integrados possibilitou o surgimento do:
+
 a) Ábaco
+
 b) Computador mecânico
+
 c) Microprocessador
+
 d) Computador a válvula
 
 ---
