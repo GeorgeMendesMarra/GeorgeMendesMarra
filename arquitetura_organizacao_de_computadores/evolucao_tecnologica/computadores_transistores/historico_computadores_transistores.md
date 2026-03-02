@@ -1,4 +1,4 @@
-# 🔬 Histórico Detalhado – 4️⃣ Transistores (Década de 1950)
+# Transistores (Década de 1950)
 
 A invenção do **transistor** marcou o início da **Segunda Geração da Computação (aprox. 1956–1964)** e representou uma das maiores revoluções tecnológicas do século XX. Ele substituiu as válvulas termiônicas, tornando os computadores **menores, mais rápidos, mais econômicos e mais confiáveis**.
 
@@ -9,8 +9,11 @@ A invenção do **transistor** marcou o início da **Segunda Geração da Comput
 O transistor é um dispositivo semicondutor que:
 
 ✔ Amplifica sinais elétricos
+
 ✔ Funciona como interruptor eletrônico
+
 ✔ Controla o fluxo de corrente
+
 ✔ Opera em sistema binário (0 e 1)
 
 Ele desempenha o mesmo papel lógico das válvulas, porém com enorme eficiência.
