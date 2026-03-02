@@ -17,17 +17,25 @@ d) Por meio de compiladores
 ---
 
 **2.** O principal diferencial da Arquitetura de Von Neumann é:
+
 a) Uso de múltiplas CPUs
+
 b) Separação entre dados e instruções
+
 c) Armazenamento conjunto de dados e instruções na mesma memória
+
 d) Processamento paralelo
 
 ---
 
 **3.** A ULA (Unidade Lógica e Aritmética) é responsável por:
+
 a) Armazenar programas
+
 b) Executar cálculos e operações lógicas
+
 c) Controlar periféricos
+
 d) Gerenciar memória secundária
 
 ---
