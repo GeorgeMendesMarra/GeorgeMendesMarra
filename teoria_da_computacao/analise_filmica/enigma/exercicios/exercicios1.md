@@ -141,39 +141,63 @@
     d) 2005
 
 29. O nome do livro que inspirou o filme é *Enigma*, escrito por:
+    
     a) Dan Brown
+    
     b) Robert Harris
+    
     c) Stephen King
+    
     d) John Grisham
 
-30. A máquina Enigma era utilizada por qual país?
+31. A máquina Enigma era utilizada por qual país?
+    
     a) Estados Unidos
+    
     b) União Soviética
+    
     c) Alemanha Nazista
+    
     d) Japão
 
-31. O filme mostra a importância de qual área do conhecimento?
+33. O filme mostra a importância de qual área do conhecimento?
+    
     a) Biologia
+    
     b) Matemática
+    
     c) Química
+    
     d) Filosofia
 
-32. O trabalho dos criptógrafos tinha impacto direto em:
+35. O trabalho dos criptógrafos tinha impacto direto em:
+    
     a) Estratégias militares
+    
     b) Moda europeia
+    
     c) Economia asiática
+    
     d) Cultura popular
 
-33. O clima predominante do filme é de:
+37. O clima predominante do filme é de:
+    
     a) Leveza e humor
+    
     b) Mistério e tensão
+    
     c) Fantasia e aventura
+    
     d) Musical e romance
 
-34. A narrativa do filme enfatiza principalmente:
+39. A narrativa do filme enfatiza principalmente:
+    
     a) Tecnologia espacial
+    
     b) Relações familiares
+    
     c) Inteligência, espionagem e guerra
+    
     d) Vida escolar
 
 ---
