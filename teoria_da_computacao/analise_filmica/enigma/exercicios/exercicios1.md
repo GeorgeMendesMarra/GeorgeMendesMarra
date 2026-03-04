@@ -10,7 +10,7 @@
    
    d) Guerra do Vietnã
 
-3. O principal local onde os códigos alemães são decifrados é:
+2. O principal local onde os códigos alemães são decifrados é:
    
    a) Pentágono
    
@@ -20,7 +20,7 @@
    
    d) MI6
 
-5. O protagonista do filme é:
+3. O protagonista do filme é:
    
    a) Alan Turing
    
@@ -30,7 +30,7 @@
    
    d) David Bowman
 
-7. A personagem interpretada por Kate Winslet se chama:
+4. A personagem interpretada por Kate Winslet se chama:
    
    a) Hester Wallace
    
@@ -40,7 +40,7 @@
    
    d) Emily Carter
 
-9. A máquina usada pelos alemães para criptografar mensagens era chamada:
+5. A máquina usada pelos alemães para criptografar mensagens era chamada:
     
    a) Colossus
    
@@ -50,7 +50,7 @@
    
    d) Enigma
 
-11. O grande desafio dos criptógrafos no filme é:
+6. O grande desafio dos criptógrafos no filme é:
     
    a) Construir uma bomba nuclear
    
@@ -60,7 +60,7 @@
    
    d) Desenvolver radar
 
-13. O protagonista é especialista em:
+7. O protagonista é especialista em:
     
    a) Engenharia mecânica
    
@@ -70,7 +70,7 @@
    
    d) Medicina
 
-15. O filme mistura quais gêneros principais?
+8. O filme mistura quais gêneros principais?
     
    a) Comédia e romance
    
@@ -80,7 +80,7 @@
    
    d) Ação e fantasia
 
-17. A história envolve o desaparecimento de qual personagem?
+9. A história envolve o desaparecimento de qual personagem?
     
    a) Hester Wallace
    
@@ -90,7 +90,7 @@
    
    d) Alan Turing
 
-19. A criptografia apresentada no filme está ligada principalmente à:
+10. A criptografia apresentada no filme está ligada principalmente à:
     
     a) Aviação civil
     
@@ -100,7 +100,7 @@
     
     d) Corrida nuclear
 
-21. A atriz Kate Winslet é natural de qual país?
+11. A atriz Kate Winslet é natural de qual país?
     
     a) Estados Unidos
     
@@ -110,7 +110,7 @@
     
     d) Reino Unido
 
-23. A quebra dos códigos Enigma ajudou principalmente a:
+12. A quebra dos códigos Enigma ajudou principalmente a:
     
     a) Prolongar a guerra
     
@@ -120,7 +120,7 @@
     
     d) Impedir a invasão da França
 
-25. O trabalho em Bletchley Park era mantido em:
+13. O trabalho em Bletchley Park era mantido em:
     
     a) Rede nacional
     
@@ -130,7 +130,7 @@
     
     d) Jornal diário
 
-27. O filme foi lançado em qual ano?
+14. O filme foi lançado em qual ano?
     
     a) 1995
     
@@ -140,7 +140,7 @@
     
     d) 2005
 
-29. O nome do livro que inspirou o filme é *Enigma*, escrito por:
+15. O nome do livro que inspirou o filme é *Enigma*, escrito por:
     
     a) Dan Brown
     
@@ -150,7 +150,7 @@
     
     d) John Grisham
 
-31. A máquina Enigma era utilizada por qual país?
+16. A máquina Enigma era utilizada por qual país?
     
     a) Estados Unidos
     
@@ -160,7 +160,7 @@
     
     d) Japão
 
-33. O filme mostra a importância de qual área do conhecimento?
+17. O filme mostra a importância de qual área do conhecimento?
     
     a) Biologia
     
@@ -170,7 +170,7 @@
     
     d) Filosofia
 
-35. O trabalho dos criptógrafos tinha impacto direto em:
+18. O trabalho dos criptógrafos tinha impacto direto em:
     
     a) Estratégias militares
     
@@ -180,7 +180,7 @@
     
     d) Cultura popular
 
-37. O clima predominante do filme é de:
+19. O clima predominante do filme é de:
     
     a) Leveza e humor
     
@@ -190,7 +190,7 @@
     
     d) Musical e romance
 
-39. A narrativa do filme enfatiza principalmente:
+20. A narrativa do filme enfatiza principalmente:
     
     a) Tecnologia espacial
     
