@@ -11,114 +11,166 @@
    d) Guerra do Vietnã
 
 3. O principal local onde os códigos alemães são decifrados é:
+   
    a) Pentágono
+   
    b) Bletchley Park
+   
    c) CIA
+   
    d) MI6
 
-4. O protagonista do filme é:
+5. O protagonista do filme é:
+   
    a) Alan Turing
+   
    b) Tom Jericho
+   
    c) Winston Churchill
+   
    d) David Bowman
 
-5. A personagem interpretada por Kate Winslet se chama:
+7. A personagem interpretada por Kate Winslet se chama:
+   
    a) Hester Wallace
+   
    b) Claire Romilly
+   
    c) Sarah Williams
+   
    d) Emily Carter
 
-6. A máquina usada pelos alemães para criptografar mensagens era chamada:
+9. A máquina usada pelos alemães para criptografar mensagens era chamada:
+    
    a) Colossus
+   
    b) Lorenz
+   
    c) Bombe
+   
    d) Enigma
 
-7. O grande desafio dos criptógrafos no filme é:
+11. O grande desafio dos criptógrafos no filme é:
+    
    a) Construir uma bomba nuclear
+   
    b) Decifrar códigos militares alemães
+   
    c) Invadir Berlim
+   
    d) Desenvolver radar
 
-8. O protagonista é especialista em:
+13. O protagonista é especialista em:
+    
    a) Engenharia mecânica
+   
    b) Física nuclear
+   
    c) Matemática e criptografia
+   
    d) Medicina
 
-9. O filme mistura quais gêneros principais?
+15. O filme mistura quais gêneros principais?
+    
    a) Comédia e romance
+   
    b) Suspense e drama histórico
+   
    c) Terror e ficção científica
+   
    d) Ação e fantasia
 
-10. A história envolve o desaparecimento de qual personagem?
+17. A história envolve o desaparecimento de qual personagem?
+    
    a) Hester Wallace
+   
    b) Tom Jericho
+   
    c) Winston Churchill
+   
    d) Alan Turing
 
-11. A criptografia apresentada no filme está ligada principalmente à:
+19. A criptografia apresentada no filme está ligada principalmente à:
+    
     a) Aviação civil
+    
     b) Guerra naval no Atlântico
+    
     c) Exploração espacial
+    
     d) Corrida nuclear
 
-12. A atriz Kate Winslet é natural de qual país?
+21. A atriz Kate Winslet é natural de qual país?
+    
     a) Estados Unidos
+    
     b) França
+    
     c) Alemanha
+    
     d) Reino Unido
 
-13. A quebra dos códigos Enigma ajudou principalmente a:
+23. A quebra dos códigos Enigma ajudou principalmente a:
+    
     a) Prolongar a guerra
+    
     b) Acelerar o fim da guerra
+    
     c) Fortalecer o exército alemão
+    
     d) Impedir a invasão da França
 
-14. O trabalho em Bletchley Park era mantido em:
+25. O trabalho em Bletchley Park era mantido em:
+    
     a) Rede nacional
+    
     b) Sigilo absoluto
+    
     c) Transmissão pública
+    
     d) Jornal diário
 
-15. O filme foi lançado em qual ano?
+27. O filme foi lançado em qual ano?
+    
     a) 1995
+    
     b) 1999
+    
     c) 2001
+    
     d) 2005
 
-16. O nome do livro que inspirou o filme é *Enigma*, escrito por:
+29. O nome do livro que inspirou o filme é *Enigma*, escrito por:
     a) Dan Brown
     b) Robert Harris
     c) Stephen King
     d) John Grisham
 
-17. A máquina Enigma era utilizada por qual país?
+30. A máquina Enigma era utilizada por qual país?
     a) Estados Unidos
     b) União Soviética
     c) Alemanha Nazista
     d) Japão
 
-18. O filme mostra a importância de qual área do conhecimento?
+31. O filme mostra a importância de qual área do conhecimento?
     a) Biologia
     b) Matemática
     c) Química
     d) Filosofia
 
-19. O trabalho dos criptógrafos tinha impacto direto em:
+32. O trabalho dos criptógrafos tinha impacto direto em:
     a) Estratégias militares
     b) Moda europeia
     c) Economia asiática
     d) Cultura popular
 
-20. O clima predominante do filme é de:
+33. O clima predominante do filme é de:
     a) Leveza e humor
     b) Mistério e tensão
     c) Fantasia e aventura
     d) Musical e romance
 
-21. A narrativa do filme enfatiza principalmente:
+34. A narrativa do filme enfatiza principalmente:
     a) Tecnologia espacial
     b) Relações familiares
     c) Inteligência, espionagem e guerra
