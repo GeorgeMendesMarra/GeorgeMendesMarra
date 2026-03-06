@@ -1,7 +1,3 @@
-Enviar as respostas do questionário para:
-E-mail: trabalhos.george@gmail.com
-Assunto: ADS-N2-Herança-Seu nome 
-
 Questionário sobre Herança em Java:
 
 1.  Defina herança em programação orientada a objetos e explique seu principal objetivo em Java.**
