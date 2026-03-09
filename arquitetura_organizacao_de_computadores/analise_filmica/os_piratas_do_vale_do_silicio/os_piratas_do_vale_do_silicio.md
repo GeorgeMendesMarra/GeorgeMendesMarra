@@ -108,7 +108,8 @@ Lançamento do **Macintosh**, computador da Apple com interface gráfica inovado
 
 ### 1985
 
-A Microsoft inicia o desenvolvimento do **Windows**, sistema operacional com interface gráfica.
+A Microsoft inicia o desenvolvimento do **Windows**, ambiente operacional com interface gráfica. Era necessário ter o sistema
+operacional MS-DOS instalado.
 
 ---
 
