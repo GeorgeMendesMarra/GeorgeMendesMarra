@@ -1,0 +1,107 @@
+# 🧠 Problema da Torre de Hanoi
+
+O problema consiste em **três torres**:
+
+* Torre **A** (origem)
+* Torre **B** (auxiliar)
+* Torre **C** (destino)
+
+Objetivo:
+Mover **todos os discos da torre A para a torre C** obedecendo três regras:
+
+1️⃣ Apenas **um disco pode ser movido por vez**
+2️⃣ **Um disco maior nunca pode ficar sobre um menor**
+3️⃣ Só é possível mover **o disco do topo**
+
+---
+
+# 📚 Implementação da Torre de Hanoi em Python
+
+## Código simples com recursão
+
+```python
+def torre_hanoi(n, origem, destino, auxiliar):
+    
+    if n == 1:
+        print(f"Mover disco 1 de {origem} para {destino}")
+        return
+    
+    torre_hanoi(n-1, origem, auxiliar, destino)
+    
+    print(f"Mover disco {n} de {origem} para {destino}")
+    
+    torre_hanoi(n-1, auxiliar, destino, origem)
+
+
+# número de discos
+n = 3
+
+torre_hanoi(n, 'A', 'C', 'B')
+```
+
+---
+
+# 📊 Saída do programa (3 discos)
+
+```
+Mover disco 1 de A para C
+Mover disco 2 de A para B
+Mover disco 1 de C para B
+Mover disco 3 de A para C
+Mover disco 1 de B para A
+Mover disco 2 de B para C
+Mover disco 1 de A para C
+```
+
+---
+
+# 🔎 Explicação do algoritmo
+
+A lógica recursiva segue três passos:
+
+1️⃣ mover **n-1 discos da origem para a torre auxiliar**
+2️⃣ mover **o maior disco para o destino**
+3️⃣ mover **os n-1 discos da auxiliar para o destino**
+
+Representação:
+
+```
+Origem → Auxiliar
+Origem → Destino
+Auxiliar → Destino
+```
+
+---
+
+# ⏱ Complexidade do algoritmo
+
+Número mínimo de movimentos:
+
+[
+2^n - 1
+]
+
+Exemplos:
+
+| Discos | Movimentos |
+| ------ | ---------- |
+| 1      | 1          |
+| 2      | 3          |
+| 3      | 7          |
+| 4      | 15         |
+| 5      | 31         |
+
+---
+
+# 🎓 Uso didático da Torre de Hanoi
+
+A Torre de Hanoi é muito usada para ensinar:
+
+* **Recursão**
+* **Algoritmos**
+* **Estruturas de dados**
+* **pilhas implícitas (call stack)**
+
+Cada chamada recursiva é armazenada na **pilha de execução do programa**.
+
+---
