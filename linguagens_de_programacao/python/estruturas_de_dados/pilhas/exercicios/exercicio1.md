@@ -8,8 +8,11 @@
 Uma pilha (stack) segue qual princípio?
 
 A) FIFO
+
 B) **LIFO**
+
 C) FILO
+
 D) LILO
 
 ✅ **Resposta correta: B**
@@ -24,8 +27,11 @@ Uma pilha segue o princípio **LIFO (Last In, First Out)**, ou seja, **o último
 Qual estrutura nativa de Python é mais usada para implementar uma pilha?
 
 A) Tuple
+
 B) Dictionary
+
 C) **List**
+
 D) Set
 
 ✅ **Resposta correta: C**
@@ -40,8 +46,11 @@ Em Python, a estrutura **list** é frequentemente usada para implementar pilhas,
 Qual método adiciona um elemento ao topo da pilha em Python?
 
 A) insert()
+
 B) **append()**
+
 C) add()
+
 D) push()
 
 ✅ **Resposta correta: B**
@@ -56,8 +65,11 @@ O método `append()` adiciona um elemento **no final da lista**, representando o
 Qual método remove o elemento do topo da pilha?
 
 A) delete()
+
 B) remove()
+
 C) **pop()**
+
 D) clear()
 
 ✅ **Resposta correta: C**
@@ -284,8 +296,11 @@ A biblioteca `collections` possui estruturas úteis para manipulação de dados.
 Qual estrutura da biblioteca `collections` pode ser usada como pilha?
 
 A) Counter
+
 B) OrderedDict
+
 C) **deque**
+
 D) ChainMap
 
 ✅ **Resposta correta: C**
@@ -346,8 +361,11 @@ Pilhas são usadas para **avaliar expressões e converter notações matemática
 Qual algoritmo usa pilha?
 
 A) Busca em largura
+
 B) **Busca em profundidade (DFS)**
+
 C) Ordenação por seleção
+
 D) Bubble Sort
 
 ✅ **Resposta correta: B**
@@ -362,6 +380,7 @@ O algoritmo **Depth-First Search (DFS)** utiliza pilha para explorar os nós.
 Qual estrutura armazena chamadas de funções em Python?
 
 A) Heap
+
 B) Queue
 C) **Call Stack**
 D) Cache
