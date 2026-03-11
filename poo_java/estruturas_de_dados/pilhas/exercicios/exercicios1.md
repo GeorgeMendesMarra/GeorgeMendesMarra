@@ -7,8 +7,11 @@
 Uma pilha (Stack) segue qual princípio?
 
 A) FIFO
+
 B) **LIFO**
+
 C) FILO
+
 D) LILO
 
 ✅ **Resposta correta: B**
@@ -23,8 +26,11 @@ A pilha segue o princípio **LIFO (Last In, First Out)**, ou seja, **o último e
 O princípio **LIFO** significa:
 
 A) Primeiro que entra é o primeiro que sai
+
 B) **Último que entra é o primeiro que sai**
+
 C) Elementos são removidos aleatoriamente
+
 D) A pilha remove elementos do meio
 
 ✅ **Resposta correta: B**
@@ -39,8 +45,11 @@ No modelo LIFO, o elemento inserido mais recentemente na pilha é o primeiro a s
 Qual classe da biblioteca padrão Java implementa uma pilha?
 
 A) Queue
+
 B) **Stack**
+
 C) ArrayList
+
 D) HashMap
 
 ✅ **Resposta correta: B**
@@ -55,8 +64,11 @@ A classe `Stack` faz parte da biblioteca padrão do Java e fornece métodos para
 A classe `Stack` pertence a qual pacote?
 
 A) **java.util**
+
 B) java.io
+
 C) java.lang
+
 D) java.net
 
 ✅ **Resposta correta: A**
@@ -71,8 +83,11 @@ A classe `Stack` está localizada no pacote **java.util**, que contém diversas 
 Qual método adiciona um elemento na pilha?
 
 A) insert()
+
 B) add()
+
 C) **push()**
+
 D) enqueue()
 
 ✅ **Resposta correta: C**
@@ -87,8 +102,11 @@ O método `push()` é utilizado para **inserir um novo elemento no topo da pilha
 Qual método remove o elemento do topo da pilha?
 
 A) **pop()**
+
 B) removeTop()
+
 C) delete()
+
 D) poll()
 
 ✅ **Resposta correta: A**
@@ -103,8 +121,11 @@ O método `pop()` remove e retorna **o elemento que está no topo da pilha**.
 Qual método retorna o elemento do topo sem removê-lo?
 
 A) get()
+
 B) **peek()**
+
 C) pop()
+
 D) top()
 
 ✅ **Resposta correta: B**
@@ -119,8 +140,11 @@ O método `peek()` permite **visualizar o elemento do topo da pilha sem removê-
 Qual método verifica se a pilha está vazia?
 
 A) empty()
+
 B) **isEmpty()**
+
 C) size()
+
 D) check()
 
 ✅ **Resposta correta: B**
@@ -135,8 +159,11 @@ O método `isEmpty()` retorna **true se a pilha estiver vazia** e **false caso c
 Qual exceção ocorre ao tentar remover elemento de uma pilha vazia?
 
 A) IOException
+
 B) StackOverflowError
+
 C) **EmptyStackException**
+
 D) NullPointerException
 
 ✅ **Resposta correta: C**
@@ -151,8 +178,11 @@ Se `pop()` for chamado em uma pilha vazia, o Java lança a exceção **EmptyStac
 Qual estrutura é utilizada internamente pela classe `Stack`?
 
 A) LinkedList
+
 B) **Vector**
+
 C) ArrayList
+
 D) TreeMap
 
 ✅ **Resposta correta: B**
@@ -167,8 +197,11 @@ A classe `Stack` herda da classe **Vector**, que utiliza uma estrutura baseada e
 A pilha é frequentemente usada em:
 
 A) Ordenação de arquivos
+
 B) **Controle de chamadas de métodos**
+
 C) Comunicação de rede
+
 D) Banco de dados
 
 ✅ **Resposta correta: B**
@@ -183,8 +216,11 @@ A pilha é utilizada no **controle de chamadas de funções e métodos**, forman
 Em Java, o uso da pilha está associado ao conceito de:
 
 A) Heap Memory
+
 B) **Stack Memory**
+
 C) Cache Memory
+
 D) Virtual Memory
 
 ✅ **Resposta correta: B**
