@@ -1,173 +1,348 @@
-**Atividades sobre a máquina Enigma**
+# Atividades Educacionais sobre a Máquina Enigma
 
-O uso de um **Enigma Simulator** (seja o app para mobile ou simuladores web) é uma ferramenta pedagógica poderosa para unir **História, Matemática e Ciência da Computação**.
+O uso de um **simulador da máquina Enigma** (aplicativo mobile ou simulador web) constitui uma ferramenta pedagógica eficiente para integrar conhecimentos de **História, Matemática e Ciência da Computação**.
 
-1. Desafio de Criptoanálise (Matemática/Computação)
-
-O objetivo é entender a **Análise Combinatória** por trás da máquina.
-
-Atividade
-
- Calcular o número total de combinações possíveis da Enigma considerando:
-
-* A ordem dos 3 rotores (de um total de 5 disponíveis).
-* As 26 posições iniciais de cada rotor.
-* As conexões no painel de cabos (*plugboard*).
-
-Faça um programa em Python e outro em Java para auxiliar nos cálculos.
-
-2. Implementação de Algoritmos (Programação)
-
-Atividade: Desenvolver um simulador simplificado em Python e/ou Java.
-
-2.1) Executar o programa maquina_enigma1.py
-
-2.2) Executar o programa maquina_enigma2.py
-
-2.3) Executar o programa enigma.jar
-
-3. Simulação Histórica (História/Interdisciplinar)
-
-Focado no contexto da **Segunda Guerra Mundial** e no trabalho de **Alan Turing**.
-
-* **Atividade (Roleplay):** Divida a classe em dois grupos: "Operadores Alemães" e "Codebreakers de Bletchley Park".
-1. Os Alemães escolhem uma configuração secreta no app e entregam apenas a mensagem cifrada.
-2. Os Codebreakers devem tentar achar padrões (como as famosas "cribs" — palavras comuns como "Heil Hitler" ou previsões do tempo) para reduzir as possibilidades e tentar descobrir a configuração.
-
-
-* **Discussão:** Debater como a falha humana (repetição de chaves) foi o que permitiu a quebra do código, e não apenas a força bruta.
+A partir dessa abordagem interdisciplinar, os estudantes podem compreender conceitos fundamentais de **criptografia clássica**, **análise combinatória**, **algoritmos** e **segurança da informação**, além de conhecer o contexto histórico da criptografia durante a Segunda Guerra Mundial.
 
 ---
 
-### Comparativo de Conceitos abordados
+# 1. Desafio de Criptoanálise
 
-| Conceito | Aplicação no Simulador |
-| --- | --- |
-| **Cifra de Substituição** | Cada letra pressionada vira outra letra. |
-| **Polialfabetismo** | O alfabeto de substituição muda a cada clique porque os rotores giram. |
-| **Reciprocidade** | A mesma configuração que cifra é a que decifra (devido ao Refletor). |
-| **Segurança da Informação** | Importância do segredo da chave vs. segredo do algoritmo. |
+### (Matemática e Ciência da Computação)
 
-### ✍️ Atividade: Operação Bletchley Park
+O objetivo desta atividade é compreender a **complexidade combinatória** da máquina Enigma e como seu grande número de configurações contribuía para a segurança das mensagens militares.
 
-**Objetivo:** Decifrar uma mensagem interceptada utilizando a lógica da Enigma.
+## Atividade
 
-#### 1. A Configuração (A Chave do Dia)
+Calcular o **número total de combinações possíveis** da máquina Enigma considerando:
 
-Para que o simulador funcione, todos devem configurar a máquina exatamente da mesma forma. No seu **Enigma Simulator**, ajuste os seguintes parâmetros:
+* A **ordem de 3 rotores** escolhidos entre **5 disponíveis**.
+* As **26 posições iniciais** possíveis para cada rotor.
+* As **conexões do Plugboard** (painel de cabos).
+
+Esses cálculos envolvem conceitos de:
+
+* **Permutação**
+* **Combinação**
+* **Análise combinatória**
+
+### Exercício prático
+
+Desenvolver programas para auxiliar nesses cálculos em:
+
+* **Python**
+* **Java**
+
+---
+
+# 2. Implementação de Algoritmos
+
+### (Programação)
+
+Nesta etapa, os alunos devem explorar o funcionamento prático da criptografia implementando ou executando simuladores da máquina Enigma.
+
+## Atividade
+
+Executar os seguintes programas:
+
+1. **maquina_enigma1.py**
+2. **maquina_enigma2.py**
+3. **enigma.jar**
+
+Objetivos da atividade:
+
+* Compreender a lógica de **substituição de caracteres**
+* Observar o **movimento dos rotores**
+* Entender como ocorre a **cifragem e decifragem da mensagem**
+
+---
+
+# 3. Simulação Histórica
+
+### (História e Computação)
+
+Esta atividade é baseada no contexto da **Segunda Guerra Mundial** e no trabalho de criptoanálise realizado em **Bletchley Park**, liderado por Alan Turing.
+
+## Atividade (Roleplay)
+
+Dividir a turma em dois grupos:
+
+### Grupo 1 — Operadores Alemães
+
+* Escolhem uma configuração secreta no simulador.
+* Criam uma mensagem cifrada.
+* Entregam apenas o **texto criptografado** aos adversários.
+
+### Grupo 2 — Codebreakers de Bletchley Park
+
+* Recebem a mensagem cifrada.
+
+* Tentam identificar padrões e possíveis palavras conhecidas (**cribs**), como:
+
+* "Heil Hitler"
+
+* previsões meteorológicas
+
+* saudações militares
+
+O objetivo é **reduzir o espaço de busca** e tentar descobrir a configuração da máquina.
+
+### Discussão
+
+Debater com os alunos que a quebra da Enigma não ocorreu apenas por **força bruta computacional**, mas também devido a:
+
+* **erros humanos**
+* **repetição de padrões**
+* **uso previsível da linguagem**
+
+---
+
+# Conceitos Criptográficos Abordados
+
+| Conceito                    | Aplicação na Enigma                                         |
+| --------------------------- | ----------------------------------------------------------- |
+| **Cifra de Substituição**   | Cada tecla pressionada gera outra letra.                    |
+| **Polialfabetismo**         | O alfabeto de substituição muda a cada rotação dos rotores. |
+| **Reciprocidade**           | A mesma configuração cifra e decifra a mensagem.            |
+| **Segurança da Informação** | A segurança depende do segredo da chave e não do algoritmo. |
+
+---
+
+# Atividade Prática
+
+## Operação Bletchley Park
+
+### Objetivo
+
+Decifrar uma mensagem interceptada utilizando a lógica da máquina Enigma.
+
+---
+
+## 1. Configuração da Máquina (Chave do Dia)
+
+No simulador da Enigma, configurar:
 
 * **Modelo:** Enigma I (ou M3)
-* **Rotores:** I - II - III (nesta ordem, da esquerda para a direita)
-* **Posição Inicial (Ground Setting):** A - B - C
-* **Anéis (Ring Settings):** 01 - 01 - 01 (ou A - A - A)
-* **Plugboard (Painel de Cabos):** Conecte as letras **A-M**, **B-N** e **C-O**.
+* **Rotores:** I – II – III (da esquerda para a direita)
+* **Posição inicial:** A – B – C
+* **Ring Settings:** 01 – 01 – 01 (A – A – A)
+* **Plugboard:**
 
-#### 2. O Desafio (A Mensagem Interceptada)
-
-Digite o código abaixo no simulador após configurá-lo:
-
-> **PXQZ GBDN**
-
-#### 3. Tarefas para os Alunos:
-
-1. **Decifração:** Qual é a mensagem oculta? (Dica: É uma saudação em inglês).
-2. **Teste de Reciprocidade:** Sem resetar a máquina, apague o texto e digite o resultado que você encontrou. O que acontece na saída?
-3. **Análise de Erro:** Mude apenas o primeiro rotor da posição **A** para a posição **B** e tente digitar a mensagem original novamente. O resultado ainda faz sentido? Por quê?
+  * A ↔ M
+  * B ↔ N
+  * C ↔ O
 
 ---
 
-### 💡 Por que isso é uma atividade acadêmica?
+## 2. Mensagem Interceptada
 
-Esta atividade demonstra três pilares da criptografia clássica:
+Digite no simulador:
 
-* **Espaço de Chaves:** Mostra que um erro mínimo na configuração (mudar uma letra no rotor) torna a mensagem ilegível, exemplificando a sensibilidade do algoritmo.
-* **Logística Militar:** Explica por que os alemães precisavam distribuir livros de códigos mensais com as "chaves do dia".
-* **Matemática Discreta:** Introduz o conceito de **Permutação**, onde cada letra é mapeada para outra através de um caminho elétrico complexo.
-
-
-
-
-Excelente! Aqui está um modelo de **Livro de Códigos (Codebook)** para uma semana inteira de atividades. Você pode imprimir e entregar aos alunos, ou projetar na sala.
-
-Cada dia da semana possui uma configuração diferente. Isso forçará os alunos a "resetarem" a máquina e entenderem que o segredo não está apenas na máquina, mas na **combinação variável**.
+```
+PXQZ GBDN
+```
 
 ---
 
-### 🗓️ Livro de Códigos: Operação Simulação (Semana 01)
+## 3. Tarefas para os alunos
 
-| Dia | Rotores (Ordem) | Posição Inicial | Plugboard (Cabos) |
-| --- | --- | --- | --- |
-| **Segunda** | I - II - III | D - E - F | A-B, C-D |
-| **Terça** | II - I - III | G - H - I | X-Y, Z-W |
-| **Quarta** | III - II - I | J - K - L | M-N, O-P |
-| **Quinta** | I - III - II | M - N - O | Q-R, S-T |
-| **Sexta** | II - III - I | P - Q - R | U-V, E-R |
+### 1. Decifração
 
----
+Descobrir qual é a mensagem original.
 
-### 🛠️ Dinâmica Sugerida para a Aula:
+Dica: trata-se de **uma saudação em inglês**.
 
-1. **A Estação de Transmissão:** Divida a turma em duplas. O aluno A é o "Transmissor" e o aluno B é o "Receptor".
-2. **A Mensagem Secreta:** O Transmissor escolhe o dia da semana no Livro de Códigos, configura o app, escreve uma frase curta (ex: "ATACAR AS DEZ") e anota apenas o **resultado cifrado**.
-3. **A Interceptação:** O Transmissor passa o papel com a mensagem cifrada e o dia da semana para o Receptor.
-4. **A Decifração:** O Receptor configura sua máquina de acordo com o dia e deve obter a frase original.
+### 2. Teste de Reciprocidade
 
-### 🧠 Perguntas para o Relatório Acadêmico:
+Sem reiniciar a máquina:
 
-Para transformar a brincadeira em uma atividade avaliativa, peça que respondam:
+* apague o texto
+* digite novamente a mensagem decifrada
 
-* **P1:** O que acontece se você inverter a ordem dos rotores (ex: usar II-I-III em vez de I-II-III)? A mensagem ainda pode ser lida?
-* **P2:** Por que o **Plugboard** (painel de cabos) aumentava tanto a segurança da máquina? (Dica: Pense na quantidade de combinações extras que 10 cabos criam).
-* **P3:** Se um espião roubasse a máquina Enigma, mas não tivesse o **Livro de Códigos**, ele conseguiria ler as mensagens? Justifique.
+Observe o resultado.
 
----
-Essa é a grande ironia da história da criptografia: a peça que tornava a Enigma prática e fácil de usar foi exatamente o que a destruiu.
+### 3. Análise de erro
 
-O **Refletor** (ou *Umkehrwalze*) era um disco fixo no final da sequência de rotores. Ele pegava o sinal elétrico e o mandava de volta pelos mesmos rotores por um caminho diferente.
+Altere apenas a posição do primeiro rotor:
+
+A → B
+
+Digite novamente a mensagem original.
+
+Pergunta:
+
+> O resultado ainda faz sentido?
+> Por que pequenas mudanças na chave tornam a mensagem ilegível?
 
 ---
 
-### 1. A Vantagem
+# Por que esta é uma atividade acadêmica?
 
-Graças ao refletor, a máquina era **recíproca**.
+Esta atividade demonstra três pilares da criptografia:
 
-* Se você configurasse a máquina e digitasse `A` e saísse `X`, bastava digitar `X` para sair `A`.
-* Isso facilitava a vida dos soldados no campo de batalha, pois eles não precisavam de uma máquina para "cifrar" e outra para "decifrar". Era o mesmo processo.
+### 1. Espaço de chaves
 
-### 2. A Falha Fatal (O que Turing explorou)
+Uma pequena mudança na configuração gera resultados completamente diferentes.
 
-Matematicamente, para que a reciprocidade funcionasse, o refletor trocava as letras em pares. Isso criava uma regra física absoluta: **uma letra nunca poderia ser conectada a si mesma.**
-
-> **A Regra de Ouro de Turing:** Se você pressionasse a tecla `T`, a lâmpada `T` nunca, sob nenhuma circunstância, acenderia.
-
-### 3. Como isso quebrou o código?
-
-Imagine que Turing interceptou a mensagem: `S P J Q Q Z`
-E ele suspeitava (a "Crib") que a palavra original fosse: `W E T T E R` (Tempo, em alemão).
-
-Ele alinhava as duas e fazia uma verificação lógica rápida:
-
-1. `W` coincide com `S`? (Possível)
-2. `E` coincide com `P`? (Possível)
-3. **`T` coincide com `J`?** (Possível)
-4. **`T` coincide com `Q`?** (Possível)
-... e assim por diante.
-
-Mas, se em algum alinhamento a letra da "Crib" coincidisse com a letra cifrada (ex: um `T` da mensagem original alinhado com um `T` da mensagem cifrada), Turing sabia **instantaneamente** que aquela posição e aquela configuração de rotores estavam erradas.
-
-### 4. A Bombe como um "Detetor de Contradições"
-
-A máquina Bombe de Turing era um exército de rotores elétricos que buscava justamente essas colisões.
-
-* Ela testava milhares de posições por segundo.
-* Sempre que a eletricidade tentava completar um circuito onde uma letra "era ela mesma", a máquina descartava aquela opção e passava para a próxima.
-* Quando a máquina **não encontrava** uma contradição, ela parava. Aquela era a chave provável.
+Isso demonstra o conceito de **sensibilidade à chave**.
 
 ---
 
-### Reflexão Final para a Atividade:
+### 2. Logística militar
 
-Você pode perguntar aos seus alunos:
-*"Vocês notaram que, enquanto digitavam, nenhuma letra que vocês pressionaram resultou nela mesma? Se vocês tivessem que decifrar uma mensagem sem a chave, como usariam essa 'falha' para eliminar as tentativas erradas?"*
+Os alemães precisavam distribuir **livros de códigos mensais** contendo as **chaves do dia**.
 
-Isso fecha o ciclo da atividade, unindo a prática do app com o raciocínio lógico que mudou o curso da Segunda Guerra Mundial.
+---
+
+### 3. Matemática discreta
+
+Cada transformação da máquina pode ser vista como uma **permutação de letras**, conceito fundamental da criptografia.
+
+---
+
+# Livro de Códigos — Operação Simulação (Semana 01)
+
+Cada dia possui uma configuração diferente da máquina.
+
+| Dia     | Rotores      | Posição Inicial | Plugboard |
+| ------- | ------------ | --------------- | --------- |
+| Segunda | I – II – III | D – E – F       | A-B, C-D  |
+| Terça   | II – I – III | G – H – I       | X-Y, Z-W  |
+| Quarta  | III – II – I | J – K – L       | M-N, O-P  |
+| Quinta  | I – III – II | M – N – O       | Q-R, S-T  |
+| Sexta   | II – III – I | P – Q – R       | U-V, E-R  |
+
+---
+
+# Dinâmica de Aula
+
+### 1. Estação de transmissão
+
+Dividir os alunos em **duplas**:
+
+* Aluno A: transmissor
+* Aluno B: receptor
+
+---
+
+### 2. Mensagem secreta
+
+O transmissor:
+
+1. Escolhe um dia no livro de códigos
+2. Configura o simulador
+3. Escreve uma frase curta
+
+Exemplo:
+
+```
+ATACAR AS DEZ
+```
+
+4. Anota apenas a **mensagem cifrada**
+
+---
+
+### 3. Interceptação
+
+O transmissor entrega ao colega:
+
+* o **texto cifrado**
+* o **dia da semana**
+
+---
+
+### 4. Decifração
+
+O receptor configura sua máquina de acordo com o livro de códigos e tenta recuperar a mensagem original.
+
+---
+
+# Perguntas para Relatório
+
+**P1.** O que acontece se a ordem dos rotores for alterada?
+Exemplo: II-I-III em vez de I-II-III.
+
+---
+
+**P2.** Por que o Plugboard aumentava significativamente a segurança da máquina?
+
+---
+
+**P3.** Se um espião roubasse uma máquina Enigma, mas não tivesse o livro de códigos, ele conseguiria ler as mensagens? Justifique.
+
+---
+
+# O Papel do Refletor na Enigma
+
+O **refletor** (*Umkehrwalze*) era um disco fixo que redirecionava o sinal elétrico de volta pelos rotores.
+
+---
+
+## Vantagem
+
+Graças ao refletor, a máquina era **recíproca**:
+
+Se
+
+```
+A → X
+```
+
+então
+
+```
+X → A
+```
+
+Isso permitia que a mesma máquina fosse usada para **cifrar e decifrar mensagens**.
+
+---
+
+## A falha explorada por Turing
+
+Devido ao funcionamento do refletor, existia uma regra fundamental:
+
+> **Uma letra nunca poderia ser cifrada como ela mesma.**
+
+Se o operador digitasse:
+
+```
+T
+```
+
+a lâmpada **T nunca acenderia**.
+
+Essa propriedade foi explorada por Alan Turing no desenvolvimento da máquina **Bombe**.
+
+---
+
+## A lógica usada na criptoanálise
+
+Se os analistas suspeitavam que a mensagem continha uma palavra conhecida (*crib*), podiam testar alinhamentos.
+
+Se em algum ponto:
+
+```
+T → T
+```
+
+isso significava que aquela configuração era **impossível**, permitindo eliminar rapidamente milhares de combinações.
+
+---
+
+# Reflexão Final para os Alunos
+
+Durante o uso do simulador, observe:
+
+> Alguma vez uma letra digitada resultou na mesma letra?
+
+Se não, pergunte-se:
+
+**Como essa propriedade poderia ser usada para eliminar configurações incorretas durante a quebra de um código?**
+
+---
+
+✅ Esse tipo de atividade permite compreender como **matemática, lógica e computação** contribuíram para um dos episódios mais importantes da história da criptografia durante a **World War II**.
+
+---
