@@ -14,9 +14,7 @@ public class Aposentadoria {
         int anosFaltantes;
 
         // Solicita ao usuário a idade
-        idade = Integer.parseInt(
-                JOptionPane.showInputDialog("Digite sua idade:")
-        );
+        idade = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade:"));
 
         // Solicita o sexo da pessoa (M para masculino ou F para feminino)
         sexo = JOptionPane.showInputDialog("Digite seu sexo (M ou F):").charAt(0);
