@@ -5,9 +5,13 @@
 O monitor de computador é classificado como qual tipo de dispositivo?
 
 A) Dispositivo de entrada
+
 B) Dispositivo de armazenamento
+
 C) Dispositivo de saída
+
 D) Dispositivo de processamento
+
 E) Dispositivo de rede
 
 ✅ **Resposta:** C
@@ -20,9 +24,13 @@ E) Dispositivo de rede
 Qual tecnologia foi utilizada nos primeiros monitores de computador?
 
 A) LCD
+
 B) LED
+
 C) OLED
+
 D) CRT
+
 E) Plasma
 
 ✅ **Resposta:** D
@@ -35,9 +43,13 @@ E) Plasma
 O que significa a sigla **CRT**?
 
 A) Computer Response Technology
+
 B) Cathode Ray Tube
+
 C) Color Resolution Technology
+
 D) Central Rendering Terminal
+
 E) Computer Ray Technology
 
 ✅ **Resposta:** B
@@ -50,9 +62,13 @@ E) Computer Ray Technology
 Qual característica era comum nos monitores CRT?
 
 A) Eram finos e leves
+
 B) Consumiam pouca energia
+
 C) Eram grandes e pesados
+
 D) Não utilizavam eletricidade
+
 E) Eram flexíveis
 
 ✅ **Resposta:** C
@@ -65,9 +81,13 @@ E) Eram flexíveis
 Qual tecnologia substituiu gradualmente os monitores CRT?
 
 A) LCD
+
 B) Plasma
+
 C) OLED
+
 D) Laser
+
 E) VGA
 
 ✅ **Resposta:** A
@@ -80,9 +100,13 @@ E) VGA
 O que significa a sigla **LCD**?
 
 A) Liquid Crystal Display
+
 B) Light Control Device
+
 C) Linear Computer Display
+
 D) Liquid Computer Driver
+
 E) Light Crystal Device
 
 ✅ **Resposta:** A
@@ -95,9 +119,13 @@ E) Light Crystal Device
 Qual das alternativas é uma vantagem dos monitores LCD em relação aos CRT?
 
 A) Maior peso
+
 B) Maior consumo de energia
+
 C) Tela mais fina
+
 D) Mais calor
+
 E) Menor qualidade de imagem
 
 ✅ **Resposta:** C
@@ -110,9 +138,13 @@ E) Menor qualidade de imagem
 Os monitores LED são considerados:
 
 A) Uma tecnologia totalmente diferente do LCD
+
 B) Uma evolução do LCD
+
 C) Uma substituição da CPU
+
 D) Um dispositivo de entrada
+
 E) Um tipo de impressora
 
 ✅ **Resposta:** B
@@ -125,9 +157,13 @@ E) Um tipo de impressora
 Qual tecnologia de monitor permite que cada pixel emita sua própria luz?
 
 A) CRT
+
 B) LCD
+
 C) LED
+
 D) OLED
+
 E) VGA
 
 ✅ **Resposta:** D
@@ -140,9 +176,13 @@ E) VGA
 Qual destas resoluções é considerada **Full HD**?
 
 A) 800 × 600
+
 B) 1024 × 768
+
 C) 1280 × 720
+
 D) 1920 × 1080
+
 E) 3840 × 2160
 
 ✅ **Resposta:** D
@@ -155,9 +195,13 @@ E) 3840 × 2160
 A resolução de um monitor representa:
 
 A) A quantidade de energia consumida
+
 B) O tamanho físico da tela
+
 C) A quantidade de pixels exibidos na tela
+
 D) A velocidade do processador
+
 E) A memória do computador
 
 ✅ **Resposta:** C
@@ -170,9 +214,13 @@ E) A memória do computador
 Qual das opções representa uma resolução **4K**?
 
 A) 1920 × 1080
+
 B) 2560 × 1440
+
 C) 3840 × 2160
+
 D) 800 × 600
+
 E) 1280 × 720
 
 ✅ **Resposta:** C
@@ -185,9 +233,13 @@ E) 1280 × 720
 Qual é a função principal do monitor?
 
 A) Processar dados
+
 B) Armazenar arquivos
+
 C) Exibir informações visuais
+
 D) Controlar o sistema operacional
+
 E) Conectar dispositivos de rede
 
 ✅ **Resposta:** C
@@ -200,9 +252,13 @@ E) Conectar dispositivos de rede
 A taxa de atualização de um monitor é medida em:
 
 A) Volts
+
 B) Hertz
+
 C) Bytes
+
 D) Pixels
+
 E) Watts
 
 ✅ **Resposta:** B
@@ -215,9 +271,13 @@ E) Watts
 Monitores com **taxa de atualização alta (144Hz ou mais)** são mais utilizados em:
 
 A) Servidores
+
 B) Impressoras
+
 C) Jogos eletrônicos
+
 D) Redes de computadores
+
 E) Sistemas operacionais
 
 ✅ **Resposta:** C
@@ -230,9 +290,13 @@ E) Sistemas operacionais
 Qual tecnologia permite monitores com telas curvas?
 
 A) CRT
+
 B) LED / LCD moderno
+
 C) Impressoras térmicas
+
 D) Discos rígidos
+
 E) Memória RAM
 
 ✅ **Resposta:** B
@@ -245,9 +309,13 @@ E) Memória RAM
 Qual destas opções **não é uma tecnologia de monitor**?
 
 A) CRT
+
 B) LCD
+
 C) LED
+
 D) OLED
+
 E) SSD
 
 ✅ **Resposta:** E
@@ -260,9 +328,13 @@ E) SSD
 O tamanho de um monitor é medido em:
 
 A) Bytes
+
 B) Hertz
+
 C) Polegadas
+
 D) Megabytes
+
 E) Watts
 
 ✅ **Resposta:** C
@@ -275,9 +347,13 @@ E) Watts
 Os primeiros monitores monocromáticos geralmente exibiam qual cor?
 
 A) Azul
+
 B) Verde ou âmbar
+
 C) Vermelho
+
 D) Branco
+
 E) Roxo
 
 ✅ **Resposta:** B
@@ -290,9 +366,13 @@ E) Roxo
 Os monitores atuais podem ter resoluções como:
 
 A) 720p apenas
+
 B) 1080p apenas
+
 C) 4K e 8K
+
 D) Apenas 640 × 480
+
 E) Somente 800 × 600
 
 ✅ **Resposta:** C
