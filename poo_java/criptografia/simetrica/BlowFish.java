@@ -5,7 +5,7 @@ import javax.crypto.spec.SecretKeySpec;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
-public class BlowfishEncryption {
+public class BlowFish {
 
     private static final String ALGORITHM = "Blowfish";
 
