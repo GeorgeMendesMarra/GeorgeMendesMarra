@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.security.SecureRandom;
 import java.nio.charset.StandardCharsets;
 
-public class ExemploOTP {
+public class OTP {
 
     public static byte[] encrypt(byte[] plaintext, byte[] key) {
         if (plaintext.length != key.length) {
