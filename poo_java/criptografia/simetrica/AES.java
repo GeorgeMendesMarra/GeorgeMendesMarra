@@ -5,7 +5,7 @@ import javax.crypto.spec.IvParameterSpec;
 import java.security.SecureRandom;
 import java.util.Base64;
 
-public class ExemploAES {
+public class AES {
 
     private static final String ALGO = "AES/CBC/PKCS5Padding";
 
