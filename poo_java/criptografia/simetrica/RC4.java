@@ -4,7 +4,7 @@ import javax.crypto.spec.SecretKeySpec;
 import java.util.Base64;
 import java.nio.charset.StandardCharsets;
 
-public class ExemploRC4 {
+public class RC4 {
 
     private static final String ALGORITHM = "ARCFOUR";
 
