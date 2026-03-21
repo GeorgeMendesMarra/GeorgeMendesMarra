@@ -13,7 +13,7 @@ public class MediaAluno2 {
         // Painel principal
         JPanel panel = new JPanel(new BorderLayout(10, 10));
 
-        // 📋 Formulário
+        // Formulário
         JPanel formPanel = new JPanel(new GridLayout(3, 2, 10, 10));
 
         JTextField campoProva1 = new JTextField();
@@ -29,12 +29,12 @@ public class MediaAluno2 {
         formPanel.add(new JLabel("Trabalho:"));
         formPanel.add(campoTrabalho);
 
-        // 📊 Área de resultado
+        // Área de resultado
         JTextArea resultadoArea = new JTextArea(4, 30);
         resultadoArea.setEditable(false);
         resultadoArea.setBorder(BorderFactory.createTitledBorder("Resultado"));
 
-        // 🔘 Botões
+        // Botões
         JPanel buttonPanel = new JPanel();
 
         JButton btnCalcular = new JButton("Calcular");
@@ -53,11 +53,11 @@ public class MediaAluno2 {
         frame.add(panel);
         frame.setVisible(true);
 
-        // 🔘 BOTÃO CALCULAR
+        // BOTÃO CALCULAR
         btnCalcular.addActionListener(e -> {
             try {
 
-                // ✅ Validação
+                // Validação
                 if (campoProva1.getText().isEmpty() ||
                     campoProva2.getText().isEmpty() ||
                     campoTrabalho.getText().isEmpty()) {
@@ -73,12 +73,12 @@ public class MediaAluno2 {
                 double n2 = Double.parseDouble(campoProva2.getText());
                 double trab = Double.parseDouble(campoTrabalho.getText());
 
-                // 🎯 Cálculo da média
+                // Cálculo da média
                 double media = (n1 + n2 + trab) / 3;
 
                 String resultado = (media >= 6) ? "Aprovado" : "Reprovado";
 
-                // 📊 Resultado
+                // Resultado
                 resultadoArea.setText(
                         "Média: " + String.format("%.2f", media) +
                         "\nSituação: " + resultado
@@ -92,7 +92,7 @@ public class MediaAluno2 {
             }
         });
 
-        // 🔘 BOTÃO LIMPAR
+        // BOTÃO LIMPAR
         btnLimpar.addActionListener(e -> {
             campoProva1.setText("");
             campoProva2.setText("");
@@ -100,7 +100,7 @@ public class MediaAluno2 {
             resultadoArea.setText("");
         });
 
-        // 🔘 BOTÃO SAIR
+        // BOTÃO SAIR
         btnSair.addActionListener(e -> System.exit(0));
     }
 }
