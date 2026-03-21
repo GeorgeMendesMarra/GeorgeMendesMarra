@@ -13,7 +13,7 @@ public class DescontoProduto2 {
         // Painel principal
         JPanel panel = new JPanel(new BorderLayout(10, 10));
 
-        // 📋 Formulário
+        // Formulário
         JPanel formPanel = new JPanel(new GridLayout(2, 2, 10, 10));
 
         JTextField campoValor = new JTextField();
@@ -25,12 +25,12 @@ public class DescontoProduto2 {
         formPanel.add(new JLabel("Desconto (%):"));
         formPanel.add(campoPercentual);
 
-        // 📊 Área de resultado
+        // Área de resultado
         JTextArea resultadoArea = new JTextArea(5, 30);
         resultadoArea.setEditable(false);
         resultadoArea.setBorder(BorderFactory.createTitledBorder("Resultado"));
 
-        // 🔘 Botões
+        // Botões
         JPanel buttonPanel = new JPanel();
 
         JButton btnCalcular = new JButton("Calcular");
@@ -49,11 +49,11 @@ public class DescontoProduto2 {
         frame.add(panel);
         frame.setVisible(true);
 
-        // 🔘 BOTÃO CALCULAR
+        // BOTÃO CALCULAR
         btnCalcular.addActionListener(e -> {
             try {
 
-                // ✅ Validação
+                // Validação
                 if (campoValor.getText().isEmpty() ||
                     campoPercentual.getText().isEmpty()) {
 
@@ -67,11 +67,11 @@ public class DescontoProduto2 {
                 double valorProduto = Double.parseDouble(campoValor.getText());
                 double percentual = Double.parseDouble(campoPercentual.getText());
 
-                // 💰 Cálculos
+                // Cálculos
                 double desconto = valorProduto * percentual / 100;
                 double valorFinal = valorProduto - desconto;
 
-                // 📊 Resultado
+                // Resultado
                 resultadoArea.setText(
                         "Valor do produto: R$ " + valorProduto +
                         "\nDesconto: " + percentual + "%" +
@@ -87,14 +87,14 @@ public class DescontoProduto2 {
             }
         });
 
-        // 🔘 BOTÃO LIMPAR
+        //  BOTÃO LIMPAR
         btnLimpar.addActionListener(e -> {
             campoValor.setText("");
             campoPercentual.setText("");
             resultadoArea.setText("");
         });
 
-        // 🔘 BOTÃO SAIR
+        // BOTÃO SAIR
         btnSair.addActionListener(e -> System.exit(0));
     }
 }
