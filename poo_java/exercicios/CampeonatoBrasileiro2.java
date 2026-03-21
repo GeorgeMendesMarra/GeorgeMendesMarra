@@ -13,7 +13,7 @@ public class CampeonatoBrasileiro2 {
         // Painel principal
         JPanel panel = new JPanel(new BorderLayout(10, 10));
 
-        // 📋 Formulário
+        // Formulário
         JPanel formPanel = new JPanel(new GridLayout(2, 2, 10, 10));
 
         JTextField campoLider = new JTextField();
@@ -25,12 +25,12 @@ public class CampeonatoBrasileiro2 {
         formPanel.add(new JLabel("Pontos do Lanterna:"));
         formPanel.add(campoLanterna);
 
-        // 📊 Área de resultado
+        // Área de resultado
         JTextArea resultadoArea = new JTextArea(3, 30);
         resultadoArea.setEditable(false);
         resultadoArea.setBorder(BorderFactory.createTitledBorder("Resultado"));
 
-        // 🔘 Botões
+        // Botões
         JPanel buttonPanel = new JPanel();
 
         JButton btnCalcular = new JButton("Calcular");
@@ -49,11 +49,11 @@ public class CampeonatoBrasileiro2 {
         frame.add(panel);
         frame.setVisible(true);
 
-        // 🔘 BOTÃO CALCULAR
+        // BOTÃO CALCULAR
         btnCalcular.addActionListener(e -> {
             try {
 
-                // ✅ Validação
+                // Validação
                 if (campoLider.getText().isEmpty() ||
                     campoLanterna.getText().isEmpty()) {
 
@@ -69,7 +69,7 @@ public class CampeonatoBrasileiro2 {
 
                 int diferenca = lider - lanterna;
 
-                // 🔥 Ajuste correto: arredondar para cima
+                // Ajuste correto: arredondar para cima
                 int vitorias = (int) Math.ceil(diferenca / 3.0);
 
                 resultadoArea.setText(
@@ -85,14 +85,14 @@ public class CampeonatoBrasileiro2 {
             }
         });
 
-        // 🔘 BOTÃO LIMPAR
+        // BOTÃO LIMPAR
         btnLimpar.addActionListener(e -> {
             campoLider.setText("");
             campoLanterna.setText("");
             resultadoArea.setText("");
         });
 
-        // 🔘 BOTÃO SAIR
+        // BOTÃO SAIR
         btnSair.addActionListener(e -> System.exit(0));
     }
 }
