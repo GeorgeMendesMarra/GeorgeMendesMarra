@@ -55,10 +55,10 @@ public class Aposentadoria2 {
         frame.add(panel);
         frame.setVisible(true);
 
-        // 🔘 BOTÃO CALCULAR
+        // BOTÃO CALCULAR
         btnCalcular.addActionListener((ActionEvent e) -> {
             try {
-                // 🔴 VALIDAÇÃO
+                //  VALIDAÇÃO
                 if (campoIdade.getText().isEmpty() ||
                     campoSexo.getText().isEmpty() ||
                     campoContribuicao.getText().isEmpty()) {
@@ -107,7 +107,7 @@ public class Aposentadoria2 {
             }
         });
 
-        // 🔘 BOTÃO LIMPAR
+        // BOTÃO LIMPAR
         btnLimpar.addActionListener(e -> {
             campoIdade.setText("");
             campoSexo.setText("");
@@ -115,7 +115,7 @@ public class Aposentadoria2 {
             resultadoArea.setText("");
         });
 
-        // 🔘 BOTÃO SAIR
+        //  BOTÃO SAIR
         btnSair.addActionListener(e -> System.exit(0));
     }
 }
