@@ -13,7 +13,7 @@ public class CalculoITBI2 {
         // Painel principal
         JPanel panel = new JPanel(new BorderLayout(10, 10));
 
-        // 📋 Formulário
+        // Formulário
         JPanel formPanel = new JPanel(new GridLayout(3, 2, 10, 10));
 
         JTextField campoTransacao = new JTextField();
@@ -29,12 +29,12 @@ public class CalculoITBI2 {
         formPanel.add(new JLabel("Percentual ITBI (%):"));
         formPanel.add(campoPercentual);
 
-        // 📊 Área de resultado
+        // Área de resultado
         JTextArea resultadoArea = new JTextArea(4, 30);
         resultadoArea.setEditable(false);
         resultadoArea.setBorder(BorderFactory.createTitledBorder("Resultado"));
 
-        // 🔘 Botões
+        // Botões
         JPanel buttonPanel = new JPanel();
 
         JButton btnCalcular = new JButton("Calcular");
@@ -53,11 +53,11 @@ public class CalculoITBI2 {
         frame.add(panel);
         frame.setVisible(true);
 
-        // 🔘 BOTÃO CALCULAR
+        // BOTÃO CALCULAR
         btnCalcular.addActionListener(e -> {
             try {
 
-                // ✅ VALIDAÇÃO
+                // VALIDAÇÃO
                 if (campoTransacao.getText().isEmpty() ||
                     campoVenal.getText().isEmpty() ||
                     campoPercentual.getText().isEmpty()) {
@@ -73,13 +73,13 @@ public class CalculoITBI2 {
                 double valorVenal = Double.parseDouble(campoVenal.getText());
                 double percentual = Double.parseDouble(campoPercentual.getText());
 
-                // 🔍 Maior valor
+                // Maior valor
                 double maiorValor = Math.max(valorTransacao, valorVenal);
 
-                // 💰 Cálculo do imposto
+                // Cálculo do imposto
                 double imposto = maiorValor * percentual / 100;
 
-                // 📊 Resultado
+                // Resultado
                 resultadoArea.setText(
                         "Maior valor considerado: R$ " + maiorValor +
                         "\nPercentual: " + percentual + "%" +
@@ -94,7 +94,7 @@ public class CalculoITBI2 {
             }
         });
 
-        // 🔘 BOTÃO LIMPAR
+        // BOTÃO LIMPAR
         btnLimpar.addActionListener(e -> {
             campoTransacao.setText("");
             campoVenal.setText("");
@@ -102,7 +102,7 @@ public class CalculoITBI2 {
             resultadoArea.setText("");
         });
 
-        // 🔘 BOTÃO SAIR
+        // BOTÃO SAIR
         btnSair.addActionListener(e -> System.exit(0));
     }
 }
