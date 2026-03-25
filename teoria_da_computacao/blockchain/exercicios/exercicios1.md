@@ -3,8 +3,11 @@
 **1. Qual das seguintes alternativas descreve corretamente a principal característica de um blockchain?**
 
 A) Um banco de dados centralizado controlado por uma única autoridade
+
 B) Um livro-razão distribuído, imutável e descentralizado, que utiliza criptografia para interligar blocos de informações
+
 C) Um sistema de armazenamento em nuvem sem qualquer tipo de segurança
+
 D) Uma rede social descentralizada sem moderação
 
 ---
