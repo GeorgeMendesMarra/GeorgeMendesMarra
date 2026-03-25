@@ -231,5 +231,3 @@ D) A baixa volatividade, que torna os ativos pouco atrativos
 20. **C (complexidade):** A gestão de chaves privadas, seed phrases e taxas ainda representa barreira para usuários comuns.
 
 ---
-
-Caso deseje um **formato diferente** (como questões verdadeiro/falso, dissertativas ou com nível de dificuldade variado) ou precise de **questões específicas para um concurso, prova ou simulado**, é só avisar!
