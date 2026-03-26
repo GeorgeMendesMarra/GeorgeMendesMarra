@@ -1,5 +1,3 @@
----
-
 ## 🧠 Parte 1 – Conceitos Gerais
 
 1. **O que representa o problema da Torre de Hanói?**  
