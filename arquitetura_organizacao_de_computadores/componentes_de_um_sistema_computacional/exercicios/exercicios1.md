@@ -228,5 +228,3 @@ e) Executar programas aplicativos
 | 20 | c |
 
 ---
-
-Caso deseje, posso elaborar uma versão com questões dissertativas, um simulado com grau de dificuldade variado ou um resumo esquematizado para revisão.
