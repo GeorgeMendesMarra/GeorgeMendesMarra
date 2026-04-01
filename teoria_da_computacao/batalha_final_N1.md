@@ -2,7 +2,7 @@
 Teoria da Computação - Batalha final - N1
 ---
 
-**Publicar todos os documentos abaixo em seu GitHub;**
+**Publicar todos os documentos abaixo em seu GitHub**
 **Enviar a url do seu repositório para o e-mail: george.marra@unialfa.com.br**
 
 1) Responder todos os exercícios dos temas apresentados até o momento da disciplina Teoria da Computação;
