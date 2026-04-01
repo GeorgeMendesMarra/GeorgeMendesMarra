@@ -1,5 +1,3 @@
----
-
 ## Questões
 
 **1. Qual é a unidade fundamental de informação em um computador quântico?**
