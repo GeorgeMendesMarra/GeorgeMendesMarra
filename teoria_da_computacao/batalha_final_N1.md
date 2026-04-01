@@ -1,6 +1,7 @@
 ---
 Teoria da Computação - Batalha final - N1
 ---
+
 **Publicar todos os documentos abaixo em seu GitHub;**
 **Enviar a url do seu repositório para o e-mail: george.marra@unialfa.com.br**
 
@@ -11,3 +12,5 @@ Teoria da Computação - Batalha final - N1
 5) https://github.com/GeorgeMendesMarra/GeorgeMendesMarra/tree/main/teoria_da_computacao/analise_filmica/o_jogo_da_imitacao/python
 6) https://github.com/GeorgeMendesMarra/GeorgeMendesMarra/tree/main/poo_java/criptografia/assimetrica
 7) https://github.com/GeorgeMendesMarra/GeorgeMendesMarra/tree/main/poo_java/criptografia/simetrica
+
+---
