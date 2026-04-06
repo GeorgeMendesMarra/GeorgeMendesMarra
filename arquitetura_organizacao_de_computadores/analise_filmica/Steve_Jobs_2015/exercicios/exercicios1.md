@@ -11,6 +11,7 @@ e) NeXT, iMac, iPhone
 ---
 
 **2. Quem dirigiu *Steve Jobs* (2015)?**
+
 a) David Fincher  
 b) Aaron Sorkin  
 c) Ridley Scott  
@@ -22,6 +23,7 @@ e) Spike Jonze
 ---
 
 **3. Quem escreveu o roteiro do filme, baseado na biografia de Walter Isaacson?**
+
 a) Aaron Sorkin  
 b) Charlie Kaufman  
 c) Quentin Tarantino  
@@ -33,6 +35,7 @@ e) Paul Schrader
 ---
 
 **4. Michael Fassbender interpreta Steve Jobs. Qual ator foi originalmente cotado para o papel antes de Fassbender ser escalado?**
+
 a) Leonardo DiCaprio  
 b) Christian Bale  
 c) Bradley Cooper  
@@ -44,6 +47,7 @@ e) Ben Affleck
 ---
 
 **5. Kate Winslet interpreta Joanna Hoffman, uma figura importante na vida de Jobs. Qual era sua função na Apple e na NeXT?**
+
 a) Designer-chefe  
 b) Executiva de marketing e confidente  
 c) Engenheira de software  
@@ -55,6 +59,7 @@ e) Relações públicas
 ---
 
 **6. Seth Rogen interpreta qual cofundador da Apple?**
+
 a) Mike Markkula  
 b) Jef Raskin  
 c) Andy Hertzfeld  
@@ -66,6 +71,7 @@ e) Bill Atkinson
 ---
 
 **7. No filme, Jobs discute acaloradamente nos bastidores com John Sculley. Quem foi Sculley?**
+
 a) Cofundador da Microsoft  
 b) Primeiro investidor da Apple  
 c) CEO da Apple que demitiu Jobs  
@@ -77,6 +83,7 @@ e) Professor universitário de Jobs
 ---
 
 **8. O filme mostra repetidamente o relacionamento conturbado de Jobs com sua filha Lisa. O que ele inicialmente nega sobre ela?**
+
 a) Que ela é inteligente  
 b) Que ela é sua filha biológica  
 c) Que ela sabe usar um computador  
@@ -88,6 +95,7 @@ e) Que ela nasceu na Califórnia
 ---
 
 **9. Qual é o nome do computador que Jobs batizou em homenagem à sua filha, e que é um ponto central da trama?**
+
 a) Macintosh Lisa  
 b) Apple Lisa  
 c) NeXT Lisa  
@@ -99,6 +107,7 @@ e) Power Lisa
 ---
 
 **10. Qual engenheiro da Apple da vida real é retratado frequentemente discutindo com Jobs sobre impossibilidades técnicas?**
+
 a) Bill Atkinson  
 b) Chris Espinosa  
 c) Andy Hertzfeld  
@@ -110,6 +119,7 @@ e) Daniel Kottke
 ---
 
 **11. O filme é conhecido por sua estrutura narrativa única. Cada ato ocorre em tempo real antes do lançamento de um produto. Quanto antes de cada lançamento as cenas começam?**
+
 a) 10 minutos  
 b) 30 minutos  
 c) 40 minutos  
@@ -121,6 +131,7 @@ e) 2 horas
 ---
 
 **12. Durante a cena do lançamento da NeXT, Jobs fica furioso por causa de uma capa de revista. O que a capa diz?**
+
 a) "Jobs: A Estrela Caída"  
 b) "A Vingança da Apple"  
 c) "O Retorno do Woz"  
@@ -132,6 +143,7 @@ e) "O Complexo de Messias"
 ---
 
 **13. O que Joanna Hoffman tenta constantemente dar a Jobs ao longo do filme, e que ele frequentemente recusa?**
+
 a) Um copo d'água  
 b) Uma gravata para o palco  
 c) Um casaco ou paletó  
@@ -143,6 +155,7 @@ e) Uma xícara de chá
 ---
 
 **14. Como o filme retrata o relacionamento de Steve Wozniak com Jobs?**
+
 a) Sempre apoiador e amigável  
 b) Irritado e vingativo  
 c) Respeitoso, mas frustrado com a falta de crédito de Jobs à equipe do Apple II  
@@ -154,6 +167,7 @@ e) Competitivo e invejoso
 ---
 
 **15. No último ato (lançamento do iMac, 1998), Jobs admite à filha Lisa que criou um computador capaz de guardar toda a sua biblioteca musical no bolso. Qual produto ele está sugerindo?**
+
 a) iTunes  
 b) iPhone  
 c) iPod  
@@ -165,6 +179,7 @@ e) iBook
 ---
 
 **16. Qual personagem famosamente diz a Jobs: "Você não é Deus. Você é apenas um homem que faz computadores"?**
+
 a) Joanna Hoffman  
 b) John Sculley  
 c) Steve Wozniak  
@@ -176,6 +191,7 @@ e) Chrisann Brennan (mãe de Lisa)
 ---
 
 **17. O diretor de fotografia do filme, que rodou todo o longa em película 35mm com um estilo de alto contraste, foi:**
+
 a) Roger Deakins  
 b) Emmanuel Lubezki  
 c) Alwin H. Küchler  
@@ -187,6 +203,7 @@ e) Robert Richardson
 ---
 
 **18. Qual é o subtítulo do filme *Steve Jobs* (frequentemente exibido nos pôsteres)?**
+
 a) O Visionário  
 b) O Homem que Pensava Diferente  
 c) A Revolução Digital  
@@ -198,6 +215,7 @@ e) A Segunda Vinda
 ---
 
 **19. No filme, Jobs insulta repetidamente um engenheiro de software que trabalhou na demonstração de "Hello" do Macintosh. Qual é o nome do personagem?**
+
 a) Larry Kenyon  
 b) Steve Capps  
 c) Bruce Horn  
@@ -209,6 +227,7 @@ e) Jef Raskin
 ---
 
 **20. A cena final do filme mostra Jobs caminhando em direção ao palco do lançamento do iMac, mas então corta para um flashback. Qual é a resolução emocional com Lisa?**
+
 a) Ele a deserdada permanentemente  
 b) Ele dá a ela opções de ações  
 c) Ele pede que ela more com ele e admite que o Apple Lisa foi nomeado em homenagem a ela  
