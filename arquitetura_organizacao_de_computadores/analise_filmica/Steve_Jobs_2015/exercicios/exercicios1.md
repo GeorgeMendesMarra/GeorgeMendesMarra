@@ -1,4 +1,5 @@
 **1. O filme *Steve Jobs* (2015) é estruturado em torno dos bastidores antes de três lançamentos icônicos. Quais produtos são apresentados?**
+
 a) Macintosh, iMac, iPad  
 b) Apple II, NeXT, iPod  
 c) Macintosh, NeXT, iMac  
