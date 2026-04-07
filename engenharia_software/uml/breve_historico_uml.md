@@ -180,5 +180,3 @@ O UML possui **14 tipos de diagramas**, divididos em duas grandes categorias :
 - **Ferramentas gratuitas:** Draw.io, Lucidchart, Visual Paradigm Community Edition
 
 ---
-
-Espero que este material ajude na sua aula! Se precisar de slides prontos, exercícios ou exemplos práticos de diagramas, é só pedir. 🚀
