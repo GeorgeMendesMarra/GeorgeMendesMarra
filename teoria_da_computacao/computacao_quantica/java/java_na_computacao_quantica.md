@@ -1,3 +1,5 @@
+Java no mundo da computação quântica é uma realidade prática e acessível. Longe de ser apenas um conceito teórico, já existem bibliotecas, simuladores e até integrações com hardware real que permitem que desenvolvedores Java escrevam e executem código quântico.
+
 ### 🚀 Frameworks e Ferramentas para Java
 
 Se você quer colocar a mão no código, estas são as principais ferramentas que integram o mundo quântico com o ecossistema Java:
