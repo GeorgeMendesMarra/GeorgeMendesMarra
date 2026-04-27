@@ -1,7 +1,3 @@
-Aqui está o documento completo sobre TPU (Tensor Processing Unit) no mesmo formato técnico detalhado do texto sobre CPU e GPU:
-
----
-
 # TPU (Tensor Processing Unit): Guia Técnico Completo
 
 ## Sumário
