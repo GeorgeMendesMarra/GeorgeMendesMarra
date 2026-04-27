@@ -1,5 +1,3 @@
-Aqui está o documento completo sobre GPU (Unidade de Processamento Gráfico) no mesmo formato técnico detalhado do texto sobre CPU:
-
 ---
 
 # GPU (Graphics Processing Unit): Guia Técnico Completo
@@ -649,5 +647,3 @@ E_LLM = (Memory_bandwidth × Utilization_factor) / (TDP × Price_hourly × Preci
 | Inferência | L40S, A10 | MI210 | Flex 170 |
 
 ---
-
-Este documento consolida todo o conhecimento técnico sobre GPUs da NVIDIA, AMD e Intel, com catálogos completos de todas as gerações, análises arquiteturais e guias de seleção para diferentes casos de uso.
