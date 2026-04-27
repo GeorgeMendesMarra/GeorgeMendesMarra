@@ -1,5 +1,3 @@
-Aqui estão 30 questões sobre CPU com 5 alternativas cada, sendo apenas uma correta. O gabarito está no final.
-
 ---
 
 ## Questões sobre CPU (Unidade Central de Processamento)
@@ -424,5 +422,3 @@ e) Redução do número de núcleos para maior frequência
 | e | 0 |
 
 ---
-
-Estas questões cobrem desde conceitos básicos até tópicos avançados sobre arquitetura de CPUs, fabricantes e tecnologias emergentes.
