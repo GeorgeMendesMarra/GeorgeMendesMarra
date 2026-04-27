@@ -1,5 +1,3 @@
----
-
 # GPU (Graphics Processing Unit): Guia Técnico Completo
 
 ## Sumário
