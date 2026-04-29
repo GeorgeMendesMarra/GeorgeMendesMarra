@@ -1,3 +1,10 @@
+Grupo 1
+
+ALLYSSON DA SILVA VITAL - Matriculado
+ANDRESSA PEDROSA DA SILVA - Matriculado
+ARTHUR ARAÚJO TEIXEIRA - Matriculado
+ARTHUR BRUNO CESAR SILVA  - Matriculado
+AYSHA TAMILA TEIXEIRA DE SOUZA - Matriculado
 
 
 Grupo 2
