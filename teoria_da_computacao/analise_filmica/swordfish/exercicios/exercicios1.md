@@ -239,17 +239,3 @@ e) Crime compensa
 **Resposta correta: a) Nenhum sistema é 100% seguro**
 
 ---
-
-## 📊 Gabarito rápido
-
-| Q | R  | Q | R  | Q | R  | Q | R  |
-|---|---|----|---|----|---|----|---|----|
-| 1 | B  | 6 | B  | 11| B  | 16| C  |
-| 2 | B  | 7 | A  | 12| D  | 17| B  |
-| 3 | C  | 8 | C  | 13| B  | 18| A  |
-| 4 | B  | 9 | A  | 14| B  | 19| B  |
-| 5 | C  | 10| D  | 15| C  | 20| A  |
-
----
-
-Caso queira as questões em formato para impressão (PDF), ou com espaço para gabarito do aluno, é só pedir!
