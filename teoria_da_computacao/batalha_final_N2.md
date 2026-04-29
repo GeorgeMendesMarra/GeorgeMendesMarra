@@ -55,7 +55,7 @@ KIOSEFY SAMUEL DE OLIVEIRA BASTOS
 
 ---
 
-Grupo 5
+Grupo 5 - 20/07/2026 - Computação Quântica
 
 LUIGHY OLIVEIRA DA SILVA DOS REIS
 
@@ -69,7 +69,7 @@ MARIA EDUARDA DA COSTA JORGE TOLEDO
 
 ---
 
-Grupo 6
+Grupo 6 - 20/07/2026 - Análise fílmica - Enigma
 
 MATEUS HENRIQUE SOARES SILVA
 
@@ -83,7 +83,7 @@ PABLO HENRIQUE LOPES PINTO
 
 ---
 
-Grupo 7
+Grupo 7 - 27/05/2026 - Análise fílmica - O jogo da imitação
 
 PEDRO GABRIEL DA SILVA ROCHA
 
@@ -97,7 +97,7 @@ VICTOR GABRIEL SILVA
 
 ---
 
-Grupo 8
+Grupo 8 - 27/05/2026 - Análise fílmica - Swordfish
 
 VITOR DE OLIVEIRA ALMEIDA
 
