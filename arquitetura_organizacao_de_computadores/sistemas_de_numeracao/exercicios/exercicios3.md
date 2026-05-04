@@ -2,9 +2,13 @@
 O valor do número binário `101011₂` em decimal é:
 
 a) 42
+
 b) 43
+
 c) 44
+
 d) 45
+
 e) 46
 
 **Resposta correta: b**
@@ -15,9 +19,13 @@ e) 46
 O valor do número decimal `58₁₀` em binário é:
 
 a) 111010₂
+
 b) 111011₂
+
 c) 110110₂
+
 d) 111100₂
+
 e) 110010₂
 
 **Resposta correta: a**
@@ -28,9 +36,13 @@ e) 110010₂
 O valor do número hexadecimal `2F₁₆` em decimal é:
 
 a) 45
+
 b) 46
+
 c) 47
+
 d) 48
+
 e) 49
 
 **Resposta correta: c**
@@ -41,9 +53,13 @@ e) 49
 O valor do número decimal `255₁₀` em hexadecimal é:
 
 a) EE
+
 b) EF
+
 c) F0
+
 d) FF
+
 e) FE
 
 **Resposta correta: d**
@@ -54,9 +70,13 @@ e) FE
 O valor do número binário `11111010₂` em hexa é:
 
 a) F8
+
 b) F9
+
 c) FA
+
 d) FB
+
 e) FC
 
 **Resposta correta: c**
@@ -67,9 +87,13 @@ e) FC
 O resultado da soma `1011₂ + 1101₂` em binário é:
 
 a) 11000₂
+
 b) 11001₂
+
 c) 11010₂
+
 d) 11011₂
+
 e) 11100₂
 
 **Resposta correta: a**
@@ -80,9 +104,13 @@ e) 11100₂
 O resultado da subtração `1100₂ - 0111₂` em binário é:
 
 a) 0101₂
+
 b) 0110₂
+
 c) 0100₂
+
 d) 0011₂
+
 e) 0111₂
 
 **Resposta correta: a**
@@ -93,9 +121,13 @@ e) 0111₂
 Em Complemento de 2 com 8 bits, a representação de `-15₁₀` é:
 
 a) 11110000₂
+
 b) 11110001₂
+
 c) 11110010₂
+
 d) 11110011₂
+
 e) 11110100₂
 
 **Resposta correta: b**
@@ -106,9 +138,13 @@ e) 11110100₂
 O valor decimal do número em Complemento de 2 `11111001₂` (8 bits) é:
 
 a) -5
+
 b) -6
+
 c) -7
+
 d) -8
+
 e) -9
 
 **Resposta correta: c**
@@ -119,9 +155,13 @@ e) -9
 O número octal `37₈` em decimal vale:
 
 a) 29
+
 b) 30
+
 c) 31
+
 d) 32
+
 e) 33
 
 **Resposta correta: c**
@@ -132,9 +172,13 @@ e) 33
 O número decimal `50₁₀` em octal é:
 
 a) 60₈
+
 b) 61₈
+
 c) 62₈
+
 d) 63₈
+
 e) 64₈
 
 **Resposta correta: c**
@@ -145,9 +189,13 @@ e) 64₈
 O número hexadecimal `1A3₁₆` em decimal é:
 
 a) 417
+
 b) 418
+
 c) 419
+
 d) 420
+
 e) 421
 
 **Resposta correta: c**
@@ -158,9 +206,13 @@ e) 421
 O resultado da multiplicação `1011₂ × 0011₂` em binário é:
 
 a) 100001₂
+
 b) 100010₂
+
 c) 100011₂
+
 d) 100100₂
+
 e) 100101₂
 
 **Resposta correta: a**
@@ -171,9 +223,13 @@ e) 100101₂
 O valor do número decimal `0.625₁₀` em binário (fracionário) é:
 
 a) 0.100₂
+
 b) 0.101₂
+
 c) 0.110₂
+
 d) 0.111₂
+
 e) 0.011₂
 
 **Resposta correta: b**
@@ -184,9 +240,13 @@ e) 0.011₂
 O valor do número binário `1101.011₂` em decimal é:
 
 a) 13.25
+
 b) 13.375
+
 c) 13.5
+
 d) 13.625
+
 e) 13.75
 
 **Resposta correta: b**
@@ -197,9 +257,13 @@ e) 13.75
 Qual das seguintes alternativas representa o número `-25₁₀` em Complemento de 2 com 8 bits?
 
 a) 11100111₂
+
 b) 11101000₂
+
 c) 11100110₂
+
 d) 11101001₂
+
 e) 11100101₂
 
 **Resposta correta: a**
@@ -210,9 +274,13 @@ e) 11100101₂
 O número hexadecimal `FF₁₆` escrito em binário é:
 
 a) 11111111₂
+
 b) 11111110₂
+
 c) 11111100₂
+
 d) 11111000₂
+
 e) 11110000₂
 
 **Resposta correta: a**
@@ -223,9 +291,13 @@ e) 11110000₂
 O resultado da divisão `1100₂ ÷ 0011₂` (divisão inteira) em binário é:
 
 a) 0100₂
+
 b) 0101₂
+
 c) 0110₂
+
 d) 0111₂
+
 e) 1000₂
 
 **Resposta correta: a**
@@ -236,9 +308,13 @@ e) 1000₂
 O valor do número binário `11111111₂` (lido como número sem sinal) em decimal é:
 
 a) 254
+
 b) 255
+
 c) 256
+
 d) 257
+
 e) 258
 
 **Resposta correta: b**
@@ -249,9 +325,13 @@ e) 258
 Quantos bits são necessários para representar o número decimal `1000₁₀` em binário?
 
 a) 8 bits
+
 b) 9 bits
+
 c) 10 bits
+
 d) 11 bits
+
 e) 12 bits
 
 **Resposta correta: c** (o binário de 1000₁₀ é 1111101000₂, que tem 10 bits)
