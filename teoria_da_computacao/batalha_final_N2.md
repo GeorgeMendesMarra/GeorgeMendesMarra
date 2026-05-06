@@ -55,7 +55,7 @@ KIOSEFY SAMUEL DE OLIVEIRA BASTOS
 
 ---
 
-Grupo 5 - 20/07/2026 - Computação Quântica
+Grupo 5 - 20/05/2026 - Computação Quântica
 
 LUIGHY OLIVEIRA DA SILVA DOS REIS
 
@@ -69,7 +69,7 @@ MARIA EDUARDA DA COSTA JORGE TOLEDO
 
 ---
 
-Grupo 6 - 20/07/2026 - Análise fílmica - Enigma
+Grupo 6 - 20/05/2026 - Análise fílmica - Enigma
 
 MATEUS HENRIQUE SOARES SILVA
 
