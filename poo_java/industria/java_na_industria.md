@@ -104,10 +104,15 @@ Java é forte em:
 Java ajuda a indústria porque:
 
 ✅ É multiplataforma
+
 ✅ É segura
+
 ✅ É escalável
+
 ✅ É muito usada em sistemas corporativos
+
 ✅ Integra bem com banco de dados
+
 ✅ Funciona muito bem em servidores
 
 ---
