@@ -617,5 +617,3 @@ Depois de dominar ArrayList, estude:
 5. **Streams** - Para operações avançadas (filter, map, reduce)
 
 ---
-
-Este guia cobre tudo que você precisa para começar com listas em Java. Pratique os exercícios e, se tiver dúvidas, volte a este material!
