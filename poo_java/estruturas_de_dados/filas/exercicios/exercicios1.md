@@ -303,5 +303,3 @@ Antes de considerar um exercício completo, verifique se você:
 - [ ] Fechou o `Scanner` no final do programa
 
 ---
-
-Bons estudos! Se precisar das soluções dos exercícios, é só pedir.
