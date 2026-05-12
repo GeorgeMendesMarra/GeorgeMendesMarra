@@ -1,161 +1,717 @@
----
+================================================================================
+ADMINISTRAÇÃO DE PROJETOS: ESTIMATIVAS
+================================================================================
+Disciplina: Fundamentos de Engenharia de Software
+Curso: Engenharia de Software
+Autor: Material Didático
+Versão: 1.0 - Completa
+================================================================================
 
-# 📘 **Histórico da Administração de Projetos: Estimativas**
 
-A prática de realizar **estimativas em projetos** acompanha a própria evolução da humanidade em suas obras organizadas. Desde construções antigas até o desenvolvimento moderno de software, estimar tempo, custo e esforço sempre foi essencial para reduzir riscos e garantir previsibilidade. Ao longo das décadas, o processo evoluiu de métodos intuitivos para modelos matemáticos rigorosos e baseados em dados.
+SUMÁRIO
+================================================================================
 
----
+1. INTRODUÇÃO ÀS ESTIMATIVAS EM PROJETOS DE SOFTWARE
+2. CONCEITOS FUNDAMENTAIS
+3. MÉTODOS DE ESTIMATIVA
+4. TÉCNICAS DE ESTIMATIVA DE ESFORÇO E CUSTO
+5. TÉCNICAS DE ESTIMATIVA DE PRAZO
+6. TÉCNICAS DE ESTIMATIVA DE TAMANHO
+7. MODELOS PARAMÉTRICOS DE SOFTWARE
+8. FATORES DE AJUSTE E COMPLEXIDADE
+9. ESTIMATIVA EM METODOLOGIAS ÁGEIS
+10. RISCOS E INCERTEZAS NAS ESTIMATIVAS
+11. FERRAMENTAS DE APOIO À ESTIMATIVA
+12. EXERCÍCIOS E ESTUDO DE CASO
+13. REFERÊNCIAS BIBLIOGRÁFICAS
+14. APÊNDICE - CHECKLIST DE ESTIMATIVA
 
-## 🏺 **1. Antiguidade e Idade Média: estimativas intuitivas**
 
-Nas civilizações antigas — como Egito, Roma e Mesopotâmia — grandes obras (pirâmides, estradas, aquedutos) só eram possíveis porque engenheiros e mestres de obra faziam **estimativas empíricas** de materiais, mão de obra e prazos. Essas estimativas eram baseadas em:
+================================================================================
+1. INTRODUÇÃO ÀS ESTIMATIVAS EM PROJETOS DE SOFTWARE
+================================================================================
 
-* Experiência acumulada
-* Observação de construções anteriores
-* Conhecimento artesanal
-* Tentativa e erro
+1.1 Por que Estimar é Crucial?
 
-Embora não houvesse formalização matemática, esse período lançou as bases práticas do conceito de estimar recursos.
+Estimar em projetos de software é a arte e a ciência de prever recursos,
+esforço e tempo necessários para desenvolver um sistema com um determinado
+escopo.
 
----
+CONSEQUÊNCIAS DA MÁ ESTIMATIVA
 
-## 🕰️ **2. Revolução Industrial: surgimento das primeiras medições sistemáticas**
+Estimativa muito baixa:
+- Qualidade comprometida
+- Horas extras não pagas / burnout da equipe
+- Insatisfação do cliente
+- Atrasos consecutivos
 
-Durante os séculos XVIII e XIX, com a mecanização e o aumento da produção em larga escala, houve a necessidade de **planejar melhor recursos, tempo e processos**.
-Taylor e o movimento da **Administração Científica** introduziram:
+Estimativa muito alta:
+- Recursos ociosos
+- Em consultoria: cliente paga por algo mais lento
+- Perda de competitividade no mercado
 
-* Estudo de tempos e movimentos
-* Padronização de tarefas
-* Previsão de capacidade
-* Planejamento analítico de produção
+1.2 Desafios Específicos da Estimativa em Software
 
-Isso marcou o início das **estimativas sistemáticas e mensuráveis**, embora ainda centradas na manufatura.
++---------------------+--------------------------------------------------+
+| Desafio             | Descrição                                        |
++---------------------+--------------------------------------------------+
+| Imaterialidade      | Software não é físico; não dá para medir visual |
+| Complexidade        | Sistemas modernos têm milhares de interações    |
+| Novidade Tecnológica| Equipe pode não conhecer a tecnologia           |
+| Mudanças Contínuas  | Requisitos mudam durante o projeto              |
+| Dependências Humanas| Produtividade varia muito por pessoa            |
++---------------------+--------------------------------------------------+
 
----
 
-## 🏗️ **3. Pós-guerra e grandes projetos de engenharia (décadas de 1940–1960)**
+================================================================================
+2. CONCEITOS FUNDAMENTAIS
+================================================================================
 
-A complexidade crescente de projetos militares e espaciais após a Segunda Guerra Mundial levou ao desenvolvimento de **ferramentas de planejamento e estimativas**, como:
+2.1 Glossário de Termos
 
-* **PERT (Program Evaluation and Review Technique)**
-* **CPM (Critical Path Method)**
-* Gráficos de Gantt evoluídos
-* Análises probabilísticas de tempo
++-------------------+------------------------------------------------+-------------------+
+| Termo             | Definição                                      | Unidade           |
++-------------------+------------------------------------------------+-------------------+
+| Esforço           | Quantidade de trabalho humano necessário      | Pessoa-hora/mês   |
+| Prazo             | Tempo calendário para execução                | Dias/semanas/meses|
+| Custo             | Valor financeiro total                        | R$, US$           |
+| Tamanho           | Dimensão do software                          | SLOC, PF          |
+| Produtividade     | Tamanho produzido por unidade de esforço      | PF/pessoa-mês     |
+| Velocidade (Ágil) | Escopo entregue por iteração                  | Story points/sprint|
++-------------------+------------------------------------------------+-------------------+
 
-O foco dessa época era estimar:
+2.2 A Equação Fundamental da Estimativa
 
-* Tempo de execução das atividades
-* Relações de precedência
-* Caminho crítico
-* Recursos para grandes projetos de engenharia
+Tamanho (T) = Esforço (E) x Produtividade (P)
+Prazo (D) = Esforço (E) / (Tamanho da Equipe x Fator de Comunicação)
+Custo (C) = Esforço (E) x Custo Unitário (salário + overhead)
 
-Essas técnicas influenciariam diretamente a engenharia de software mais tarde.
+2.3 Quando Estimar?
 
----
++---------------------+-------------------------------+-------------------+
+| Fase do Projeto     | Tipo de Estimativa            | Precisão Esperada |
++---------------------+-------------------------------+-------------------+
+| Concepção (Idea)    | Ordem de grandeza (ROM)       | -25% a +75%       |
+| Viabilidade         | Estimativa preliminar         | -15% a +50%       |
+| Análise de Requisitos| Estimativa detalhada (budget) | -10% a +25%       |
+| Design/Implementação| Estimativa definitiva         | -5% a +10%        |
++---------------------+-------------------------------+-------------------+
 
-## 💻 **4. Anos 1960–1980: início da engenharia de software e crise do software**
 
-Com o surgimento da **Engenharia de Software** nos anos 1960, ficou claro que desenvolver software exigia métodos formais de estimativa, pois os projetos:
+================================================================================
+3. MÉTODOS DE ESTIMATIVA
+================================================================================
 
-* Atrasavam frequentemente
-* Estouravam orçamentos
-* Apresentavam baixa qualidade
-* Eram de difícil manutenção
+3.1 Classificação dos Métodos
 
-Surgem então os primeiros modelos dedicados exclusivamente a estimativas de software, como:
+MÉTODOS EMPÍRICOS (baseados em experiência):
+- Opinião de especialistas
+- Analogia
+- Delphi (Wideband)
+- Estimativa por componentes
 
-### **• Linha de Código (LOC) – estimativa baseada em tamanho**
+MÉTODOS ALGORÍTMICOS (baseados em fórmulas):
+- COCOMO
+- Pontos de Função
+- SLIM
+- SEER-SEM
 
-Quanto maior o código, maior o custo/tempo.
-Foi bastante usado nos anos 70, mas tinha limitações (dificuldade de prever tamanho antes do projeto existir).
+3.2 Métodos Comparados
 
-### **• COCOMO (Boehm, década de 1980)**
++---------------------+----------+-------------------+------------------------+
+| Método              | Precisão | Esforço da        | Quando Usar           |
+|                     |          | Estimativa        |                        |
++---------------------+----------+-------------------+------------------------+
+| Opinião especialistas| Baixa    | Muito baixo       | Estimativas iniciais   |
+| Analogia            | Média    | Baixo             | Projetos similares     |
+| Delphi (Wideband)   | Média-Alta| Médio             | Consenso em equipe     |
+| Pontos de Função    | Alta     | Alto              | Projetos de negócio    |
+| COCOMO II           | Alta     | Muito alto        | Projetos grandes       |
+| Planning Poker      | Média    | Baixo             | Sprints (Ágil)         |
++---------------------+----------+-------------------+------------------------+
 
-O **Constructive Cost Model** foi o primeiro modelo matemático robusto para estimar:
 
-* Esforço
-* Tempo
-* Custo
+================================================================================
+4. TÉCNICAS DE ESTIMATIVA DE ESFORÇO E CUSTO
+================================================================================
 
-Com base em **métricas históricas** e **parâmetros calibrados estatisticamente**.
+4.1 Opinião de Especialistas
 
----
+Fórmula dos 3 cenários (PERT simplificado):
 
-## 📊 **5. Anos 1990–2000: maturidade e métricas orientadas ao negócio**
+Estimativa Esperada (E) = (Otimista + 4 x Mais Provável + Pessimista) / 6
 
-Com a modernização dos processos e o aumento da globalização, estimativas passaram a incorporar fatores como:
+Exemplo:
+- Otimista: 30 dias
+- Mais Provável: 45 dias
+- Pessimista: 70 dias
 
-* Produtividade das equipes
-* Complexidade funcional
-* Riscos
-* Requisitos instáveis
+E = (30 + 4x45 + 70) / 6 = (30 + 180 + 70) / 6 = 280 / 6 = 46,7 dias
 
-E novos modelos surgem:
+4.2 Wideband Delphi
 
-### **• Ponto de Função (Albrecht, IBM)**
+Processo:
+1. Coordenador apresenta especificação
+2. Cada membro estima anonimamente
+3. Coordenador tabula e apresenta resultados
+4. Discussão sobre discrepâncias
+5. Repete até convergência
+6. Resultado final por consenso ou média
 
-Estimativa baseada na **complexidade funcional**, não no tamanho do código.
-Ideal para sistemas corporativos e amplamente adotado.
+4.3 Estimativa por Analogia
 
-### **• Modelos híbridos e calibrados**
+Fórmula:
+Estimativa_Novo = Estimativa_Similar x (Tamanho_Novo / Tamanho_Similar) x
+Fatores_Ajuste
 
-Organizações começaram a usar **bancos históricos**, **benchmarking** e modelos compostos.
+Exemplo:
+Projeto anterior: 120 PF - 600 horas
+Projeto novo: 180 PF estimado
 
----
+Esforço_Novo = 600 x (180/120) x 1,0 = 600 x 1,5 = 900 horas
 
-## 🧪 **6. Era Ágil (anos 2000 em diante): estimativas adaptativas**
 
-Com o crescimento do **Agile**, estimativas deixaram de ser puramente determinísticas e passaram a ser:
+================================================================================
+5. TÉCNICAS DE ESTIMATIVA DE PRAZO
+================================================================================
 
-* **Iterativas**
-* **Revisadas frequentemente**
-* **Baseadas em colaboração**
-* **Ligadas a entregas incrementais**
+5.1 Lei de Brooks
 
-Principais técnicas:
+"Adicionar mais pessoas a um projeto de software atrasado o torna ainda mais
+atrasado." - Fred Brooks (The Mythical Man-Month)
 
-### **• Planning Poker e Story Points**
+5.2 Canais de Comunicação
 
-Estimativas relativas baseadas em consenso da equipe.
+Canais = n x (n-1) / 2 (onde n = número de pessoas)
 
-### **• Velocity**
++-------------------+--------------------------+-------------------+
+| Tamanho da Equipe | Canais de Comunicação    | Overhead Relativo |
++-------------------+--------------------------+-------------------+
+| 1                 | 0                        | 0%                |
+| 2                 | 1                        | 5%                |
+| 3                 | 3                        | 10%               |
+| 4                 | 6                        | 20%               |
+| 5                 | 10                       | 35%               |
+| 6-8               | 15-28                    | 50%               |
+| 9+                | 36+                      | 70%+              |
++-------------------+--------------------------+-------------------+
 
-Utilizada para prever prazos futuros com base em entregas passadas.
+5.3 Fórmula de Putnam (Norden-Rayleigh)
 
-### **• T-shirt sizes**
+Tempo (anos) = (Esforço / Produtividade) ^ (1/3)
 
-Estimativas rápidas (S, M, L, XL).
+Exemplo:
+- Esforço = 60 pessoa-meses = 5 pessoa-anos
+- Produtividade = 10 PF/pessoa-mês
 
-As estimativas ágeis enfatizam **adaptação** em vez de precisão absoluta.
+T = (60 / 10) ^ (1/3) = 6 ^ 0,333 = 1,82 anos
 
----
 
-## 🤖 **7. Atualidade: estimativas orientadas a dados e IA**
+================================================================================
+6. TÉCNICAS DE ESTIMATIVA DE TAMANHO
+================================================================================
 
-Atualmente, ferramentas modernas utilizam:
+6.1 SLOC (Source Lines of Code)
 
-* Machine Learning
-* Análise de projetos passados
-* Mineração de repositórios de código
-* Predição de produtividade
-* Modelos probabilísticos avançados (Monte Carlo)
+Produtividade por Linguagem (SLOC/pessoa-dia):
 
-Esses sistemas conseguem prever prazos, riscos e esforço com mais precisão, reduzindo incertezas naturais do desenvolvimento de software.
++-------------------+-------------------+-------------------+
+| Linguagem         | SLOC/pessoa-dia   | Fator de Compressão|
++-------------------+-------------------+-------------------+
+| Assembly          | 50-100            | 1x                |
+| C                 | 100-150           | 2x                |
+| C++               | 120-180           | 2,5x              |
+| Java              | 150-200           | 3x                |
+| C#                | 150-200           | 3x                |
+| Python            | 200-300           | 4x                |
+| Ruby              | 200-300           | 4x                |
+| SQL               | 100-200           | 3x                |
++-------------------+-------------------+-------------------+
 
----
+6.2 Pontos de Função (Function Points - IFPUG)
 
-# 📌 **Conclusão**
+Componentes:
 
-A história das estimativas em administração de projetos mostra uma evolução constante:
++-------------------+------------------------------------------+
+| Componente        | Descrição                                |
++-------------------+------------------------------------------+
+| EI (External Input) | Entrada de dados (tela, arquivo)        |
+| EO (External Output)| Saída de dados (relatório, consulta)    |
+| EQ (External Inquiry)| Consulta que não modifica dados          |
+| ILF (Internal Logical File)| Arquivo/tabela interno           |
+| EIF (External Interface File)| Arquivo de outro sistema         |
++-------------------+------------------------------------------+
 
-1. **Intuição e experiência** (antiguidade)
-2. **Padronização e medições científicas** (Revolução Industrial)
-3. **Métodos analíticos formais** (Pós-guerra)
-4. **Modelos matemáticos específicos de software** (anos 60–90)
-5. **Estimativas funcionais e orientadas ao negócio**
-6. **Estimativas ágeis colaborativas**
-7. **Predições baseadas em IA e dados históricos**
+Pesos:
 
-Estimativas continuam sendo um dos pilares do gerenciamento de projetos, influenciadas diretamente pelas tecnologias e métodos de cada época.
++-------------------+-------------------------------+
+| Componente        | Baixo | Médio | Alto           |
++-------------------+-------+-------+---------------+
+| EI                | 3     | 4     | 6              |
+| EO                | 4     | 5     | 7              |
+| EQ                | 3     | 4     | 6              |
+| ILF               | 7     | 10    | 15             |
+| EIF               | 5     | 7     | 10             |
++-------------------+-------+-------+---------------+
 
----
+Exemplo de Cálculo:
+
+Componente: EI - 15 x média (4) = 60
+Componente: EO - 8 x baixa (4) = 32
+Componente: EQ - 5 x baixa (3) = 15
+Componente: ILF - 4 x média (10) = 40
+Componente: EIF - 2 x baixa (5) = 10
+UFP (soma) = 157
+
+6.3 Ajuste de Complexidade (VAF)
+
+PF = UFP x (0,65 + 0,01 x Soma dos Fatores)
+
+Onde Soma dos Fatores varia de 0 a 70 (14 fatores de 0 a 5)
+
+Exemplo:
+UFP = 157
+Soma Fatores = 35
+PF = 157 x (0,65 + 0,35) = 157 x 1,0 = 157 PF
+
+
+================================================================================
+7. MODELOS PARAMÉTRICOS DE SOFTWARE
+================================================================================
+
+7.1 COCOMO (COnstructive COst MOdel) - Barry Boehm
+
+COCOMO Básico:
+
+Esforço (pessoa-mês) = a x (KLOC)^b
+Prazo (meses) = c x (Esforço)^d
+
+Parâmetros por tipo de projeto:
+
++-------------------+-----+-----+-----+-----+
+| Tipo              | a   | b   | c   | d   |
++-------------------+-----+-----+-----+-----+
+| Orgânico          | 2,4 | 1,05| 2,5 | 0,38|
+| Semi-acoplado     | 3,0 | 1,12| 2,5 | 0,35|
+| Embutido          | 3,6 | 1,20| 2,5 | 0,32|
++-------------------+-----+-----+-----+-----+
+
+Exemplo - Projeto Orgânico de 50 KLOC:
+
+Esforço = 2,4 x (50)^1,05 = 2,4 x 58,5 = 140 pessoa-mês
+Prazo = 2,5 x (140)^0,38 = 2,5 x 6,5 = 16 meses
+Equipe = 140 / 16 = 9 pessoas
+
+7.2 COCOMO II
+
+Fórmula (pós-arquitetura):
+PM = A x (Tamanho)^B x PI(EMi)
+
+Onde:
+- A = 2,94 (constante de calibração)
+- B = 1,01 + 0,01 x SOMATÓRIO(SFi)
+- EMi = Multiplicadores de esforço (10 fatores)
+- SFi = Fatores de escala (5 fatores)
+
+
+================================================================================
+8. FATORES DE AJUSTE E COMPLEXIDADE
+================================================================================
+
+8.1 Drivers de Produtividade
+
++-----------------------------------+-------------------+
+| Fator                             | Impacto           |
++-----------------------------------+-------------------+
+| Experiência da equipe             | +50% a +100%      |
+| Ferramentas de automação          | +30% a +50%       |
+| Ambiente estável de requisitos    | +20% a +40%       |
+| Metodologia ágil (vs cascata)     | +10% a +30%       |
+| Testes automatizados              | -10% a +20%       |
+| Documentação extensa              | -20% a -40%       |
++-----------------------------------+-------------------+
+
+8.2 Fatores de Risco na Estimativa
+
++-------------------------------+-------------------+
+| Fator                         | Amplitude de erro |
++-------------------------------+-------------------+
+| Requisitos vagos              | +50% a +200%      |
+| Tecnologia nova               | +30% a +100%      |
+| Equipe distribuída            | +20% a +50%       |
+| Integração com legado         | +15% a +40%       |
+| Segurança crítica             | +30% a +60%       |
+| Conformidade regulatória      | +25% a +50%       |
+| Dependências externas         | +20% a +80%       |
++-------------------------------+-------------------+
+
+8.3 Matriz de Complexidade
+
++---------------+---------------+-------------------+-------------------+
+| Nível         | Descrição     | Fator Multiplicador| Exemplo           |
++---------------+---------------+-------------------+-------------------+
+| Muito Baixo   | CRUD simples  | 0,5x              | Formulário contato|
+| Baixo         | Telas c/ validação | 0,8x         | Cadastro cliente  |
+| Médio         | Regras de negócio| 1,0x            | Sistema de pedidos|
+| Alto          | Workflows     | 1,5x              | Sistema fiscal    |
+| Muito Alto    | Algoritmos    | 2,0x - 3,0x       | Sistema de trading|
++---------------+---------------+-------------------+-------------------+
+
+
+================================================================================
+9. ESTIMATIVA EM METODOLOGIAS ÁGEIS
+================================================================================
+
+9.1 Conceitos Fundamentais
+
++-------------------+------------------------+------------------------+
+| Característica    | Cascata                | Ágil                   |
++-------------------+------------------------+------------------------+
+| Quando estima     | No início do projeto   | Iterativamente         |
+| Unidade de medida | Horas, dias, PF        | Story points           |
+| Quem estima       | Gerente de projeto     | Time inteiro           |
+| Precisão esperada | +-10% (detalhamento)   | +-30% (release)        |
+| Reestimativa      | Rara                   | A cada sprint          |
++-------------------+------------------------+------------------------+
+
+9.2 Story Points
+
+Escala (Sequência de Fibonacci modificada):
+
++-------------------+--------------------------------+-------------------+
+| Pontos            | Significado                    | Exemplo           |
++-------------------+--------------------------------+-------------------+
+| 1                 | Muito simples, minutos         | Corrigir texto    |
+| 2                 | Simples, algumas horas         | Adicionar campo   |
+| 3                 | Médio, meio dia                | Validação de CPF  |
+| 5                 | Complexo, 1 dia                | Relatório filtros |
+| 8                 | Muito complexo, 2 dias         | Integração API    |
+| 13                | Muito grande, precisa quebrar  | Módulo inteiro    |
+| 21+               | Épico                          | Sistema inteiro   |
++-------------------+--------------------------------+-------------------+
+
+9.3 Planning Poker
+
+Processo:
+1. Product Owner apresenta a história de usuário
+2. Time faz perguntas para esclarecimento
+3. Cada membro escolhe uma carta em segredo
+4. Todos revelam suas cartas simultaneamente
+5. Se houver discrepância: valores extremos explicam e nova rodada
+6. Repete até consenso
+
+9.4 Velocidade do Time (Team Velocity)
+
+Velocidade média = Soma dos pontos entregues / Número de sprints
+
+Exemplo:
+
+Sprint 1: 20 planejados, 18 entregues
+Sprint 2: 22 planejados, 21 entregues
+Sprint 3: 20 planejados, 20 entregues
+Sprint 4: 25 planejados, 19 entregues
+
+Velocidade média = (18 + 21 + 20 + 19) / 4 = 19,5 pontos/sprint
+
+Backlog total = 120 pontos
+Sprints necessárias = 120 / 19,5 = 6,15 sprints (aprox. 12 semanas)
+
+9.5 T-Shirt Sizing
+
++-------------------+------------------------+-------------------+
+| Tamanho           | Story Points Equivalentes| Tempo Estimado    |
++-------------------+------------------------+-------------------+
+| XS (Extra Small)  | 1-2                    | Horas             |
+| S (Small)         | 3-5                    | 1-2 dias          |
+| M (Medium)        | 8-13                   | 1 semana          |
+| L (Large)         | 20+                    | 2-4 semanas       |
+| XL (Extra Large)  | 40+                    | Sprint+           |
++-------------------+------------------------+-------------------+
+
+
+================================================================================
+10. RISCOS E INCERTEZAS NAS ESTIMATIVAS
+================================================================================
+
+10.1 Por que Estimativas Falham?
+
++---------------------+--------------------------------+-------------------+
+| Causa               | Descrição                      | Como Mitigar      |
++---------------------+--------------------------------+-------------------+
+| Síndrome do Otimismo| Assumir que tudo dará certo    | Adicionar reserva |
+| Viés de Ancoragem   | Ficar preso a um número inicial| Usar diferentes   |
+|                     |                                | métodos           |
+| Escopo invisível    | Funcionalidades não documentadas| Entrevistas      |
+| Pressão política    | Forçar estimativa baixa        | Documentar riscos |
+| Equipe hipotética   | Equipe diferente da idealizada | Conhecer equipe   |
++---------------------+--------------------------------+-------------------+
+
+10.2 Intervalo de Confiança (PERT)
+
++-------------------+-------------------+-----------------------------+
+| Nível de Confiança| Intervalo         | Uso                         |
++-------------------+-------------------+-----------------------------+
+| 50% (mediano)     | -10% a +10%       | Compromisso interno         |
+| 70%               | -20% a +30%       | Projetos baixo risco        |
+| 85%               | -30% a +60%       | Projetos médio risco        |
+| 95%               | -50% a +100%      | Estimativa inicial (ROM)    |
++-------------------+-------------------+-----------------------------+
+
+Fórmula PERT (3 pontos):
+Estimativa Final (E) = (O + 4M + P) / 6
+Desvio Padrão (σ) = (P - O) / 6
+Intervalo 95% = E +/- 2σ
+
+Exemplo:
+O = 60, M = 80, P = 130
+E = (60 + 4x80 + 130) / 6 = 510 / 6 = 85 dias
+σ = (130 - 60) / 6 = 70 / 6 = 11,7 dias
+Intervalo 95% = 85 +/- 23,4 = [61,6 dias a 108,4 dias]
+
+10.3 Adicionando Reserva (Contingência)
+
++-------------------------------+-------------------+------------------------+
+| Tipo de Reserva               | Percentual        | Descrição              |
++-------------------------------+-------------------+------------------------+
+| Reserva de contingência       | 10% a 20%         | Riscos conhecidos      |
+| Reserva gerencial             | 15% a 30%         | Riscos desconhecidos   |
+| Reserva total                 | 25% a 50%         | Soma das duas          |
++-------------------------------+-------------------+------------------------+
+
+10.4 Cone of Uncertainty (Baseado no CHAOS Report)
+
+- Projetos bem-sucedidos: variam +-20% da estimativa original
+- Projetos desafiados: variam +-50% a +-100%
+- Projetos fracassados: variam >200% (ou nunca entregam)
+
+
+================================================================================
+11. FERRAMENTAS DE APOIO À ESTIMATIVA
+================================================================================
+
+11.1 Ferramentas Populares
+
++-------------------+-------------------+-------------------+-------------------+
+| Ferramenta        | Tipo              | Preço             | Características   |
++-------------------+-------------------+-------------------+-------------------+
+| COCOMO II         | Modelo paramétrico| Gratuito (USC)    | Baseado em SLOC   |
+| SEER for Software | Modelo paramétrico| Comercial         | Completíssimo     |
+| TruePlanning      | Modelo paramétrico| Comercial         | Aerospace/defesa  |
+| ProjectEstimator  | Pontos de Função  | Freemium          | IFPUG padrão      |
+| Jira (Velocity)   | Ágil              | Pago              | Tracking          |
+| PlanITpoker       | Planning Poker    | Gratuito          | Online, distribuído|
++-------------------+-------------------+-------------------+-------------------+
+
+11.2 Excel: Templates Práticos
+
++-------------------+------------------------+-------------------+
+| Template          | Função                 | Fórmulas-chave    |
++-------------------+------------------------+-------------------+
+| Planilha de UFP   | Contagem PF            | SOMA x (0,65+0,01xFatores)|
+| Estimativa projetos| Cálculo esforço/custo  | Base produtividade|
+| Planning Poker    | Consenso remoto        | Média ponderada   |
++-------------------+------------------------+-------------------+
+
+
+================================================================================
+12. EXERCÍCIOS E ESTUDO DE CASO
+================================================================================
+
+12.1 Exercício 1: Cálculo de Pontos de Função
+
+Enunciado:
+Uma aplicação de vendas possui:
+- 12 telas de entrada de dados (baixa complexidade - peso 3)
+- 5 relatórios (média complexidade - peso 5)
+- 3 consultas (baixa complexidade - peso 3)
+- 8 tabelas internas (média complexidade - peso 10)
+- 1 arquivo de integração (baixa complexidade - peso 5)
+Fatores de ajuste somam 40.
+
+Calcule o PF total.
+
+Resolução:
+UFP = (12x3) + (5x5) + (3x3) + (8x10) + (1x5)
+UFP = 36 + 25 + 9 + 80 + 5 = 155
+
+PF = 155 x (0,65 + 0,01x40)
+PF = 155 x (0,65 + 0,40)
+PF = 155 x 1,05 = 162,75 ≈ 163 PF
+
+-------------------------------------------------------------------------------
+
+12.2 Exercício 2: Estimativa PERT
+
+Enunciado:
+Um analista estimou: Otimista = 12 dias, Mais Provável = 18 dias,
+Pessimista = 32 dias.
+Calcule: a) E, b) σ, c) Intervalo 95%
+
+Resolução:
+a) E = (12 + 4x18 + 32) / 6 = (12 + 72 + 32) / 6 = 116 / 6 = 19,3 dias
+
+b) σ = (32 - 12) / 6 = 20 / 6 = 3,3 dias
+
+c) 95% = 19,3 +/- (2 x 3,3) = 19,3 +/- 6,6 = [12,7 dias a 25,9 dias]
+
+-------------------------------------------------------------------------------
+
+12.3 Exercício 3: COCOMO Básico
+
+Enunciado:
+Projeto semi-acoplado com 80 KLOC.
+Dados: a=3,0; b=1,12; c=2,5; d=0,35.
+Calcule esforço, prazo e tamanho da equipe.
+
+Resolução:
+Esforço = 3,0 x (80)^1,12
+80^1,12 = 80 x 80^0,12 = 80 x 1,69 = 135,2
+Esforço = 3,0 x 135,2 = 405,6 pessoa-mês
+
+Prazo = 2,5 x (405,6)^0,35
+405,6^0,35 = e^(0,35 x ln(405,6)) = e^(0,35 x 6,005) = e^2,102 = 8,18
+Prazo = 2,5 x 8,18 = 20,45 meses
+
+Equipe = 405,6 / 20,45 = 19,8 ≈ 20 pessoas
+
+-------------------------------------------------------------------------------
+
+12.4 Exercício 4: Velocidade Ágil
+
+Enunciado:
+Um time teve as seguintes entregas nos últimos 4 sprints:
+Sprint 1: 21 pontos, Sprint 2: 23 pontos, Sprint 3: 22 pontos, Sprint 4: 18 pontos
+O backlog total é de 150 pontos.
+Quantos sprints são necessários?
+
+Resolução:
+Velocidade média = (21 + 23 + 22 + 18) / 4 = 84 / 4 = 21 pontos/sprint
+Sprints = 150 / 21 = 7,14 sprints (aprox. 8 sprints)
+
+-------------------------------------------------------------------------------
+
+12.5 Estudo de Caso: Sistema de Gestão Escolar
+
+Contexto:
+Startup contratada para desenvolver sistema de gestão escolar (matrículas, notas,
+frequência, financeiro, relatórios). Prazo desejado: 6 meses.
+Orçamento máximo: R$ 500.000.
+
+Dados:
+- 40 telas de entrada
+- 20 relatórios
+- 15 tabelas internas
+- 2 integrações externas
+- Equipe: 1 gerente, 2 analistas, 4 devs, 1 QA (8 pessoas)
+- Produtividade média: 10 PF/pessoa-mês
+
+Perguntas:
+1. Qual o tamanho estimado em PF?
+2. Quantos meses seriam necessários?
+3. A estimativa cabe no prazo de 6 meses?
+
+Respostas:
+1. UFP estimado = 350-400 PF. Com fatores de ajuste (complexidade alta):
+   PF = 525 (valor médio adotado)
+
+2. Esforço = PF / Produtividade = 525 / 10 = 52,5 pessoa-mês
+   Prazo = 52,5 / 8 pessoas = 6,56 meses
+
+3. Não cabe (6,56 > 6,0 meses). Alternativas:
+   - Aumentar equipe (cuidado: Lei de Brooks)
+   - Reduzir escopo (MVP)
+   - Aumentar prazo
+   - Aumentar produtividade (automação, horas extras)
+
+-------------------------------------------------------------------------------
+
+12.6 Exercícios Propostos para o Aluno
+
+1. Estime 3 projetos hipotéticos usando Pontos de Função (dados fornecidos)
+2. Simule planning poker em sala com 5 histórias de usuário
+3. Calcule a velocidade do time após 6 sprints (dados tabelados)
+4. Compare resultados entre Delphi e COCOMO para um mesmo projeto
+5. Faça a estimativa completa de um sistema de e-commerce com escopo definido
+
+
+================================================================================
+13. REFERÊNCIAS BIBLIOGRÁFICAS
+================================================================================
+
+13.1 Livros Clássicos
+
+- BROOKS, Fred. The Mythical Man-Month. 1975/1995.
+- BOEHM, Barry. Software Engineering Economics. 1981.
+- BOEHM, Barry et al. Software Cost Estimation with COCOMO II. 2000.
+- JONES, Capers. Estimating Software Costs. 2007.
+- COHN, Mike. Agile Estimating and Planning. 2005.
+- McCONNELL, Steve. Software Estimation: Demystifying the Black Art. 2006.
+
+13.2 Normas e Padrões
+
+- IFPUG FPA (Function Point Analysis) - versão 4.3
+- ISO/IEC 20926:2009 - IFPUG FPA
+- ISO/IEC 24570:2005 - NESMA FPA
+- COSMIC-FFP (para software em tempo real)
+- PMBOK (Project Management Body of Knowledge) - 7ª ed./8ª ed.
+
+13.3 Artigos Científicos Recomendados
+
+- BOEHM, Barry; BASILI, Victor. Software Defect Reduction Top 10 List. 2001.
+- COHN, Mike. What is Agile Estimating and Planning. 2005.
+- Standish Group. The Chaos Report. 1994-2023.
+- KARNER, Gustav. Estimating with Use Case Points. 1993.
+
+13.4 Ferramentas Online
+
+- COCOMO II Web: http://csse.usc.edu/tools/
+- PlanITpoker: https://www.planitpoker.com/
+- IFPUG: https://www.ifpug.org/
+
+
+================================================================================
+14. APÊNDICE - CHECKLIST DE ESTIMATIVA
+================================================================================
+
+CHECKLIST PARA ESTIMATIVA DE SOFTWARE
+
+[ ] Escopo mínimo está claramente definido?
+[ ] Requisitos funcionais levantados?
+[ ] Requisitos não-funcionais documentados?
+[ ] Histórico de projetos similares disponível?
+
+[ ] Todos os stakeholders entrevistados?
+[ ] Riscos identificados e documentados?
+[ ] Equipe que vai executar é conhecida?
+[ ] Tecnologias são conhecidas ou novas?
+
+[ ] Método(s) de estimativa selecionado(s):
+    [ ] Pontos de Função   [ ] COCOMO
+    [ ] Planning Poker     [ ] Delphi
+    [ ] Analogia           [ ] Outro: ___________
+
+[ ] Estimativa validada com outra técnica (cross-check)?
+[ ] Reserva de contingência adicionada? (___ %)
+[ ] Estimativa aprovada pelo sponsor?
+[ ] Plano de reestimativa estabelecido (a cada milestone)?
+
+
+================================================================================
+FIM DO MATERIAL
+================================================================================
+
+RESUMO PARA O ALUNO:
+
+Estimativa em software é mais arte do que ciência exata. Use múltiplas técnicas
+(nunca só uma), envolva quem realmente vai executar e revise suas previsões com
+dados reais. A transparência sobre a incerteza (intervalos de confiança) é tão
+importante quanto o número estimado.
+
+Lembre-se da Lei de Parkinson: "O trabalho se expande para preencher o tempo
+disponível". E da Lei de Brooks: "Adicionar mais pessoas a um projeto atrasado
+o torna ainda mais atrasado".
+
+================================================================================
+Material preparado para a disciplina Fundamentos de Engenharia de Software
+Curso Superior de Engenharia de Software
+================================================================================
