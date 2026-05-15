@@ -1,4 +1,4 @@
-# 🐧 Debian Day 2026: O futuro é livre, e ele acontece no UniAlfa!
+# 🐧 Debian Day 2026: O futuro é livre, e ele acontece na UniAlfa!
 
 ## 🌍 Liberdade, código e comunidade: um convite mundial com sabor Goiano
 
