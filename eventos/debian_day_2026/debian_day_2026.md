@@ -75,7 +75,7 @@ Alunos, professores e egressos desses cursos estarão juntos com a comunidade De
 
 ---
 
-## 🔥 O que esperar do Debian Day 2026 no UniAlfa?
+## 🔥 O que esperar do Debian Day 2026 na UniAlfa?
 
 ✅ **Palestra de abertura com os professores George Marra e Sandro Cardoso** — "Debian, Software Livre e o nascimento do UniAlfa Linux"  
 ✅ **Lançamento oficial e demonstração ao vivo do UniAlfa Linux 1.0**  
