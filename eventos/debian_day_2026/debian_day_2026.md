@@ -34,7 +34,7 @@ O **Debian Day** celebra, todo dia 16 de agosto, o aniversário de fundação do
 
 🎓 **Executores do evento:**  
 - **Professor Me. George Mendes Marra**  
-- **Professor Sandro Gouveia Cardoso**  
+- **Professor Me. Sandro Gouveia Cardoso**  
 
 Dois nomes que respiram software livre e tecnologia educacional. O Prof. George mantém um blog ativo onde compartilha conhecimento sobre desenvolvimento, sistemas e inovação — vale acompanhar!  
 📌 **Blog oficial do Professor George Mendes Marra:**  
@@ -79,11 +79,7 @@ Alunos, professores e egressos desses cursos estarão juntos com a comunidade De
 
 ✅ **Palestra de abertura com os professores George Marra e Sandro Cardoso** — "Debian, Software Livre e o nascimento do UniAlfa Linux"  
 ✅ **Lançamento oficial e demonstração ao vivo do UniAlfa Linux 1.0**  
-✅ Oficinas de instalação e configuração do Debian 12 "Bookworm" e do UniAlfa Linux  
-✅ Mesa redonda: "Software Livre no Mercado de Trabalho em Goiás e no Brasil"  
-✅ Espaço "instala-tchê": traga seu PC, notebook ou VM e saia rodando Linux livre com ajuda da comunidade  
 ✅ Hands-on de contribuição para o Debian — você pode ajudar o projeto global mesmo sendo iniciante!  
-✅ Competição de scripts e automação em Bash/Python  
 ✅ Encontro de grupos de usuários GNU/Linux do Centro-Oeste (GO, DF, MT, MS)  
 ✅ Coffee break livre (café também é liberdade ☕🐧)  
 ✅ **Sorteio de brindes** — adesivos, camisetas do Debian, canecas e pendrives com UniAlfa Linux  
@@ -116,7 +112,7 @@ O evento foi pensado para ter **trilhas simultâneas**: uma mais técnica (para 
 🔹 Haverá **transmissão ao vivo** no YouTube da UniAlfa para quem não puder comparecer presencialmente
 
 > **Quer ser voluntário, palestrante ou apresentar um projeto na mostra de software livre?**  
-> Entre em contato com os professores executores pelo e-mail: **debian.day@uniafa.edu.br**
+> Entre em contato com os professores executores pelo e-mail: **george.marra@unialfa.edu.br**
 
 ---
 
@@ -147,8 +143,7 @@ Ajude Goiânia a entrar no mapa global do software livre. Marque seus amigos, co
 ## 📍 Como chegar?
 
 **UniAlfa Perimetral**  
-Endereço: Avenida Perimetral, nº 1234 (exemplo — ajustar conforme endereço real)  
-Setor: (inserir setor correto), Goiânia - GO
+Endereço: Av. Perimetral Norte, 4129, Vila João Vaz, CEP 74445-190,  Goiânia - GO
 
 **Estacionamento:** disponível no local (vagas limitadas, recomendado chegar cedo)  
 **Transporte público:** diversas linhas de ônibus passam próximo à unidade  
