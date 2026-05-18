@@ -463,5 +463,3 @@ mvnd clean install  # muito mais rápido!
 - **Solução**: Use `chmod +x arquivo.sh` para tornar executável.
 
 ---
-
-Agora você tem um ambiente Maven completo no macOS, funcionando 100% via Terminal! Esse workflow é idêntico ao usado em servidores CI/CD e ambientes de produção. O Homebrew torna tudo muito simples, mas você também tem o controle total com a instalação manual se precisar.
