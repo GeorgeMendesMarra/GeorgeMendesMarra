@@ -380,4 +380,3 @@ build.bat
 | `mvn dependency:tree` | Mostra árvore de dependências |
 | `mvn -version` | Verifica a instalação |
 
-Agora você tem um ambiente Maven completo no Windows, funcionando 100% via linha de comando! Esse conhecimento é fundamental para trabalhar com servidores CI/CD (Jenkins, GitLab CI, GitHub Actions) e para quem prefere um workflow mais controlado e automatizado.
