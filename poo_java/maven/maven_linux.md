@@ -2,7 +2,7 @@
 
 ## 🐧 Passo 1: Instalação do Maven no Linux
 
-### Opção 1: Usando o gerenciador de pacotes (recomendado)
+## Opção 1: Usando o gerenciador de pacotes (recomendado)
 
 **Ubuntu/Debian:**
 ```bash
