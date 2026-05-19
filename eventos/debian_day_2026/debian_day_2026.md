@@ -131,7 +131,7 @@ Ajude Goiânia a entrar no mapa global do software livre. Marque seus amigos, co
 `#GeorgeMarra`  
 `#SandroCardoso`
 
-📌 **Blog oficial do Professor George Mendes Marra (lá tem prévia do UniAlfa Linux):**  
+📌 **Blog oficial do Professor George Mendes Marra:**  
 👉 [https://georgemendesmarra.blogspot.com/](https://georgemendesmarra.blogspot.com/)
 
 📌 **Instagram e LinkedIn da UniAlfa Perimetral:** acompanhe para novidades e link de inscrição.
