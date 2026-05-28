@@ -1,4 +1,3 @@
----
 Grupo 1 - 06/05/2026 - Criptografia Assimétrica **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 ALLYSSON DA SILVA VITAL - 8,5
