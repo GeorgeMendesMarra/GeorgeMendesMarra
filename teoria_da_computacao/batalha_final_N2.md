@@ -108,7 +108,7 @@ VITOR HUGO MEDEIROS ALECRIM - 9,5
 VITOR MONTEIRO DA COSTA SILVA - 9,5
 
 WESLEY DIAS FRÓES - 9,5
-=========================================================================
+---
 Grupo 9 - 03/06/2026 - 
 
 AYSHA TAMILA TEIXEIRA DE SOUZA
@@ -118,7 +118,7 @@ EDUARDO ABRÃO ALVARENGA SANTANA
 EDUARDO RIBEIRO ARRUDA
 
 Felipe de Castro Rosa
-=========================================================================
+---
 Grupo 10 - 03/06/2026 - 
 
 GUILHERME ABREU DA SILVA
