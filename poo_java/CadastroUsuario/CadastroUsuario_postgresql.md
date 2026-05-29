@@ -855,4 +855,3 @@ CREATE INDEX idx_usuarios_email ON usuarios(email);
 5. **Cross-platform** - Funciona em Windows, Linux e Mac
 6. **JDBC driver maduro** - Estável e bem testado
 
-Este tutorial completo permite que você substitua facilmente o MySQL ou Oracle pelo PostgreSQL mantendo a mesma funcionalidade do sistema de cadastro de usuários! O PostgreSQL é uma excelente escolha para projetos Java por ser gratuito, poderoso e fácil de usar.
