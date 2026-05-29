@@ -846,5 +846,3 @@ COMMIT;
 -- Verificar
 SELECT * FROM usuarios;
 ```
-
-Este tutorial completo permite que você substitua o MySQL pelo Oracle XE (gratuito) mantendo a mesma funcionalidade do sistema de cadastro de usuários!
