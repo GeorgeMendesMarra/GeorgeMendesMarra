@@ -71,7 +71,7 @@ A UniAlfa não é apenas palco deste evento: é protagonista. Nossos cursos de T
 - **📐 Engenharia de Software** — Qualidade, processos, metodologias ágeis, arquitetura de sistemas e gestão de projetos. Foco em construir software robusto e escalável.
 - **🔧 Engenharia de Computação** — Hardware, firmware, sistemas embarcados, robótica e a alma dos dispositivos. Une eletrônica e software na ponta da faca.
 
-Alunos, professores e egressos desses cursos estarão juntos com a comunidade Debian para trocar experiências, aprender e contribuir. Haverá **estandes de cada curso** apresentando projetos desenvolvidos com software livre.
+Alunos, professores e egressos desses cursos estarão juntos com a comunidade Debian para trocar experiências, aprender e contribuir.
 
 ---
 
@@ -134,7 +134,7 @@ Ajude Goiânia a entrar no mapa global do software livre. Marque seus amigos, co
 📌 **Blog oficial do Professor George Mendes Marra:**  
 👉 [https://georgemendesmarra.blogspot.com/](https://georgemendesmarra.blogspot.com/)
 
-📌 **Instagram e LinkedIn da UniAlfa Perimetral:** acompanhe para novidades e link de inscrição.
+📌 **Instagram e LinkedIn da UniAlfa:** acompanhe para novidades e link de inscrição.
 
 📌 **Grupo no Telegram:** "Debian Day UniAlfa 2026" — link disponível em breve para trocar ideias, tirar dúvidas e fazer networking pré-evento.
 
@@ -142,10 +142,10 @@ Ajude Goiânia a entrar no mapa global do software livre. Marque seus amigos, co
 
 ## 📍 Como chegar?
 
-**UniAlfa Perimetral**  
-Endereço: Av. Perimetral Norte, 4129, Vila João Vaz, CEP 74445-190,  Goiânia - GO
+**UniAlfa T-1**  
+Endereço: Av. T-1, 363 - QUADRA 25, LOTE 7/8/17/19 - St. Bueno, Goiânia - GO, 74210-098
 
-**Estacionamento:** disponível no local (vagas limitadas, recomendado chegar cedo)  
+**Estacionamento:** disponível no local (entrada pela rua T-28)
 **Transporte público:** diversas linhas de ônibus passam próximo à unidade  
 **Aplicativos de mobilidade:** Uber/99 com ponto de parada na porta
 
@@ -153,7 +153,7 @@ Endereço: Av. Perimetral Norte, 4129, Vila João Vaz, CEP 74445-190,  Goiânia 
 
 ## 🐧 "Liberdade é o melhor feature"
 
-No dia **14 de agosto de 2026, das 18h55 às 22h25**, o UniAlfa Perimetral será uma extensão do mundo Debian: colaborativo, diverso, técnico e humano. Venha celebrar a distribuição que move servidores, desktops, nuvens e corações — e testemunhe o **nascimento do UniAlfa Linux 1.0**.
+No dia **15 de agosto de 2026, das 08h às 17h**, o UniAlfa Perimetral será uma extensão do mundo Debian: colaborativo, diverso, técnico e humano. Venha celebrar a distribuição que move servidores, desktops, nuvens e corações — e testemunhe o **nascimento do UniAlfa Linux 1.0**.
 
 **Traga sua mente aberta. Leve conhecimento, comunidade e muito ping pong no terminal.**
 
