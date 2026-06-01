@@ -2,7 +2,7 @@
 
 ## 🌍 Liberdade, código e comunidade: um convite mundial com sabor Goiano
 
-No dia **14 de agosto de 2026**, o coração da tecnologia livre bate mais forte no Centro Universitário UniAlfa Perimetral, em Goiânia. Preparem teclados, mentes curiosas e corações abertos: **chegou o Debian Day**, e com ele a chance de celebrar o maior sistema operacional colaborativo do planeta — o **Debian GNU/Linux** — ao lado de quem entende que software não é só código, é revolução.
+No dia **15 de agosto de 2026**, o coração da tecnologia livre bate mais forte no Centro Universitário UniAlfa Perimetral, em Goiânia. Preparem teclados, mentes curiosas e corações abertos: **chegou o Debian Day**, e com ele a chance de celebrar o maior sistema operacional colaborativo do planeta — o **Debian GNU/Linux** — ao lado de quem entende que software não é só código, é revolução.
 
 ---
 
@@ -26,9 +26,9 @@ O **Debian Day** celebra, todo dia 16 de agosto, o aniversário de fundação do
 
 ## 📅 Quando, onde e com quem?
 
-📌 **Data:** 14 de agosto de 2026 (sexta-feira)  
-⏰ **Horário:** 18h55 às 22h25  
-📍 **Local:** Centro Universitário UniAlfa – Unidade Perimetral  
+📌 **Data:** 15 de agosto de 2026 (sábado)  
+⏰ **Horário:** 08h às 17h  
+📍 **Local:** Centro Universitário UniAlfa – Unidade T1 (Setor Bueno) 
 🏙️ **Cidade:** Goiânia - GO  
 🌎 **Público:** Técnicos, entusiastas, curiosos, estudantes e profissionais de todo o Brasil, Goiás e da região Centro-Oeste
 
