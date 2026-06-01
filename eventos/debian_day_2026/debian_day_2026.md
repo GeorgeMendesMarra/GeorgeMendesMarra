@@ -55,7 +55,7 @@ Neste Debian Day, a UniAlfa não será apenas palco, mas protagonista de uma nov
 - Atualizações e suporte pela própria comunidade UniAlfa  
 - Interface amigável mas poderosa, perfeita para iniciantes e experts em desenvolvimento
 
-O **UniAlfa Linux 1.0** é a prova de que software livre não se consome apenas — se **cria, se adapta, se ensina**. E ele nasce oficialmente em Goiânia, no dia 14 de agosto de 2026, dentro do Debian Day.
+O **UniAlfa Linux 1.0** é a prova de que software livre não se consome apenas — se **cria, se adapta, se ensina**. E ele nasce oficialmente em Goiânia, no dia 15 de agosto de 2026, dentro do Debian Day.
 
 Durante o evento, haverá **demonstração ao vivo**, instalação em máquinas reais e distribuição de mídias (pendrives/dvds) para os primeiros participantes.
 
@@ -161,5 +161,6 @@ No dia **15 de agosto de 2026, das 08h às 17h**, o UniAlfa Perimetral será uma
 
 **Até lá, rode no seu terminal:**  
 ```bash
-sudo apt-get update
-sudo apt-get install comunidade-debian-day-2026
+apt update
+apt upgrade
+apt install comunidade-debian-day-2026
