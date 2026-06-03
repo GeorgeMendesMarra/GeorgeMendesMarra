@@ -77,5 +77,3 @@ Com base nas ementas analisadas, estes são os livros mais citados como **biblio
 | **Engenharia de Software Moderna** | Marco Tulio Valente | Independente | Aborda práticas modernas como DevOps e CI/CD. |
 
 ---
-
-Caso você tenha interesse em um recorte mais específico (como **Engenharia de Requisitos** ou **Qualidade de Software**) ou em um formato de resumo para estudo, é só me avisar!
