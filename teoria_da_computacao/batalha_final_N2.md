@@ -117,14 +117,14 @@ EDUARDO ABRÃO ALVARENGA SANTANA
 
 EDUARDO RIBEIRO ARRUDA - 8,5
 
-Felipe de Castro Rosa
+Felipe de Castro Rosa - 8,5
 
 ---
 Grupo 10 - 03/06/2026 - Máquinas de Registradores **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 GUILHERME ABREU DA SILVA
 
-GUILHERME BARROS DOS PASSOS
+GUILHERME BARROS DOS PASSOS - 8,5
 
 JHONY OLIVEIRA VIEIRA - 8,5
 
