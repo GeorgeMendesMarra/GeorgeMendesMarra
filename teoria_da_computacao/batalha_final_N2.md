@@ -111,7 +111,7 @@ WESLEY DIAS FRÓES - 9,5
 ---
 Grupo 9 - 03/06/2026 - Teste de Church **Enviar a apresentação para: george.marra@unialfa.com.br**
 
-AYSHA TAMILA TEIXEIRA DE SOUZA - 9,5
+AYSHA TAMILA TEIXEIRA DE SOUZA - 10,0
 
 EDUARDO ABRÃO ALVARENGA SANTANA
 
