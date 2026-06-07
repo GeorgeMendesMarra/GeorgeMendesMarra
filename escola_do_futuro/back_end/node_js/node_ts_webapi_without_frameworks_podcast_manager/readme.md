@@ -2,19 +2,19 @@
 
 ## Descrição
 
-O Podcast Manager é uma aplicação inspirada no estilo da Netflix, que permite centralizar diferentes episódios de podcasts separados por categoria. Este projeto visa facilitar o acesso e a organização de episódios de podcasts em formato de vídeo, proporcionando uma experiência de navegação intuitiva e agradável para os usuários.
+O Podcast Manager é uma aplicação inspirada no estilo da Netflix, desenvolvida para centralizar episódios de podcasts organizados por categorias. Com um design focado na experiência do usuário, a plataforma permite navegar de forma intuitiva por diferentes conteúdos em formato de vídeo, facilitando o acesso e a organização dos episódios.
 
 ## Funcionalidades
 
-- **Listar os episódios de podcasts em sessões de categorias:** Os episódios são organizados em categorias como saúde, bodybuilder, mentalidade e humor, permitindo aos usuários explorar facilmente os conteúdos disponíveis.
-- **Filtrar episódios por nome de podcast:** Os usuários podem realizar buscas específicas por nome de podcast, facilitando o acesso aos episódios desejados.
+- **Listagem de episódios por categoria:** Os episódios são agrupados em categorias como saúde, bodybuilder, mentalidade e humor, permitindo que os usuários descubram novos conteúdos de forma organizada.
+- **Busca por nome de podcast:** Os usuários podem filtrar episódios específicos utilizando o nome do podcast, agilizando o acesso ao conteúdo desejado.
 
 ## Implementação
 
-### Listar os episódios de podcasts em sessões de categorias
+### Listagem de episódios por categoria
 
 - **Endpoint:** `GET /list`
-- **Descrição:** Retorna uma lista de episódios de podcasts organizados por categorias.
+- **Descrição:** Retorna uma lista de episódios de podcasts agrupados por suas respectivas categorias.
 - **Exemplo de resposta:**
 
 ```json
@@ -38,30 +38,30 @@ O Podcast Manager é uma aplicação inspirada no estilo da Netflix, que permite
 ]
 ```
 
-### Filtrar episódios por nome de podcast
+### Busca por nome de podcast
 
 - **Endpoint:** `GET /episode?podcastName={nome}`
-- **Descrição:** Retorna uma lista de episódios de podcast com base no nome do podcast fornecido.
+- **Descrição:** Retorna uma lista de episódios correspondentes ao nome do podcast informado como parâmetro.
 - **Exemplo de requisição:** `GET /episode?podcastName=flow`
 
 ## Tecnologias Utilizadas
 
-- **[TypeScript](https://www.typescriptlang.org/):** Linguagem de programação utilizada para o desenvolvimento do projeto.
-- **[Tsup](https://github.com/egoist/tsup):** Ferramenta de construção e empacotamento para projetos TypeScript.
-- **[Tsx](https://github.com/egoist/tsx):** Compilador TypeScript que suporta a construção de projetos.
-- **[Node.js](https://nodejs.org/):** Ambiente de execução JavaScript que permite executar código JavaScript do lado do servidor.
-- **[@types/node](https://www.npmjs.com/package/@types/node):** Pacote de definições de tipos para Node.js para auxiliar no desenvolvimento com TypeScript.
+- **[TypeScript](https://www.typescriptlang.org/):** Linguagem principal que adiciona tipagem estática ao JavaScript, aumentando a robustez e a manutenibilidade do código.
+- **[Tsup](https://github.com/egoist/tsup):** Ferramenta rápida e sem configuração para empacotar projetos TypeScript.
+- **[Tsx](https://github.com/egoist/tsx):** Executor TypeScript que permite rodar arquivos `.ts` diretamente sem compilação manual.
+- **[Node.js](https://nodejs.org/):** Ambiente de execução JavaScript back-end que possibilita a criação da API.
+- **[@types/node](https://www.npmjs.com/package/@types/node):** Definições de tipos oficiais para Node.js, garantindo maior segurança e produtividade no desenvolvimento com TypeScript.
 
 ## Como Utilizar
 
 1. Clone este repositório.
-2. Instale as dependências usando `npm install`.
-3. Inicie o servidor executando `start:dev`.
-4. Acesse os endpoints fornecidos para listar os episódios de podcasts ou filtrá-los por nome de podcast.
+2. Instale as dependências com o comando `npm install`.
+3. Inicie o servidor em modo de desenvolvimento executando `npm run start:dev`.
+4. Acesse os endpoints disponíveis para listar episódios ou filtrar por nome de podcast.
 
 ## Contribuição
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas ou enviar solicitações de recebimento (pull requests) para melhorar este projeto.
+Contribuições são muito bem-vindas! Sinta-se à vontade para abrir *issues* relatar melhorias ou enviar *pull requests* com sugestões e correções.
 
 ## Licença
 
