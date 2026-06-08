@@ -37,36 +37,3 @@
     "@types/node": "^20.0.0"
   }
 }
-```
-
-### ✨ Novos Scripts
-
-```bash
-# Executa a aplicação em produção
-npm start
-
-# Modo desenvolvimento com hot-reload (Node.js 18+)
-npm run dev
-
-# Executa testes (placeholder para futura implementação)
-npm test
-
-# Verifica qualidade do código (placeholder)
-npm run lint
-
-# Formata o código (placeholder)
-npm run format
-```
-
-### 🛒 Funcionalidades Esperadas para o Shopee Cart
-
-Com base no nome do projeto, as funcionalidades típicas incluem:
-
-- ✅ Adicionar produtos ao carrinho
-- ✅ Remover produtos do carrinho
-- ✅ Atualizar quantidades
-- ✅ Calcular subtotal, frete e total
-- ✅ Aplicar cupons de desconto
-- ✅ Listar itens do carrinho
-- ✅ Finalizar compra (checkout)
----
