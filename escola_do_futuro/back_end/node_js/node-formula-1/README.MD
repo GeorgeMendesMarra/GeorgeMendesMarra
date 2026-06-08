@@ -1,7 +1,3 @@
-Aqui está o README.md melhorado e mais profissional:
-
----
-
 <div align="center">
 
   <img src="./.github/assets/blue-saiyan-bg.png" alt="Logo" height="200">
