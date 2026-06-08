@@ -1,13 +1,73 @@
+```json
 {
-  "name": "06-shopee-cart",
+  "name": "shopee-cart",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sistema de gerenciamento de carrinho de compras inspirado no Shopee - Simulação de e-commerce com funcionalidades de adicionar, remover e calcular itens",
   "type": "module",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "echo \"Adicione um linter como ESLint\"",
+    "format": "echo \"Adicione um formatador como Prettier\""
   },
-  "keywords": [],
+  "keywords": [
+    "shopee",
+    "cart",
+    "ecommerce",
+    "shopping-cart",
+    "nodejs",
+    "javascript"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgeMendesMarra/GeorgeMendesMarra/shopee-cart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GeorgeMendesMarra/GeorgeMendesMarra/shopee-cart/issues"
+  },
+  "homepage": "https://github.com/GeorgeMendesMarra/GeorgeMendesMarra/shopee-cart#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  }
 }
+```
+
+### ✨ Novos Scripts
+
+```bash
+# Executa a aplicação em produção
+npm start
+
+# Modo desenvolvimento com hot-reload (Node.js 18+)
+npm run dev
+
+# Executa testes (placeholder para futura implementação)
+npm test
+
+# Verifica qualidade do código (placeholder)
+npm run lint
+
+# Formata o código (placeholder)
+npm run format
+```
+
+### 🛒 Funcionalidades Esperadas para o Shopee Cart
+
+Com base no nome do projeto, as funcionalidades típicas incluem:
+
+- ✅ Adicionar produtos ao carrinho
+- ✅ Remover produtos do carrinho
+- ✅ Atualizar quantidades
+- ✅ Calcular subtotal, frete e total
+- ✅ Aplicar cupons de desconto
+- ✅ Listar itens do carrinho
+- ✅ Finalizar compra (checkout)
+---
