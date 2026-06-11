@@ -20,7 +20,7 @@ Nascido em 1993, o **Debian** é uma das distribuições Linux mais antigas, res
 
 O Debian segue rigorosamente o **Contrato Social Debian** e as **Diretrizes de Software Livre do Debian (DFSG)** , que garantem que o sistema permanecerá 100% livre, aberto e gratuito. Seu sistema de pacotes (APT/dpkg) é referência em facilidade de uso e gerenciamento de dependências.
 
-O **Debian Day** celebra, todo dia 16 de agosto, o aniversário de fundação do projeto. Mas em 2026, a gente antecipa a festa e traz a Goiânia um encontro presencial histórico, direto no **UniAlfa Perimetral**.
+O **Debian Day** celebra, todo dia 16 de agosto, o aniversário de fundação do projeto. Mas em 2026, a gente antecipa a festa e traz a Goiânia um encontro presencial histórico, direto na **UniAlfa T-1**.
 
 ---
 
