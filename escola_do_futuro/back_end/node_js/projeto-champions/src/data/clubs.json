@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "name": "Real Madrid"
+    },
+    {
+        "id": 2,
+        "name": "Barcelona"
+    },
+    {
+        "id": 3,
+        "name": "Manchester City"
+    },
+    {
+        "id": 4,
+        "name": "Atlético de Madrid"
+    },
+    {
+        "id": 5,
+        "name": "Bayern Munich"
+    },
+    {
+        "id": 6,
+        "name": "Benfica"
+    },
+    {
+        "id": 7,
+        "name": "Borussia Dortmund"
+    },
+    {
+        "id": 8,
+        "name": "Celtic"
+    },
+    {
+        "id": 9,
+        "name": "Copenhagen"
+    },
+    {
+        "id": 10,
+        "name": "Crvena zvezda"
+    },
+    {
+        "id": 11,
+        "name": "Feyenoord"
+    },
+    {
+        "id": 12,
+        "name": "Galatasaray"
+    },
+    {
+        "id": 13,
+        "name": "Inter Milan"
+    },
+    {
+        "id": 14,
+        "name": "Lazio"
+    },
+    {
+        "id": 15,
+        "name": "Lens"
+    },
+    {
+        "id": 16,
+        "name": "RB Leipzig"
+    },
+    {
+        "id": 17,
+        "name": "Milan"
+    },
+    {
+        "id": 18,
+        "name": "Napoli"
+    },
+    {
+        "id": 19,
+        "name": "Newcastle United"
+    },
+    {
+        "id": 20,
+        "name": "Paris Saint-Germain"
+    },
+    {
+        "id": 21,
+        "name": "Porto"
+    },
+    {
+        "id": 22,
+        "name": "PSV Eindhoven"
+    },
+    {
+        "id": 23,
+        "name": "Real Sociedad"
+    },
+    {
+        "id": 24,
+        "name": "Salzburg"
+    },
+    {
+        "id": 25,
+        "name": "Sevilla"
+    },
+    {
+        "id": 26,
+        "name": "Shakhtar Donetsk"
+    },
+    {
+        "id": 27,
+        "name": "Union Berlin"
+    },
+    {
+        "id": 28,
+        "name": "Young Boys"
+    },
+    {
+        "id": 29,
+        "name": "Arsenal"
+    },
+    {
+        "id": 30,
+        "name": "Manchester United"
+    },
+    {
+        "id": 31,
+        "name": "Braga"
+    },
+    {
+        "id": 32,
+        "name": "Antwerp"
+    }
+]
