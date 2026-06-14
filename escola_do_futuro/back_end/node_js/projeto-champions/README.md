@@ -12,7 +12,7 @@ The **Champions League API** is a back-end application built with **Node.js** an
 1. Clone the repository:
 ```bash
 git clone https://github.com/georgemendesmarra/projeto-champions.git
-cd api-champions-league
+cd projeto-champions
 ```
 
 2. Install dependencies:
