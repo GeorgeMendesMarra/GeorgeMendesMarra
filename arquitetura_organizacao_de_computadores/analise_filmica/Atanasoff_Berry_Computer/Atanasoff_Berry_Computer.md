@@ -87,9 +87,3 @@ O documentário, portanto, provavelmente explora:
 
 **Link do vídeo que você enviou (legendado em português):**  
 https://www.youtube.com/watch?v=mKGEM_tc7oQ
-
----
-
-Caso você consiga acessar a **transcrição ou descrição do vídeo** e queira uma análise mais específica daquele conteúdo (como datações, citações de entrevistados ou fatos exclusivos do documentário), é só enviar o texto.
-
-Além disso, se desejar, posso elaborar **20 questões objetivas** sobre este documentário seguindo o mesmo padrão das anteriores. É só pedir.
