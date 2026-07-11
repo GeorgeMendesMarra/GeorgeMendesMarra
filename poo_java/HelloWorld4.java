@@ -1,10 +1,10 @@
-public class HelloWorld4 {
-    public static void main(String[] args) {
-        String greeting = "Hello, World!"; //Linha 3
-        System.out.println(greeting);      //Linha 4
-    }
-}
-
-/* Linha 3 - Declara uma variável greeting do tipo String e atribui a ela a string "Hello, World!".
-   Linha 4 - Em seguida, ela imprime o valor da variável. Isso demonstra como usar variáveis para armazenar e manipular strings.
-*/
+/*
+ * Versão Java: 8+
+ * Paradigma: Imperativo
+ */
+public class HelloWorld4 { // Classe principal
+    private static final String SAUDACAO = "Hello World"; // Constante estática
+    public static void main(String[] args) { // Método principal
+        System.out.println(SAUDACAO); // Imprime a constante
+    } // Fim do main
+} // Fim da classe
