@@ -1,5 +1,3 @@
----
-
 🧠 O que é um ponteiro?
 
 **Ponteiro** é uma variável que **armazena um endereço de memória**, em vez de armazenar um valor direto.
