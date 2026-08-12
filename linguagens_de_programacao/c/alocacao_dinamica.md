@@ -1,5 +1,3 @@
----
-
 ## 🧠 O que é alocação dinâmica?
 
 Até agora, você declarava variáveis assim:
