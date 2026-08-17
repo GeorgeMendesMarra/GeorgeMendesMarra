@@ -1,14 +1,14 @@
-Grupo 1 - 06/05/2026 - Criptografia Assimétrica **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 1 - 06/05/2026 - A rede social **Enviar a apresentação para: george.marra@unialfa.com.br**
 
-ALLYSSON DA SILVA VITAL - 8,5
+ANA CLARA VIANA MACEDO
 
-ANDRESSA PEDROSA DA SILVA - 8,5
+Arthur Alves Mesquita Fonseca
 
-ARTHUR ARAÚJO TEIXEIRA - 8,5
+ARTHUR NUNES GUIMARÃES
 
-ARTHUR BRUNO CESAR SILVA - 8,5
+ARTHUR VIRGILIO ALBINO FERREIRA
 
-AYSHA TAMILA TEIXEIRA DE SOUZA
+BRENO SILVANO GOMES MARTINS DE PAULA
 
 ---
 
