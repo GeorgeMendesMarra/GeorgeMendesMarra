@@ -1,9 +1,13 @@
 Grupo 1 - 06/05/2026 - A rede social - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 ANA CLARA VIANA MACEDO
+
 Arthur Alves Mesquita Fonseca
+
 ARTHUR NUNES GUIMARÃES
+
 ARTHUR VIRGILIO ALBINO FERREIRA
+
 BRENO SILVANO GOMES MARTINS DE PAULA
 
 ---
@@ -11,16 +15,20 @@ BRENO SILVANO GOMES MARTINS DE PAULA
 Grupo 2 - 06/05/2026 - Criptografia Simétrica **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 EDUARDO PIMENTA MOREIRA
+
 ERICK EDUARDO ALVES FERNANDES
+
 GABRIEL ARAUJO LOPES
+
 GABRIEL FERREIRA GALVAO
+
 GABRIEL LUCAS FREITAS CARVALHO BARBOSA
 
 ---
 
 Grupo 3 - 13/05/2026 - Criptomoedas **Enviar a apresentação para: george.marra@unialfa.com.br**
 
-
+GABRIEL PEREIRA MARTINS
 
 ---
 
