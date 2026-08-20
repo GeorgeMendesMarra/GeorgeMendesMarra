@@ -341,8 +341,11 @@ E) Ausência de direitos autorais.
 A) Porque Linux não possui código-fonte.
 
 B) Porque considera importante reconhecer a contribuição do Projeto GNU para o sistema.
+
 C) Porque Linux foi desenvolvido pela Microsoft.
+
 D) Porque GNU é o nome comercial do Linux.
+
 E) Porque Linux e GNU são sistemas completamente independentes e incompatíveis.
 
 ---
@@ -350,9 +353,13 @@ E) Porque Linux e GNU são sistemas completamente independentes e incompatíveis
 **26. Qual das alternativas apresenta apenas pessoas entrevistadas ou relacionadas diretamente ao documentário?**
 
 A) Richard Stallman, Linus Torvalds e Eric Raymond.
+
 B) Mark Zuckerberg, Steve Jobs e Bill Gates.
+
 C) Tim Berners-Lee, Elon Musk e Jeff Bezos.
+
 D) Alan Turing, Ada Lovelace e Charles Babbage.
+
 E) Dennis Ritchie, James Gosling e Guido van Rossum.
 
 ---
@@ -360,9 +367,13 @@ E) Dennis Ritchie, James Gosling e Guido van Rossum.
 **27. Qual é uma das principais diferenças entre Software Livre e a abordagem Open Source apresentada no documentário?**
 
 A) Software Livre utiliza computadores, enquanto Open Source não utiliza.
+
 B) Software Livre enfatiza a liberdade dos usuários, enquanto Open Source também enfatiza aspectos práticos e técnicos do desenvolvimento aberto.
+
 C) Open Source não permite acesso ao código.
+
 D) Software Livre é necessariamente pago e Open Source é necessariamente gratuito.
+
 E) Não existe qualquer diferença conceitual entre os dois movimentos.
 
 ---
@@ -370,9 +381,13 @@ E) Não existe qualquer diferença conceitual entre os dois movimentos.
 **28. Qual é uma das principais contribuições do desenvolvimento colaborativo apresentado no documentário?**
 
 A) Impedir que outras pessoas encontrem erros no software.
+
 B) Concentrar todo o desenvolvimento em uma única empresa.
+
 C) Permitir que diferentes pessoas contribuam para identificar problemas e desenvolver melhorias.
+
 D) Eliminar a necessidade de programadores.
+
 E) Impedir a distribuição de novas versões.
 
 ---
@@ -380,9 +395,13 @@ E) Impedir a distribuição de novas versões.
 **29. Qual interpretação melhor representa o significado do título *Revolution OS*?**
 
 A) Uma revolução exclusivamente política.
+
 B) Uma revolução relacionada à mudança na forma de desenvolver, distribuir e compreender sistemas e software.
+
 C) Uma guerra entre fabricantes de computadores.
+
 D) Uma revolução causada exclusivamente pelo Windows.
+
 E) Uma revolução relacionada à criação dos videogames.
 
 ---
@@ -390,9 +409,13 @@ E) Uma revolução relacionada à criação dos videogames.
 **30. Considerando o conjunto de ideias apresentado no documentário, qual é a principal reflexão de *Revolution OS*?**
 
 A) O desenvolvimento tecnológico depende exclusivamente de grandes empresas.
+
 B) O código-fonte deve sempre permanecer secreto.
+
 C) A colaboração e o compartilhamento de conhecimento podem produzir tecnologias relevantes e desafiar modelos tradicionais de software.
+
 D) O software livre não possui importância histórica.
+
 E) O Linux foi criado exclusivamente como produto comercial.
 
 ---
