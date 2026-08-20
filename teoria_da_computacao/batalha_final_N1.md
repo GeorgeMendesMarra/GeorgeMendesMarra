@@ -14,7 +14,7 @@ BRENO SILVANO GOMES MARTINS DE PAULA
 
 Grupo 2 - 06/05/2026 - Criptografia Simétrica **Enviar a apresentação para: george.marra@unialfa.com.br**
 
-
+EDUARDO PIMENTA MOREIRA
 
 ---
 
