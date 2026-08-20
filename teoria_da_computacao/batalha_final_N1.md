@@ -42,7 +42,15 @@ GUSTAVO DO PRADO SILVA
 
 Grupo 4 - 13/05/2026 - Blockchain **Enviar a apresentação para: george.marra@unialfa.com.br**
 
+HIGOR RESENDE ARAÚJO
 
+IGOR FILLIPE BRANDÃO MACHADO 
+
+ISABELLA DE OLIVEIRA PEDROSA
+
+ISAQUE AYUPE FERREIRA
+
+JANAINA BATISTA DA SILVA
 
 ---
 
