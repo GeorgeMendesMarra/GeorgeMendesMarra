@@ -12,7 +12,7 @@ BRENO SILVANO GOMES MARTINS DE PAULA
 
 ---
 
-Grupo 2 - 06/05/2026 - Criptografia Simétrica **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 2 - 06/05/2026 - Revolution OS **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 EDUARDO PIMENTA MOREIRA
 
@@ -29,6 +29,14 @@ GABRIEL LUCAS FREITAS CARVALHO BARBOSA
 Grupo 3 - 13/05/2026 - Criptomoedas **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 GABRIEL PEREIRA MARTINS
+
+GABRIEL ROBERTO MARINHO DA SILVA REIS
+
+GUILHERME NAVES DE LIMA
+
+GUSTAVO DO PRADO FARIA
+
+GUSTAVO DO PRADO SILVA
 
 ---
 
