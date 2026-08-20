@@ -84,6 +84,19 @@ NÍCOLAS MOURA BARBOSA
 
 Grupo 7 - 27/05/2026 - Análise fílmica - O jogo da imitação **Enviar a apresentação para: george.marra@unialfa.com.br**
 
+PEDRO AUGUSTO FELDMANN GOMES
+
+PEDRO MENDONÇA ALENCAR
+
+Pedro Sorelly Marques
+
+PEDRO VIEIRA CARVALHO
+
+RAPHAEL FERNANDES DE CARVALHO
+
+
+
+
 
 
 ---
