@@ -1,227 +1,340 @@
-## 📽️ PROVA: REVOLUTION OS – 20 QUESTÕES OBJETIVAS
+# 30 Questões Objetivas — Documentário *Revolution OS*
 
-**Instrução:** Marque a única alternativa correta em cada questão.
+**1. Qual é o principal tema abordado pelo documentário *Revolution OS*?**
 
----
-
-### Questão 1
-Quem é o criador do kernel Linux?
-
-a) Richard Stallman  
-b) Bill Gates  
-c) Linus Torvalds  
-d) Eric S. Raymond  
+A) A história dos videogames e dos consoles domésticos.
+B) A evolução dos computadores pessoais da IBM.
+C) A história do GNU, Linux, Software Livre e Open Source.
+D) O desenvolvimento exclusivo do sistema Windows.
+E) A história da internet e das redes sociais.
 
 ---
 
-### Questão 2
-Qual o nome do movimento e do sistema operacional iniciado por Richard Stallman?
+**2. Quem dirigiu o documentário *Revolution OS*?**
 
-a) BSD  
-b) GNU  
-c) Apache  
-d) Unix  
-
----
-
-### Questão 3
-O que significa o acrônimo recursivo GNU?
-
-a) GNU is Not Unix  
-b) GNU Never Unix  
-c) General Unix Network  
-d) Go Now Unix  
+A) Richard Stallman.
+B) Linus Torvalds.
+C) Eric Raymond.
+D) J. T. S. Moore.
+E) Bruce Perens.
 
 ---
 
-### Questão 4
-Qual a principal diferença entre "software livre" e "software gratuito", segundo Richard Stallman?
+**3. Qual personagem é apresentado como fundador do Projeto GNU?**
 
-a) Software livre é sempre pago  
-b) Software livre se refere a liberdade, não a preço  
-c) Software gratuito não tem código aberto  
-d) Ambos são a mesma coisa  
-
----
-
-### Questão 5
-Como Richard Stallman define a expressão "free speech, not free beer"?
-
-a) Uma crítica ao consumo de álcool  
-b) Uma metáfora para explicar que software livre é questão de liberdade, não de preço  
-c) Um slogan contra a censura na internet  
-d) Uma propaganda da Free Software Foundation  
+A) Linus Torvalds.
+B) Richard Stallman.
+C) Eric Raymond.
+D) Larry Augustin.
+E) Brian Behlendorf.
 
 ---
 
-### Questão 6
-Qual foi o evento de 1978 que Richard Stallman critica como o início do software proprietário?
+**4. O que significa GNU?**
 
-a) O lançamento do Windows  
-b) A "Carta Aberta aos Hobbistas" de Bill Gates  
-c) A criação da Microsoft  
-d) A fundação da Apple  
-
----
-
-### Questão 7
-O que Richard Stallman chama de "esquerda autoral" (copyleft)?
-
-a) Um tipo de licença que proíbe cópias  
-b) Um mecanismo legal que garante que versões modificadas de um software também sejam livres  
-c) Uma forma de violar direitos autorais  
-d) Um sistema de censura digital  
+A) General Network Utility.
+B) Global Network Unix.
+C) GNU's Not Unix.
+D) General New Unix.
+E) GNU Network User.
 
 ---
 
-### Questão 8
-Qual é o nome da licença criada pela Free Software Foundation e usada pelo GNU?
+**5. Qual era um dos principais objetivos do Projeto GNU?**
 
-a) MIT License  
-b) Apache License  
-c) GPL (General Public License)  
-d) BSD License  
-
----
-
-### Questão 9
-O que é um kernel (núcleo) em um sistema operacional?
-
-a) Um editor de texto  
-b) Um compilador de linguagens  
-c) O componente que gerencia os recursos do hardware e permite que outros programas rodem  
-d) Um tipo de banco de dados  
+A) Criar uma versão comercial do Windows.
+B) Criar um sistema operacional livre e compatível com Unix.
+C) Desenvolver exclusivamente jogos para computadores.
+D) Criar uma rede social mundial.
+E) Desenvolver um novo navegador proprietário.
 
 ---
 
-### Questão 10
-Qual era o objetivo inicial do Projeto GNU?
+**6. Quem é conhecido como criador do kernel Linux?**
 
-a) Criar um software proprietário para competir com a Microsoft  
-b) Criar um sistema operacional completamente livre  
-c) Desenvolver um novo tipo de hardware  
-d) Patentear algoritmos de inteligência artificial  
-
----
-
-### Questão 11
-Qual era a grande peça que faltava no sistema GNU para ele ser completo como sistema operacional?
-
-a) O compilador GCC  
-b) O editor Emacs  
-c) O kernel (que foi suprido pelo Linux)  
-d) A interface gráfica  
+A) Richard Stallman.
+B) Eric Raymond.
+C) Linus Torvalds.
+D) Bruce Perens.
+E) Michael Tiemann.
 
 ---
 
-### Questão 12
-Qual frase Eric S. Raymond (ESR) disse a um executivo da Microsoft em um elevador?
+**7. O que é um kernel?**
 
-a) "Linux vai destruir vocês"  
-b) "I'm your worst nightmare" (Sou seu pior pesadelo)  
-c) "Microsoft é o inimigo"  
-d) "Software livre vencerá"  
-
----
-
-### Questão 13
-Qual o nome do influente ensaio escrito por Eric S. Raymond que inspirou a Netscape a liberar seu código?
-
-a) "A Ética Hacker"  
-b) "A Catedral e o Bazar" (The Cathedral and the Bazaar)  
-c) "A Revolução do Código"  
-d) "O Manifesto GNU"  
+A) Um navegador de internet.
+B) Um editor de textos.
+C) O núcleo de um sistema operacional.
+D) Um programa antivírus.
+E) Uma linguagem de programação.
 
 ---
 
-### Questão 14
-Qual foi a empresa de navegadores que, em 1998, liberou o código-fonte do seu produto, impulsionando o movimento open source?
+**8. Qual é uma diferença fundamental entre GNU e Linux?**
 
-a) Microsoft  
-b) Google  
-c) Netscape  
-d) Mozilla (ainda não existia como fundação)  
-
----
-
-### Questão 15
-Qual navegador moderno se originou diretamente do código-fonte liberado pela Netscape?
-
-a) Google Chrome  
-b) Safari  
-c) Firefox  
-d) Opera  
+A) GNU é um navegador e Linux é um compilador.
+B) GNU é uma empresa e Linux é uma linguagem.
+C) GNU desenvolveu diversas ferramentas do sistema, enquanto Linux é o nome do kernel.
+D) GNU é um hardware e Linux é um protocolo de rede.
+E) GNU e Linux são exatamente o mesmo software.
 
 ---
 
-### Questão 16
-O que Brian Behlendorf e outros desenvolvedores criaram a partir de "patches" (correções) no servidor web da NCSA?
+**9. Qual personagem é associado à defesa filosófica da liberdade dos usuários de software?**
 
-a) O sistema Linux  
-b) O servidor web Apache  
-c) O compilador GCC  
-d) O sistema BSD  
-
----
-
-### Questão 17
-Segundo Larry Augustin, fundador da VA Linux, qual era a vantagem de usar GNU/Linux em uma estação de trabalho?
-
-a) Três vezes mais potente e um terço do preço de uma workstation da Sun  
-b) Compatibilidade apenas com Windows  
-c) Menor desempenho porém mais barato  
-d) Design mais bonito  
+A) Bill Gates.
+B) Steve Ballmer.
+C) Richard Stallman.
+D) Larry Augustin.
+E) Frank Hecker.
 
 ---
 
-### Questão 18
-Qual foi a reação de Steve Ballmer (CEO da Microsoft) em relação à licença GPL, segundo o documentário?
+**10. No contexto do Software Livre, o termo "livre" refere-se principalmente a:**
 
-a) Ele elogiou a liberdade do software  
-b) Ele comparou a GPL a um "câncer" que se espalha para tudo que toca  
-c) Ele ignorou completamente o movimento  
-d) Ele adotou a GPL na Microsoft  
-
----
-
-### Questão 19
-O documentário *Revolution OS* foi lançado em que ano?
-
-a) 1998  
-b) 2005  
-c) 2001  
-d) 1995  
+A) Software que obrigatoriamente não pode gerar lucro.
+B) Software que não possui código-fonte.
+C) Liberdade para usar, estudar, modificar e compartilhar o software, conforme sua licença.
+D) Software que só pode ser utilizado gratuitamente por estudantes.
+E) Programas que não possuem direitos autorais.
 
 ---
 
-### Questão 20
-Qual foi uma das principais críticas da imprensa (como o *New York Times*) ao documentário?
+**11. O que é copyleft?**
 
-a) O filme é muito longo e chato  
-b) O documentário é unilateral, sem entrevistas com representantes do software proprietário  
-c) As entrevistas são todas em off  
-d) O filme não tem legendas em português  
-
----
-
-## 📄 GABARITO (para consulta após responder)
-
-| Q | Resposta | Q | Resposta |
-|:-:|:--------:|:-:|:--------:|
-| 1 | c | 11 | c |
-| 2 | b | 12 | b |
-| 3 | a | 13 | b |
-| 4 | b | 14 | c |
-| 5 | b | 15 | c |
-| 6 | b | 16 | b |
-| 7 | b | 17 | a |
-| 8 | c | 18 | b |
-| 9 | c | 19 | c |
-| 10 | b | 20 | b |
+A) Uma técnica para bloquear o código-fonte.
+B) Um mecanismo para garantir determinadas liberdades de uso, modificação e redistribuição do software.
+C) Um sistema operacional desenvolvido pela Microsoft.
+D) Um tipo de antivírus para Linux.
+E) Uma linguagem de programação.
 
 ---
 
-## 🎥 Referência
+**12. Qual das alternativas melhor representa o modelo de desenvolvimento Open Source?**
 
-Documentário *Revolution OS* (2001) – legendado em português:  
-https://www.youtube.com/watch?v=Z3f-M43DiD4
+A) Código fechado e desenvolvimento exclusivamente interno.
+B) Código aberto e possibilidade de colaboração da comunidade, conforme a licença.
+C) Proibição de alterações no software.
+D) Venda obrigatória de todas as versões do programa.
+E) Desenvolvimento sem participação de programadores externos.
+
+---
+
+**13. Quem escreveu o conhecido ensaio "The Cathedral and the Bazaar"?**
+
+A) Linus Torvalds.
+B) Richard Stallman.
+C) Eric Raymond.
+D) Bruce Perens.
+E) J. T. S. Moore.
+
+---
+
+**14. Na metáfora apresentada por Eric Raymond, o "Bazar" representa:**
+
+A) Um modelo de desenvolvimento fechado e centralizado.
+B) Um modelo baseado na colaboração e participação de diversos desenvolvedores.
+C) Uma empresa especializada em venda de computadores.
+D) Um sistema operacional proprietário.
+E) Um modelo no qual apenas uma pessoa pode alterar o código.
+
+---
+
+**15. Qual empresa aparece no contexto do documentário como importante representante do modelo proprietário de software?**
+
+A) Netscape.
+B) Red Hat.
+C) VA Linux.
+D) Microsoft.
+E) Cygnus Solutions.
+
+---
+
+**16. Qual acontecimento envolvendo a Netscape foi importante para o movimento Open Source?**
+
+A) A empresa encerrou definitivamente a internet.
+B) A empresa liberou o código-fonte de seu navegador.
+C) A empresa comprou a Microsoft.
+D) A empresa criou o kernel Linux.
+E) A empresa fundou o Projeto GNU.
+
+---
+
+**17. Qual dos seguintes personagens está diretamente associado ao desenvolvimento do servidor Apache?**
+
+A) Brian Behlendorf.
+B) Linus Torvalds.
+C) Richard Stallman.
+D) Larry Augustin.
+E) Steve Ballmer.
+
+---
+
+**18. O movimento Software Livre defendido por Stallman está relacionado principalmente à ideia de:**
+
+A) Controle absoluto do software pelos fabricantes.
+B) Restrição do acesso ao código-fonte.
+C) Liberdade dos usuários sobre o software.
+D) Exclusividade de sistemas operacionais comerciais.
+E) Proibição da distribuição de programas.
+
+---
+
+**19. Qual situação histórica é apresentada no documentário como parte da mudança da cultura de compartilhamento de software?**
+
+A) O surgimento das redes sociais.
+B) A popularização dos smartphones.
+C) A transformação do software em produto proprietário e comercial.
+D) A criação da inteligência artificial generativa.
+E) A criação da computação em nuvem.
+
+---
+
+**20. Como o documentário caracteriza a cultura hacker apresentada em sua narrativa?**
+
+A) Exclusivamente como prática criminosa.
+B) Como uma cultura ligada à curiosidade, conhecimento técnico, experimentação e criação.
+C) Como uma atividade exclusivamente militar.
+D) Como uma profissão voltada somente para manutenção de computadores.
+E) Como uma atividade sem relação com programação.
+
+---
+
+**21. Qual é a principal função de um compilador?**
+
+A) Armazenar arquivos pessoais.
+B) Traduzir código-fonte para uma forma que possa ser executada pelo computador.
+C) Controlar exclusivamente conexões Wi-Fi.
+D) Criar usuários em redes sociais.
+E) Gerenciar arquivos de imagem.
+
+---
+
+**22. Qual empresa foi fundada por Larry Augustin e aparece no documentário relacionada à comercialização do Linux?**
+
+A) Microsoft.
+B) Netscape.
+C) VA Linux.
+D) Apple.
+E) IBM.
+
+---
+
+**23. O documentário demonstra que o Software Livre:**
+
+A) É necessariamente incompatível com atividades comerciais.
+B) Não pode ser utilizado por empresas.
+C) Pode coexistir com modelos de negócio e atividades comerciais.
+D) Não permite prestação de serviços.
+E) Não pode ser utilizado profissionalmente.
+
+---
+
+**24. Qual é uma característica do modelo proprietário de software criticado pelo movimento apresentado no documentário?**
+
+A) Disponibilização obrigatória do código-fonte.
+B) Liberdade irrestrita para modificar o programa.
+C) Controle do código e das condições de uso pelo proprietário.
+D) Desenvolvimento necessariamente comunitário.
+E) Ausência de direitos autorais.
+
+---
+
+**25. Por que Richard Stallman defende o uso da expressão GNU/Linux?**
+
+A) Porque Linux não possui código-fonte.
+B) Porque considera importante reconhecer a contribuição do Projeto GNU para o sistema.
+C) Porque Linux foi desenvolvido pela Microsoft.
+D) Porque GNU é o nome comercial do Linux.
+E) Porque Linux e GNU são sistemas completamente independentes e incompatíveis.
+
+---
+
+**26. Qual das alternativas apresenta apenas pessoas entrevistadas ou relacionadas diretamente ao documentário?**
+
+A) Richard Stallman, Linus Torvalds e Eric Raymond.
+B) Mark Zuckerberg, Steve Jobs e Bill Gates.
+C) Tim Berners-Lee, Elon Musk e Jeff Bezos.
+D) Alan Turing, Ada Lovelace e Charles Babbage.
+E) Dennis Ritchie, James Gosling e Guido van Rossum.
+
+---
+
+**27. Qual é uma das principais diferenças entre Software Livre e a abordagem Open Source apresentada no documentário?**
+
+A) Software Livre utiliza computadores, enquanto Open Source não utiliza.
+B) Software Livre enfatiza a liberdade dos usuários, enquanto Open Source também enfatiza aspectos práticos e técnicos do desenvolvimento aberto.
+C) Open Source não permite acesso ao código.
+D) Software Livre é necessariamente pago e Open Source é necessariamente gratuito.
+E) Não existe qualquer diferença conceitual entre os dois movimentos.
+
+---
+
+**28. Qual é uma das principais contribuições do desenvolvimento colaborativo apresentado no documentário?**
+
+A) Impedir que outras pessoas encontrem erros no software.
+B) Concentrar todo o desenvolvimento em uma única empresa.
+C) Permitir que diferentes pessoas contribuam para identificar problemas e desenvolver melhorias.
+D) Eliminar a necessidade de programadores.
+E) Impedir a distribuição de novas versões.
+
+---
+
+**29. Qual interpretação melhor representa o significado do título *Revolution OS*?**
+
+A) Uma revolução exclusivamente política.
+B) Uma revolução relacionada à mudança na forma de desenvolver, distribuir e compreender sistemas e software.
+C) Uma guerra entre fabricantes de computadores.
+D) Uma revolução causada exclusivamente pelo Windows.
+E) Uma revolução relacionada à criação dos videogames.
+
+---
+
+**30. Considerando o conjunto de ideias apresentado no documentário, qual é a principal reflexão de *Revolution OS*?**
+
+A) O desenvolvimento tecnológico depende exclusivamente de grandes empresas.
+B) O código-fonte deve sempre permanecer secreto.
+C) A colaboração e o compartilhamento de conhecimento podem produzir tecnologias relevantes e desafiar modelos tradicionais de software.
+D) O software livre não possui importância histórica.
+E) O Linux foi criado exclusivamente como produto comercial.
+
+---
+
+# Gabarito
+
+| Questão | Resposta |
+| ------- | :------: |
+| 1       |   **C**  |
+| 2       |   **D**  |
+| 3       |   **B**  |
+| 4       |   **C**  |
+| 5       |   **B**  |
+| 6       |   **C**  |
+| 7       |   **C**  |
+| 8       |   **C**  |
+| 9       |   **C**  |
+| 10      |   **C**  |
+| 11      |   **B**  |
+| 12      |   **B**  |
+| 13      |   **C**  |
+| 14      |   **B**  |
+| 15      |   **D**  |
+| 16      |   **B**  |
+| 17      |   **A**  |
+| 18      |   **C**  |
+| 19      |   **C**  |
+| 20      |   **B**  |
+| 21      |   **B**  |
+| 22      |   **C**  |
+| 23      |   **C**  |
+| 24      |   **C**  |
+| 25      |   **B**  |
+| 26      |   **A**  |
+| 27      |   **B**  |
+| 28      |   **C**  |
+| 29      |   **B**  |
+| 30      |   **C**  |
+
+As questões foram elaboradas a partir dos principais acontecimentos e conceitos efetivamente abordados no documentário, incluindo o Projeto GNU, Linux, a filosofia de Stallman, o desenvolvimento do kernel, Open Source, Netscape, Apache e a comercialização do Linux. ([Wikipédia][1])
+
+[1]: https://pt.wikipedia.org/wiki/Revolution_OS?utm_source=chatgpt.com "Revolution OS"
