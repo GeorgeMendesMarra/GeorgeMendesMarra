@@ -1,4 +1,4 @@
-Grupo 1 - 06/05/2026 - A rede social - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 1 - 17/09/2026 - A rede social - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 ANA CLARA VIANA MACEDO
 
@@ -12,7 +12,7 @@ BRENO SILVANO GOMES MARTINS DE PAULA
 
 ---
 
-Grupo 2 - 06/05/2026 - Revolution OS **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 2 - 17/09/2026 - Revolution OS **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 EDUARDO PIMENTA MOREIRA
 
@@ -26,7 +26,7 @@ GABRIEL LUCAS FREITAS CARVALHO BARBOSA
 
 ---
 
-Grupo 3 - 13/05/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 3 - 17/09/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 GABRIEL PEREIRA MARTINS
 
@@ -40,7 +40,7 @@ GUSTAVO DO PRADO SILVA
 
 ---
 
-Grupo 4 - 13/05/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 4 - 17/09/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 HIGOR RESENDE ARAÚJO
 
@@ -54,7 +54,7 @@ JANAINA BATISTA DA SILVA
 
 ---
 
-Grupo 5 - 20/05/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 5 - 24/09/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 JOAO VICTOR MOREIRA RODRIGUES
 
@@ -68,7 +68,7 @@ MARCO AURELIO ALVES MELO
 
 ---
 
-Grupo 6 - 20/05/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 6 - 24/09/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 MATEUS ALVES DIAS QUEIROZ
 
@@ -82,7 +82,7 @@ NÍCOLAS MOURA BARBOSA
 
 ---
 
-Grupo 7 - 27/05/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 7 - 24/09/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 PEDRO AUGUSTO FELDMANN GOMES
 
@@ -96,7 +96,7 @@ RAPHAEL FERNANDES DE CARVALHO
 
 ---
 
-Grupo 8 - 27/05/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 8 - 24/09/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 RYAN VITOR DE SOUZA FERREIRA
 
