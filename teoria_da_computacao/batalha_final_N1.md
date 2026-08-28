@@ -26,7 +26,7 @@ GABRIEL LUCAS FREITAS CARVALHO BARBOSA
 
 ---
 
-Grupo 3 - 17/09/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 3 - 17/09/2026 -O menino da Internet **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 GABRIEL PEREIRA MARTINS
 
