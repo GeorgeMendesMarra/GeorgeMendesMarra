@@ -68,7 +68,7 @@ MARCO AURELIO ALVES MELO
 
 ---
 
-Grupo 6 - 24/09/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 6 - 24/09/2026 - Comparativo: Revolution OS X O menino da Internet - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 MATEUS ALVES DIAS QUEIROZ
 
