@@ -40,7 +40,7 @@ GUSTAVO DO PRADO SILVA
 
 ---
 
-Grupo 4 - 17/09/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 4 - 17/09/2026 - Os piratas do vale do silício - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 HIGOR RESENDE ARAÚJO
 
