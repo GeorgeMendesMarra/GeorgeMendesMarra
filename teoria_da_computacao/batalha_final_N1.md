@@ -12,7 +12,7 @@ BRENO SILVANO GOMES MARTINS DE PAULA
 
 ---
 
-Grupo 2 - 17/09/2026 - Revolution OS **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 2 - 17/09/2026 - Revolution OS - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 EDUARDO PIMENTA MOREIRA
 
@@ -54,7 +54,7 @@ JANAINA BATISTA DA SILVA
 
 ---
 
-Grupo 5 - 24/09/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 5 - 24/09/2026 - Comparativo: A rede social X Revolution OS - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 JOAO VICTOR MOREIRA RODRIGUES
 
