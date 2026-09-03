@@ -82,7 +82,7 @@ NÍCOLAS MOURA BARBOSA
 
 ---
 
-Grupo 7 - 24/09/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 7 - 24/09/2026 -Comparativo: Os piratas do vale do silício X A rede social - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 PEDRO AUGUSTO FELDMANN GOMES
 
@@ -96,7 +96,7 @@ RAPHAEL FERNANDES DE CARVALHO
 
 ---
 
-Grupo 8 - 24/09/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 8 - 24/09/2026 - Comparativo: Revolution OS X Os piratas do vale do silício - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 RYAN VITOR DE SOUZA FERREIRA
 
