@@ -9,9 +9,13 @@ Curso: Engenharia de Software | Disciplina: Algoritmos e Estruturas de Dados I
 O que o operador `&` faz quando aplicado a uma variável em C?
 
 A) Retorna o valor armazenado na variável
+
 B) Retorna o endereço de memória da variável
+
 C) Declara a variável como ponteiro
+
 D) Libera a memória da variável
+
 E) Compara dois endereços
 
 ---
@@ -20,9 +24,13 @@ E) Compara dois endereços
 O que o operador `*` faz quando aplicado a um ponteiro (fora da declaração)?
 
 A) Multiplica o valor do ponteiro por 2
+
 B) Retorna o endereço do ponteiro
+
 C) Acessa (dereferencia) o valor armazenado no endereço apontado
+
 D) Converte o ponteiro para inteiro
+
 E) Aloca memória dinamicamente
 
 ---
@@ -31,9 +39,13 @@ E) Aloca memória dinamicamente
 Qual é a forma correta de declarar um ponteiro para `int` em C?
 
 A) `int ptr;`
+
 B) `ptr int;`
+
 C) `int *ptr;`
+
 D) `int &ptr;`
+
 E) `pointer int ptr;`
 
 ---
@@ -42,14 +54,19 @@ E) `pointer int ptr;`
 Considere:
 ```c
 int x = 10;
+
 int *p = &x;
 ```
 Qual o valor de `*p`?
 
 A) O endereço de `x`
+
 B) `10`
+
 C) O endereço de `p`
+
 D) `NULL`
+
 E) Um erro de compilação
 
 ---
@@ -58,9 +75,13 @@ E) Um erro de compilação
 Em um sistema com ponteiros de 8 bytes, qual o valor aproximado de `sizeof(p)` para `int *p;`?
 
 A) 1
+
 B) 2
+
 C) 4
+
 D) 8
+
 E) Depende do valor apontado por `p`
 
 ---
@@ -69,9 +90,13 @@ E) Depende do valor apontado por `p`
 Qual é o valor padrão recomendado para inicializar um ponteiro que ainda não aponta para nenhum endereço válido?
 
 A) `0.0`
+
 B) `""`
+
 C) `NULL`
+
 D) `-1`
+
 E) O ponteiro não precisa ser inicializado
 
 ---
@@ -80,14 +105,19 @@ E) O ponteiro não precisa ser inicializado
 Dado o código:
 ```c
 int v[5] = {10, 20, 30, 40, 50};
+
 int *p = v;
 ```
 Qual expressão é equivalente a `v[2]`?
 
 A) `*p + 2`
+
 B) `*(p + 2)`
+
 C) `p + 2`
+
 D) `&p[2]`
+
 E) `*p * 2`
 
 ---
@@ -96,9 +126,13 @@ E) `*p * 2`
 O que acontece quando incrementamos um ponteiro `int *p` com `p++`?
 
 A) O valor apontado é incrementado em 1
+
 B) O endereço em `p` avança 1 byte
+
 C) O endereço em `p` avança `sizeof(int)` bytes
+
 D) Ocorre erro de compilação
+
 E) `p` passa a apontar para `NULL`
 
 ---
@@ -107,15 +141,22 @@ E) `p` passa a apontar para `NULL`
 Qual a saída do código abaixo?
 ```c
 int x = 5;
+
 int *p = &x;
+
 *p = *p + 1;
+
 printf("%d", x);
 ```
 
 A) 5
+
 B) 6
+
 C) Endereço de x
+
 D) Erro de compilação
+
 E) Comportamento indefinido
 
 ---
@@ -124,9 +165,13 @@ E) Comportamento indefinido
 Para que serve a passagem de parâmetros por ponteiro em funções C, como em `void trocar(int *a, int *b)`?
 
 A) Para tornar a função mais rápida sempre
+
 B) Para permitir que a função modifique as variáveis originais do chamador
+
 C) Para evitar o uso de `return`
+
 D) Para criar cópias independentes dos argumentos
+
 E) É obrigatório em toda função C
 
 ---
@@ -135,9 +180,13 @@ E) É obrigatório em toda função C
 Qual função da biblioteca `stdlib.h` aloca memória dinamicamente e a inicializa com zeros?
 
 A) `malloc`
+
 B) `free`
+
 C) `calloc`
+
 D) `alloc`
+
 E) `sizeof`
 
 ---
@@ -146,9 +195,13 @@ E) `sizeof`
 Após usar `int *p = malloc(10 * sizeof(int));` e terminar de usar a memória, qual é a prática correta?
 
 A) Apenas deixar o programa terminar
+
 B) Chamar `free(p);`
+
 C) Fazer `p = 0;` sem liberar
+
 D) Chamar `malloc(0)`
+
 E) Chamar `delete p;`
 
 ---
@@ -157,9 +210,13 @@ E) Chamar `delete p;`
 O que é um "ponteiro solto" (dangling pointer)?
 
 A) Um ponteiro que nunca foi inicializado
+
 B) Um ponteiro que aponta para uma área de memória já liberada ou inválida
+
 C) Um ponteiro que aponta para outro ponteiro
+
 D) Um ponteiro usado apenas em arrays
+
 E) Um ponteiro do tipo `void*`
 
 ---
@@ -168,9 +225,13 @@ E) Um ponteiro do tipo `void*`
 O que representa `int **pp;` em C?
 
 A) Um array de inteiros
+
 B) Um ponteiro para inteiro
+
 C) Um ponteiro para ponteiro para inteiro
+
 D) Uma função que retorna inteiro
+
 E) Erro de sintaxe
 
 ---
@@ -179,9 +240,13 @@ E) Erro de sintaxe
 O que é um `void*` (ponteiro genérico) em C?
 
 A) Um ponteiro que sempre aponta para `NULL`
+
 B) Um ponteiro que não pode ser usado
+
 C) Um ponteiro que pode apontar para qualquer tipo de dado, mas não pode ser dereferenciado diretamente sem conversão
+
 D) Um tipo exclusivo para funções
+
 E) Um ponteiro que ocupa 0 bytes
 
 ---
@@ -202,9 +267,13 @@ int main(void) {
 Qual a saída?
 
 A) 4
+
 B) 5
+
 C) Endereço de x
+
 D) Erro de compilação
+
 E) Valor indefinido
 
 ---
@@ -213,9 +282,13 @@ E) Valor indefinido
 Qual a diferença principal entre `const int *p` e `int *const p`?
 
 A) Não há diferença, são idênticos
+
 B) No primeiro, o valor apontado não pode mudar; no segundo, o próprio ponteiro não pode apontar para outro endereço
+
 C) O primeiro só funciona com arrays
+
 D) O segundo é inválido em C
+
 E) O primeiro é mais rápido que o segundo
 
 ---
@@ -224,9 +297,13 @@ E) O primeiro é mais rápido que o segundo
 Em uma struct `typedef struct { int dado; struct No *proximo; } No;`, qual operador é usado para acessar o campo `dado` a partir de um ponteiro `No *n`?
 
 A) `n.dado`
+
 B) `n->dado`
+
 C) `*n.dado`
+
 D) `n[dado]`
+
 E) `n::dado`
 
 ---
@@ -235,9 +312,13 @@ E) `n::dado`
 O que ocorre se tentarmos dereferenciar (`*p`) um ponteiro `p` que vale `NULL`?
 
 A) O programa retorna 0 automaticamente
+
 B) O compilador impede a compilação
+
 C) Comportamento indefinido / falha em tempo de execução (ex.: segmentation fault)
+
 D) `p` passa a apontar para o início do programa
+
 E) Nada acontece, é ignorado silenciosamente
 
 ---
@@ -246,9 +327,13 @@ E) Nada acontece, é ignorado silenciosamente
 Qual das opções abaixo é um exemplo válido de declaração de um ponteiro para uma função que recebe dois `int` e retorna `int`?
 
 A) `int f(int, int);`
+
 B) `int *f(int, int);`
+
 C) `int (*f)(int, int);`
+
 D) `pointer int f(int, int);`
+
 E) `int f*(int, int);`
 
 ---
