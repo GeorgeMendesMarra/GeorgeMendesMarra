@@ -52,3 +52,21 @@ Gustavo Lemos Gonçalves
 Henrique de Lima Souza 
 
 Hugo Soares da Silva 
+
+Grupo 4 - /09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+
+Isadora Dias De Castro Santana
+
+Izabel Paiva Vieira
+
+Joao Gabriel Oliveira Delfino
+
+João Pedro Fagundes Damásio
+
+João Pedro Jacomini Amaral Nunes
+
+JOÃO VICTOR FORTUNA COSTA
+
+João Víctor Moreira Calaça 
+
+João Vitor Rezende Barbosa 
