@@ -107,3 +107,21 @@ Miguel Augusto Pereira
 Murilo Cardoso da Silva Santos 
 
 Murilo Luiz Pereira da Silva 
+
+Grupo 7 - /09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+
+Nathan Gabriel Lourenço Linhares
+
+Nicolas Faria Luz
+
+Pablo Henrique de Souza Maranhão
+
+Paulo Henrique Rodrigues de Carvalho
+
+Pedro Augusto Lima Alves
+
+Pedro Henrique Almeida Silva 
+
+Pedro Henryck Pires da Cunha
+
+Rafaella Rebeca Rodrigues Ferreira 
