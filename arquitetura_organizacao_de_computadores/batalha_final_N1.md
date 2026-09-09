@@ -34,3 +34,21 @@ Fernando da costa quintanilha filho
 Frederico Faleiro da Silva 
 
 Gabriel Fernando Freitas Silva Peixoto
+
+Grupo 3 - /09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+
+Gabriel Gomes dos Santos
+
+Gabriel Pinheiro Amaral
+
+Gabriel Rodrigues Pimenta
+
+Guilherme Rodrigues Medeiros
+
+Gustavo de Castro Silva
+
+Gustavo Lemos Gonçalves 
+
+Henrique de Lima Souza 
+
+Hugo Soares da Silva 
