@@ -88,3 +88,22 @@ Kayque Dias dos Santos
 Luan Silva Muniz
 
 LUCAS ABREU DA SILVA 
+
+Grupo 6 - /09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+
+
+Luis Fellype Queiroz Carneiro
+
+Luis Gusthavo Fernandes de Carvalho
+
+Luiz Augusto de Aguiar Moreira
+
+Maria Eduarda Ribeiro Soares Teles
+
+Matheus Matsuta Alcantara 
+
+Miguel Augusto Pereira 
+
+Murilo Cardoso da Silva Santos 
+
+Murilo Luiz Pereira da Silva 
