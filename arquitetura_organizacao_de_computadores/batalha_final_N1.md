@@ -70,3 +70,21 @@ JOÃO VICTOR FORTUNA COSTA
 João Víctor Moreira Calaça 
 
 João Vitor Rezende Barbosa 
+
+Grupo 5 - /09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+
+Juan Pablo Nunes de Oliveira
+
+Kaick Eduardo dos Santos Taveira
+
+Kairo Vieira Farias
+
+Kaua Borges do Nascimento
+
+Kayk Siqueira de Paula
+
+Kayque Dias dos Santos
+
+Luan Silva Muniz
+
+LUCAS ABREU DA SILVA 
