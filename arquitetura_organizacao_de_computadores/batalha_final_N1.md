@@ -125,3 +125,22 @@ Pedro Henrique Almeida Silva
 Pedro Henryck Pires da Cunha
 
 Rafaella Rebeca Rodrigues Ferreira 
+
+Grupo 8 - /09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+
+
+Rafhaela Sena Santana
+
+Ronilson Lima Carrias
+
+Silvio Rocha Camelo Neto
+
+Thiago Duarte Pinheiro Filho
+
+Tyago Paiva da Costa
+
+Vinícius Lemes D’Abadia Filho 
+
+Waykon Martins de Souza
+
+Wender Alves Paiva
