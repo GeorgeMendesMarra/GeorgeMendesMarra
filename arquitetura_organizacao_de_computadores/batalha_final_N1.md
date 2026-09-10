@@ -108,7 +108,7 @@ Murilo Cardoso da Silva Santos
 
 Murilo Luiz Pereira da Silva 
 
-Grupo 7 - 30/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 7 - 30/09/2026 - Dispositivos de Entrada e Saída - Enviar a apresentação para: george.marra@unialfa.com.br
 
 Nathan Gabriel Lourenço Linhares
 
@@ -126,7 +126,7 @@ Pedro Henryck Pires da Cunha
 
 Rafaella Rebeca Rodrigues Ferreira 
 
-Grupo 8 - 30/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 8 - 30/09/2026 - Modelo Harvard x Modelo von Neumann - Enviar a apresentação para: george.marra@unialfa.com.br
 
 
 Rafhaela Sena Santana
