@@ -96,7 +96,7 @@ RAPHAEL FERNANDES DE CARVALHO
 
 ---
 
-Grupo 8 - 24/09/2026 - Comparativo: Atanasoff-Berry Computer (ABC) X Os piratas do vale do silício - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 8 - 24/09/2026 - Comparativo: Atanasoff-Berry Computer (ABC) X Z3_de_Konrad_Zuse - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 RYAN VITOR DE SOUZA FERREIRA
 
