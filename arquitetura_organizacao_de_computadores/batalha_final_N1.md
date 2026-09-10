@@ -1,4 +1,4 @@
-Grupo 1 - /09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 1 - 23/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
 
 Allisson de Sousa Santana
 
@@ -16,7 +16,7 @@ Daniel Martins Alves Ferreira
 
 Daniel Paulo Figueredo da Silva 
 
-Grupo 2 - /09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 2 - 23/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
 
 
 Eduardo Reis Barbosa 
@@ -35,7 +35,7 @@ Frederico Faleiro da Silva
 
 Gabriel Fernando Freitas Silva Peixoto
 
-Grupo 3 - /09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 3 - 23/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
 
 Gabriel Gomes dos Santos
 
@@ -53,7 +53,7 @@ Henrique de Lima Souza
 
 Hugo Soares da Silva 
 
-Grupo 4 - /09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 4 - 23/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
 
 Isadora Dias De Castro Santana
 
@@ -71,7 +71,7 @@ João Víctor Moreira Calaça
 
 João Vitor Rezende Barbosa 
 
-Grupo 5 - /09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 5 - 30/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
 
 Juan Pablo Nunes de Oliveira
 
@@ -89,7 +89,7 @@ Luan Silva Muniz
 
 LUCAS ABREU DA SILVA 
 
-Grupo 6 - /09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 6 - 30/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
 
 
 Luis Fellype Queiroz Carneiro
@@ -108,7 +108,7 @@ Murilo Cardoso da Silva Santos
 
 Murilo Luiz Pereira da Silva 
 
-Grupo 7 - /09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 7 - 30/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
 
 Nathan Gabriel Lourenço Linhares
 
@@ -126,7 +126,7 @@ Pedro Henryck Pires da Cunha
 
 Rafaella Rebeca Rodrigues Ferreira 
 
-Grupo 8 - /09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 8 - 30/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
 
 
 Rafhaela Sena Santana
