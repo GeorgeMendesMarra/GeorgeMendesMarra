@@ -1,6 +1,3 @@
-| title | Projeto Integrador — Estrutura de Dados I |
-| ----- | ------------------------------------------ |
-
 # CENTRO UNIVERSITÁRIO ALVES FARIA — UNIALFA
 
 **Curso:** Análise e Desenvolvimento de Sistemas — ADS
