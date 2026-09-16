@@ -20,6 +20,7 @@ Daniel Paulo Figueredo da Silva
 
 Grupo 2 - 23/09/2026 - Computadores analógicos - Enviar a apresentação para: george.marra@unialfa.com.br
 
+André Henrique Fornazier
 
 Eduardo Reis Barbosa 
 
