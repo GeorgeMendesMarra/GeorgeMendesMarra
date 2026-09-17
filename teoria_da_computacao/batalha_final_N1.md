@@ -96,6 +96,8 @@ PEDRO VIEIRA CARVALHO
 
 RAPHAEL FERNANDES DE CARVALHO
 
+VICTOR ARTHUR LOPES RODRIGUES
+
 ---
 
 Grupo 8 - 24/09/2026 - Comparativo: Atanasoff-Berry Computer (ABC) X Z3_de_Konrad_Zuse - **Enviar a apresentação para: george.marra@unialfa.com.br**
