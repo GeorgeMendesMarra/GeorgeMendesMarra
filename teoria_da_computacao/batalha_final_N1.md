@@ -1,10 +1,10 @@
 Grupo 1 - 17/09/2026 - A rede social - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
-ANA CLARA VIANA MACEDO
+ANA CLARA VIANA MACEDO - 7,0
 
-Arthur Alves Mesquita Fonseca
+Arthur Alves Mesquita Fonseca - 7,0
 
-ARTHUR NUNES GUIMARÃES
+ARTHUR NUNES GUIMARÃES - 7.0
 
 ARTHUR VIRGILIO ALBINO FERREIRA
 
