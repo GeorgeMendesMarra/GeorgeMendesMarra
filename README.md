@@ -4,7 +4,11 @@
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![JSF](https://img.shields.io/badge/JSF-5382A1?style=for-the-badge&logo=java&logoColor=white)
+![JSP](https://img.shields.io/badge/JSP-5382A1?style=for-the-badge&logo=java&logoColor=white)
+![Struts](https://img.shields.io/badge/Apache%20Struts-2D3E50?style=for-the-badge&logo=apache&logoColor=white)
+![EJB](https://img.shields.io/badge/EJB-5382A1?style=for-the-badge&logo=java&logoColor=white)
+![Tomcat](https://img.shields.io/badge/Apache%20Tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=black)
 > **"Antes de ensinar uma linguagem, é preciso compreender a arquitetura que existe por trás dela."**
 
 Bem-vindo ao meu laboratório de software.
