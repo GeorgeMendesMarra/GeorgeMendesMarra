@@ -28,8 +28,6 @@ Fabricio Souza Guedes - 10,0
 
 Felipe José Alves Nunes - 10,0
 
-FELIPE SILVA CARES - 0,0
-
 Fernando da costa quintanilha filho - 10,0
 
 Frederico Faleiro da Silva - 10,0
@@ -163,4 +161,6 @@ Wender Alves Paiva
 Grupo 9 - Repescagem - 30/09/2026 - 
 
 Daniel Martins Alves Ferreira
+
+FELIPE SILVA CARES
 
