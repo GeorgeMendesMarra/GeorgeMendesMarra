@@ -12,8 +12,6 @@ Bruno Leandro da Costa Cazuza
 
 CARLOS DANIEL DIAS FREITAS
 
-Daniel Martins Alves Ferreira
-
 Daniel Paulo Figueredo da Silva 
 
 ---
@@ -159,3 +157,8 @@ Vinícius Lemes D’Abadia Filho
 Waykon Martins de Souza
 
 Wender Alves Paiva
+
+Grupo 9 - Repescagem - 30/09/2026 - 
+
+Daniel Martins Alves Ferreira
+
