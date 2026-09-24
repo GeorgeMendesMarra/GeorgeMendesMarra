@@ -92,17 +92,17 @@ VICTOR ARTHUR LOPES RODRIGUES - 7,5
 
 Grupo 8 - 24/09/2026 - Comparativo: Atanasoff-Berry Computer (ABC) X Z3_de_Konrad_Zuse - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
-RYAN VITOR DE SOUZA FERREIRA
+RYAN VITOR DE SOUZA FERREIRA - 8,0
 
-TATIANA MENDOZA LONDONO
+TATIANA MENDOZA LONDONO - 8,0
 
-VANDERLEY FARIA RENOVATO
+VANDERLEY FARIA RENOVATO - 8,0
 
-VICTOR TYMINSKI RODRIGUES
+VICTOR TYMINSKI RODRIGUES - 8,0
 
-WILHIAN DIAS MACHADO
+WILHIAN DIAS MACHADO - 8,0
 
-ERICK EDUARDO ALVES FERNANDES
+ERICK EDUARDO ALVES FERNANDES - 8,0
 
 ---
 Grupo 9 - 01/10/2026 - Os piratas do vale do silício X Atanasoff-Berry Computer (ABC) - **Enviar a apresentação para: george.marra@unialfa.com.br**
