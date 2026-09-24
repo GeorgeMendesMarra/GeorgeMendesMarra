@@ -115,7 +115,7 @@ VICTOR TYMINSKI RODRIGUES
 WILHIAN DIAS MACHADO
 
 ---
-Grupo 9 - 01/10/2026 - Os piratas do vale do silício X Atanasoff-Berry Computer (ABC)
+Grupo 9 - 01/10/2026 - Os piratas do vale do silício X Atanasoff-Berry Computer (ABC) - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 GABRIEL FERREIRA GALVAO
 
