@@ -1,18 +1,18 @@
 Grupo 1 - 23/09/2026 - Computadores a válvulas - Enviar a apresentação para: george.marra@unialfa.com.br
 
-Allisson de Sousa Santana
+Allisson de Sousa Santana - 8,0
 
-Ana Julia Eliezer Rodrigues 
+Ana Julia Eliezer Rodrigues - 8,0
 
-Andres Rodrigues Vaz 
+Andres Rodrigues Vaz - 8,0
 
-Anthony Joas Vieira da Silva 
+Anthony Joas Vieira da Silva - 8,0
 
-Bruno Leandro da Costa Cazuza
+Bruno Leandro da Costa Cazuza- 8,0
 
-CARLOS DANIEL DIAS FREITAS
+CARLOS DANIEL DIAS FREITAS- 8,0
 
-Daniel Paulo Figueredo da Silva 
+Daniel Paulo Figueredo da Silva - 8,0
 
 ---
 
