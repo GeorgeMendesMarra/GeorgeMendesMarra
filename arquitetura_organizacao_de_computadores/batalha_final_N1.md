@@ -58,21 +58,19 @@ Hugo Soares da Silva - 8,5
 
 Grupo 4 - 23/09/2026 - Computadores mecânicos - Enviar a apresentação para: george.marra@unialfa.com.br
 
-Isadora Dias De Castro Santana
+Isadora Dias De Castro Santana - 8,0
 
-Izabel Paiva Vieira
+Joao Gabriel Oliveira Delfino - 8,0
 
-Joao Gabriel Oliveira Delfino
+João Pedro Fagundes Damásio - 8,0
 
-João Pedro Fagundes Damásio
+João Pedro Jacomini Amaral Nunes - 8,0
 
-João Pedro Jacomini Amaral Nunes
+JOÃO VICTOR FORTUNA COSTA - 8,0
 
-JOÃO VICTOR FORTUNA COSTA
+João Víctor Moreira Calaça - 8,0
 
-João Víctor Moreira Calaça 
-
-João Vitor Rezende Barbosa 
+João Vitor Rezende Barbosa - 8,0
 
 ---
 
@@ -158,9 +156,11 @@ Wender Alves Paiva
 
 ---
 
-Grupo 9 - Repescagem - 30/09/2026 - 
+Grupo 9 - Repescagem - 30/09/2026 - Análise fílmica: Os piratas do vale do silício
 
 Daniel Martins Alves Ferreira
 
 FELIPE SILVA CARES
+
+Izabel Paiva Vieira
 
