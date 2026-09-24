@@ -38,21 +38,21 @@ Gabriel Fernando Freitas Silva Peixoto - 10,0
 
 Grupo 3 - 23/09/2026 - Computadores com circuitos integrados - Enviar a apresentação para: george.marra@unialfa.com.br
 
-Gabriel Gomes dos Santos
+Gabriel Gomes dos Santos - 8,5
 
-Gabriel Pinheiro Amaral
+Gabriel Pinheiro Amaral - 8,5
 
-Gabriel Rodrigues Pimenta
+Gabriel Rodrigues Pimenta - 8,5
 
-Guilherme Rodrigues Medeiros
+Guilherme Rodrigues Medeiros - 8,5
 
-Gustavo de Castro Silva
+Gustavo de Castro Silva - 8,5
 
-Gustavo Lemos Gonçalves 
+Gustavo Lemos Gonçalves - 8,5
 
-Henrique de Lima Souza 
+Henrique de Lima Souza - 8,5
 
-Hugo Soares da Silva 
+Hugo Soares da Silva - 8,5
 
 ---
 
