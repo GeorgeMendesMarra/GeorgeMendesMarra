@@ -88,10 +88,6 @@ Grupo 7 - 24/09/2026 -Comparativo: Os piratas do vale do silício X A rede socia
 
 PEDRO AUGUSTO FELDMANN GOMES
 
-PEDRO MENDONÇA ALENCAR
-
-Pedro Sorelly Marques
-
 PEDRO VIEIRA CARVALHO
 
 RAPHAEL FERNANDES DE CARVALHO
@@ -120,3 +116,7 @@ Grupo 9 - 01/10/2026 - Os piratas do vale do silício X Atanasoff-Berry Computer
 GABRIEL FERREIRA GALVAO
 
 VICTOR HUGO ARANTES SILVA E SOUZA
+
+PEDRO MENDONÇA ALENCAR
+
+Pedro Sorelly Marques
