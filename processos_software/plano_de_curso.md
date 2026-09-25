@@ -36,6 +36,6 @@ Em grupo, os alunos escolhem um sistema fictício (ou de uma empresa real/local)
 3. Modelar com pelo menos 3 diagramas UML
 4. Entregar um documento comparando como o mesmo sistema seria conduzido em cascata vs. ágil
 
-## Avaliações sugeridas
-- **N1**: prova teórica (ciclo de vida, paradigmas, Scrum/XP/Kanban)
-- **N2**: entrega do projeto prático + apresentação (pode valer também como parte de trabalho contínuo, tipo "portfólio de artefatos")
+## Avaliações 2026/2
+- **N1**: prova teórica (Unidade 1) + entrega do projeto prático + apresentação (entre 01/10/2026 e 07/10/2026)
+- **N2**: prova teórica (Unidade 2) + entrega do projeto prático + apresentação (entre 03/12/2026 e 09/12/2026)
