@@ -52,15 +52,13 @@ JANAINA BATISTA DA SILVA - 7,0
 
 Grupo 5 - 24/09/2026 - Comparativo: A rede social X Revolution OS - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
-JOAO VICTOR MOREIRA RODRIGUES
+JOSÉ GABRIEL DE ANDRADE ALMEIDA - 6,5
 
-JOSÉ GABRIEL DE ANDRADE ALMEIDA
+KAEL MARTINS STACIARINI ANDERS  - 6,5
 
-KAEL MARTINS STACIARINI ANDERS
+Carlos Eduardo Corrêa da Paixão  - 6,5
 
-Carlos Eduardo Corrêa da Paixão
-
-MARCO AURELIO ALVES MELO
+MARCO AURELIO ALVES MELO  - 6,5
 
 ---
 
