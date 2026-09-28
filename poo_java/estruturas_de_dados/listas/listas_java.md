@@ -232,42 +232,60 @@ Todos os métodos da seção 1 (`add`, `get`, `remove(índice)`, `remove(objeto)
 ### 2.6 Exemplo completo de código
 
 ```java
+// Importa a implementação de lista duplamente encadeada.
+// LinkedList implementa tanto List quanto Deque, por isso pode
+// funcionar como lista, pilha (Stack) e fila (Queue)
 import java.util.LinkedList;
 
 public class ExemploLinkedList {
     public static void main(String[] args) {
+
+        // Aqui declaramos como LinkedList (e não como List) porque vamos
+        // usar métodos específicos de Deque, como addLast/getLast/removeLast
         LinkedList<String> historicoNavegador = new LinkedList<>();
 
-        // Simula navegação: cada página visitada entra no final
-        historicoNavegador.addLast("google.com");
-        historicoNavegador.addLast("unialfa.com.br");
-        historicoNavegador.addLast("github.com");
+        // ---------- Uso como lista/deque: histórico de navegação ----------
+        // addLast() insere no final da lista (equivalente a add() aqui)
+        historicoNavegador.addLast("google.com");        // [google.com]
+        historicoNavegador.addLast("unialfa.com.br");     // [google.com, unialfa.com.br]
+        historicoNavegador.addLast("github.com");         // [google.com, unialfa.com.br, github.com]
 
         System.out.println("Histórico completo: " + historicoNavegador);
 
-        // Página atual (última visitada)
-        System.out.println("Página atual: " + historicoNavegador.getLast());
+        // getLast() retorna o último elemento sem removê-lo
+        System.out.println("Página atual: " + historicoNavegador.getLast()); // github.com
 
-        // Botão "voltar": remove a página atual e mostra a anterior
-        historicoNavegador.removeLast();
-        System.out.println("Após voltar, página atual: " + historicoNavegador.getLast());
+        // removeLast() remove e descarta o último elemento (simula "voltar")
+        historicoNavegador.removeLast(); // [google.com, unialfa.com.br]
+        System.out.println("Após voltar, página atual: " + historicoNavegador.getLast()); // unialfa.com.br
 
-        // Usando como pilha (push/pop) para um histórico de "desfazer"
+        // ---------- Uso como pilha (LIFO) ----------
+        // push()/pop()/peek() tratam a LinkedList como uma Stack,
+        // inserindo e removendo sempre pelo início da lista
         LinkedList<String> desfazer = new LinkedList<>();
-        desfazer.push("digitar texto");
-        desfazer.push("aplicar negrito");
-        desfazer.push("inserir imagem");
 
-        System.out.println("Última ação: " + desfazer.peek());
-        System.out.println("Desfazendo: " + desfazer.pop());
-        System.out.println("Ações restantes: " + desfazer);
+        // push() insere no início (topo da pilha)
+        desfazer.push("digitar texto");      // [digitar texto]
+        desfazer.push("aplicar negrito");     // [aplicar negrito, digitar texto]
+        desfazer.push("inserir imagem");      // [inserir imagem, aplicar negrito, digitar texto]
 
-        // Usando como fila (offer/poll) para uma fila de impressão
+        // peek() olha o topo da pilha sem remover
+        System.out.println("Última ação: " + desfazer.peek()); // inserir imagem
+
+        // pop() remove e retorna o topo da pilha
+        System.out.println("Desfazendo: " + desfazer.pop()); // inserir imagem
+        System.out.println("Ações restantes: " + desfazer);  // [aplicar negrito, digitar texto]
+
+        // ---------- Uso como fila (FIFO) ----------
+        // offer()/poll() tratam a LinkedList como uma Queue:
+        // offer() insere no final, poll() remove do início
         LinkedList<String> filaImpressao = new LinkedList<>();
-        filaImpressao.offer("documento1.pdf");
-        filaImpressao.offer("documento2.pdf");
-        System.out.println("Imprimindo: " + filaImpressao.poll());
-        System.out.println("Fila restante: " + filaImpressao);
+        filaImpressao.offer("documento1.pdf"); // [documento1.pdf]
+        filaImpressao.offer("documento2.pdf"); // [documento1.pdf, documento2.pdf]
+
+        // poll() remove e retorna o primeiro elemento da fila (o mais antigo)
+        System.out.println("Imprimindo: " + filaImpressao.poll()); // documento1.pdf
+        System.out.println("Fila restante: " + filaImpressao);     // [documento2.pdf]
     }
 }
 ```
