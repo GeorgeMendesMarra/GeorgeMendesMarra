@@ -98,46 +98,70 @@ Baseada em um **array dinâmico** que cresce automaticamente. É a lista mais us
 ### 1.9 Exemplo completo de código
 
 ```java
+// Importa a implementação de lista baseada em array dinâmico
 import java.util.ArrayList;
+// Importa a interface List (declaramos a variável pela interface)
 import java.util.List;
+// Importa a classe utilitária com métodos estáticos para coleções (sort, reverse, max...)
 import java.util.Collections;
 
 public class ExemploArrayList {
     public static void main(String[] args) {
+
+        // Declara pela interface List e instancia com ArrayList.
+        // <String> é o tipo genérico: a lista só aceita objetos String.
         List<String> produtos = new ArrayList<>();
 
-        // Inserção
-        produtos.add("Notebook");
-        produtos.add("Mouse");
-        produtos.add("Teclado");
-        produtos.add(1, "Monitor"); // insere na posição 1
+        // ---------- Inserção ----------
+        // add(elemento) insere no final da lista
+        produtos.add("Notebook");   // [Notebook]
+        produtos.add("Mouse");      // [Notebook, Mouse]
+        produtos.add("Teclado");    // [Notebook, Mouse, Teclado]
 
-        // Acesso
-        System.out.println("Produto na posição 0: " + produtos.get(0));
+        // add(índice, elemento) insere na posição indicada e desloca
+        // os elementos seguintes uma posição para a direita
+        produtos.add(1, "Monitor"); // [Notebook, Monitor, Mouse, Teclado]
 
-        // Busca
-        System.out.println("Índice de 'Mouse': " + produtos.indexOf("Mouse"));
+        // ---------- Acesso ----------
+        // get(índice) retorna o elemento da posição (índices começam em 0)
+        System.out.println("Produto na posição 0: " + produtos.get(0)); // Notebook
 
-        // Substituição
-        produtos.set(2, "Mouse sem fio");
+        // ---------- Busca ----------
+        // indexOf(elemento) retorna o índice da primeira ocorrência
+        // (ou -1 se o elemento não existir). Usa equals() para comparar.
+        System.out.println("Índice de 'Mouse': " + produtos.indexOf("Mouse")); // 2
 
-        // Iteração
+        // ---------- Substituição ----------
+        // set(índice, elemento) troca o elemento da posição, sem alterar o tamanho
+        produtos.set(2, "Mouse sem fio"); // [Notebook, Monitor, Mouse sem fio, Teclado]
+
+        // ---------- Iteração ----------
+        // for-each percorre todos os elementos sem controlar índice manualmente
         System.out.println("Catálogo atual:");
         for (String produto : produtos) {
             System.out.println("- " + produto);
         }
 
-        // Ordenação
+        // ---------- Ordenação ----------
+        // Collections.sort() ordena in-place pela ordem natural (alfabética para String)
+        // Resultado: [Monitor, Mouse sem fio, Notebook, Teclado]
         Collections.sort(produtos);
         System.out.println("Catálogo ordenado: " + produtos);
 
-        // Remoção
-        produtos.remove("Teclado");
-        produtos.removeIf(p -> p.startsWith("Monitor"));
+        // ---------- Remoção ----------
+        // remove(Object) remove a primeira ocorrência do valor informado
+        produtos.remove("Teclado"); // [Monitor, Mouse sem fio, Notebook]
 
-        // Consulta
-        System.out.println("Contém 'Notebook'? " + produtos.contains("Notebook"));
-        System.out.println("Tamanho final: " + produtos.size());
+        // removeIf(predicado) remove todos os elementos que satisfazem a condição.
+        // p -> p.startsWith("Monitor") é uma expressão lambda (Java 8+).
+        produtos.removeIf(p -> p.startsWith("Monitor")); // [Mouse sem fio, Notebook]
+
+        // ---------- Consulta ----------
+        // contains(elemento) retorna true se o elemento existe na lista
+        System.out.println("Contém 'Notebook'? " + produtos.contains("Notebook")); // true
+
+        // size() retorna a quantidade de elementos atual
+        System.out.println("Tamanho final: " + produtos.size()); // 2
     }
 }
 ```
