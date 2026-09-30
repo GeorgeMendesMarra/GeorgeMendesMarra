@@ -158,7 +158,7 @@ Wender Alves Paiva
 
 Grupo 9 - Repescagem - 30/09/2026 - Análise fílmica: Os piratas do vale do silício
 
-Daniel Martins Alves Ferreira
+Daniel Martins Alves Ferreira- 7,0
 
 FELIPE SILVA CARES
 
