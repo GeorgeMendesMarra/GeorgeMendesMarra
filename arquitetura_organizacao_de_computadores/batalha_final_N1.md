@@ -97,21 +97,21 @@ LUCAS ABREU DA SILVA - 0,0
 Grupo 6 - 30/09/2026 - Computadores com transistores - Enviar a apresentação para: george.marra@unialfa.com.br
 
 
-Luis Fellype Queiroz Carneiro
+Luis Fellype Queiroz Carneiro - 8,0
 
-Luis Gusthavo Fernandes de Carvalho
+Luis Gusthavo Fernandes de Carvalho - 8,0
 
-Luiz Augusto de Aguiar Moreira
+Luiz Augusto de Aguiar Moreira - 8,0
 
-Maria Eduarda Ribeiro Soares Teles
+Maria Eduarda Ribeiro Soares Teles - 0,0
 
-Matheus Matsuta Alcantara 
+Matheus Matsuta Alcantara - 8,0
 
-Miguel Augusto Pereira 
+Miguel Augusto Pereira - 8,0
 
-Murilo Cardoso da Silva Santos 
+Murilo Cardoso da Silva Santos - 8,0
 
-Murilo Luiz Pereira da Silva 
+Murilo Luiz Pereira da Silva - 8,0
 
 ---
 
