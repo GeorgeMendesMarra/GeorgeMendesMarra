@@ -76,21 +76,21 @@ João Vitor Rezende Barbosa - 8,0
 
 Grupo 5 - 30/09/2026 - Computadores com micro-processadores - Enviar a apresentação para: george.marra@unialfa.com.br
 
-Juan Pablo Nunes de Oliveira
+Juan Pablo Nunes de Oliveira - 7,0
 
-Kaick Eduardo dos Santos Taveira
+Kaick Eduardo dos Santos Taveira - 0,0
 
-Kairo Vieira Farias
+Kairo Vieira Farias - 0,0
 
-Kaua Borges do Nascimento
+Kaua Borges do Nascimento - 7,0
 
-Kayk Siqueira de Paula
+Kayk Siqueira de Paula - 7,0
 
-Kayque Dias dos Santos
+Kayque Dias dos Santos - 7,0
 
-Luan Silva Muniz
+Luan Silva Muniz - 7,0
 
-LUCAS ABREU DA SILVA 
+LUCAS ABREU DA SILVA - 0,0
 
 ---
 
