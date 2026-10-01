@@ -117,21 +117,21 @@ Murilo Luiz Pereira da Silva - 8,0
 
 Grupo 7 - 30/09/2026 - Dispositivos de Entrada e Saída - Enviar a apresentação para: george.marra@unialfa.com.br
 
-Nathan Gabriel Lourenço Linhares
+Nathan Gabriel Lourenço Linhares - 7,5
 
-Nicolas Faria Luz
+Nicolas Faria Luz - 7,5
 
-Pablo Henrique de Souza Maranhão
+Pablo Henrique de Souza Maranhão - 7,5
 
-Paulo Henrique Rodrigues de Carvalho
+Paulo Henrique Rodrigues de Carvalho - 7,5
 
-Pedro Augusto Lima Alves
+Pedro Augusto Lima Alves - 7,5
 
-Pedro Henrique Almeida Silva 
+Pedro Henrique Almeida Silva - 7,5
 
-Pedro Henryck Pires da Cunha
+Pedro Henryck Pires da Cunha - 7,5
 
-Rafaella Rebeca Rodrigues Ferreira 
+Rafaella Rebeca Rodrigues Ferreira - 7,5
 
 ---
 
