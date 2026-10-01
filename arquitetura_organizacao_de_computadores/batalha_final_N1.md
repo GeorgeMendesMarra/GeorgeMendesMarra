@@ -138,21 +138,21 @@ Rafaella Rebeca Rodrigues Ferreira - 7,5
 Grupo 8 - 30/09/2026 - Modelo Harvard x Modelo von Neumann - Enviar a apresentação para: george.marra@unialfa.com.br
 
 
-Rafhaela Sena Santana
+Rafhaela Sena Santana - 8,0
 
-Ronilson Lima Carrias
+Ronilson Lima Carrias - 8,0
 
-Silvio Rocha Camelo Neto
+Silvio Rocha Camelo Neto - 0,0
 
-Thiago Duarte Pinheiro Filho
+Thiago Duarte Pinheiro Filho - 8,0
 
-Tyago Paiva da Costa
+Tyago Paiva da Costa - 8,0
 
-Vinícius Lemes D’Abadia Filho 
+Vinícius Lemes D’Abadia Filho - 8,0
 
-Waykon Martins de Souza
+Waykon Martins de Souza - 8,0
 
-Wender Alves Paiva
+Wender Alves Paiva - 8,0
 
 ---
 
@@ -162,5 +162,5 @@ Daniel Martins Alves Ferreira- 7,0
 
 FELIPE SILVA CARES
 
-Izabel Paiva Vieira
+Izabel Paiva Vieira - 8,0
 
