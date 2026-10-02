@@ -105,7 +105,7 @@ ERICK EDUARDO ALVES FERNANDES - 8,0
 ---
 Grupo 9 - 01/10/2026 - Os piratas do vale do silício X Atanasoff-Berry Computer (ABC) - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
-GABRIEL FERREIRA GALVAO
+GABRIEL FERREIRA GALVAO - 7,0
 
 VICTOR HUGO ARANTES SILVA E SOUZA
 
@@ -115,5 +115,5 @@ Pedro Sorelly Marques
 
 NATHALIA DE PAULA FERREIRA
 
-Pedro Henrique de Sousa
+Pedro Henrique de Sousa - 7,0
 
