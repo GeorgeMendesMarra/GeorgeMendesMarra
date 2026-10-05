@@ -4,7 +4,7 @@
 
 **Disciplina:** Programação Orientada a Objetos (Java)
 **Pré-requisitos:** variáveis, tipos primitivos, métodos, arrays e classes
-**Código executável:** pasta [`exemplos/`](exemplos/) — `Simples.java`, `Intermediario.java` e `Complexo.java`
+**Código executável:** pasta [`passagem_de_parametro/`](passagem_de_parametro/) — `Simples.java`, `Intermediario.java` e `Complexo.java`
 
 ---
 
