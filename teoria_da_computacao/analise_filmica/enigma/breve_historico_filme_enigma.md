@@ -1,9 +1,3 @@
-Sim, Professor George. Acessei o texto atual no GitHub. Ele já tem uma boa estrutura, mas dá para melhorar bastante o **rigor histórico, a linguagem acadêmica e, principalmente, a conexão com Teoria da Computação, criptografia e Engenharia de Software**. ([GitHub][1])
-
-Também faria algumas correções conceituais. Por exemplo, a frase de que o foco real de Bletchley Park era “puramente na matemática e volume de dados” simplifica demais o processo: havia matemática, criptoanálise, engenharia, máquinas eletromecânicas, linguística, procedimentos operacionais e trabalho humano especializado.
-
-Abaixo está uma versão que eu considero mais adequada para o seu repositório didático:
-
 # Breve histórico do filme *Enigma*
 
 ## 1. Apresentação
