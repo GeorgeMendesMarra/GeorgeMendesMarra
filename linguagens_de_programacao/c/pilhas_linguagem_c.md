@@ -165,6 +165,95 @@ Por isso o ponteiro `Pilha *p` faz o papel do `this` do Java: é ele que diz **s
 
 ## 4. O jogo Torre de Hanói
 
+### Um pouco de história
+
+A Torre de Hanói não é um jogo milenar do Oriente, como a lenda faz parecer: foi **inventada em 1883** pelo matemático francês **Édouard Lucas** (1842-1891) e lançada como brinquedo. Na divulgação, Lucas assinou com o pseudônimo **"N. Claus de Siam"**, um anagrama de **"Lucas d'Amiens"** (Amiens era sua cidade natal). O jogo foi batizado de *La Tour d'Hanoï*, e o nome da capital do Vietnã, então parte da Indochina Francesa, dava ao brinquedo um ar exótico que ajudava a vender. Segundo os relatos da época, o brinquedo original vinha com **8 discos**.
+
+| Ano | Fato |
+|:---:|---|
+| 1883 | Édouard Lucas lança a *Tour d'Hanoï* sob o pseudônimo "N. Claus de Siam" |
+| 1884 | A lenda dos 64 discos é divulgada em artigos de revistas científicas francesas e se espalha pelo mundo |
+| Século XX | O problema vira um exemplo clássico de **recursão** nos cursos de computação |
+
+#### A lenda dos 64 discos
+
+A história que acompanhava o jogo (existem variações, que falam de um templo em Benares ou em Hanói) conta mais ou menos assim:
+
+> Em um templo, sob a cúpula que marca o centro do mundo, há **três hastes de diamante**. Na criação do mundo, foram colocados em uma delas **64 discos de ouro**, do maior para o menor. Sacerdotes movem os discos, **um por vez**, sem jamais pôr um maior sobre um menor. Quando todos os discos estiverem na terceira haste, **o mundo acabará**.
+
+#### Será que o mundo vai acabar?
+
+Já vimos que o mínimo de jogadas para `n` discos é `2^n - 1`. Para 64 discos:
+
+```
+2^64 - 1 = 18.446.744.073.709.551.615 movimentos
+```
+
+Mesmo que os sacerdotes fizessem **1 movimento por segundo**, sem parar, levariam cerca de **585 bilhões de anos**, aproximadamente 42 vezes a idade estimada do universo (cerca de 13,8 bilhões de anos). Pode ficar tranquilo.
+
+Isso mostra, de forma bem concreta, o que é **crescimento exponencial**: cada disco a mais **dobra** (e soma 1) o número de movimentos.
+
+#### Comprovando em C
+
+**Arquivo:** `hanoi_lenda.c`
+
+```c
+// LEGENDA: [FUNÇÃO]  = função comum (faz um trabalho e pronto)
+//          [MÉTODO]  = função que opera sobre a Pilha (recebe a pilha como 1º parâmetro)
+//          Obs.: C não tem métodos de verdade (isso é de orientação a objetos, como em Java);
+//          aqui usamos o nome "método" por analogia. Em C, tudo é função.
+
+#include <stdio.h>
+
+#define SEGUNDOS_POR_ANO 31557600.0   // 365,25 dias * 24 h * 3600 s
+
+// [FUNÇÃO]
+// Calcula o mínimo de jogadas para n discos usando a recorrência:
+//   minimo(0) = 0
+//   minimo(n) = 2 * minimo(n-1) + 1
+// "unsigned long long" tem 64 bits e comporta exatamente 2^64 - 1,
+// por isso o valor para 64 discos cabe sem estourar.
+unsigned long long jogadasMinimas(int n) {
+    unsigned long long movimentos = 0;   // com 0 discos não há o que mover
+    int i;
+    for (i = 1; i <= n; i++) {
+        movimentos = 2 * movimentos + 1; // cada disco novo dobra o trabalho e soma 1
+    }
+    return movimentos;
+}
+
+// [FUNÇÃO PRINCIPAL] ponto de entrada: o programa começa aqui
+int main(void) {
+    int discos[] = {3, 8, 20, 64};   // quantidades de discos a comparar
+    int total = sizeof(discos) / sizeof(discos[0]);
+    int i;
+    unsigned long long movimentos;
+    double anos;
+
+    printf("Discos | Movimentos              | Anos a 1 movimento/segundo\n");
+    for (i = 0; i < total; i++) {
+        movimentos = jogadasMinimas(discos[i]);
+        // Converte segundos em anos (dividindo por segundos por ano).
+        anos = movimentos / SEGUNDOS_POR_ANO;
+        printf("  %2d   | %23llu | %.3e\n", discos[i], movimentos, anos);
+    }
+
+    return 0;
+}
+```
+
+**Saída esperada:**
+
+```
+Discos | Movimentos              | Anos a 1 movimento/segundo
+   3   |                       7 | 2.218e-07
+   8   |                     255 | 8.080e-06
+  20   |                 1048575 | 3.323e-02
+  64   |    18446744073709551615 | 5.845e+11
+```
+
+---
+
 ### Regras
 
 Há **3 torres** (hastes) e **N discos** de tamanhos diferentes. No início, todos os discos estão na torre 1, do maior (embaixo) para o menor (em cima).
@@ -508,6 +597,7 @@ O número mínimo de jogadas com `n` discos é:
 | 4 | 15 |
 | 5 | 31 |
 | 8 | 255 |
+| 64 | 18.446.744.073.709.551.615 |
 
 ---
 
