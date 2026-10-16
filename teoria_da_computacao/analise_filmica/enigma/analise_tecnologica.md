@@ -1,772 +1,595 @@
-### Análise tecnológica do filme *Enigma*
+# Análise Tecnológica do Filme *Enigma* (2001)
 
-# Análise Tecnológica do Filme *Enigma*
+**Disciplina:** Teoria da Computação · **Atividade:** Análise fílmica
+
+> *Enigma* é um thriller de espionagem. Neste material, ele é usado como **ponto de partida** para estudar criptografia, algoritmos, busca, automação e a transição entre máquinas mecânicas e computadores. O filme é ficção; os conceitos tecnológicos que ele toca são reais.
+
+## Ficha técnica
+
+| Item | Informação |
+| --- | --- |
+| Título | *Enigma* (2001) |
+| Direção | Michael Apted |
+| Roteiro | Tom Stoppard |
+| Base literária | Romance homônimo de Robert Harris (1995) |
+| Cenário | Bletchley Park, Reino Unido, Segunda Guerra Mundial |
+| Protagonista | Tom Jericho (personagem **fictício**) |
+
+## Objetivos de aprendizagem
+
+Ao final desta análise, o estudante deverá ser capaz de:
+
+1. descrever o funcionamento básico da máquina Enigma;
+2. diferenciar **criptografia** de **criptoanálise**;
+3. explicar por que testar todas as chaves (força bruta) era inviável e como a **redução do espaço de busca** resolve o problema;
+4. explicar o que foi a **Bombe** e por que ela **não** é um computador moderno;
+5. distinguir **Enigma**, **Bombe** e **Colossus**;
+6. relacionar o episódio histórico com algoritmos, complexidade, Engenharia de Software, Segurança da Informação e Inteligência Artificial;
+7. separar o que é **ficção** do que é **história** no filme.
+
+## Sumário
+
+1. [Introdução](#1-introdução)
+2. [Ficção e história](#2-ficção-e-história)
+3. [A máquina Enigma](#3-a-máquina-enigma)
+4. [Criptografia e criptoanálise](#4-criptografia-e-criptoanálise)
+5. [O problema computacional: o tamanho do espaço de chaves](#5-o-problema-computacional-o-tamanho-do-espaço-de-chaves)
+6. [O *crib* e a redução do espaço de busca](#6-o-crib-e-a-redução-do-espaço-de-busca)
+7. [A Bombe](#7-a-bombe)
+8. [Da Bombe ao Colossus](#8-da-bombe-ao-colossus)
+9. [Hardware e algoritmo](#9-hardware-e-algoritmo)
+10. [Um esforço coletivo](#10-um-esforço-coletivo)
+11. [Escalabilidade e processamento de informação](#11-escalabilidade-e-processamento-de-informação)
+12. [Segurança da informação](#12-segurança-da-informação)
+13. [Relação com a Inteligência Artificial](#13-relação-com-a-inteligência-artificial)
+14. [Quadro comparativo](#14-quadro-comparativo)
+15. [Conexões com as disciplinas](#15-conexões-com-as-disciplinas)
+16. [Atividades e questões para discussão](#16-atividades-e-questões-para-discussão)
+17. [Glossário](#17-glossário)
+18. [Considerações finais](#18-considerações-finais)
+19. [Referências](#referências)
+
+---
 
 ## 1. Introdução
 
-O filme *Enigma* (2001), dirigido por Michael Apted e baseado no romance homônimo de Robert Harris, apresenta uma narrativa de espionagem ambientada durante a Segunda Guerra Mundial, tendo como cenário principal o centro britânico de inteligência de **Bletchley Park**.
+O filme *Enigma* apresenta uma narrativa de espionagem ambientada em **Bletchley Park**, o centro britânico de criptoanálise durante a Segunda Guerra Mundial. A trama é ficcional, mas parte de um dos episódios mais importantes da história da criptografia: o esforço dos Aliados para decifrar as mensagens protegidas pelas máquinas **Enigma**, usadas pelas forças alemãs.
 
-Embora a narrativa seja ficcional, o filme utiliza como base um dos episódios mais importantes da história da criptografia: os esforços dos Aliados para analisar e decifrar mensagens produzidas pelas máquinas **Enigma**, utilizadas pelas forças alemãs.
-
-Do ponto de vista tecnológico, o filme apresenta um período particularmente importante da história da Computação, no qual problemas matemáticos e criptográficos passaram a exigir a utilização de máquinas capazes de executar operações sistemáticas em grande escala.
-
-A importância tecnológica da obra está justamente na transição entre um processo predominantemente humano de análise de informações e a utilização crescente de **máquinas eletromecânicas para automatizar processos lógicos**.
+Do ponto de vista tecnológico, o período retratado é decisivo para a Computação. Problemas matemáticos e criptográficos passaram a exigir **máquinas capazes de executar operações lógicas sistemáticas em grande escala**. Em outras palavras, o filme mostra a transição entre uma análise de informações predominantemente humana e a **automação de processos lógicos** por máquinas eletromecânicas.
 
 ---
 
-# 2. A máquina Enigma
+## 2. Ficção e história
 
-A Enigma era uma máquina eletromecânica utilizada para cifrar e decifrar mensagens.
+Antes de analisar a tecnologia, é importante separar o que o filme inventa do que a história registra.
 
-Seu funcionamento envolvia componentes como:
+| Elemento | No filme | Na história |
+| --- | --- | --- |
+| Bletchley Park | Cenário principal | Real: centro de criptoanálise britânico |
+| Máquina Enigma | Central na trama | Real: máquina eletromecânica de cifragem |
+| Tom Jericho | Matemático protagonista | **Fictício** |
+| Trama de espionagem e traição | Motor do enredo | **Ficção** |
+| Solução vinda de um único gênio | Ênfase dramática | A história real foi **coletiva e cumulativa** (ver [seção 10](#10-um-esforço-coletivo)) |
+| Bombe, criptoanálise e busca sistemática | Aparecem no pano de fundo | Reais |
 
-* teclado;
-* rotores;
-* painel de conexões (*plugboard*);
-* circuitos elétricos;
-* painel de lâmpadas;
-* mecanismos mecânicos de movimentação dos rotores.
-
-Quando uma tecla era pressionada, um circuito elétrico atravessava diferentes componentes da máquina. A configuração dos rotores e do *plugboard* determinava a transformação realizada sobre o caractere.
-
-A cada nova tecla pressionada, a configuração interna da máquina podia mudar, tornando a relação entre texto original e texto cifrado extremamente complexa.
-
-A importância desse mecanismo para a Computação está no fato de que a Enigma pode ser estudada como um **sistema determinístico de transformação de símbolos**, no qual uma determinada configuração e uma determinada entrada produzem uma saída específica.
+> **Dica didática:** o filme *O Jogo da Imitação* (2014) é centrado em Alan Turing e também mistura fatos e dramatização. Compará-lo com *Enigma* é um bom exercício de leitura crítica de obras baseadas em fatos reais.
 
 ---
 
-# 3. Criptografia e criptoanálise
+## 3. A máquina Enigma
 
-É importante diferenciar dois conceitos apresentados implicitamente no filme:
+A Enigma era uma máquina **eletromecânica** usada para cifrar e decifrar mensagens.
 
-### Criptografia
+### 3.1 Componentes
 
-É a área relacionada à criação e utilização de mecanismos destinados a proteger informações.
+- teclado;
+- conjunto de rotores;
+- refletor;
+- painel de conexões (*plugboard*);
+- circuitos elétricos;
+- painel de lâmpadas;
+- mecanismo de movimentação dos rotores.
 
-### Criptoanálise
+### 3.2 Funcionamento
 
-É o estudo de métodos utilizados para analisar sistemas criptográficos e recuperar informações sem necessariamente possuir a chave original.
-
-Os profissionais de Bletchley Park trabalhavam principalmente com **criptoanálise**.
-
-O problema enfrentado não era simplesmente "descobrir uma senha". Era necessário desenvolver métodos capazes de reduzir sistematicamente um enorme conjunto de possibilidades.
-
-Essa característica aproxima diretamente o problema histórico dos conceitos estudados atualmente em:
-
-* algoritmos;
-* estruturas de dados;
-* complexidade computacional;
-* inteligência artificial;
-* busca;
-* otimização;
-* segurança da informação.
-
----
-
-# 4. O problema computacional apresentado
-
-Uma das principais contribuições tecnológicas do filme é permitir que o espectador compreenda a dimensão do problema enfrentado pelos criptoanalistas.
-
-Uma configuração incorreta da Enigma poderia produzir uma quantidade enorme de resultados possíveis.
-
-Se todas as possibilidades fossem testadas manualmente, o processo seria extremamente demorado.
-
-Consequentemente, os pesquisadores precisavam encontrar uma estratégia mais eficiente:
-
-> **reduzir o espaço de busca antes de realizar os testes.**
-
-Essa ideia é fundamental na Computação moderna.
-
-Um algoritmo eficiente raramente tenta todas as possibilidades indiscriminadamente. Ele procura utilizar propriedades do problema para eliminar alternativas impossíveis.
-
-Essa estratégia aparece em diversas áreas contemporâneas, como:
-
-* inteligência artificial;
-* algoritmos de busca;
-* otimização;
-* mineração de dados;
-* reconhecimento de padrões;
-* processamento de linguagem natural;
-* resolução de problemas combinatórios.
-
----
-
-# 5. A Bombe
-
-Um dos elementos tecnológicos mais importantes relacionados ao filme é a **Bombe**.
-
-A Bombe foi uma máquina eletromecânica desenvolvida para auxiliar na identificação das configurações utilizadas pelas máquinas Enigma.
-
-É importante evitar um erro conceitual comum: a Bombe **não era um computador moderno**.
-
-Sua função principal era executar de maneira extremamente rápida e sistemática uma série de verificações lógicas relacionadas às possíveis configurações da Enigma.
-
-A máquina utilizava sistemas eletromecânicos, incluindo rotores, circuitos e relés, para automatizar o processo de busca.
-
-A documentação de Alan Turing descreve a Bombe como um método mecânico de solução baseado na formulação de hipóteses e na busca por confirmações ou contradições. ([Turing][2])
-
-Portanto, podemos interpretar a Bombe como uma forma de **automação de um processo de raciocínio lógico e criptoanalítico**.
-
----
-
-# 6. Bombe não é sinônimo de computador
-
-Para estudantes de Computação, essa distinção é fundamental.
-
-A Bombe:
-
-* não era um computador eletrônico de propósito geral;
-* não executava programas armazenados como os computadores modernos;
-* não possuía sistema operacional;
-* não utilizava a arquitetura de von Neumann;
-* não funcionava como um computador pessoal moderno;
-* executava uma tarefa altamente especializada.
-
-Sua importância está na capacidade de **automatizar uma busca sistemática baseada em lógica e restrições**.
-
-Um estudo técnico da Bombe destaca que ela era uma máquina eletromecânica baseada em relés e que seu objetivo era realizar uma busca sistemática por partes das configurações da chave da Enigma. ([Museu Bob Doran de Computação][3])
-
----
-
-# 7. Algoritmos e redução do espaço de busca
-
-A relação entre a história da Enigma e os algoritmos é particularmente importante.
-
-Imagine um problema com milhões ou bilhões de possibilidades.
-
-Uma abordagem ingênua poderia ser:
+Quando o operador pressionava uma tecla, o rotor da direita avançava e um circuito elétrico atravessava o *plugboard*, os rotores, o refletor e voltava pelos rotores e pelo *plugboard*, acendendo uma lâmpada com a letra cifrada.
 
 ```text
-para cada possibilidade:
-    testar possibilidade
-    verificar resultado
+Tecla → Plugboard → Rotores → Refletor → Rotores → Plugboard → Lâmpada
 ```
 
-Essa estratégia pode ser inviável quando o espaço de busca é muito grande.
+Como os rotores giravam a cada tecla, **a mesma letra digitada duas vezes produzia letras cifradas diferentes**. Isso tornava a relação entre texto original e texto cifrado muito mais complexa do que uma simples substituição fixa.
 
-A abordagem utilizada pelos criptoanalistas era mais sofisticada.
+### 3.3 Propriedades importantes
 
-Eles utilizavam informações conhecidas ou hipóteses sobre o conteúdo das mensagens para eliminar possibilidades.
+- **Reciprocidade:** com a mesma configuração, cifrar e decifrar são a mesma operação. Se a letra A vira Q, então Q vira A.
+- **Nenhuma letra é cifrada como ela mesma**, consequência direta do refletor. Parece uma qualidade, mas é uma **fraqueza**: permite eliminar hipóteses (ver [seção 6](#6-o-crib-e-a-redução-do-espaço-de-busca)).
+- **Chave diária:** a ordem dos rotores, suas posições iniciais e as ligações do *plugboard* eram combinadas em uma configuração que as redes alemãs mudavam periodicamente.
 
-O processo pode ser representado didaticamente como:
+### 3.4 A Enigma como modelo computacional
 
-```text
-Mensagem interceptada
-        ↓
-Análise do texto cifrado
-        ↓
-Formulação de hipóteses
-        ↓
-Identificação de padrões
-        ↓
-Redução das possibilidades
-        ↓
-Teste sistemático
-        ↓
-Verificação
-        ↓
-Possível configuração da Enigma
-```
+Para a Teoria da Computação, a Enigma pode ser estudada como um **sistema determinístico de transformação de símbolos**: dada uma configuração e uma entrada, a saída é sempre a mesma.
 
-Esse modelo possui forte relação com os princípios de desenvolvimento de algoritmos.
+Mais formalmente, ela se comporta como um **transdutor de estados finitos** (uma máquina de Mealy): o **estado** é a posição dos rotores, e a **saída** depende do estado e do símbolo de entrada. Esse é um bom exemplo concreto de autômato com saída.
 
 ---
 
-# 8. O conceito de "crib"
+## 4. Criptografia e criptoanálise
 
-Um dos conceitos fundamentais da criptoanálise da Enigma era o **crib**.
+O filme apresenta, de forma implícita, dois conceitos que precisam ser diferenciados:
 
-Um *crib* correspondia a uma hipótese sobre determinado trecho da mensagem original.
+| Conceito | Definição |
+| --- | --- |
+| **Criptografia** | Criação e uso de mecanismos para proteger informações |
+| **Criptoanálise** | Estudo de métodos para analisar sistemas criptográficos e recuperar informações **sem possuir a chave original** |
 
-Por exemplo, os analistas poderiam suspeitar que determinada mensagem contivesse uma expressão ou estrutura conhecida.
+Os profissionais de Bletchley Park trabalhavam com **criptoanálise**. O problema não era "descobrir uma senha": era desenvolver métodos capazes de **reduzir sistematicamente** um conjunto enorme de possibilidades.
 
-Essa informação fornecia uma restrição para o problema.
+Isso aproxima o episódio de temas atuais como algoritmos, estruturas de dados, complexidade computacional, busca, otimização, inteligência artificial e segurança da informação.
 
-Em termos computacionais, podemos interpretar o processo como:
+---
+
+## 5. O problema computacional: o tamanho do espaço de chaves
+
+Uma configuração incorreta da Enigma produz apenas texto sem sentido. Para saber quão grande era o problema, considere o modelo militar de **3 rotores escolhidos entre 5**, com **10 cabos** no *plugboard*:
+
+| Fator | Cálculo | Possibilidades |
+| --- | --- | --- |
+| Ordem dos rotores | 5 × 4 × 3 | 60 |
+| Posições iniciais | 26³ | 17.576 |
+| Ligações do *plugboard* | 26! ÷ (6! · 10! · 2¹⁰) | 150.738.274.937.250 |
+| **Total** | produto dos fatores | **≈ 1,59 × 10²⁰** |
+
+O mesmo cálculo em Python:
+
+```python
+from math import factorial, perm
+
+ordem_rotores = perm(5, 3)          # 60
+posicoes = 26 ** 3                  # 17.576
+cabos = 10
+plugboard = factorial(26) // (
+    factorial(26 - 2 * cabos) * factorial(cabos) * 2 ** cabos
+)                                   # 150.738.274.937.250
+
+total = ordem_rotores * posicoes * plugboard
+print(f"{total:,}")                 # 158.962.555.217.826.360.000
+
+# Quanto tempo levaria testar tudo a 1 bilhão de testes por segundo?
+segundos = total / 1e9
+anos = segundos / (60 * 60 * 24 * 365)
+print(f"{anos:,.0f} anos")          # ≈ 5.000 anos
+```
+
+> **Observação:** o cálculo ignora o ajuste dos anéis dos rotores e considera apenas a configuração descrita acima, por ser uma simplificação didática.
+
+Mesmo um computador **atual**, testando um bilhão de configurações por segundo, levaria milhares de anos. Testar manualmente, como no início da guerra, era impensável. A conclusão é a ideia central deste material:
+
+> **Em problemas grandes, a solução não está em testar tudo mais rápido, mas em eliminar possibilidades antes de testar.**
+
+Essa estratégia é fundamental na Computação moderna e aparece em inteligência artificial, algoritmos de busca, otimização, mineração de dados, reconhecimento de padrões e problemas combinatórios.
+
+---
+
+## 6. O *crib* e a redução do espaço de busca
+
+### 6.1 O que é um *crib*
+
+Um ***crib*** é uma **hipótese sobre um trecho do texto original** de uma mensagem. Os analistas exploravam o fato de que as mensagens alemãs seguiam padrões previsíveis, como relatórios meteorológicos e fórmulas de abertura e encerramento.
+
+Um *crib* funciona como uma **restrição** sobre o problema. Combinado com a propriedade de que nenhuma letra é cifrada como ela mesma, ele permite descartar muitas posições possíveis do trecho no texto cifrado.
 
 ```text
 Espaço de possibilidades
         ↓
-Aplicação de restrição
+Aplicação de restrição (crib)
         ↓
-Eliminação de possibilidades incompatíveis
+Eliminação das possibilidades incompatíveis
         ↓
-Novo espaço reduzido
+Espaço reduzido
 ```
 
-Esse conceito possui relação direta com técnicas modernas de:
+### 6.2 Abordagem ingênua × abordagem inteligente
 
-* busca com restrições;
-* *constraint satisfaction*;
-* poda de árvores de busca;
-* otimização;
-* raciocínio lógico;
-* inteligência artificial.
+```text
+# Força bruta
+para cada configuração possível:
+    testar configuração
+    verificar resultado
+
+# Abordagem dos criptoanalistas
+formular hipóteses (crib)
+usar restrições para eliminar configurações
+testar apenas os candidatos restantes
+verificar resultado
+```
+
+### 6.3 Inferência lógica e contradição
+
+A criptoanálise não dependia só de força bruta. Era preciso construir relações lógicas entre letras, posições e configurações:
+
+```text
+Hipótese A → implica B → implica C → C contradiz D  ⟹  A é descartada
+Hipótese A → B → C → nenhuma contradição            ⟹  A é candidata
+```
+
+Esse raciocínio é uma forma de **inferência lógica automatizada**, e tem relação direta com técnicas modernas como:
+
+- busca com restrições (*constraint satisfaction*);
+- poda de árvores de busca (*pruning*);
+- *backtracking*;
+- demonstração por contradição;
+- raciocínio lógico em inteligência artificial.
 
 ---
 
-# 9. A lógica por trás da criptoanálise
+## 7. A Bombe
 
-A criptoanálise não dependia apenas de força bruta.
+A **Bombe** foi uma máquina eletromecânica projetada para auxiliar na identificação das configurações da Enigma. Seu princípio era **testar hipóteses em grande velocidade**, usando um *crib* e a lógica de consequências e contradições descrita na seção anterior.
 
-Era necessário construir relações lógicas entre letras, posições e configurações.
+O relatório de Turing sobre a Enigma descreve a Bombe como um método mecânico de solução baseado na formulação de hipóteses e na busca por confirmações ou contradições. ([Turing, 1940](https://www.turing.org.uk/sources/mathenigma.html))
 
-A ideia pode ser simplificada da seguinte forma:
+Na prática, a máquina executava automaticamente uma enorme quantidade de verificações lógicas e **parava** quando encontrava uma configuração sem contradição. Esse candidato era então verificado por analistas.
 
-```text
-Hipótese A
-   ↓
-Implica B
-   ↓
-Implica C
-   ↓
-C contradiz D
-   ↓
-Hipótese A é descartada
-```
+### 7.1 A Bombe não é sinônimo de computador
 
-Ou:
+Para estudantes de Computação, essa distinção é essencial. A Bombe:
 
-```text
-Hipótese A
-   ↓
-B
-   ↓
-C
-   ↓
-Nenhuma contradição
-   ↓
-Hipótese candidata
-```
+- **não** era um computador eletrônico de propósito geral;
+- **não** executava programas armazenados;
+- **não** possuía sistema operacional;
+- **não** seguia a arquitetura de von Neumann;
+- executava uma **tarefa altamente especializada**.
 
-Essa abordagem representa uma forma de **inferência lógica automatizada**.
+Sua importância está em **automatizar uma busca sistemática baseada em lógica e restrições**. Um estudo técnico a descreve como uma máquina eletromecânica baseada em relés, voltada à busca sistemática de partes da chave da Enigma. ([The Rutherford Journal](https://museum.cs.auckland.ac.nz/rutherfordjournal/article030108.html))
 
-A importância histórica está no fato de que processos desse tipo seriam posteriormente fundamentais para diversas áreas da Computação.
+Por isso, a Bombe é melhor compreendida como uma **máquina eletromecânica especializada de processamento lógico e busca**, e não como "o primeiro computador".
 
----
+### 7.2 Relés eletromecânicos e a evolução da tecnologia
 
-# 10. Relés eletromecânicos
-
-Outro aspecto tecnológico importante é a utilização de **relés eletromecânicos**.
-
-Os relés funcionavam como dispositivos capazes de controlar circuitos elétricos.
-
-A utilização de grandes quantidades de relés permitia construir sistemas capazes de realizar operações lógicas de forma automatizada.
-
-Isso é importante historicamente porque demonstra que a Computação não começou diretamente com os computadores eletrônicos modernos.
-
-Existe uma evolução tecnológica:
+A Bombe ocupa um lugar específico na trajetória tecnológica da Computação:
 
 ```text
 Mecanismos mecânicos
-       ↓
-Máquinas eletromecânicas
-       ↓
-Relés
-       ↓
-Válvulas eletrônicas
-       ↓
+      ↓
+Máquinas eletromecânicas (relés)   ← Enigma e Bombe
+      ↓
+Válvulas eletrônicas               ← Colossus
+      ↓
 Transistores
-       ↓
+      ↓
 Circuitos integrados
-       ↓
+      ↓
 Microprocessadores
-       ↓
+      ↓
 Computadores modernos
 ```
 
-A Bombe ocupa uma posição importante nessa trajetória.
+Isso mostra que a Computação não começou diretamente com os computadores eletrônicos.
 
 ---
 
-# 11. Engenharia de hardware
+## 8. Da Bombe ao Colossus
 
-O filme também permite analisar a Computação sob a perspectiva da **Engenharia de Hardware**.
+Um erro comum é misturar Bombe e **Colossus**. Eles atacavam problemas diferentes:
 
-Construir uma máquina capaz de executar milhares de verificações exigia:
+| | Bombe | Colossus |
+| --- | --- | --- |
+| Alvo | Cifra **Enigma** | Cifra **Lorenz** (comunicações de alto comando) |
+| Tecnologia | Eletromecânica | **Eletrônica** (válvulas) |
+| Função | Testar hipóteses de configuração | Auxiliar na análise estatística do texto cifrado |
+| Programabilidade | Muito limitada | Programável por chaves e painéis de conexão |
+| Programa armazenado | Não | Não |
 
-* projeto mecânico;
-* projeto elétrico;
-* engenharia de componentes;
-* sincronização;
-* confiabilidade;
-* manutenção;
-* testes;
-* padronização.
+O Colossus é frequentemente citado como um dos primeiros dispositivos eletrônicos digitais programáveis. Ainda assim, **não** era um computador de propósito geral com programa armazenado.
 
-Portanto, a solução do problema da Enigma não foi apenas matemática.
-
-Foi necessária a integração entre diferentes áreas:
-
-```text
-Matemática
-     +
-Criptografia
-     +
-Lógica
-     +
-Engenharia
-     +
-Máquinas
-     +
-Informação
-     =
-Criptoanálise automatizada
-```
-
-Essa interdisciplinaridade é uma das principais características da Engenharia de Computação.
+Esse contraste ajuda a perceber que a "evolução" não foi uma linha reta: diferentes máquinas especializadas foram desenvolvidas para problemas específicos, e só depois a ideia de uma máquina **universal** se consolidou.
 
 ---
 
-# 12. Software e hardware
+## 9. Hardware e algoritmo
 
-Embora a Bombe não utilizasse software da maneira como entendemos atualmente, o filme permite introduzir uma discussão importante sobre a relação entre **hardware e algoritmo**.
+Um **algoritmo** é uma sequência organizada de procedimentos para resolver um problema. Na Bombe, parte desse procedimento estava **incorporada fisicamente** à máquina:
 
-Um algoritmo pode ser descrito como uma sequência organizada de procedimentos para solucionar determinado problema.
+> **O comportamento desejado era parcialmente implementado no próprio hardware.**
 
-Na Bombe, parte desse procedimento era incorporada fisicamente ao funcionamento da máquina.
-
-Em outras palavras:
-
-> **o comportamento desejado era parcialmente implementado no próprio hardware.**
-
-Essa característica é muito diferente dos computadores atuais, nos quais o mesmo hardware pode executar diferentes programas.
-
-A evolução posterior da Computação permitiu separar cada vez mais:
+Isso é muito diferente dos computadores atuais, em que o mesmo hardware executa programas distintos. A Computação posterior separou cada vez mais as camadas:
 
 ```text
 Hardware
-    ↕
+   ↕
 Sistema operacional
-    ↕
+   ↕
 Software
-    ↕
+   ↕
 Aplicações
 ```
 
----
+### 9.1 Conexão com Turing e a Teoria da Computação
 
-# 13. Turing, Welchman e o desenvolvimento coletivo
+Em 1936, antes da guerra, Alan Turing havia proposto a **máquina de Turing** e a ideia de uma **máquina universal**: uma única máquina capaz de simular qualquer outra, bastando receber a descrição dela como entrada. A Bombe seguia a lógica oposta, uma máquina **dedicada** a uma só tarefa.
 
-Embora o filme utilize o personagem fictício **Tom Jericho** como protagonista, a história real envolveu diversos pesquisadores.
-
-**Alan Turing** teve papel fundamental no desenvolvimento da Bombe britânica e nos métodos de criptoanálise da Enigma.
-
-Entretanto, não se deve interpretar o processo como o trabalho isolado de um único indivíduo.
-
-**Gordon Welchman**, por exemplo, realizou uma contribuição fundamental ao aprimorar o projeto da Bombe com o chamado **diagonal board**.
-
-A documentação histórica mostra que o desenvolvimento da Bombe britânica ocorreu a partir de trabalhos anteriores e de contribuições de diferentes pesquisadores, incluindo os criptoanalistas poloneses. ([Turing][4])
-
-Esse aspecto é particularmente importante para estudantes de Engenharia de Software:
-
-> **grandes sistemas tecnológicos são normalmente resultado de trabalho colaborativo e incremental.**
+Esse contraste (**máquina especializada × máquina universal**) é uma excelente ponte para discutir computabilidade e os fundamentos da programação.
 
 ---
 
-# 14. A contribuição polonesa
+## 10. Um esforço coletivo
 
-Uma análise tecnológica completa do filme não pode ignorar a contribuição dos matemáticos e criptoanalistas poloneses.
+O filme usa um protagonista fictício, mas a história real foi cumulativa e envolveu muitas pessoas.
 
-Antes da atuação britânica em Bletchley Park, pesquisadores poloneses já haviam obtido importantes resultados contra versões da Enigma.
+### 10.1 A contribuição polonesa
 
-Em julho de 1939, representantes poloneses compartilharam com britânicos e franceses informações técnicas e métodos desenvolvidos para atacar a Enigma.
+Antes de Bletchley Park, matemáticos poloneses do Biuro Szyfrów, entre eles **Marian Rejewski**, **Jerzy Różycki** e **Henryk Zygalski**, já haviam obtido resultados importantes contra versões da Enigma, incluindo uma máquina eletromecânica própria, a *bomba kryptologiczna*.
 
-Essas informações foram extremamente importantes para os trabalhos posteriores realizados pelos britânicos. ([CIA][5])
+Em julho de 1939, representantes poloneses compartilharam com britânicos e franceses métodos e informações técnicas, o que foi extremamente importante para o trabalho posterior. ([CIA](https://www.cia.gov/stories/story/who-first-cracked-the-enigma-cipher))
 
-Portanto, tecnologicamente, o desenvolvimento da solução para a Enigma deve ser entendido como um processo cumulativo:
+### 10.2 Turing e Welchman
+
+**Alan Turing** teve papel fundamental nos métodos de criptoanálise e no desenvolvimento da Bombe britânica. **Gordon Welchman** aprimorou o projeto com o ***diagonal board***, que tornou a máquina muito mais eficiente. A documentação histórica mostra que a Bombe britânica se apoiou em trabalhos anteriores e em contribuições de vários pesquisadores. ([Turing, 1939](https://www.turing.org.uk/sources/nov39.html))
+
+### 10.3 Operadores, analistas e engenheiros
+
+Bletchley Park era um sistema humano e técnico: matemáticos, linguistas, engenheiros, operadores e analistas. A operação das Bombes e de boa parte do fluxo de trabalho dependia de grande quantidade de pessoal, incluindo muitas mulheres.
 
 ```text
 Pesquisa polonesa
-       ↓
+      ↓
 Compartilhamento de conhecimento
-       ↓
+      ↓
 Desenvolvimento britânico
-       ↓
+      ↓
 Aprimoramento dos métodos
-       ↓
+      ↓
 Automação
-       ↓
-Produção em escala
+      ↓
+Produção e operação em escala
 ```
 
-Esse modelo é muito mais próximo do funcionamento real da ciência e da engenharia do que a ideia de um único "gênio" que resolve o problema sozinho.
+> **Para estudantes de Engenharia de Software:** grandes sistemas tecnológicos são normalmente resultado de trabalho **colaborativo e incremental**, não de um único "gênio".
 
 ---
 
-# 15. Escalabilidade
+## 11. Escalabilidade e processamento de informação
 
-Outro conceito importante que pode ser extraído do contexto histórico é o de **escalabilidade**.
+Não bastava resolver **uma** mensagem. Era preciso criar um processo capaz de trabalhar continuamente com **grandes quantidades de mensagens interceptadas**, dia após dia, sob prazos curtos. Isso envolve preocupações que continuam atuais:
 
-Não bastava encontrar uma solução para uma única mensagem.
+- desempenho;
+- volume de dados;
+- tempo de processamento;
+- disponibilidade;
+- confiabilidade;
+- manutenção;
+- escalabilidade.
 
-Era necessário criar um processo capaz de trabalhar continuamente com grandes quantidades de mensagens interceptadas.
+Bletchley Park pode ser analisado como um **grande sistema de processamento de informações**, no qual humanos e máquinas trabalhavam de forma integrada.
 
-Esse problema possui forte relação com os sistemas computacionais modernos.
+### 11.1 "Big Data antes do Big Data"?
 
-Uma solução tecnológica precisa considerar:
+Há uma comparação didática possível, desde que feita com cuidado. Bletchley Park **não** tinha Big Data no sentido atual: não havia bancos de dados modernos, armazenamento digital em larga escala, computação em nuvem, GPUs ou IA moderna.
 
-* desempenho;
-* volume de dados;
-* tempo de processamento;
-* disponibilidade;
-* confiabilidade;
-* manutenção;
-* escalabilidade.
+Mas havia um problema conceitualmente parecido:
 
-Nesse sentido, Bletchley Park pode ser analisado como um grande sistema de processamento de informações, no qual seres humanos e máquinas trabalhavam de maneira integrada.
+> **Como coletar, classificar, correlacionar e interpretar grandes volumes de informação de forma rápida e organizada?**
 
----
-
-# 16. Big Data antes do Big Data
-
-É possível estabelecer uma relação didática interessante com o conceito contemporâneo de **Big Data**.
-
-Obviamente, não se deve afirmar que Bletchley Park possuía Big Data no sentido tecnológico atual.
-
-Não existiam:
-
-* bancos de dados modernos;
-* armazenamento digital em larga escala;
-* computação em nuvem;
-* Hadoop;
-* Spark;
-* GPUs;
-* inteligência artificial moderna.
-
-Entretanto, existia um problema semelhante em uma dimensão conceitual:
-
-> **como processar grandes volumes de informações de maneira rápida e organizada?**
-
-Os britânicos precisavam coletar, classificar, analisar, correlacionar e interpretar grandes quantidades de informações.
-
-Essa comparação permite mostrar aos estudantes que muitos problemas atuais da Computação possuem antecedentes históricos.
+Mostrar isso aos estudantes ajuda a perceber que muitos problemas atuais têm antecedentes históricos.
 
 ---
 
-# 17. Segurança da informação
+## 12. Segurança da informação
 
-O filme também apresenta conceitos relacionados à **Segurança da Informação**.
+### 12.1 Princípios envolvidos
 
 As mensagens militares precisavam garantir:
 
-* confidencialidade;
-* proteção contra interceptação;
-* controle de acesso;
-* proteção das chaves;
-* segurança dos procedimentos;
-* sigilo das técnicas de criptoanálise.
+- confidencialidade;
+- proteção contra interceptação;
+- proteção das chaves;
+- segurança dos procedimentos;
+- sigilo das próprias técnicas de criptoanálise.
 
-Entretanto, a história da Enigma demonstra uma questão fundamental:
+### 12.2 O elo mais fraco costuma ser o humano
 
-> **a segurança de um sistema criptográfico não depende apenas da existência de um algoritmo complexo.**
+A história da Enigma mostra que a segurança de um sistema **não depende apenas de um algoritmo complexo**. Padrões previsíveis nas mensagens, hábitos dos operadores, reutilização de informações e erros de procedimento forneciam justamente os *cribs* de que os criptoanalistas precisavam.
 
-Procedimentos operacionais inadequados, reutilização de informações, erros humanos ou padrões previsíveis podem comprometer todo o sistema.
+Esse princípio continua absolutamente atual na segurança cibernética (senhas previsíveis, reutilização de credenciais, engenharia social).
 
-Esse princípio continua absolutamente atual na segurança cibernética.
+### 12.3 Segurança por obscuridade × princípio de Kerckhoffs
 
----
+Os alemães mantinham em segredo mensagens, chaves, procedimentos e equipamentos. Mas a segurança efetiva de um sistema criptográfico não deve depender do segredo do **método**.
 
-# 18. Segurança por obscuridade
+O **princípio de Kerckhoffs** (1883) afirma que um sistema criptográfico deve permanecer seguro **mesmo que todo o seu funcionamento seja conhecido**, desde que a **chave** permaneça protegida. Esse princípio é a base da criptografia moderna.
 
-Outro ponto importante é diferenciar **segurança criptográfica** de simples segredo.
+### 12.4 Informação como arma
 
-Os alemães precisavam manter em segredo não apenas as mensagens, mas também:
-
-* configurações;
-* procedimentos;
-* equipamentos;
-* chaves;
-* protocolos.
-
-Entretanto, a segurança efetiva depende da robustez do sistema e da proteção adequada das chaves.
-
-Essa discussão pode ser relacionada ao princípio moderno de que um sistema criptográfico deve continuar seguro mesmo quando seu funcionamento é conhecido, desde que a chave permaneça protegida.
-
----
-
-# 19. Informação como arma
-
-Uma das principais mensagens tecnológicas do filme é que, na guerra moderna, informação pode possuir valor estratégico equivalente ao de equipamentos militares.
-
-A interceptação e análise das comunicações permitia aos Aliados obter conhecimento sobre movimentações e operações inimigas.
-
-Assim:
+Na guerra moderna, a informação passou a ter valor estratégico comparável ao de equipamentos militares. A inteligência obtida pela decifração das comunicações alemãs, conhecida como **Ultra**, foi mantida em sigilo por décadas.
 
 ```text
-Comunicação
-     ↓
-Interceptação
-     ↓
-Criptoanálise
-     ↓
-Informação
-     ↓
-Inteligência
-     ↓
-Decisão
-     ↓
-Ação
+Comunicação → Interceptação → Criptoanálise → Informação
+                                                  ↓
+                            Inteligência → Decisão → Ação
 ```
 
-Essa cadeia antecipa uma característica fundamental dos sistemas modernos de informação.
-
-Atualmente, organizações utilizam sistemas computacionais para transformar grandes volumes de dados em informações capazes de apoiar decisões.
+Essa cadeia antecipa a lógica dos sistemas modernos, que transformam grandes volumes de dados em informação capaz de apoiar decisões.
 
 ---
 
-# 20. Relação com a Inteligência Artificial
+## 13. Relação com a Inteligência Artificial
 
-O filme também pode ser utilizado para introduzir uma comparação com a Inteligência Artificial.
+A Bombe **não** era uma IA: não aprendia, não treinava modelos e não usava redes neurais ou aprendizado de máquina. Seu comportamento era definido pelo projeto físico e pelos procedimentos dos operadores.
 
-A Bombe não era uma IA.
+Mesmo assim, existe uma conexão conceitual importante. Tanto a criptoanálise da época quanto os sistemas modernos de IA procuram:
 
-Ela não aprendia.
+- explorar espaços de possibilidades;
+- usar informações disponíveis para reduzir incertezas;
+- encontrar padrões;
+- selecionar hipóteses;
+- automatizar processos de análise.
 
-Não possuía redes neurais.
+Um exemplo histórico mais próximo da IA moderna é o **Banburismus**, método estatístico associado a Turing, usado contra a Enigma naval. Ele acumulava evidências para **ordenar hipóteses por probabilidade**, ideia próxima do raciocínio bayesiano usado hoje em aprendizado de máquina.
 
-Não treinava modelos.
-
-Não utilizava aprendizado de máquina.
-
-Seu comportamento era determinado pelo projeto físico e pelos procedimentos utilizados pelos operadores.
-
-Mesmo assim, existe uma conexão conceitual importante.
-
-Tanto a criptoanálise da época quanto sistemas modernos de IA procuram:
-
-* explorar espaços de possibilidades;
-* utilizar informações disponíveis;
-* encontrar padrões;
-* reduzir incertezas;
-* selecionar hipóteses;
-* automatizar processos de análise.
-
-A diferença está principalmente nos métodos e nas tecnologias utilizadas.
+A diferença está principalmente nos **métodos** e nas **tecnologias**, não no tipo de problema.
 
 ---
 
-# 21. Comparação entre Bombe e computadores modernos
+## 14. Quadro comparativo
 
-| Característica          | Bombe                                  | Computador moderno              |
-| ----------------------- | -------------------------------------- | ------------------------------- |
-| Tecnologia              | Eletromecânica                         | Eletrônica                      |
-| Relés                   | Sim                                    | Não como elemento principal     |
-| Propósito               | Criptoanálise                          | Propósito geral                 |
-| Programabilidade        | Muito limitada                         | Elevada                         |
-| Software                | Não no sentido moderno                 | Fundamental                     |
-| Armazenamento           | Não comparável aos computadores atuais | Memória e armazenamento digital |
-| Processamento           | Especializado                          | Geral                           |
-| Operação                | Física/eletromecânica                  | Eletrônica                      |
-| Inteligência artificial | Não                                    | Pode executar IA                |
-| Sistema operacional     | Não                                    | Sim                             |
-| Escalabilidade          | Física                                 | Digital e distribuída           |
-
-Essa comparação demonstra que a Bombe não deve ser chamada simplesmente de "primeiro computador".
-
-Ela é melhor compreendida como uma **máquina eletromecânica especializada de processamento lógico e busca**.
+| Característica | Enigma | Bombe | Colossus | Computador moderno |
+| --- | --- | --- | --- | --- |
+| Papel | Cifrar e decifrar | Auxiliar a criptoanálise | Auxiliar a criptoanálise | Propósito geral |
+| Alvo | — | Enigma | Lorenz | Qualquer tarefa programável |
+| Tecnologia | Eletromecânica | Eletromecânica | Eletrônica (válvulas) | Eletrônica (circuitos integrados) |
+| Programabilidade | Configurável (chave) | Muito limitada | Limitada (chaves e painéis) | Elevada |
+| Programa armazenado | Não | Não | Não | Sim |
+| Software no sentido moderno | Não | Não | Não | Fundamental |
+| Sistema operacional | Não | Não | Não | Sim |
+| Executa IA | Não | Não | Não | Pode executar |
 
 ---
 
-# 22. Relação com Engenharia de Software
+## 15. Conexões com as disciplinas
 
-Para estudantes de Engenharia de Software, o filme apresenta uma oportunidade para discutir conceitos que continuam presentes no desenvolvimento de sistemas.
+### 15.1 Engenharia de Software
 
-### Requisitos
+O episódio permite discutir conceitos que continuam presentes no desenvolvimento de sistemas:
 
-Era necessário definir exatamente qual problema deveria ser solucionado.
+| Conceito | No episódio |
+| --- | --- |
+| Requisitos | Definir exatamente qual problema resolver |
+| Modelagem | Representar a Enigma e as relações entre suas configurações |
+| Algoritmos | Criar métodos sistemáticos de busca |
+| Testes | Verificar cada hipótese |
+| Otimização | Reduzir o número de possibilidades analisadas |
+| Trabalho em equipe | Matemáticos, engenheiros, operadores e analistas integrados |
+| Confiabilidade | Uma pequena falha produzia resultados incorretos |
+| Segurança | Todo o processo precisava permanecer secreto |
 
-### Modelagem
+### 15.2 Teoria da Computação
 
-Os pesquisadores precisavam representar o funcionamento da Enigma e as relações entre suas configurações.
+Talvez a principal contribuição do filme para a disciplina seja provocar a pergunta:
 
-### Algoritmos
+> **Quais problemas podem ser resolvidos por procedimentos sistemáticos, e quais recursos são necessários para resolvê-los de maneira eficiente?**
 
-Era necessário desenvolver métodos sistemáticos para procurar soluções.
+Isso permite introduzir: algoritmos, máquinas abstratas, autômatos, computabilidade, complexidade, busca, lógica, processamento de símbolos, automação e limites computacionais.
 
-### Testes
+Não basta perguntar *"é possível encontrar a solução?"*. Também é preciso perguntar *"quanto tempo, memória e recursos são necessários?"*. Essa segunda pergunta é o território da **complexidade computacional**.
 
-As hipóteses precisavam ser verificadas.
+### 15.3 Modelo do processo
 
-### Otimização
-
-Os métodos precisavam reduzir o número de possibilidades analisadas.
-
-### Trabalho em equipe
-
-Matemáticos, engenheiros, operadores e analistas trabalhavam de forma integrada.
-
-### Confiabilidade
-
-Uma pequena falha poderia produzir resultados incorretos.
-
-### Segurança
-
-Todo o processo precisava permanecer secreto.
-
-Esses elementos continuam presentes em projetos modernos de software.
-
----
-
-# 23. Relação com Teoria da Computação
-
-Para a disciplina de **Teoria da Computação**, talvez a principal contribuição tecnológica de *Enigma* seja demonstrar uma questão fundamental:
-
-> **Quais problemas podem ser resolvidos por procedimentos sistemáticos e quais recursos são necessários para resolvê-los de maneira eficiente?**
-
-A história da Enigma permite introduzir conceitos como:
-
-* algoritmos;
-* máquinas abstratas;
-* computabilidade;
-* complexidade;
-* busca;
-* lógica;
-* linguagens formais;
-* processamento de símbolos;
-* automação;
-* limites computacionais.
-
-A história mostra que não basta perguntar:
-
-**"É possível encontrar a solução?"**
-
-Também é necessário perguntar:
-
-**"Quanto tempo, memória e recursos são necessários para encontrar essa solução?"**
-
-Essa segunda pergunta está diretamente relacionada à **complexidade computacional**.
-
----
-
-# 24. Uma interpretação computacional do filme
-
-Podemos representar o problema tecnológico apresentado em *Enigma* da seguinte maneira:
+O problema apresentado em *Enigma* pode ser representado assim:
 
 ```text
-        MENSAGEM CIFRADA
-                │
-                ▼
-       ┌─────────────────┐
-       │ Análise inicial │
-       └────────┬────────┘
-                │
-                ▼
-       Identificação de
-          padrões
-                │
-                ▼
-          Formulação
-         de hipóteses
-                │
-                ▼
-       Redução do espaço
-             de busca
-                │
-                ▼
-       ┌─────────────────┐
-       │     BOMBE        │
-       │ Busca sistemática│
-       └────────┬────────┘
-                │
-                ▼
-          Candidatos
-                │
-                ▼
-           Verificação
-                │
-          ┌─────┴─────┐
-          │           │
-       Inválido     Válido
-          │           │
-          ▼           ▼
-       Descartar   Decifrar
-                      │
-                      ▼
-                  INFORMAÇÃO
+MENSAGEM CIFRADA
+       │
+       ▼
+Análise inicial e identificação de padrões
+       │
+       ▼
+Formulação de hipóteses (crib)
+       │
+       ▼
+Redução do espaço de busca
+       │
+       ▼
+BOMBE: busca sistemática
+       │
+       ▼
+Candidatos
+       │
+       ▼
+Verificação
+   ┌───┴────┐
+Inválido  Válido
+   │        │
+Descartar  Decifrar
+              │
+              ▼
+         INFORMAÇÃO
 ```
 
-Essa representação aproxima o contexto histórico do modelo de processamento utilizado em sistemas computacionais.
+---
+
+## 16. Atividades e questões para discussão
+
+*Enigma* pode ser usado em cursos de Ciência da Computação, Engenharia de Computação, Engenharia de Software, Sistemas de Informação, Segurança da Informação, Tecnologia da Informação e Teoria da Computação.
+
+### 16.1 Pesquisa (após a exibição)
+
+1. Como funcionava a máquina Enigma? O que era um rotor e qual era a função do *plugboard*?
+2. Por que nenhuma letra podia ser cifrada como ela mesma? Como isso ajudava a criptoanálise?
+3. O que era um *crib*?
+4. Como funcionava a Bombe e qual era a sua diferença em relação à Enigma?
+5. Qual foi a contribuição de Alan Turing, de Gordon Welchman e dos matemáticos poloneses?
+
+### 16.2 Discussão
+
+6. A Bombe pode ser considerada um computador? Justifique.
+7. Qual a diferença entre Bombe e Colossus?
+8. Por que reduzir o espaço de busca é mais importante do que testar mais rápido?
+9. Que conceitos de segurança da informação aparecem no filme? O que muda com o princípio de Kerckhoffs?
+10. O que a história da Enigma ensina sobre a relação entre hardware e software?
+11. Quais partes do filme são ficção? Como diferenciar "inventor", "pesquisador", "engenheiro", "algoritmo" e "sistema tecnológico"?
+
+### 16.3 Atividade prática
+
+12. Executar o código da [seção 5](#5-o-problema-computacional-o-tamanho-do-espaço-de-chaves) e alterá-lo para 6 cabos no *plugboard*, depois 13. Como o espaço de chaves varia? O que isso diz sobre crescimento combinatório?
+13. (Desafio) Escrever um programa que simule um único rotor com avanço a cada letra e comparar com a cifra de César.
 
 ---
 
-# 25. O filme como recurso didático
+## 17. Glossário
 
-*Enigma* pode ser utilizado em cursos de:
-
-* Ciência da Computação;
-* Engenharia de Computação;
-* Engenharia de Software;
-* Sistemas de Informação;
-* Segurança da Informação;
-* Tecnologia da Informação;
-* Matemática Computacional;
-* Teoria da Computação.
-
-Após a exibição, o professor pode solicitar que os estudantes investiguem:
-
-1. Como funcionava a máquina Enigma?
-2. O que era um rotor?
-3. Qual era a função do *plugboard*?
-4. O que era um *crib*?
-5. Como funcionava a Bombe?
-6. Qual era a diferença entre Enigma e Bombe?
-7. A Bombe pode ser considerada um computador?
-8. Qual foi a contribuição de Alan Turing?
-9. Qual foi a contribuição de Gordon Welchman?
-10. Qual foi a contribuição dos matemáticos poloneses?
-11. Qual a relação entre criptoanálise e algoritmos?
-12. Como a redução do espaço de busca melhora o desempenho?
-13. Quais conceitos de Segurança da Informação aparecem no filme?
-14. Que diferenças existem entre a Bombe e um computador moderno?
-15. O que a história da Enigma ensina sobre a relação entre hardware e software?
+| Termo | Significado |
+| --- | --- |
+| **Bombe** | Máquina eletromecânica britânica usada para testar hipóteses de configuração da Enigma |
+| **Colossus** | Máquina eletrônica usada contra a cifra Lorenz |
+| **Criptoanálise** | Análise de sistemas criptográficos para recuperar informação sem a chave |
+| **Crib** | Hipótese sobre um trecho do texto original de uma mensagem |
+| **Espaço de busca** | Conjunto de todas as soluções candidatas de um problema |
+| **Plugboard** | Painel de conexões que trocava pares de letras antes e depois dos rotores |
+| **Refletor** | Componente que devolvia o sinal elétrico pelos rotores, tornando a cifra recíproca |
+| **Rotor** | Disco com fiação interna que substituía letras e girava a cada tecla |
+| **Ultra** | Nome da inteligência obtida pela decifração das comunicações do Eixo |
 
 ---
 
-# 26. Considerações finais
+## 18. Considerações finais
 
-A análise tecnológica de *Enigma* demonstra que a história da Computação não começou com os computadores digitais modernos.
+A análise tecnológica de *Enigma* mostra que a história da Computação **não começou com os computadores digitais modernos**. Antes deles, já se enfrentavam problemas de processamento de informação, automação, lógica, busca e criptografia.
 
-Antes deles, pesquisadores já enfrentavam problemas relacionados ao processamento de informações, automação, lógica, busca e criptografia.
-
-A Enigma representa uma tecnologia eletromecânica de cifragem, enquanto a Bombe representa uma tentativa de **automatizar a resolução de um problema complexo de criptoanálise**.
-
-O grande legado tecnológico desse período está menos na máquina isoladamente e mais na metodologia utilizada:
+A Enigma representa uma tecnologia eletromecânica de cifragem. A Bombe representa a tentativa de **automatizar a resolução de um problema complexo de criptoanálise**. O grande legado desse período está menos na máquina isolada e mais na **metodologia**:
 
 **problema → modelagem → hipótese → algoritmo → automação → processamento → verificação → resultado.**
 
-Essa sequência representa uma das bases do pensamento computacional.
-
-Por essa razão, *Enigma* pode ser utilizado como uma ponte didática entre a história da criptografia e conceitos contemporâneos de **Computação, Engenharia de Software, Segurança da Informação e Teoria da Computação**.
+Essa sequência é uma das bases do **pensamento computacional**. Por isso, *Enigma* funciona como ponte didática entre a história da criptografia e conceitos contemporâneos de Computação, Engenharia de Software, Segurança da Informação e Teoria da Computação.
 
 ---
 
 ## Referências
 
-NATIONAL MUSEUM OF COMPUTING. *The Film 'Enigma'*. Disponível em: The National Museum of Computing. Acesso em: 8 out. 2026.
+ENIGMA. Direção: Michael Apted. Roteiro: Tom Stoppard. Reino Unido: Columbia Pictures, 2001. 1 filme.
 
-TURING, Alan. *Turing's report on the Enigma, 1940*. The Alan Turing Internet Scrapbook. Disponível em: Turing.org.uk. Acesso em: 8 out. 2026.
+CIA. *Who First Cracked the ENIGMA Cipher?* Disponível em: <https://www.cia.gov/stories/story/who-first-cracked-the-enigma-cipher>. Acesso em: 8 out. 2026.
 
-TURING, Alan. *Report on Enigma decipherment, 1 November 1939*. The Alan Turing Internet Scrapbook. Acesso em: 8 out. 2026.
+THE RUTHERFORD JOURNAL. *The Turing Bombe in Bletchley Park*. Disponível em: <https://museum.cs.auckland.ac.nz/rutherfordjournal/article030108.html>. Acesso em: 8 out. 2026.
 
-THE ALAN TURING INSTITUTE. *Enigma machine goes on display at The Alan Turing Institute*. London, 2017. Acesso em: 8 out. 2026.
+TURING, Alan. *Turing's report on the Enigma, 1940*. The Alan Turing Internet Scrapbook. Disponível em: <https://www.turing.org.uk/sources/mathenigma.html>. Acesso em: 8 out. 2026.
 
-ENIGMA. Direção: Michael Apted. Roteiro: Tom Stoppard. Reino Unido: Columbia Pictures, 2001. Filme.
+TURING, Alan. *Report on Enigma decipherment, 1 November 1939*. The Alan Turing Internet Scrapbook. Disponível em: <https://www.turing.org.uk/sources/nov39.html>. Acesso em: 8 out. 2026.
 
-### Um ponto que eu considero especialmente importante para suas aulas
+NATIONAL MUSEUM OF COMPUTING. *The Film "Enigma"*. Acesso em: 8 out. 2026.
 
-Eu colocaria **“Bombe não é computador”** como uma seção obrigatória. Isso evita um erro muito comum dos alunos: chamar qualquer máquina de processamento automático da década de 1940 de “computador”.
+THE ALAN TURING INSTITUTE. *Enigma machine goes on display at The Alan Turing Institute*. Londres, 2017. Acesso em: 8 out. 2026.
 
-A Bombe era **eletromecânica e especializada**, baseada em relés e projetada para uma tarefa específica de criptoanálise. ([Museu Bob Doran de Computação][3])
+### Leitura complementar
 
-Também vale destacar que a história real é **colaborativa**: os trabalhos poloneses anteriores foram fundamentais, Turing desenvolveu métodos e o projeto britânico da Bombe recebeu contribuição decisiva de Gordon Welchman. ([Turing][4])
+HARRIS, Robert. *Enigma*. 1995. (romance que deu origem ao filme)
 
-Isso rende uma excelente discussão com os alunos sobre a diferença entre **“inventor”, “pesquisador”, “engenheiro”, “algoritmo” e “sistema tecnológico”**.
+HODGES, Andrew. *Alan Turing: The Enigma*. 1983.
 
-Posso gerar agora um **diagrama tecnológico Enigma → Criptoanálise → Bombe → Computação moderna** para usar na aula — estilo **infográfico acadêmico**, **diagrama técnico** ou **linha do tempo**?
+KERCKHOFFS, Auguste. *La cryptographie militaire*. 1883.
 
-[1]: https://www.tnmoc.org/bh-17-the-film-enigma?utm_source=chatgpt.com "The Film ‘Enigma’ — The National Museum of Computing"
-[2]: https://www.turing.org.uk/sources/mathenigma.html?utm_source=chatgpt.com "Turing's report on the Enigma, 1940"
-[3]: https://museum.cs.auckland.ac.nz/rutherfordjournal/article030108.html?utm_source=chatgpt.com "The Turing bombe in Bletchley Park"
-[4]: https://www.turing.org.uk/sources/nov39.html?utm_source=chatgpt.com "Enigma report, November 1939"
-[5]: https://www.cia.gov/stories/story/who-first-cracked-the-enigma-cipher?utm_source=chatgpt.com "Who First Cracked the ENIGMA Cipher? - CIA"
+SINGH, Simon. *O Livro dos Códigos*. (história da criptografia, com capítulo dedicado à Enigma)
+
+TURING, Alan. *On Computable Numbers, with an Application to the Entscheidungsproblem*. 1936.
+
+WELCHMAN, Gordon. *The Hut Six Story: Breaking the Enigma Codes*. 1982.
