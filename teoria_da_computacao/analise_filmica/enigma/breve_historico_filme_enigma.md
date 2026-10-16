@@ -1,209 +1,247 @@
-# Breve histórico do filme *Enigma*
+# Breve Histórico do Filme *Enigma* (2001)
+
+**Disciplina:** Teoria da Computação · **Atividade:** Análise fílmica
+
+> Este material apresenta o **contexto do filme**: de onde vem, quem o fez e o que nele é ficção ou história. A análise dos conceitos tecnológicos está no arquivo complementar [`analise_tecnologica.md`](analise_tecnologica.md).
+
+## Sumário
+
+1. [Apresentação](#1-apresentação)
+2. [Ficha técnica](#2-ficha-técnica)
+3. [Origem literária](#3-origem-literária)
+4. [A produção cinematográfica](#4-a-produção-cinematográfica)
+5. [Hester Wallace e a presença feminina em Bletchley Park](#5-hester-wallace-e-a-presença-feminina-em-bletchley-park)
+6. [O contexto histórico: Bletchley Park](#6-o-contexto-histórico-bletchley-park)
+7. [Linha do tempo](#7-linha-do-tempo)
+8. [A crise retratada no filme](#8-a-crise-retratada-no-filme)
+9. [Ficção e realidade](#9-ficção-e-realidade)
+10. [A importância da Enigma para a Computação](#10-a-importância-da-enigma-para-a-computação)
+11. [A Bombe e a automação da criptoanálise](#11-a-bombe-e-a-automação-da-criptoanálise)
+12. [Alan Turing e o contexto tecnológico](#12-alan-turing-e-o-contexto-tecnológico)
+13. [Contribuições para a Teoria da Computação](#13-contribuições-para-a-teoria-da-computação)
+14. [Questões para discussão](#14-questões-para-discussão)
+15. [Considerações finais](#15-considerações-finais)
+16. [Referências](#referências)
+
+---
 
 ## 1. Apresentação
 
-Lançado em 2001, o filme *Enigma*, dirigido por Michael Apted, é um thriller de espionagem ambientado durante a Segunda Guerra Mundial e relacionado às atividades de criptoanálise desenvolvidas em **Bletchley Park**, centro britânico responsável pela interceptação e análise de comunicações cifradas das forças do Eixo.
+Lançado em 2001, *Enigma*, dirigido por **Michael Apted**, é um thriller de espionagem ambientado durante a Segunda Guerra Mundial. A história se passa em **Bletchley Park**, o centro britânico responsável pela interceptação e análise de comunicações cifradas das forças do Eixo.
 
-O filme é baseado no romance homônimo de **Robert Harris**, publicado em 1995, e utiliza acontecimentos históricos relacionados à quebra dos códigos utilizados pela máquina **Enigma** como pano de fundo para uma narrativa ficcional de espionagem, investigação e criptografia.
+O filme é baseado no romance homônimo de **Robert Harris** (1995). Ele usa acontecimentos históricos ligados à quebra dos códigos da máquina **Enigma** como pano de fundo para uma narrativa ficcional de espionagem e criptografia.
 
-É importante destacar que *Enigma* não deve ser entendido como uma biografia de **Alan Turing** nem como uma reconstrução documental das atividades de Bletchley Park. Trata-se de uma obra de ficção histórica que combina personagens fictícios, acontecimentos inspirados em fatos reais e elementos dramáticos.
+É importante destacar que *Enigma* **não é uma biografia de Alan Turing** nem uma reconstrução documental de Bletchley Park. Trata-se de **ficção histórica**: combina personagens fictícios, fatos inspirados na realidade e elementos dramáticos.
 
-Essa característica torna o filme particularmente interessante para estudantes de **Computação, Engenharia de Software, Ciência da Computação e Teoria da Computação**, pois permite discutir a evolução histórica da computação, criptografia, segurança da informação, processamento de dados e resolução de problemas computacionais.
-
----
-
-## 2. Origem literária
-
-O filme é uma adaptação do romance *Enigma*, escrito pelo britânico **Robert Harris** e publicado em 1995.
-
-Harris construiu uma narrativa de ficção histórica utilizando como cenário o ambiente de Bletchley Park e os esforços britânicos para decifrar as comunicações alemãs durante a Segunda Guerra Mundial.
-
-O roteiro cinematográfico foi desenvolvido por **Tom Stoppard**, conhecido por seu trabalho como dramaturgo e roteirista.
-
-A adaptação procura combinar elementos de suspense, espionagem e investigação com o contexto tecnológico da criptografia militar. Dessa maneira, o funcionamento da máquina Enigma e o trabalho dos criptoanalistas aparecem como elementos fundamentais para o desenvolvimento da narrativa.
+Essa característica o torna interessante para estudantes de Computação, Engenharia de Software e Teoria da Computação, pois permite discutir a evolução histórica da computação, criptografia, segurança da informação e resolução de problemas computacionais.
 
 ---
 
-## 3. A produção cinematográfica
+## 2. Ficha técnica
 
-A produção de *Enigma* contou com a participação do músico **Mick Jagger**, dos Rolling Stones, como produtor.
-
-Jagger demonstrava interesse pela história de Bletchley Park e pela utilização da criptografia durante a Segunda Guerra Mundial. Esse envolvimento contribuiu para despertar maior atenção sobre o contexto histórico e tecnológico utilizado pelo filme.
-
-Um dos aspectos interessantes da produção é a preocupação em reproduzir visualmente o ambiente de trabalho dos centros britânicos de inteligência, incluindo máquinas, documentos, sistemas de comunicação e procedimentos relacionados à criptografia.
-
-Essa preocupação contribui para que o espectador compreenda que a guerra também foi travada no campo da **informação**.
-
----
-
-## 4. Kate Winslet e a representação feminina
-
-A atriz **Kate Winslet** interpreta Hester Wallace, personagem fictícia criada para a narrativa cinematográfica.
-
-Hester desempenha papel importante na investigação apresentada pelo filme e representa uma das diversas funções desempenhadas por mulheres nos esforços britânicos de inteligência durante a Segunda Guerra Mundial.
-
-A presença feminina em Bletchley Park possui fundamento histórico. Muitas mulheres participaram das atividades de inteligência britânicas, desempenhando funções relacionadas à operação de máquinas, processamento de informações, tradução, análise, administração e outras atividades essenciais.
-
-Portanto, embora a personagem Hester seja fictícia, sua presença permite discutir uma questão histórica relevante: a participação de milhares de mulheres em atividades fundamentais para o esforço de guerra britânico.
+| Item | Informação |
+| --- | --- |
+| Título | *Enigma* |
+| Ano | 2001 |
+| Direção | Michael Apted |
+| Roteiro | Tom Stoppard |
+| Base literária | Romance *Enigma*, de Robert Harris (1995) |
+| Produção | Com participação de Mick Jagger como produtor |
+| Elenco principal | Dougray Scott (Tom Jericho), Kate Winslet (Hester Wallace) |
+| Cenário | Bletchley Park, Inglaterra, 1943 |
+| Gênero | Thriller de espionagem / ficção histórica |
 
 ---
 
-## 5. O contexto histórico: Bletchley Park
+## 3. Origem literária
 
-**Bletchley Park** foi um dos principais centros britânicos de inteligência durante a Segunda Guerra Mundial.
+O filme adapta o romance de **Robert Harris**, publicado em 1995. Harris construiu uma ficção histórica ambientada em Bletchley Park e nos esforços britânicos para decifrar as comunicações alemãs.
 
-O local reuniu matemáticos, linguistas, engenheiros, militares, operadores e especialistas de diferentes áreas para trabalhar na interceptação e análise das comunicações inimigas.
-
-Um dos grandes desafios enfrentados pelos britânicos era a máquina **Enigma**, utilizada pelas forças alemãs para cifrar mensagens.
-
-A Enigma utilizava um sistema eletromecânico baseado em rotores, conexões elétricas e diferentes configurações de operação. A combinação dessas configurações produzia um espaço de possibilidades extremamente grande, dificultando a tentativa de descobrir a chave utilizada para determinada comunicação.
-
-Do ponto de vista computacional, esse problema é especialmente relevante porque envolve conceitos relacionados a:
-
-* algoritmos;
-* busca em grandes espaços de possibilidades;
-* análise combinatória;
-* criptografia;
-* reconhecimento de padrões;
-* processamento sistemático de informações;
-* automação;
-* segurança da informação.
+O roteiro cinematográfico foi escrito por **Tom Stoppard**, conhecido como dramaturgo e roteirista. A adaptação combina suspense, espionagem e investigação com o contexto tecnológico da criptografia militar: o funcionamento da Enigma e o trabalho dos criptoanalistas são elementos centrais da narrativa.
 
 ---
 
-## 6. A crise de 1943 apresentada no filme
+## 4. A produção cinematográfica
 
-A narrativa de *Enigma* está relacionada a uma importante mudança ocorrida nas comunicações criptografadas alemãs.
+A produção contou com o músico **Mick Jagger**, dos Rolling Stones, como produtor. Seu envolvimento ajudou a levar o tema de Bletchley Park e da criptografia ao grande público.
 
-Em 1943, alterações nos procedimentos e configurações utilizados pela Marinha alemã dificultaram significativamente a capacidade britânica de decifrar determinadas mensagens.
+Um dos pontos fortes do filme é a ambientação: ele procura reproduzir o ambiente de trabalho dos centros britânicos de inteligência, com máquinas, documentos, sistemas de comunicação e procedimentos. Isso ajuda o espectador a perceber que a guerra também foi travada no campo da **informação**.
 
-O filme utiliza esse contexto histórico para construir a situação de crise envolvendo as comunicações dos submarinos alemães, conhecidos como **U-boats**.
+---
 
-Na narrativa, o matemático fictício **Tom Jericho**, interpretado por Dougray Scott, retorna a Bletchley Park e passa a investigar simultaneamente dois problemas:
+## 5. Hester Wallace e a presença feminina em Bletchley Park
+
+**Kate Winslet** interpreta **Hester Wallace**, personagem **fictícia** criada para a narrativa. Hester tem papel importante na investigação apresentada pelo filme.
+
+Embora a personagem seja inventada, a presença feminina em Bletchley Park tem **fundamento histórico**. Milhares de mulheres atuaram em funções essenciais, como operação de máquinas, processamento de informações, tradução, análise e administração.
+
+Assim, Hester permite discutir uma questão histórica relevante: a participação de mulheres em atividades fundamentais para o esforço de guerra britânico.
+
+---
+
+## 6. O contexto histórico: Bletchley Park
+
+**Bletchley Park** foi um dos principais centros britânicos de inteligência durante a guerra. O local reuniu matemáticos, linguistas, engenheiros, militares, operadores e especialistas de diversas áreas.
+
+Um dos grandes desafios era a máquina **Enigma**, usada pelas forças alemãs para cifrar mensagens. Ela era eletromecânica, baseada em rotores, conexões elétricas e configurações variáveis. A combinação dessas configurações gerava um **espaço de possibilidades extremamente grande**, o que tornava muito difícil descobrir a chave de uma comunicação.
+
+Do ponto de vista computacional, o problema envolve:
+
+- algoritmos;
+- busca em grandes espaços de possibilidades;
+- análise combinatória;
+- criptografia e criptoanálise;
+- reconhecimento de padrões;
+- automação;
+- segurança da informação.
+
+---
+
+## 7. Linha do tempo
+
+| Ano | Acontecimento |
+| --- | --- |
+| 1918 | Arthur Scherbius patenteia a máquina de cifragem que daria origem à Enigma |
+| 1932 | Matemáticos poloneses, liderados por Marian Rejewski, conseguem atacar a Enigma militar alemã |
+| 1936 | Alan Turing publica o artigo sobre números computáveis (máquina de Turing) |
+| Jul. 1939 | A Polônia compartilha métodos e informações sobre a Enigma com britânicos e franceses |
+| 1940 | Primeiras Bombes britânicas entram em operação em Bletchley Park |
+| 1942 | Mudança no sistema da Enigma naval alemã causa um longo "apagão" de informações |
+| 1943 | Ano em que se passa a trama do filme |
+| 1943–1944 | Entra em operação o Colossus, máquina eletrônica usada contra a cifra Lorenz |
+| 1945 | Fim da guerra na Europa |
+| 1974 | O sigilo sobre a inteligência *Ultra* começa a ser publicamente quebrado |
+| 1995 | Publicação do romance de Robert Harris |
+| 2001 | Lançamento do filme |
+
+> **Observação:** a linha do tempo é um resumo didático. Para datas exatas, consulte as fontes listadas nas referências.
+
+---
+
+## 8. A crise retratada no filme
+
+A trama gira em torno de uma crise nas comunicações cifradas da **Marinha alemã**. As novas mensagens dos submarinos (**U-boats**) deixam de ser decifradas, o que coloca em risco comboios aliados no Atlântico.
+
+Nesse contexto, o matemático fictício **Tom Jericho** (Dougray Scott) retorna a Bletchley Park e passa a investigar dois problemas ao mesmo tempo:
 
 1. a dificuldade de decifrar as novas mensagens alemãs;
-2. a possibilidade de existir um agente infiltrado dentro da própria organização.
+2. a possibilidade de haver um agente infiltrado na própria organização.
 
-Essa combinação entre criptoanálise e espionagem constitui o principal elemento dramático da obra.
+A combinação entre **criptoanálise** e **espionagem** é o principal elemento dramático da obra.
 
----
-
-## 7. Ficção e realidade
-
-Um dos pontos mais importantes para uma análise acadêmica do filme é diferenciar os acontecimentos ficcionais daqueles historicamente documentados.
-
-| Aspecto            | No filme                                      | Contexto histórico                                                                                           |
-| ------------------ | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Protagonista       | Tom Jericho, personagem fictício              | Diversos matemáticos, criptoanalistas, engenheiros e militares participaram das atividades de Bletchley Park |
-| Ambiente           | Bletchley Park                                | Centro real de inteligência britânico                                                                        |
-| Máquina Enigma     | Elemento central da narrativa                 | Máquina eletromecânica realmente utilizada pelas forças alemãs                                               |
-| Criptoanálise      | Apresentada como elemento central do suspense | Atividade fundamental da inteligência britânica                                                              |
-| Espionagem interna | Possui papel importante na trama              | A realidade de Bletchley Park era muito mais complexa do que a narrativa apresentada                         |
-| Mulheres           | Hester Wallace é uma personagem importante    | Milhares de mulheres participaram das operações de Bletchley Park                                            |
-| Alan Turing        | Não é o protagonista da história              | Foi uma das figuras mais importantes da criptoanálise britânica                                              |
-| Gordon Welchman    | Não aparece como protagonista                 | Teve contribuição fundamental para o desenvolvimento dos métodos de criptoanálise e das Bombes               |
-
-Essa distinção é essencial para evitar que o filme seja utilizado como fonte histórica única.
+> **Cuidado com as datas:** o filme situa a crise em **1943**, mas o grande "apagão" real da Enigma naval alemã ocorreu em **1942**. Trata-se de uma condensação dramática. O professor pode usar essa diferença como exemplo de como obras de ficção reorganizam a história.
 
 ---
 
-## 8. A importância da Enigma para a Computação
+## 9. Ficção e realidade
 
-A máquina Enigma não era um computador eletrônico de propósito geral. Tratava-se de uma máquina **eletromecânica de cifragem**.
+Para uma análise acadêmica, é essencial diferenciar o que é ficcional do que é historicamente documentado.
 
-Entretanto, seu funcionamento apresenta conceitos extremamente importantes para a história da Computação.
+| Aspecto | No filme | Contexto histórico |
+| --- | --- | --- |
+| Protagonista | Tom Jericho, personagem **fictício** | Diversos matemáticos, criptoanalistas, engenheiros e militares atuaram em Bletchley Park |
+| Ambiente | Bletchley Park | Centro **real** de inteligência britânico |
+| Máquina Enigma | Elemento central da narrativa | Máquina eletromecânica **realmente** usada pelas forças alemãs |
+| Criptoanálise | Elemento central do suspense | Atividade fundamental da inteligência britânica |
+| Espionagem interna | Importante para a trama | A realidade de Bletchley Park era muito mais complexa |
+| Mulheres | Hester Wallace é importante (personagem fictícia) | Milhares de mulheres participaram das operações |
+| Alan Turing | Não é o protagonista | Foi uma das figuras mais importantes da criptoanálise britânica |
+| Gordon Welchman | Não aparece como protagonista | Contribuição fundamental para os métodos de criptoanálise e para as Bombes |
+| Contribuição polonesa | Pouco explorada | Anterior à atuação britânica e decisiva para ela |
+| Solução por um único "gênio" | Ênfase dramática | O trabalho real foi **coletivo e cumulativo** |
 
-A máquina utilizava componentes físicos para realizar transformações sistemáticas sobre os caracteres de uma mensagem. A configuração dos rotores e demais componentes determinava a transformação aplicada a cada caractere.
-
-O problema enfrentado pelos criptoanalistas consistia, em grande parte, em encontrar métodos eficientes para reduzir o enorme espaço de possibilidades envolvido na configuração da máquina.
-
-Esse processo permite estabelecer uma relação didática com conceitos contemporâneos como:
-
-* complexidade computacional;
-* algoritmos de busca;
-* redução do espaço de busca;
-* heurísticas;
-* processamento automatizado;
-* paralelismo;
-* análise de dados;
-* criptografia;
-* segurança da informação.
+Essa distinção evita que o filme seja usado como **fonte histórica única**.
 
 ---
 
-## 9. A Bombe e a automação da criptoanálise
+## 10. A importância da Enigma para a Computação
 
-Um dos aspectos mais importantes da história de Bletchley Park foi o desenvolvimento das máquinas **Bombe**, utilizadas para auxiliar na descoberta das configurações utilizadas pela Enigma.
+A Enigma **não era um computador** eletrônico de propósito geral. Era uma máquina **eletromecânica de cifragem**. Mesmo assim, seu funcionamento traz conceitos importantes:
 
-A Bombe não funcionava simplesmente como uma máquina que “decifrava automaticamente todas as mensagens”. Seu objetivo era realizar uma grande quantidade de verificações de forma sistemática, permitindo aos operadores testar hipóteses relacionadas às configurações da Enigma.
+- a configuração dos rotores e demais componentes determinava a transformação aplicada a cada caractere;
+- o problema dos criptoanalistas era encontrar métodos eficientes para **reduzir o enorme espaço de possibilidades** da configuração.
 
-Esse conceito possui grande importância para a Computação porque demonstra uma ideia fundamental:
+Isso se relaciona com conceitos atuais, como:
 
-> Problemas extremamente complexos podem se tornar tratáveis quando são estruturados em procedimentos sistemáticos e executados de forma automatizada.
-
-Essa perspectiva aproxima a história da criptoanálise dos fundamentos da Ciência da Computação, especialmente no que diz respeito a **algoritmos, automação e redução sistemática do espaço de busca**.
-
----
-
-## 10. Alan Turing e o contexto tecnológico
-
-Embora *Enigma* não seja uma biografia de **Alan Turing**, sua contribuição histórica é fundamental para compreender o contexto tecnológico apresentado pelo filme.
-
-Turing participou dos trabalhos de Bletchley Park e teve papel importante no desenvolvimento de métodos utilizados contra a criptografia alemã.
-
-Sua trajetória também possui importância para a própria formação da Ciência da Computação. Seus trabalhos sobre computabilidade, máquinas abstratas e processos algorítmicos contribuíram para estabelecer fundamentos teóricos que posteriormente seriam fundamentais para o desenvolvimento da Computação moderna.
-
-Assim, a análise de *Enigma* pode ser utilizada como ponto de partida para discutir uma questão importante:
-
-**Como problemas práticos de criptografia e processamento de informação contribuíram para o desenvolvimento de métodos que posteriormente seriam associados à Computação?**
+- complexidade computacional;
+- algoritmos de busca;
+- redução do espaço de busca;
+- heurísticas;
+- processamento automatizado;
+- paralelismo;
+- análise de dados;
+- criptografia e segurança da informação.
 
 ---
 
-## 11. Contribuições para a Teoria da Computação
+## 11. A Bombe e a automação da criptoanálise
 
-Para estudantes de **Teoria da Computação**, o filme pode ser utilizado como recurso didático para estabelecer conexões entre acontecimentos históricos e conceitos teóricos.
+A **Bombe** foi uma máquina eletromecânica britânica usada para auxiliar na descoberta das configurações da Enigma.
 
-Entre os principais pontos de discussão estão:
+Ela **não** "decifrava automaticamente todas as mensagens". Seu papel era realizar, de forma sistemática e muito rápida, um grande número de verificações, permitindo que os operadores **testassem hipóteses** sobre as configurações.
 
-### 11.1 Algoritmos
+A ideia central para a Computação é esta:
 
-Os criptoanalistas precisavam desenvolver procedimentos sistemáticos para testar hipóteses e encontrar soluções.
+> **Problemas extremamente complexos podem se tornar tratáveis quando são estruturados em procedimentos sistemáticos e executados de forma automatizada.**
 
-### 11.2 Espaço de busca
-
-A quantidade de configurações possíveis da Enigma demonstra como o tamanho do espaço de busca influencia diretamente a dificuldade de um problema computacional.
-
-### 11.3 Computabilidade
-
-A história de Turing permite introduzir discussões sobre problemas computáveis, modelos abstratos de computação e limites dos processos algorítmicos.
-
-### 11.4 Complexidade
-
-A necessidade de reduzir o número de possibilidades analisadas apresenta uma conexão natural com a ideia de eficiência computacional.
-
-### 11.5 Automação
-
-As Bombes demonstram a utilização de máquinas para executar sistematicamente operações que seriam extremamente demoradas quando realizadas exclusivamente por seres humanos.
+A Bombe também **não era um computador moderno**: era uma máquina especializada, sem programa armazenado. Os detalhes técnicos estão em [`analise_tecnologica.md`](analise_tecnologica.md).
 
 ---
 
-## 12. Considerações finais
+## 12. Alan Turing e o contexto tecnológico
 
-*Enigma* deve ser analisado como uma obra de **ficção histórica**, e não como um documentário sobre a Segunda Guerra Mundial ou sobre Alan Turing.
+Embora *Enigma* não seja uma biografia de **Alan Turing**, sua contribuição é fundamental para entender o contexto do filme. Turing atuou em Bletchley Park e teve papel importante no desenvolvimento de métodos contra a criptografia alemã, em especial contra a Enigma naval.
 
-Apesar das diferenças entre a narrativa cinematográfica e os acontecimentos históricos, o filme apresenta um cenário extremamente rico para o estudo da relação entre **informação, criptografia, matemática, máquinas e Computação**.
+Sua importância vai além da guerra. Em 1936, ele havia proposto a **máquina de Turing**, modelo abstrato que está na base da **computabilidade** e da Teoria da Computação.
 
-Para estudantes de Computação, seu principal valor está na possibilidade de compreender que muitos dos problemas enfrentados durante a Segunda Guerra Mundial anteciparam questões que continuam presentes na tecnologia contemporânea.
+Isso leva a uma pergunta para a turma:
 
-A necessidade de processar grandes quantidades de informações, reduzir espaços de busca, desenvolver algoritmos eficientes, automatizar tarefas e proteger informações estratégicas são problemas que permanecem relevantes na atualidade.
+> **Como problemas práticos de criptografia e processamento de informação contribuíram para o desenvolvimento de ideias que depois seriam associadas à Computação?**
 
-Dessa perspectiva, *Enigma* pode ser utilizado não apenas como filme de espionagem, mas como um recurso didático para discutir a evolução histórica da **criptografia e da Computação**, estabelecendo uma ponte entre os primeiros sistemas eletromecânicos de processamento de informação e os atuais sistemas computacionais.
+---
 
-### Referência cinematográfica
+## 13. Contribuições para a Teoria da Computação
 
-ENIGMA. Direção: Michael Apted. Reino Unido, Alemanha, Estados Unidos: Columbia Pictures, 2001. Filme.
+| Conceito | Relação com o filme e a história |
+| --- | --- |
+| **Algoritmos** | Os criptoanalistas desenvolviam procedimentos sistemáticos para testar hipóteses e encontrar soluções |
+| **Espaço de busca** | O número de configurações da Enigma mostra como o tamanho do espaço de busca determina a dificuldade de um problema |
+| **Computabilidade** | A obra de Turing permite discutir problemas computáveis, modelos abstratos e limites dos processos algorítmicos |
+| **Complexidade** | Reduzir o número de possibilidades analisadas é uma questão de eficiência computacional |
+| **Automação** | As Bombes executavam sistematicamente operações que seriam extremamente demoradas para humanos |
 
-### Referência literária
+---
+
+## 14. Questões para discussão
+
+1. Por que o filme não deve ser usado como única fonte histórica?
+2. Quais elementos da trama são ficção e quais têm base histórica?
+3. Por que a presença de mulheres em Bletchley Park é um tema relevante para a história da Computação?
+4. Qual a diferença entre a Enigma e a Bombe?
+5. Por que reduzir o espaço de busca é mais importante do que apenas testar mais rápido?
+6. Como a obra de Turing sobre computabilidade se relaciona com o trabalho prático em Bletchley Park?
+7. Que mudanças um roteirista faz ao transformar fatos históricos em drama? Isso é um problema?
+
+---
+
+## 15. Considerações finais
+
+*Enigma* deve ser analisado como **ficção histórica**, e não como documentário sobre a Segunda Guerra Mundial ou sobre Alan Turing.
+
+Apesar das diferenças entre a narrativa e os fatos, o filme oferece um cenário muito rico para estudar a relação entre **informação, criptografia, matemática, máquinas e Computação**. Seu principal valor para estudantes é perceber que muitos problemas daquela época antecipam questões atuais: processar grandes volumes de informação, reduzir espaços de busca, criar algoritmos eficientes, automatizar tarefas e proteger informações estratégicas.
+
+Assim, *Enigma* é mais do que um filme de espionagem: é um recurso didático que liga os primeiros sistemas eletromecânicos de processamento de informação aos sistemas computacionais atuais.
+
+---
+
+## Referências
+
+ENIGMA. Direção: Michael Apted. Roteiro: Tom Stoppard. Reino Unido, Alemanha, Estados Unidos, 2001. 1 filme.
 
 HARRIS, Robert. *Enigma*. London: Hutchinson, 1995.
 
+CIA. *Who First Cracked the ENIGMA Cipher?* Disponível em: <https://www.cia.gov/stories/story/who-first-cracked-the-enigma-cipher>. Acesso em: 8 out. 2026.
+
+TURING, Alan. *Report on Enigma decipherment, 1 November 1939*. The Alan Turing Internet Scrapbook. Disponível em: <https://www.turing.org.uk/sources/nov39.html>. Acesso em: 8 out. 2026.
+
+TURING, Alan. *On Computable Numbers, with an Application to the Entscheidungsproblem*. 1936.
