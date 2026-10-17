@@ -10,15 +10,13 @@ Esta análise faz parte de um conjunto de arquivos sobre o filme. Cada um cumpre
 
 | Arquivo | Papel |
 | --- | --- |
-| [`breve_historico_o_jogo_da_imitacao.md`](breve_historico_o_jogo_da_imitacao.md) | Contexto: origem do roteiro, produção, recepção |
-| **`analise_filmica_o_jogo_da_imitacao.md`** (este arquivo) | Leitura do filme como obra de cinema: narrativa, personagens, linguagem, temas |
+| **`analise_filmica.md`** (este arquivo) | Leitura do filme como obra de cinema: contexto de produção e recepção, narrativa, personagens, linguagem, temas |
 | [`analise_tecnologica.md`](analise_tecnologica.md) | Conceitos técnicos: Enigma, Bombe, criptoanálise, máquina de Turing, teste de Turing |
 
 **Arquivos relacionados em outra pasta (filme *Enigma*, 2001):**
 
 - [`../enigma/analise_filmica.md`](../enigma/analise_filmica.md): análise fílmica de *Enigma*, para comparação;
 - [`../enigma/analise_tecnologica.md`](../enigma/analise_tecnologica.md): detalhamento técnico da Enigma e da Bombe;
-- [`../enigma/breve_historico_filme_enigma.md`](../enigma/breve_historico_filme_enigma.md): contexto de *Enigma*.
 
 ## Sumário
 
