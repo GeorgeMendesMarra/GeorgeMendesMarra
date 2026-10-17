@@ -1,77 +1,136 @@
-# 🎬 Atanasoff: o Pai do Computador
+# 🎬 Análise Fílmica — *Atanasoff: o Pai do Computador*
 
-**Ficha técnica:** *Atanasoff: The Father of the Computer* (2012) — documentário canadense, 47 min, dirigido por **Mila Aung-Thwin** e **Daniel Cross**, produzido pela Eye Steel Film com participação do National Film Board of Canada.
+## 📋 Ficha técnica
 
----
-
-## 📽️ Resumo do Documentário
-
-O documentário conta a história de **John Vincent Atanasoff** (1903–1995), físico e inventor americano de origem búlgara que, entre **1937 e 1942**, construiu o **Atanasoff-Berry Computer (ABC)** na Iowa State College (atual Iowa State University).
-
-O filme é construído como um verdadeiro **drama jurídico**: em 1971, a Honeywell Corporation, buscando espaço no mercado de tecnologia da informação, entrou com uma ação para derrubar as patentes do **ENIAC** — até então tratado como o marco inaugural da computação eletrônica, construído por John Mauchly e J. Presper Eckert na Universidade da Pensilvânia entre 1943 e 1945 e apresentado ao público em 1946. Durante o litígio (*Honeywell vs. Sperry Rand*), os advogados encontraram referências a uma máquina anterior — o ABC — e foram atrás do até então obscuro Atanasoff.
-
-Segundo o documentário, a ideia central do ABC — uma máquina eletrônica de contagem binária, com memória baseada em capacitores no lugar das partes mecânicas móveis das calculadoras da época — teria surgido a Atanasoff enquanto ele refletia sobre o problema em um bar de beira de estrada. Frustrado com a lentidão das calculadoras mecânicas disponíveis (como a Monroe) para resolver sistemas de equações lineares, ele decidiu construir sua própria máquina: um projeto de cerca de US$ 5.000, do tamanho de uma escrivaninha, desenvolvido entre 1939 e 1942 com a ajuda de seu aluno de pós-graduação, **Clifford Berry**.
-
-Combinando material de arquivo, reconstituições e entrevistas com especialistas e testemunhas, o filme reconstitui essa disputa até seu desfecho: em **19 de outubro de 1973**, o juiz federal **Earl R. Larson** invalidou as patentes do ENIAC e reconheceu formalmente Atanasoff como o inventor do primeiro computador eletrônico digital — um veredito que, ironicamente, acabou ofuscado na imprensa da época pela cobertura do escândalo de Watergate, o que ajuda a explicar por que Atanasoff permanece tão pouco conhecido se comparado a nomes como Turing ou Von Neumann.
-
-Vale destacar que o ABC, diferentemente do ENIAC, não era um computador de propósito geral (programável para diferentes tarefas): foi projetado especificamente para resolver sistemas de equações lineares, e nunca chegou a ser patenteado, já que a Iowa State College não demonstrou interesse em protegê-lo na época.
-
-**Contribuições do ABC que o documentário destaca:**
-
-- **Sistema binário:** o ABC processava dados em aritmética binária, diferente das máquinas anteriores, que usavam o sistema decimal;
-- **Memória regenerativa (capacitores):** um sistema de memória baseado em capacitores elétricos que precisavam ser "regenerados" (recarregados) a cada ciclo — um conceito precursor da memória DRAM moderna;
-- **Separação entre processamento e memória:** o ABC já distinguia claramente os componentes de cálculo (lógica) dos de armazenamento (memória);
-- **Operação eletrônica:** mais de 300 válvulas termiônicas (tubos de vácuo) realizavam os cálculos, em contraste com máquinas mecânicas anteriores, como a de Charles Babbage.
+| Item | Informação |
+|---|---|
+| **Título original** | *Atanasoff: The Father of the Computer* |
+| **Ano** | 2012 |
+| **Gênero** | Documentário histórico-científico |
+| **Duração** | 47 minutos |
+| **Direção** | Mila Aung-Thwin e Daniel Cross |
+| **Produção** | Eye Steel Film, com participação do National Film Board of Canada |
+| **País** | Canadá |
+| **Tema central** | A invenção do primeiro computador eletrônico digital e a disputa judicial sobre sua autoria |
+| **Onde assistir** | Versão legendada em português: <https://www.youtube.com/watch?v=mKGEM_tc7oQ> |
 
 ---
 
-## 👥 Currículo dos Personagens Principais
+## 📽️ 1. Sinopse
 
-### 💡 John Vincent Atanasoff (Protagonista)
+O documentário acompanha **John Vincent Atanasoff** (1903–1995), físico e inventor que, entre 1937 e 1942, construiu o **Atanasoff-Berry Computer (ABC)** na Iowa State College, com a ajuda do aluno de pós-graduação **Clifford Berry**.
 
-- **Nascimento:** 4 de outubro de 1903, em Hamilton, Nova York, EUA.
-- **Formação:** Bacharelado em Engenharia Elétrica pela University of Florida (1925); Mestrado em Matemática pela Iowa State University (1926); Doutorado em Física Teórica pela University of Wisconsin–Madison (1930).
-- **Carreira acadêmica:** Professor de matemática e física na Iowa State University (1930–1942). Durante a Segunda Guerra Mundial, trabalhou no Naval Ordnance Laboratory, em Washington, D.C., e depois no Army's Aberdeen Proving Ground.
-- **Invenção (1937–1942):** Construiu o Atanasoff-Berry Computer (ABC), o primeiro computador eletrônico digital do mundo, em parceria com seu aluno Clifford Berry.
-- **Pós-guerra:** Deixou a vida acadêmica e fundou a Ordnance Engineering Corporation, empresa de pesquisa e desenvolvimento de defesa.
-- **Reconhecimento:** Recebeu a Medalha Nacional de Tecnologia e Inovação em 1990, entregue pelo presidente George H. W. Bush.
-- **Falecimento:** 15 de junho de 1995, em Frederick, Maryland.
-
-### 🧑‍🔧 Clifford Berry (Co-criador do ABC)
-
-- **Nascimento:** 1918, em Iowa, EUA.
-- **Formação:** Aluno de doutorado de Atanasoff na Iowa State University.
-- **Papel:** Responsável pela construção física do ABC, implementando as ideias teóricas de Atanasoff — co-inventor do computador.
-- **Pós-ABC:** Após o doutorado, trabalhou na Consolidated Engineering Corporation (mais tarde parte da Bell & Howell), contribuindo para o desenvolvimento de espectrômetros de massa e computadores analógicos.
-- **Falecimento:** 1963.
-
-### ⚖️ John Mauchly (Cofundador do ENIAC)
-
-- **Nascimento:** 30 de agosto de 1907, em Cincinnati, Ohio.
-- **Formação:** Doutorado em Física pela Johns Hopkins University (1932).
-- **Carreira:** Professor de física no Ursinus College antes de ingressar na Moore School of Electrical Engineering, da Universidade da Pensilvânia.
-- **Visita a Atanasoff (1941):** Visitou Atanasoff em Iowa por vários dias, examinando detalhadamente o ABC e discutindo seus princípios.
-- **ENIAC (1943–1945):** Projetou e construiu o ENIAC com J. Presper Eckert, amplamente divulgado à época como "o primeiro computador eletrônico digital".
-- **Controvérsia:** A decisão judicial de 1973 concluiu que Mauchly derivou ideias essenciais do ABC para o ENIAC, invalidando suas patentes.
-- **Falecimento:** 8 de janeiro de 1980.
-
-### 🔌 J. Presper Eckert (Cofundador do ENIAC)
-
-- **Nascimento:** 9 de abril de 1919, na Filadélfia, Pensilvânia.
-- **Formação:** Mestrado em Engenharia Elétrica pela Moore School, Universidade da Pensilvânia (1941).
-- **Papel:** Engenheiro-chefe do projeto ENIAC, responsável pela implementação eletrônica e física do computador.
-- **UNIVAC:** Após o ENIAC, fundou com Mauchly a Eckert-Mauchly Computer Corporation, onde desenvolveram o UNIVAC I, o primeiro computador comercial de sucesso nos EUA.
-- **Falecimento:** 3 de junho de 1995.
-
-### ⚖️ Earl R. Larson (Juiz do caso histórico)
-
-- **Profissão:** Juiz federal do Tribunal Distrital dos EUA para o Distrito de Minnesota.
-- **Papel crucial:** Presidiu o caso Honeywell Inc. vs. Sperry Rand Corp. (1970–1973).
-- **Decisão histórica (19 de outubro de 1973):** Invalidou a patente do ENIAC e declarou John Vincent Atanasoff o inventor do primeiro computador eletrônico digital, baseando-se nas visitas de Mauchly a Atanasoff e na anterioridade do ABC.
+A narrativa se organiza como um **drama jurídico**. Em 1971, a Honeywell contestou as patentes do **ENIAC** (Mauchly e Eckert, Universidade da Pensilvânia) no processo *Honeywell vs. Sperry Rand*. Ao investigar a origem do ENIAC, os advogados encontraram a máquina anterior de Atanasoff, até então quase esquecida. Em **19 de outubro de 1973**, o juiz **Earl R. Larson** invalidou as patentes do ENIAC e reconheceu Atanasoff como inventor do primeiro computador eletrônico digital.
 
 ---
 
-## 🔗 Onde assistir
+## 🕰️ 2. Contexto histórico
 
-Versão legendada em português, no YouTube:
-https://www.youtube.com/watch?v=mKGEM_tc7oQ
+Para entender o filme, é preciso situar três momentos:
+
+1. **Anos 1930 — o problema.** Cientistas e engenheiros precisavam resolver grandes sistemas de equações lineares (física, estatística, engenharia). As calculadoras mecânicas de mesa eram lentas e trabalhosas.
+2. **1937–1942 — a invenção.** Atanasoff projeta uma máquina eletrônica, binária, com memória em capacitores. O protótipo é de 1939, e a máquina completa de 1942, quando a guerra interrompe o projeto.
+3. **1971–1973 — a disputa.** O ENIAC, apresentado ao público em 1946 e divulgado como "o primeiro computador eletrônico", tem suas patentes derrubadas em juízo.
+
+Esse enquadramento ajuda a perceber que o filme trata menos de uma "máquina" e mais de **como a história da tecnologia é escrita**: quem registra, quem patenteia, quem aparece na imprensa.
+
+---
+
+## 🎞️ 3. Estrutura narrativa e linguagem
+
+- **Estrutura de investigação:** o filme parte do tribunal (1971–1973) e volta ao passado para explicar a invenção. O espectador acompanha os advogados "descobrindo" Atanasoff, o que cria suspense mesmo sendo um tema técnico.
+- **Recursos documentais:** material de arquivo, reconstituições dramatizadas e entrevistas com especialistas e testemunhas.
+- **Personagem-herói injustiçado:** Atanasoff é construído como inventor discreto, mais interessado em resolver o problema do que em se promover. Vale discutir em sala se essa construção é neutra ou se o filme assume um lado.
+- **Ironia histórica:** o veredito de 1973 foi ofuscado na imprensa pelo escândalo de Watergate, o que o filme usa para explicar por que Atanasoff é pouco lembrado ao lado de Turing ou Von Neumann.
+
+---
+
+## 💡 4. Análise tecnológica: o que o ABC trouxe
+
+| Conceito | No ABC | Importância para a computação |
+|---|---|---|
+| **Sistema binário** | Dados representados em base 2 | Base de todos os computadores digitais modernos |
+| **Eletrônica** | Mais de 300 válvulas termiônicas realizando os cálculos | Ruptura com as máquinas mecânicas (como a de Babbage) e eletromecânicas |
+| **Memória regenerativa** | Capacitores que precisavam ser recarregados a cada ciclo | Precursor do princípio da memória **DRAM** |
+| **Separação processamento/memória** | Unidades de cálculo distintas do armazenamento | Antecipa a organização que se consolidaria na arquitetura de Von Neumann |
+| **Propósito específico** | Projetado para resolver sistemas de equações lineares | Limite do ABC: **não era programável** |
+
+### ⚠️ O ponto crítico: o ABC era um computador?
+
+A resposta depende da definição adotada, e é aqui que a disciplina de **Teoria da Computação** entra:
+
+- Pelo critério **"eletrônico + digital + binário"**, o ABC é pioneiro.
+- Pelo critério de **máquina de propósito geral / programável** (a ideia da *máquina universal* de Alan Turing, 1936), o ABC **não** se qualifica: ele resolvia uma classe de problemas, não executava programas arbitrários.
+- O ENIAC, por sua vez, era programável (por recabeamento e chaves), o que explica por que a disputa não é trivial.
+
+Essa tensão mostra que "primeiro computador" não é um fato, e sim uma **escolha de definição**. É um ótimo gancho para discutir o conceito de computabilidade e universalidade.
+
+---
+
+## 👥 5. Personagens e seus papéis na narrativa
+
+| Personagem | Papel no filme | Função dramática |
+|---|---|---|
+| **John Vincent Atanasoff** | Inventor do ABC | Protagonista, o "gênio esquecido" |
+| **Clifford Berry** | Aluno e co-criador, responsável pela construção física | Mostra que a invenção foi colaborativa; faleceu em 1963, antes do reconhecimento judicial |
+| **John Mauchly** | Cofundador do ENIAC; visitou Atanasoff em 1941 | Antagonista: segundo a decisão de 1973, derivou ideias essenciais do ABC |
+| **J. Presper Eckert** | Engenheiro-chefe do ENIAC | Lado do ENIAC na disputa; depois fundou o UNIVAC com Mauchly |
+| **Earl R. Larson** | Juiz do caso | Figura que "decide a história" |
+
+Os currículos detalhados de cada um permanecem na versão anterior deste material (resumo e currículos).
+
+---
+
+## 🧭 6. Temas centrais
+
+1. **Autoria e reconhecimento na ciência:** inventar é diferente de ser reconhecido como inventor.
+2. **Propriedade intelectual:** o ABC nunca foi patenteado, pois a Iowa State College não se interessou em protegê-lo. O ENIAC foi patenteado e, por décadas, controlou o mercado, até ser derrubado em juízo.
+3. **Ciência colaborativa e influências:** a visita de Mauchly a Atanasoff em 1941 levanta a questão de onde termina a inspiração e começa a apropriação.
+4. **Memória histórica:** a história oficial favorece quem tem melhor publicidade.
+5. **Guerra como acelerador (e freio):** a Segunda Guerra impulsionou o ENIAC (financiado pelo Exército) e interrompeu o projeto de Atanasoff.
+
+---
+
+## 🔗 7. Conexões com outros filmes da disciplina
+
+| Filme | Ponto de contato com *Atanasoff* |
+|---|---|
+| **Enigma** e **O Jogo da Imitação** | Mesma época (Segunda Guerra), mas outro caminho: criptoanálise e fundamentos teóricos (Turing), enquanto Atanasoff traz o **hardware eletrônico** |
+| **Os Piratas do Vale do Silício** | Disputa por ideias e por crédito (Jobs, Gates e a interface gráfica), reeditando a questão "quem inventou de fato?" |
+| **Revolution OS** | Debate sobre propriedade intelectual e abertura do conhecimento: o ABC jamais patenteado contrasta com a patente do ENIAC |
+| **O Menino da Internet** | Conflito entre acesso livre ao conhecimento e controle jurídico |
+| **Citizenfour** e **Swordfish** | Computação, poder e Estado: o ABC mostra a origem do poder computacional que essas obras discutem |
+
+---
+
+## ❓ 8. Questões para debate em sala
+
+1. Se o ABC não era programável, por que o tribunal o reconheceu como o primeiro computador eletrônico digital? Que critério foi usado?
+2. A visita de Mauchly em 1941 foi inspiração legítima ou apropriação de ideias? Onde está a fronteira?
+3. O fato de Atanasoff nunca ter patenteado o ABC foi um erro dele ou da instituição?
+4. Por que Turing e Von Neumann são mais lembrados que Atanasoff? O que isso diz sobre como a história da computação é contada?
+5. Hoje, com repositórios abertos e licenças livres, o problema de "quem criou primeiro" estaria resolvido?
+6. O filme é imparcial ou toma partido de Atanasoff?
+
+---
+
+## ✅ 9. Avaliação crítica
+
+**Pontos fortes**
+- Torna acessível uma disputa técnica e jurídica complexa.
+- Resgata uma figura pouco conhecida e abre debate sobre autoria.
+- Boa duração (47 min), ideal para uso em sala.
+
+**Limitações**
+- Tende a favorecer a perspectiva de Atanasoff, o que pede leitura crítica e comparação com outras fontes.
+- Por ser curto, simplifica a distinção entre "computador eletrônico" e "computador de propósito geral", central para a Teoria da Computação.
+
+**Valor didático:** alto. Conecta história, direito, hardware e fundamentos teóricos em um só caso.
+
+---
+
+## 📚 10. Sugestões de aprofundamento
+
+- Decisão *Honeywell Inc. v. Sperry Rand Corp.* (1973).
+- Artigo original de Alan Turing, "On Computable Numbers" (1936), para contrastar máquina universal e máquina de propósito específico.
+- Material sobre a arquitetura de Von Neumann (1945) e sobre o ENIAC.
