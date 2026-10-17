@@ -16,6 +16,8 @@ O documentário foi dirigido, roteirizado, fotografado e produzido por J. T. S. 
 
 Entre os principais participantes estão **Richard Stallman, Linus Torvalds, Eric Raymond, Bruce Perens, Larry Augustin, Michael Tiemann, Brian Behlendorf e Frank Hecker**, todos diretamente relacionados à história do software livre ou do movimento Open Source. ([IMDb][2])
 
+Também participa **Rob Malda**, fundador do Slashdot, e a narração é de **Susan Egan**.
+
 ---
 
 # 2. Introdução
@@ -288,6 +290,8 @@ Essa decisão teve enorme importância simbólica porque demonstrou que uma gran
 
 A liberação do código do navegador Netscape é apresentada como um dos acontecimentos que ajudaram a tornar o conceito de Open Source mais conhecido no mundo empresarial. ([WIRED][3])
 
+O depoimento de Frank Hecker, engenheiro da empresa, é apresentado na seção 20.
+
 ---
 
 # 15. Linux como modelo de negócio
@@ -300,7 +304,7 @@ Empresas começam a perceber que é possível construir modelos de negócio util
 
 * Red Hat;
 * VA Linux;
-* Cygnus Solutions.
+* Cygnus Solutions (ver Michael Tiemann, seção 17).
 
 O dinheiro pode vir de:
 
@@ -330,7 +334,138 @@ O documentário acompanha inclusive o momento de abertura de capital da VA Linux
 
 ---
 
-# 17. A contradição central
+# 17. Michael Tiemann
+
+Michael Tiemann é o personagem que **prova que software livre pode sustentar uma empresa**.
+
+No documentário, ele conta como conheceu Richard Stallman em 1987 e obteve uma versão inicial do **GCC**, o compilador do projeto GNU. Impressionado com a qualidade da ferramenta, ele percebeu que o código aberto poderia ser a base de um negócio.
+
+Desse insight nasceu a **Cygnus Solutions**, empresa que vendia **suporte e serviços** em torno de ferramentas livres, em vez de vender licenças de software. A Cygnus foi posteriormente adquirida pela Red Hat, em 1999.
+
+### Função na narrativa
+
+Tiemann é a ponte entre a filosofia de Stallman e o mercado. Ele mostra que o modelo "código livre + serviço" já funcionava **antes** de o termo *Open Source* existir.
+
+### Para a análise
+
+Compare com Stallman. Ambos partem do GCC, mas um o vê como **bandeira de liberdade** e o outro como **oportunidade de negócio**. É a tensão central do filme, encarnada em duas pessoas (ver também a seção 15).
+
+---
+
+# 18. Bruce Perens
+
+Bruce Perens é apresentado como o autor da **Open Source Definition**, o documento que estabeleceu critérios para considerar uma licença "aberta". Ele havia sido líder do projeto **Debian** e escreveu as diretrizes que serviram de base para essa definição.
+
+Em 1998, Perens e Eric Raymond fundaram a **Open Source Initiative (OSI)**, organização criada para promover o termo *Open Source* junto ao mundo empresarial.
+
+### Função na narrativa
+
+Perens é o **arquiteto do vocabulário**. Sem ele e Raymond, o movimento teria continuado a ser visto pelo mercado como "ideologia radical". A mudança de termo é o que torna o movimento aceitável para empresas como a Netscape.
+
+### Para a análise
+
+O filme mostra Perens como alguém que fica entre dois mundos. Ele respeita a ética do software livre, mas defende uma linguagem mais pragmática. Isso aprofunda o debate da seção 10 (Software Livre x Open Source).
+
+---
+
+# 19. Brian Behlendorf
+
+Brian Behlendorf representa a **prova prática de que o modelo colaborativo gera produtos dominantes**. Ele é associado ao **Apache**, o servidor web que se tornou um dos mais usados da internet.
+
+O projeto Apache também deu origem à **Apache Software Foundation**, fundada em 1999, um modelo de governança comunitária que influenciou muitos projetos posteriores.
+
+### Função na narrativa
+
+Se Torvalds é o exemplo do "bazar" em um sistema operacional, Behlendorf é o exemplo do bazar **na infraestrutura da internet**. Ele ajuda o espectador a ver que o Open Source não é só sobre Linux.
+
+### Para a análise
+
+Vale conectar com a metáfora de Raymond (seção 11): o Apache é um dos casos mais citados de desenvolvimento aberto bem-sucedido.
+
+---
+
+# 20. Frank Hecker
+
+Frank Hecker era engenheiro de sistemas da **Netscape** e é o personagem por trás do momento descrito na seção 14. Ele conta como executivos da empresa decidiram **liberar o código-fonte do navegador**, um dos eventos que fizeram o Open Source ser levado a sério pelo mundo empresarial, pela mídia e pelo público.
+
+Esse episódio deu origem ao projeto **Mozilla**.
+
+### Função na narrativa
+
+Hecker é o **"homem de dentro"** da grande empresa. Enquanto Stallman e Perens falam de fora para dentro do mercado, ele mostra a decisão sendo tomada **dentro** de uma corporação.
+
+### Para a análise
+
+A seção 14 trata da Netscape como instituição. Com Hecker, ela ganha uma **testemunha direta**, o que reforça o caráter de "testemunho histórico" apontado na seção 27 (Entrevistas).
+
+---
+
+# 21. Rob Malda ("CmdrTaco")
+
+Rob Malda é o fundador do **Slashdot**, site de notícias e discussão para entusiastas de tecnologia que foi um dos principais pontos de encontro da comunidade Linux e Open Source naquela época. Seu nome aparece entre os entrevistados do documentário, segundo a divulgação oficial da obra.
+
+### Função na narrativa
+
+Malda representa a **comunidade**, o "bazar" em sua forma social. Ele não é criador de um kernel ou de uma licença, mas de um **espaço de conversa** onde o movimento se organizava e se divulgava.
+
+### Para a análise
+
+Conecta com as seções 37 e 38 (comunidade e conhecimento coletivo). O Slashdot mostra que a colaboração não acontece só no código, mas também na **circulação de informação**.
+
+---
+
+# 22. Bill Gates (material de arquivo)
+
+O documentário usa material histórico em que aparece **Bill Gates**, incluindo a famosa **Carta Aberta aos Hobbistas** (1976). Nela, Gates pede que os entusiastas de computação **não compartilhem** software, mas o comprem, argumentando que a cópia desestimula quem o produz.
+
+O filme usa essa carta como **marco do início da mudança** de uma cultura de compartilhamento para uma de propriedade (ver seção 4).
+
+### Função na narrativa
+
+Gates não é entrevistado como os demais, e sim usado como **contraponto histórico**. É a voz do modelo proprietário, o "outro lado" da disputa.
+
+### Para a análise
+
+Reforça a seção 13. A Microsoft deixa de ser apenas um símbolo abstrato e passa a ter uma **origem documentada** da posição que o filme critica. Vale lembrar que, como em outros pontos, o filme apresenta esse conflito do ponto de vista do movimento livre, e não de forma neutra.
+
+---
+
+# 23. Susan Egan (narradora)
+
+A narração do documentário é feita pela atriz **Susan Egan**. Ela não é personagem da história, mas é a **voz que costura as entrevistas**.
+
+### Função na narrativa
+
+Sua presença suaviza o tom técnico e dá unidade à sequência de depoimentos. Isso dialoga com a seção 29 (a câmera como testemunha): o filme dá voz principal aos entrevistados, e a narração apenas conecta os fatos.
+
+---
+
+# 24. Quadro-resumo dos personagens
+
+| Personagem | Papel no movimento | Contribuição central | O que representa no filme |
+|---|---|---|---|
+| **Richard Stallman** | Fundador do Projeto GNU | Software Livre, copyleft, GCC | A **filosofia** e a liberdade |
+| **Linus Torvalds** | Criador do kernel Linux | Linux | A **engenharia** e o desenvolvimento colaborativo |
+| **Eric Raymond** | Ensaísta e cofundador da OSI | *A Catedral e o Bazar* | A **teoria** do modelo aberto |
+| **Bruce Perens** | Autor da Open Source Definition | Definição de Open Source, OSI | O **vocabulário** aceitável ao mercado |
+| **Michael Tiemann** | Cofundador da Cygnus | Negócio em cima de software livre | O **modelo de negócio** |
+| **Larry Augustin** | Cofundador da VA Linux | Hardware com Linux, IPO | O **mercado financeiro** |
+| **Brian Behlendorf** | Apache | Servidor web aberto | O **bazar na infraestrutura da web** |
+| **Frank Hecker** | Engenheiro da Netscape | Abertura do código do navegador | O **Open Source dentro da corporação** |
+| **Rob Malda** | Fundador do Slashdot | Comunidade e divulgação | A **comunidade** |
+| **Bill Gates** (arquivo) | Microsoft | Carta aos Hobbistas | O **modelo proprietário** |
+
+### Questões para debate sobre os personagens
+
+1. Por que o filme precisa de **tantos personagens**? O que cada um acrescenta que os outros não trazem?
+2. Qual personagem representa melhor a **ideia de liberdade**? Qual representa melhor a **ideia de eficiência**? Eles são compatíveis?
+3. Tiemann e Stallman partem do mesmo software (GCC) e chegam a conclusões diferentes. O que isso diz sobre a relação entre tecnologia e ideologia?
+4. O Apache mostra o "bazar" em uma área diferente do Linux. Por que esse caso é importante para convencer empresas?
+5. Bill Gates aparece como material de arquivo, e não como entrevistado. Como isso influencia a imparcialidade do documentário?
+
+---
+
+# 25. A contradição central
 
 Uma das melhores características do documentário é que ele não apresenta o movimento apenas como uma comunidade perfeitamente unida.
 
@@ -358,7 +493,7 @@ Uma análise brasileira do filme também destaca essas contradições internas e
 
 ---
 
-# 18. Aspectos cinematográficos
+# 26. Aspectos cinematográficos
 
 Apesar de tratar de um tema altamente técnico, *Revolution OS* não é apresentado como uma simples aula de informática.
 
@@ -379,7 +514,7 @@ A estrutura é predominantemente documental e jornalística.
 
 ---
 
-# 19. Entrevistas
+# 27. Entrevistas
 
 As entrevistas são o principal recurso narrativo.
 
@@ -399,7 +534,7 @@ Assim, o espectador recebe diferentes perspectivas sobre o mesmo fenômeno.
 
 ---
 
-# 20. A estética do filme
+# 28. A estética do filme
 
 Um detalhe interessante é que Moore decidiu utilizar **película 35 mm e formato widescreen**, em vez de simplesmente utilizar vídeo digital.
 
@@ -413,7 +548,7 @@ Essa escolha cria um contraste interessante:
 
 ---
 
-# 21. A câmera como testemunha
+# 29. A câmera como testemunha
 
 O diretor utiliza frequentemente entrevistas diretas.
 
@@ -427,7 +562,7 @@ Isso reforça a sensação de que estamos ouvindo pessoas que efetivamente parti
 
 ---
 
-# 22. Ritmo
+# 30. Ritmo
 
 O ritmo do documentário é relativamente moderado.
 
@@ -448,7 +583,7 @@ Portanto, o filme prioriza explicações e depoimentos em vez de ação.
 
 ---
 
-# 23. Trilha sonora e atmosfera
+# 31. Trilha sonora e atmosfera
 
 A trilha sonora não é o elemento principal da obra.
 
@@ -462,7 +597,7 @@ A palavra "Revolution" apresenta o desenvolvimento do software livre como uma mu
 
 ---
 
-# 24. O significado do título
+# 32. O significado do título
 
 O título pode ser dividido em duas partes:
 
@@ -482,7 +617,7 @@ e como uma referência mais ampla à revolução provocada pelo movimento do sof
 
 ---
 
-# 25. Software como liberdade
+# 33. Software como liberdade
 
 A principal reflexão filosófica do documentário é que software não deve ser visto apenas como mercadoria.
 
@@ -502,7 +637,7 @@ Essa mudança de perspectiva é o coração ideológico da obra.
 
 ---
 
-# 26. Propriedade intelectual
+# 34. Propriedade intelectual
 
 O documentário também questiona os limites da propriedade intelectual.
 
@@ -524,7 +659,7 @@ O documentário apresenta essa disputa sem reduzi-la a uma simples questão téc
 
 ---
 
-# 27. A dimensão política
+# 35. A dimensão política
 
 Embora seja um documentário sobre informática, *Revolution OS* possui forte dimensão política.
 
@@ -545,7 +680,7 @@ Quem possui o conhecimento possui capacidade de transformar essa tecnologia.
 
 ---
 
-# 28. A dimensão econômica
+# 36. A dimensão econômica
 
 Ao mesmo tempo, o documentário mostra que nenhuma revolução tecnológica ocorre completamente fora da economia.
 
@@ -567,7 +702,7 @@ Mas também deixa evidente que essa transformação gera novos debates.
 
 ---
 
-# 29. Comunidade
+# 37. Comunidade
 
 A comunidade é um dos elementos mais importantes.
 
@@ -587,7 +722,7 @@ A inovação não depende necessariamente de uma única empresa ou de um único 
 
 ---
 
-# 30. Conhecimento coletivo
+# 38. Conhecimento coletivo
 
 O filme apresenta uma ideia extremamente relevante para a área de tecnologia:
 
@@ -599,7 +734,7 @@ Essa lógica está presente atualmente em inúmeros projetos de código aberto.
 
 ---
 
-# 31. Contraste entre "catedral" e "bazar"
+# 39. Contraste entre "catedral" e "bazar"
 
 A metáfora de Eric Raymond é uma das mais importantes para compreender o documentário.
 
@@ -615,7 +750,7 @@ O resultado pode parecer desorganizado de fora, mas existe uma dinâmica coletiv
 
 ---
 
-# 32. Pontos fortes do documentário
+# 40. Pontos fortes do documentário
 
 Entre os principais pontos positivos estão:
 
@@ -643,7 +778,7 @@ Mostra que Open Source também pode ser economicamente viável.
 
 ---
 
-# 33. Limitações
+# 41. Limitações
 
 Uma análise crítica também precisa considerar as limitações da obra.
 
@@ -666,7 +801,7 @@ Por isso, pode ser interpretado mais como uma **história contada por seus parti
 
 ---
 
-# 34. Importância para a área de informática
+# 42. Importância para a área de informática
 
 Para estudantes e profissionais de informática, *Revolution OS* possui grande valor.
 
@@ -687,7 +822,7 @@ Compreender essa história ajuda a compreender melhor a própria cultura da comp
 
 ---
 
-# 35. Relação com a Engenharia de Software
+# 43. Relação com a Engenharia de Software
 
 O documentário também possui relação direta com Engenharia de Software.
 
@@ -705,7 +840,7 @@ Essa dinâmica influenciou profundamente as práticas modernas de desenvolviment
 
 ---
 
-# 36. Relação com DevOps e desenvolvimento moderno
+# 44. Relação com DevOps e desenvolvimento moderno
 
 Embora o termo e as práticas atuais de DevOps tenham se consolidado posteriormente, algumas ideias apresentadas no documentário antecipam características do desenvolvimento moderno:
 
@@ -720,7 +855,7 @@ O movimento apresentado pelo filme ajudou a estabelecer uma cultura na qual comp
 
 ---
 
-# 37. Relação com a educação
+# 45. Relação com a educação
 
 O documentário também pode ser relacionado à educação.
 
@@ -738,7 +873,7 @@ Em vez de apenas utilizar um programa, o aluno pode investigar como ele funciona
 
 ---
 
-# 38. Mensagem principal
+# 46. Mensagem principal
 
 A principal mensagem de *Revolution OS* pode ser resumida da seguinte maneira:
 
@@ -748,7 +883,7 @@ O filme apresenta o software livre como uma alternativa ao modelo tradicional de
 
 ---
 
-# 39. Conclusão
+# 47. Conclusão
 
 *Revolution OS* é muito mais do que um documentário sobre Linux.
 
@@ -756,7 +891,7 @@ A obra registra o nascimento e a consolidação de uma mudança na maneira como 
 
 Ao apresentar figuras como Richard Stallman e Linus Torvalds, o documentário mostra duas dimensões complementares da revolução tecnológica: a **dimensão filosófica da liberdade** e a **dimensão prática da engenharia e colaboração**.
 
-Stallman representa a defesa dos princípios do Software Livre. Torvalds representa a capacidade de transformar um projeto pessoal em um grande esforço colaborativo. Eric Raymond representa a tentativa de explicar e aproximar esse modelo do mundo empresarial.
+Stallman representa a defesa dos princípios do Software Livre. Torvalds representa a capacidade de transformar um projeto pessoal em um grande esforço colaborativo. Eric Raymond e Bruce Perens representam a tentativa de explicar e traduzir esse modelo para o mundo empresarial. Michael Tiemann, Larry Augustin e Frank Hecker mostram o movimento encontrando o mercado, e Brian Behlendorf mostra o modelo aberto funcionando na infraestrutura da própria internet.
 
 O filme também mostra que o movimento não é livre de contradições. A mesma comunidade que defende colaboração possui disputas por reconhecimento, diferenças ideológicas e interesses econômicos.
 
