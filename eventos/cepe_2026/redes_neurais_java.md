@@ -1,98 +1,25 @@
 # 🧠 Minicurso: Redes Neurais em Java para Iniciantes
 
 **Público-alvo:** pessoas sem conhecimento prévio em redes neurais ou inteligência artificial.
-
-**Biblioteca utilizada:** [Deeplearning4j (DL4J)](https://deeplearning4j.konduit.ai/) + ND4J.
-
-**Pré-requisito técnico:** saber compilar e executar um programa Java simples.
-
-Neste minicurso você primeiro **constrói uma rede neural do zero** (Java puro) para entender o que acontece por baixo dos panos. Depois, refaz os mesmos problemas com o **Deeplearning4j**, a biblioteca que se usa na prática.
-
----
-
-## Índice
-
-1. [Preparando o ambiente (sem Maven)](#módulo-0-preparando-o-ambiente-sem-maven)
-2. [O que é uma Rede Neural?](#módulo-1-o-que-é-uma-rede-neural)
-3. [O Perceptron](#módulo-2-o-perceptron---o-neurônio-mais-simples)
-4. [Aprendizado e Treinamento (MLP do zero)](#módulo-3-aprendizado-e-treinamento)
-5. [Deeplearning4j na prática](#módulo-4-deeplearning4j-na-prática)
-6. [Exercícios](#módulo-5-exercícios)
-7. [Recursos para aprofundamento](#recursos-para-aprofundamento)
-
----
-
-## Módulo 0: Preparando o ambiente (sem Maven)
-
-### 0.1. O que você precisa
-
-| Item | Versão | Para quê |
-| ---- | ------ | -------- |
-| JDK  | 17 (ou 11) | compilar e executar os exemplos |
-| JBang | qualquer recente | baixar as bibliotecas do DL4J automaticamente |
-
-Os exemplos dos **Módulos 1, 2 e 3** usam apenas Java puro e rodam só com o JDK:
-
-```bash
-java NomeDoArquivo.java
-```
-
-Os exemplos do **Módulo 4** usam o DL4J, que depende de dezenas de arquivos `.jar` (o DL4J, o ND4J, bibliotecas nativas, etc.). Baixar tudo isso manualmente é inviável, então usaremos o **JBang**: uma ferramenta que executa um único arquivo `.java` e baixa sozinha as dependências declaradas no topo do arquivo. Não é necessário criar projeto, `pom.xml` ou `build.gradle`.
-
-### 0.2. Instalando o JBang
-
-**Linux / macOS:**
-
-```bash
-curl -Ls https://sh.jbang.dev | bash -s - app setup
-```
-
-**Windows (PowerShell):**
-
-```powershell
-iex "& { $(iwr https://ps.jbang.dev) } app setup"
-```
-
-Feche e abra o terminal e teste:
-
-```bash
-jbang --version
-```
-
-### 0.3. Como os exemplos do DL4J são executados
-
-Cada exemplo do Módulo 4 é um arquivo `.java` completo. As linhas `//DEPS` no topo dizem ao JBang quais bibliotecas baixar:
-
-```java
-//DEPS org.deeplearning4j:deeplearning4j-core:1.0.0-M2.1
-//DEPS org.nd4j:nd4j-native-platform:1.0.0-M2.1
-//DEPS org.slf4j:slf4j-simple:1.7.36
-```
-
-Para executar:
-
-```bash
-jbang NomeDoArquivo.java
-```
-
-> ⚠️ **Na primeira execução** o JBang baixa as bibliotecas, incluindo as nativas do ND4J, que são grandes (centenas de MB). **Faça isso antes do evento, com internet boa.** Nas execuções seguintes tudo fica em cache.
-
-### ✅ Checkpoint do Módulo 0
-
-- [ ] `java -version` mostra Java 11 ou 17.
-- [ ] `jbang --version` funciona.
+**Pré-requisito:** noções básicas de Java (variáveis, `for`, `if`, classes e métodos).
+**Como executar os exemplos:** com Java 11 ou superior, basta salvar cada exemplo em um arquivo `.java` e rodar `java NomeDoArquivo.java`. Não precisa de Maven nem de bibliotecas externas (exceto no Módulo 4).
 
 ---
 
 ## Módulo 1: O que é uma Rede Neural?
 
-### 1.1. Uma analogia simples
+### 1.1. Uma Analogia Simples
 
-Imagine que você está ensinando uma criança a reconhecer animais. Você mostra a figura de um gato e diz "gato". Mostra um cachorro e diz "cachorro". Depois de muitos exemplos, a criança começa a identificar sozinha.
+Imagine que você está ensinando uma criança a reconhecer animais. Você mostra uma figura de um gato e diz "gato". Mostra um cachorro e diz "cachorro". Depois de muitos exemplos, a criança começa a identificar sozinha.
 
-Uma rede neural artificial funciona de forma parecida: **ela aprende com exemplos**.
+Uma rede neural artificial funciona de forma parecida: **ela aprende com exemplos**, em vez de seguir regras escritas por um programador.
 
-### 1.2. O neurônio artificial
+| Programação tradicional | Rede neural |
+|-------------------------|-------------|
+| Você escreve as regras | Você mostra exemplos |
+| Dados + regras → resposta | Dados + respostas → regras (os pesos) |
+
+### 1.2. O Neurônio Artificial
 
 O cérebro humano tem neurônios que recebem sinais, processam e transmitem respostas. Um neurônio artificial faz algo parecido:
 
@@ -102,97 +29,441 @@ O cérebro humano tem neurônios que recebem sinais, processam e transmitem resp
  entrada 3 ──(peso 3)──┘
 ```
 
-Cada entrada tem um **peso**, um número que indica sua importância. O neurônio:
+#### As peças do neurônio
 
-1. Multiplica cada entrada pelo seu peso.
-2. Soma tudo, incluindo um **bias** (viés).
-3. Passa o resultado por uma **função de ativação**, que decide a saída.
+| Peça | O que é | Analogia |
+|------|---------|----------|
+| **Entrada** | Um dado que chega ao neurônio (um número) | Uma informação que você considera |
+| **Peso** | Número que indica a importância da entrada. Quanto maior, mais ela influencia; se for negativo, ela "puxa contra" | O quanto você valoriza cada informação |
+| **Bias (viés)** | Um ajuste fixo somado ao final. Define o quão fácil é o neurônio "disparar" | Sua predisposição: o quanto você é preguiçoso ou animado por natureza |
+| **Função de ativação** | Regra que transforma a soma na saída final | A decisão: "sim" ou "não" |
 
-> 🎯 **Pense assim:** é uma votação ponderada. Cada entrada vota com um peso diferente e, no final, decidimos se a resposta é "sim" ou "não".
+#### A conta que o neurônio faz
 
-### 1.3. Primeiro código: um neurônio com pesos fixos
+```
+saída = ativação( entrada1 × peso1 + entrada2 × peso2 + entrada3 × peso3 + bias )
+```
 
-Arquivo `NeuronioSimples.java`:
+Em três passos:
+
+1. **Multiplica** cada entrada pelo seu peso.
+2. **Soma** tudo, incluindo o bias.
+3. **Passa** o resultado pela função de ativação, que decide a saída.
+
+#### Exemplo: "Vou à praia hoje?"
+
+Vamos decidir com um neurônio. Cada entrada vale **1** (sim) ou **0** (não):
+
+| Entrada | Peso |
+|---------|------|
+| Está fazendo sol? | 0,6 |
+| Tenho tempo livre? | 0,3 |
+| Meus amigos vão? | 0,5 |
+
+**Bias = -1,0** (só saio de casa se o conjunto for bem convincente).
+**Função de ativação (degrau):** se a soma for ≥ 0, a saída é 1 (vou); senão, é 0 (fico).
+
+**Caso A:** sol, tempo livre e amigos vão → entradas (1, 1, 1)
+
+```
+(1 × 0,6) + (1 × 0,3) + (1 × 0,5) + (-1,0) = 0,4   → ≥ 0 → saída 1 (vou à praia! 🏖️)
+```
+
+**Caso B:** sol, tempo livre, mas amigos não vão → entradas (1, 1, 0)
+
+```
+(1 × 0,6) + (1 × 0,3) + (0 × 0,5) + (-1,0) = -0,1  → < 0 → saída 0 (fico em casa)
+```
+
+> 💡 Repare: nada mudou no neurônio, só uma entrada. **Mudar os pesos e o bias muda o comportamento do neurônio.** É exatamente isso que a rede "aprende" a ajustar durante o treinamento.
+
+#### Em Java, são poucas linhas
 
 ```java
-public class NeuronioSimples {
+public class NeuronioPraia {
     public static void main(String[] args) {
-        double[] entradas = {1.0, 0.0, 1.0};
-        double[] pesos    = {0.5, -0.6, 0.8};
-        double bias = -0.5;
+        double[] pesos = {0.6, 0.3, 0.5};
+        double bias = -1.0;
 
-        double soma = bias;
-        for (int i = 0; i < entradas.length; i++) {
-            soma += entradas[i] * pesos[i];
+        // sol, tempo livre, amigos vão
+        double[][] casos = {{1, 1, 1}, {1, 1, 0}, {0, 1, 1}};
+
+        for (double[] entradas : casos) {
+            double soma = bias;
+            for (int i = 0; i < entradas.length; i++) {
+                soma += entradas[i] * pesos[i];
+            }
+            int saida = soma >= 0 ? 1 : 0; // função de ativação (degrau)
+            System.out.printf("sol=%.0f tempo=%.0f amigos=%.0f -> soma=%.2f -> %s%n",
+                entradas[0], entradas[1], entradas[2], soma, saida == 1 ? "vou" : "fico");
         }
-        int saida = soma >= 0 ? 1 : 0; // função degrau
-
-        System.out.println("Soma ponderada: " + soma);
-        System.out.println("Saída do neurônio: " + saida);
     }
 }
 ```
 
-Execute: `java NeuronioSimples.java`
-
-Saída esperada:
+**Saída esperada:**
 
 ```
-Soma ponderada: 0.8
-Saída do neurônio: 1
+sol=1 tempo=1 amigos=1 -> soma=0.40 -> vou
+sol=1 tempo=1 amigos=0 -> soma=-0.10 -> fico
+sol=0 tempo=1 amigos=1 -> soma=-0.20 -> fico
 ```
 
-Conta feita à mão: `-0,5 + (1 × 0,5) + (0 × -0,6) + (1 × 0,8) = 0,8`. Como `0,8 ≥ 0`, a saída é 1.
+> 🎯 **Pense assim:** é um sistema de "votação ponderada". Cada entrada vota com uma força diferente (o peso), o bias é o quórum mínimo exigido, e a função de ativação anuncia o resultado: "sim" ou "não".
 
 ### ✅ Checkpoint do Módulo 1
 
-1. O que acontece com a saída se o bias for `-2.0`? (Teste e confira.)
-2. Qual entrada tem maior influência na soma? Por quê?
+1. O que acontece com a saída se aumentarmos o peso de "amigos vão" para 1,0?
+2. Se o bias for -2,0, o neurônio fica mais ou menos propenso a dizer "vou"? Por quê?
+3. Nesse exemplo, quem **escolheu** os pesos? Como uma rede neural escolheria sozinha?
 
 ---
 
-## Módulo 2: O Perceptron - O neurônio mais simples
+## Módulo 2: O Perceptron - O Neurônio Mais Simples
 
 ### 2.1. O que é um Perceptron?
 
-Proposto em 1958 por Frank Rosenblatt, o Perceptron é o modelo mais básico de rede neural: **um único neurônio que aprende seus próprios pesos**. Ele:
+Proposto em 1958 por Frank Rosenblatt, o Perceptron é o modelo mais básico de rede neural. É um único neurônio que:
 
-- recebe várias entradas (aqui, 0 ou 1);
-- calcula a soma ponderada mais o bias;
-- decide a saída (0 ou 1).
+- Recebe várias entradas (números, geralmente 0 ou 1 nos exemplos iniciais)
+- Calcula a soma ponderada mais o bias
+- Decide a saída (0 ou 1) usando a função degrau
 
-### 2.2. Como um Perceptron aprende?
+**O neurônio da praia do Módulo 1 já é um Perceptron.** A diferença é que, lá, nós escolhemos os pesos e o bias à mão. Agora vamos fazer o Perceptron **descobrir esses valores sozinho**, a partir de exemplos.
 
-1. Começamos com **pesos aleatórios**.
-2. Para cada exemplo de treino, calculamos a saída.
-3. Comparamos com a resposta correta.
-4. Se errou, **ajustamos os pesos** na direção certa.
-5. Repetimos muitas vezes.
+### 2.2. Como um Perceptron Aprende?
+
+1. Iniciamos com **pesos aleatórios**
+2. Para cada exemplo de treino, calculamos a saída
+3. Comparamos com a resposta correta
+4. Se errou, **ajustamos os pesos** para melhorar
+5. Repetimos muitas vezes
+
+**Fórmulas:**
 
 ```
 erro = valor_esperado - valor_obtido
-peso_novo = peso_antigo + taxa_aprendizado × erro × entrada
+peso_novo = peso_antigo + taxa_de_aprendizado × erro × entrada
+bias_novo = bias_antigo + taxa_de_aprendizado × erro
 ```
 
-### 2.3. Perceptron completo em Java
+**Exemplo numérico:** a resposta certa era 1 ("vou"), mas o neurônio respondeu 0 ("fico"). Então `erro = 1 - 0 = 1`. Para uma entrada que valia 1 e uma taxa de aprendizado de 0,1, o peso aumenta em `0,1 × 1 × 1 = 0,1`. O neurônio fica um pouquinho mais inclinado a responder "vou" na próxima vez.
 
-Arquivo `PerceptronPortas.java`. Ele treina o mesmo Perceptron para três portas lógicas: **AND**, **OR** e **XOR**.
+Se a entrada valia 0, o peso **não muda**: aquela entrada não teve culpa do erro.
+
+> 💡 Se o neurônio acertou, `erro = 0` e nada é alterado. Ele só aprende com os erros.
+
+### 2.3. Implementando um Perceptron em Java
 
 ```java
 import java.util.Random;
 
-public class PerceptronPortas {
+class Perceptron {
+    private double[] pesos;
+    private double bias;
+    private double taxaAprendizado = 0.1;
 
-    public static void main(String[] args) {
-        double[][] entradas = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
-
-        testar("AND", entradas, new int[]{0, 0, 0, 1});
-        testar("OR",  entradas, new int[]{0, 1, 1, 1});
-        testar("XOR", entradas, new int[]{0, 1, 1, 0});
+    public Perceptron(int numeroEntradas) {
+        pesos = new double[numeroEntradas];
+        Random random = new Random();
+        for (int i = 0; i < numeroEntradas; i++) {
+            pesos[i] = random.nextDouble() * 2 - 1; // entre -1 e 1
+        }
+        bias = random.nextDouble() * 2 - 1;
     }
 
-    static void testar(String nome, double[][] entradas, int[] esperados) {
+    // Função degrau: se >= 0 retorna 1, senão 0
+    private int funcaoAtivacao(double soma) {
+        return soma >= 0 ? 1 : 0;
+    }
+
+    // Calcula a saída do perceptron
+    public int calcular(double[] entradas) {
+        double soma = bias;
+        for (int i = 0; i < entradas.length; i++) {
+            soma += entradas[i] * pesos[i];
+        }
+        return funcaoAtivacao(soma);
+    }
+
+    // Treina o perceptron com um exemplo
+    public void treinar(double[] entradas, int esperado) {
+        int obtido = calcular(entradas);
+        int erro = esperado - obtido;
+
+        for (int i = 0; i < entradas.length; i++) {
+            pesos[i] += taxaAprendizado * erro * entradas[i];
+        }
+        bias += taxaAprendizado * erro;
+    }
+}
+```
+
+> ⚠️ **Importante:** este código é para aprendizado. Em projetos reais, use bibliotecas como Deeplearning4j.
+
+### ✅ Checkpoint do Módulo 2
+
+1. Por que o Perceptron começa com pesos aleatórios?
+2. O que acontece com os pesos quando o neurônio acerta tudo?
+3. O que muda se a taxa de aprendizado for muito grande (por exemplo, 5,0)?
+
+---
+
+## Módulo 3: Aprendizado e Treinamento
+
+### 3.1. Como a Rede "Aprende"?
+
+O aprendizado em redes neurais é um processo de **tentativa e erro**:
+
+1. **Forward Propagation**: os dados passam pela rede gerando uma saída
+2. **Cálculo do erro**: comparamos a saída com o esperado
+3. **Backpropagation**: o erro volta pela rede ajustando os pesos
+4. **Repetição**: fazemos isso milhares de vezes
+
+### 3.2. Conceitos Importantes
+
+- **Época (Epoch)**: uma rodada completa de treino com todos os dados
+- **Taxa de Aprendizado**: controla o quanto os pesos são ajustados por erro. Muito baixa: aprende devagar. Muito alta: "pula" a solução e não converge
+- **Função de Ativação**: transforma a soma em uma saída (veja abaixo)
+
+### 3.3. Funções de Ativação
+
+Até agora usamos a função **degrau**: ou 0, ou 1. Ela é simples, mas "brusca": não existe meio-termo. Redes mais poderosas usam funções suaves, que permitem dizer "tenho 80% de certeza".
+
+| Função | O que faz | Faixa de saída | Onde é usada |
+|--------|-----------|----------------|--------------|
+| **Degrau** | Corta em 0: ou 0, ou 1 | {0, 1} | Perceptron clássico |
+| **Sigmoid** | Curva em "S" suave | entre 0 e 1 | Saída de classificação (probabilidade) |
+| **Tanh** | Parecida com a sigmoid, centrada no zero | entre -1 e 1 | Camadas ocultas |
+| **ReLU** | Zera negativos, mantém positivos | de 0 a +∞ | Camadas ocultas (padrão atual) |
+
+**Comparação com alguns valores de soma (z):**
+
+| z | Degrau | Sigmoid | Tanh | ReLU |
+|---|--------|---------|------|------|
+| -2 | 0 | 0,12 | -0,96 | 0 |
+| 0 | 1 | 0,50 | 0,00 | 0 |
+| 2 | 1 | 0,88 | 0,96 | 2 |
+
+```java
+static double degrau(double z)  { return z >= 0 ? 1 : 0; }
+static double sigmoid(double z) { return 1.0 / (1.0 + Math.exp(-z)); }
+static double tanh(double z)    { return Math.tanh(z); }
+static double relu(double z)    { return Math.max(0, z); }
+```
+
+> 💡 **Por que a suavidade importa?** O backpropagation precisa calcular "para que lado e quanto" ajustar cada peso. Isso só é possível com funções suaves (que têm inclinação). O degrau é uma "parede": não dá para saber o quanto ajustar.
+
+### 3.4. O Limite do Perceptron: o Problema XOR
+
+Um único Perceptron só resolve problemas em que uma **linha reta** separa as respostas (como AND e OR). O **XOR** ("um ou outro, mas não os dois") não pode ser separado por uma única linha:
+
+| Entrada 1 | Entrada 2 | XOR |
+|-----------|-----------|-----|
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 0 |
+
+A solução é usar **camadas**: vários neurônios combinados. Isso é o **MLP (Perceptron Multicamadas)**.
+
+```
+                 camada oculta
+ entrada 1 ──┬──► ( neurônio 1 ) ──┐
+             ├──► ( neurônio 2 ) ──┤
+             │                     ├──► ( neurônio de saída ) ──► XOR
+ entrada 2 ──┼──► ( neurônio 3 ) ──┤
+             └──► ( neurônio 4 ) ──┘
+```
+
+### 3.5. Um MLP Completo em Java (resolve o XOR)
+
+Rede 2 → 4 → 1, com função sigmoid e backpropagation. Código completo, sem bibliotecas:
+
+```java
+import java.util.Random;
+
+public class MLPXor {
+    static final int ENTRADAS = 2, OCULTOS = 4;
+    static final double TAXA = 0.5;
+
+    double[][] w1 = new double[OCULTOS][ENTRADAS]; // pesos entrada -> oculta
+    double[] b1 = new double[OCULTOS];             // bias da camada oculta
+    double[] w2 = new double[OCULTOS];             // pesos oculta -> saída
+    double b2;                                     // bias da saída
+    double[] h = new double[OCULTOS];              // saídas da camada oculta
+
+    MLPXor(long seed) {
+        Random r = new Random(seed);
+        for (int j = 0; j < OCULTOS; j++) {
+            for (int i = 0; i < ENTRADAS; i++) w1[j][i] = r.nextDouble() * 2 - 1;
+            b1[j] = r.nextDouble() * 2 - 1;
+            w2[j] = r.nextDouble() * 2 - 1;
+        }
+        b2 = r.nextDouble() * 2 - 1;
+    }
+
+    static double sigmoid(double z) { return 1.0 / (1.0 + Math.exp(-z)); }
+
+    // Forward propagation
+    double prever(double[] x) {
+        for (int j = 0; j < OCULTOS; j++) {
+            double z = b1[j];
+            for (int i = 0; i < ENTRADAS; i++) z += w1[j][i] * x[i];
+            h[j] = sigmoid(z);
+        }
+        double z = b2;
+        for (int j = 0; j < OCULTOS; j++) z += w2[j] * h[j];
+        return sigmoid(z);
+    }
+
+    // Backpropagation (um exemplo)
+    void treinar(double[] x, double esperado) {
+        double y = prever(x);
+        double deltaSaida = (esperado - y) * y * (1 - y);
+
+        for (int j = 0; j < OCULTOS; j++) {
+            double deltaOculta = deltaSaida * w2[j] * h[j] * (1 - h[j]);
+            w2[j] += TAXA * deltaSaida * h[j];
+            for (int i = 0; i < ENTRADAS; i++) w1[j][i] += TAXA * deltaOculta * x[i];
+            b1[j] += TAXA * deltaOculta;
+        }
+        b2 += TAXA * deltaSaida;
+    }
+
+    public static void main(String[] args) {
+        double[][] x = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
+        double[] y = {0, 1, 1, 0};
+
+        MLPXor rede = new MLPXor(42);
+        for (int epoca = 0; epoca < 10000; epoca++) {
+            for (int i = 0; i < x.length; i++) rede.treinar(x[i], y[i]);
+        }
+
+        for (double[] e : x) {
+            System.out.printf("%.0f XOR %.0f = %.3f%n", e[0], e[1], rede.prever(e));
+        }
+    }
+}
+```
+
+**Saída esperada** (valores próximos de 0 ou 1):
+
+```
+0 XOR 0 = 0.015
+0 XOR 1 = 0.986
+1 XOR 0 = 0.984
+1 XOR 1 = 0.013
+```
+
+> 🎯 **Experimente:** mude `OCULTOS` para 1 e treine de novo. A rede não consegue mais resolver o XOR. Camadas e neurônios extras dão a ela "capacidade" de aprender padrões mais complexos.
+
+### ✅ Checkpoint do Módulo 3
+
+1. Qual a diferença entre uma época e um exemplo de treino?
+2. Por que o XOR não pode ser resolvido por um único Perceptron?
+3. Por que o backpropagation não funciona bem com a função degrau?
+
+---
+
+## Módulo 4: Ferramentas e Bibliotecas em Java
+
+### 4.1. Por que Java?
+
+O treinamento de modelos costuma ser feito em Python, que tem o ecossistema mais popular para pesquisa e experimentação. Já o Java é uma das linguagens mais usadas no mundo corporativo, com forte presença em sistemas de produção, integração com bancos de dados, serviços web e aplicações que já rodam na JVM.
+
+Por isso, uma estratégia comum é **treinar em Python e servir em Java**, ou usar bibliotecas Java para fazer tudo dentro do mesmo ecossistema.
+
+### 4.2. Bibliotecas Recomendadas
+
+| Biblioteca | Uso | Link |
+|------------|-----|------|
+| **Deeplearning4j (DL4J)** | A mais completa para deep learning em Java | [deeplearning4j.konduit.ai](https://deeplearning4j.konduit.ai) |
+| **ND4J** | Computação numérica (arrays n-dimensionais), base do DL4J | [deeplearning4j.konduit.ai](https://deeplearning4j.konduit.ai) |
+| **Basic Neural Network** | Biblioteca simples, para aprendizado | [GitHub](https://github.com/Thomas-Bergmann/neuralnetwork) |
+
+**Exemplo ilustrativo com Deeplearning4j** (a mesma rede do XOR, em 2 camadas):
+
+```java
+import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
+import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
+import org.deeplearning4j.nn.conf.layers.DenseLayer;
+import org.deeplearning4j.nn.conf.layers.OutputLayer;
+import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
+import org.nd4j.linalg.activations.Activation;
+import org.nd4j.linalg.api.ndarray.INDArray;
+import org.nd4j.linalg.factory.Nd4j;
+import org.nd4j.linalg.learning.config.Sgd;
+import org.nd4j.linalg.lossfunctions.LossFunctions;
+
+MultiLayerConfiguration conf = new NeuralNetConfiguration.Builder()
+    .seed(123)
+    .updater(new Sgd(0.1))
+    .list()
+    .layer(new DenseLayer.Builder().nIn(2).nOut(4)
+            .activation(Activation.TANH).build())
+    .layer(new OutputLayer.Builder(LossFunctions.LossFunction.XENT)
+            .nIn(4).nOut(1).activation(Activation.SIGMOID).build())
+    .build();
+
+MultiLayerNetwork modelo = new MultiLayerNetwork(conf);
+modelo.init();
+
+INDArray entradas = Nd4j.create(new double[][]{{0,0},{0,1},{1,0},{1,1}});
+INDArray saidas   = Nd4j.create(new double[][]{{0},{1},{1},{0}});
+
+for (int i = 0; i < 5000; i++) modelo.fit(entradas, saidas);
+
+System.out.println(modelo.output(entradas));
+```
+
+> ⚠️ Os pacotes e a API podem variar entre versões do DL4J. Consulte a documentação da versão que você usar.
+
+Compare com o Módulo 3: o que fizemos em ~70 linhas aqui cabe em ~20. A biblioteca cuida do backpropagation, da otimização e do desempenho.
+
+### 4.3. Carregando Modelos Treinados em Java
+
+É possível treinar modelos em Python com Keras/TensorFlow e importá-los para Java:
+
+```java
+import org.deeplearning4j.nn.modelimport.keras.KerasModelImport;
+import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
+
+// Importando um modelo Keras (.h5) treinado em Python
+String caminhoModelo = "meu_modelo.h5";
+MultiLayerNetwork modelo =
+    KerasModelImport.importKerasSequentialModelAndWeights(caminhoModelo);
+```
+
+### ✅ Checkpoint do Módulo 4
+
+1. Em que situação faz sentido treinar em Python e usar o modelo em Java?
+2. O que a biblioteca faz por você que, no Módulo 3, tivemos que programar à mão?
+
+---
+
+## Módulo 5: Exercícios Práticos
+
+### Desafio 1: Classificador AND
+
+Faça o Perceptron aprender a operação lógica AND:
+
+| Entrada 1 | Entrada 2 | Saída |
+|-----------|-----------|-------|
+| 0 | 0 | 0 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 1 | 1 | 1 |
+
+**Código para testar** (usa a classe `Perceptron` do Módulo 2.3):
+
+```java
+public class TestePerceptron {
+    public static void main(String[] args) {
         Perceptron p = new Perceptron(2);
+
+        double[][] entradas = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
+        int[] esperados = {0, 0, 0, 1};
 
         // Treina por 100 épocas
         for (int epoca = 0; epoca < 100; epoca++) {
@@ -201,687 +472,64 @@ public class PerceptronPortas {
             }
         }
 
-        System.out.println("=== " + nome + " ===");
-        int acertos = 0;
-        for (int i = 0; i < entradas.length; i++) {
-            int saida = p.calcular(entradas[i]);
-            if (saida == esperados[i]) acertos++;
-            System.out.println((int) entradas[i][0] + " " + nome + " " + (int) entradas[i][1]
-                    + " = " + saida + "  (esperado: " + esperados[i] + ")");
-        }
-        System.out.println("Acertos: " + acertos + "/4\n");
-    }
-
-    static class Perceptron {
-        private final double[] pesos;
-        private double bias;
-        private final double taxaAprendizado = 0.1;
-
-        Perceptron(int numeroEntradas) {
-            Random random = new Random(42);
-            pesos = new double[numeroEntradas];
-            for (int i = 0; i < numeroEntradas; i++) {
-                pesos[i] = random.nextDouble() * 2 - 1; // entre -1 e 1
-            }
-            bias = random.nextDouble() * 2 - 1;
-        }
-
-        // Função degrau: se soma >= 0 retorna 1, senão 0
-        int calcular(double[] entradas) {
-            double soma = bias;
-            for (int i = 0; i < entradas.length; i++) {
-                soma += entradas[i] * pesos[i];
-            }
-            return soma >= 0 ? 1 : 0;
-        }
-
-        // Treina com um exemplo, ajustando pesos e bias
-        void treinar(double[] entradas, int esperado) {
-            double erro = esperado - calcular(entradas);
-            for (int i = 0; i < entradas.length; i++) {
-                pesos[i] += taxaAprendizado * erro * entradas[i];
-            }
-            bias += taxaAprendizado * erro;
+        // Testa
+        for (double[] entrada : entradas) {
+            System.out.println((int) entrada[0] + " AND " + (int) entrada[1]
+                + " = " + p.calcular(entrada));
         }
     }
 }
 ```
 
-Execute: `java PerceptronPortas.java`
-
-Saída esperada (resumida):
+**Saída esperada:**
 
 ```
-=== AND ===
-... Acertos: 4/4
-
-=== OR ===
-... Acertos: 4/4
-
-=== XOR ===
-0 XOR 0 = 1  (esperado: 0)
-0 XOR 1 = 1  (esperado: 1)
-1 XOR 0 = 0  (esperado: 1)
-1 XOR 1 = 1  (esperado: 0)
-Acertos: 1/4
+0 AND 0 = 0
+0 AND 1 = 0
+1 AND 0 = 0
+1 AND 1 = 1
 ```
 
-### 2.4. O limite do Perceptron
+### Desafio 2: Treine o neurônio da praia
 
-O Perceptron aprende AND e OR sem problemas, mas **nunca acerta o XOR**, não importa quantas épocas você use. Um único neurônio só consegue separar os dados com **uma linha reta**, e o XOR não pode ser separado assim:
+Em vez de escolher os pesos à mão, faça o Perceptron descobrir sozinho a regra do Módulo 1. Use as 8 combinações de (sol, tempo livre, amigos vão) e as respostas que o neurônio da praia daria:
 
-```
-  entrada 2
-     1 │  1 (XOR=1)     0 (XOR=0)
-       │
-     0 │  0 (XOR=0)     1 (XOR=1)
-       └──────────────────────────  entrada 1
-          0                1
-```
+| Sol | Tempo | Amigos | Vou? |
+|-----|-------|--------|------|
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 0 |
+| 0 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 0 |
+| 1 | 1 | 1 | 1 |
 
-A solução é usar **mais de um neurônio, organizados em camadas**. É o que veremos a seguir.
+Dica: crie `new Perceptron(3)`, treine por 100 épocas e teste as 8 combinações. Os pesos finais podem ser diferentes dos originais (0,6 / 0,3 / 0,5 / -1,0), mas o **comportamento** será o mesmo.
 
-### ✅ Checkpoint do Módulo 2
+### Desafio 3 (bônus): XOR
 
-1. Aumente as épocas de 100 para 10.000. O XOR passa a acertar?
-2. Mude a taxa de aprendizado para `1.0` e para `0.001`. O que muda no AND?
+1. Rode o `MLPXor` do Módulo 3.5 e confira o resultado.
+2. Troque `OCULTOS` para 1 e observe o que acontece.
+3. Tente treinar o `Perceptron` do Módulo 2 no XOR. Ele consegue? Por quê?
 
 ---
 
-## Módulo 3: Aprendizado e Treinamento
+## 📚 Recursos para Aprofundamento
 
-### 3.1. Como a rede "aprende"?
-
-O aprendizado é um processo de **tentativa e erro** em quatro passos:
-
-1. **Forward propagation:** os dados passam pela rede e geram uma saída.
-2. **Cálculo do erro:** comparamos a saída com o valor esperado.
-3. **Backpropagation:** o erro "volta" pela rede, ajustando os pesos de cada camada.
-4. **Repetição:** fazemos isso milhares de vezes.
-
-### 3.2. Conceitos importantes
-
-- **Época (epoch):** uma rodada completa de treino com todos os dados.
-- **Função de ativação:** transforma a soma em uma saída (Sigmoid, Tanh, ReLU...).
-- **Taxa de aprendizado:** controla o quanto os pesos mudam a cada ajuste.
-- **Camada oculta:** camada entre a entrada e a saída que permite aprender padrões não lineares.
-
-### 3.3. Arquitetura de um MLP (Perceptron Multicamadas)
-
-Vamos resolver o XOR com uma rede **2 → 4 → 1**: 2 entradas, 1 camada oculta com 4 neurônios e 1 saída.
-
-```
- Entrada        Camada oculta         Saída
- (2 valores)    (4 neurônios)      (1 neurônio)
-
-   x1 ───────┬──► ( h1 ) ──┐
-             ├──► ( h2 ) ──┤
-   x2 ───────┼──► ( h3 ) ──┼──────► ( y )
-             └──► ( h4 ) ──┘
-```
-
-### 3.4. MLP do zero em Java
-
-Arquivo `MLPXor.java`. Aqui o forward e o backpropagation são escritos à mão, usando a função **sigmoide**:
-
-```
-sigmoide(x) = 1 / (1 + e^(-x))      (transforma qualquer número em algo entre 0 e 1)
-```
-
-```java
-import java.util.Random;
-
-public class MLPXor {
-
-    static double sigmoide(double x) {
-        return 1.0 / (1.0 + Math.exp(-x));
-    }
-
-    public static void main(String[] args) {
-        double[][] X = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
-        double[] Y   = {0, 1, 1, 0};
-
-        int nEntradas = 2, nOculta = 4;
-        double taxa = 0.5;
-        Random random = new Random(42);
-
-        // Pesos e biases iniciais aleatórios
-        double[][] w1 = new double[nEntradas][nOculta];
-        double[] b1 = new double[nOculta];
-        double[] w2 = new double[nOculta];
-        double b2 = random.nextDouble() * 2 - 1;
-
-        for (int j = 0; j < nOculta; j++) {
-            for (int i = 0; i < nEntradas; i++) w1[i][j] = random.nextDouble() * 2 - 1;
-            b1[j] = random.nextDouble() * 2 - 1;
-            w2[j] = random.nextDouble() * 2 - 1;
-        }
-
-        for (int epoca = 1; epoca <= 10000; epoca++) {
-            double erroTotal = 0;
-
-            for (int k = 0; k < X.length; k++) {
-                // 1) Forward propagation
-                double[] h = new double[nOculta];
-                for (int j = 0; j < nOculta; j++) {
-                    double soma = b1[j];
-                    for (int i = 0; i < nEntradas; i++) soma += X[k][i] * w1[i][j];
-                    h[j] = sigmoide(soma);
-                }
-                double s = b2;
-                for (int j = 0; j < nOculta; j++) s += h[j] * w2[j];
-                double y = sigmoide(s);
-
-                // 2) Erro
-                double erro = Y[k] - y;
-                erroTotal += erro * erro;
-
-                // 3) Backpropagation
-                double deltaSaida = erro * y * (1 - y);
-                for (int j = 0; j < nOculta; j++) {
-                    double deltaOculta = deltaSaida * w2[j] * h[j] * (1 - h[j]);
-                    w2[j] += taxa * deltaSaida * h[j];
-                    for (int i = 0; i < nEntradas; i++) w1[i][j] += taxa * deltaOculta * X[k][i];
-                    b1[j] += taxa * deltaOculta;
-                }
-                b2 += taxa * deltaSaida;
-            }
-
-            if (epoca % 2000 == 0 || epoca == 1) {
-                System.out.printf("Época %5d | erro total = %.6f%n", epoca, erroTotal);
-            }
-        }
-
-        // Resultado final
-        System.out.println("\nResultado final:");
-        for (int k = 0; k < X.length; k++) {
-            double[] h = new double[nOculta];
-            for (int j = 0; j < nOculta; j++) {
-                double soma = b1[j];
-                for (int i = 0; i < nEntradas; i++) soma += X[k][i] * w1[i][j];
-                h[j] = sigmoide(soma);
-            }
-            double s = b2;
-            for (int j = 0; j < nOculta; j++) s += h[j] * w2[j];
-            double y = sigmoide(s);
-            System.out.printf("%d XOR %d = %.4f -> %d%n",
-                    (int) X[k][0], (int) X[k][1], y, y >= 0.5 ? 1 : 0);
-        }
-    }
-}
-```
-
-Execute: `java MLPXor.java`
-
-Saída esperada (os valores exatos podem variar levemente conforme a versão do Java):
-
-```
-Época     1 | erro total = 1.128542
-Época  2000 | erro total = 0.015329
-Época  4000 | erro total = 0.004874
-Época  6000 | erro total = 0.002753
-Época  8000 | erro total = 0.001874
-Época 10000 | erro total = 0.001402
-
-Resultado final:
-0 XOR 0 = 0.0155 -> 0
-0 XOR 1 = 0.9759 -> 1
-1 XOR 0 = 0.9865 -> 1
-1 XOR 1 = 0.0200 -> 0
-```
-
-Repare como o **erro total diminui** a cada época: é a rede aprendendo. Com uma camada oculta, ela resolve o problema que o Perceptron simples não resolvia.
-
-### ✅ Checkpoint do Módulo 3
-
-1. Mude `nOculta` para 2. A rede ainda aprende o XOR?
-2. Mude a semente `new Random(42)` para outro número. O erro final muda?
-3. Diminua a taxa de aprendizado para `0.05`. O que acontece com a velocidade do aprendizado?
+1. **Livro**: *Neural Network Programming with Java* - Fábio M. Soares, Alan M. F. Souza
+2. **Projeto de exemplo**: [neuraljava no GitHub](https://github.com/cleuton/neuraljava) - exemplos de Perceptron e MLP em Java
+3. **Documentação do Deeplearning4j**: [deeplearning4j.konduit.ai](https://deeplearning4j.konduit.ai)
 
 ---
 
-## Módulo 4: Deeplearning4j na prática
-
-No Módulo 3 escrevemos cerca de 70 linhas para treinar uma rede minúscula. O **Deeplearning4j (DL4J)** faz o mesmo declarando a **arquitetura** da rede e chamando `fit()`. O ND4J, biblioteca numérica usada pelo DL4J, fornece o `INDArray` (equivalente a um array/matriz).
-
-> Lembre-se: os arquivos deste módulo são executados com `jbang NomeDoArquivo.java` (veja o [Módulo 0](#módulo-0-preparando-o-ambiente-sem-maven)).
-
-### 4.1. Por que Java?
-
-Java é uma das linguagens mais usadas no mundo corporativo. Para colocar um modelo em produção em sistemas já existentes (bancos, ERPs, serviços web), usar a JVM evita ter que integrar outra stack só para a inferência.
-
-### 4.2. Bibliotecas do ecossistema
-
-| Biblioteca | Uso | Link |
-| ---------- | --- | ---- |
-| **Deeplearning4j** | Construção e treino de redes neurais em Java | [deeplearning4j.konduit.ai](https://deeplearning4j.konduit.ai/) |
-| **ND4J** | Computação numérica (arrays n-dimensionais) usada pelo DL4J | [deeplearning4j.konduit.ai](https://deeplearning4j.konduit.ai/) |
-| **deeplearning4j-modelimport** | Importa modelos treinados em Keras | [deeplearning4j.konduit.ai](https://deeplearning4j.konduit.ai/) |
-
-> ℹ️ A última versão estável do DL4J (`1.0.0-M2.1`) é de 2022 e o projeto tem pouca atividade atualmente. Para aprender os conceitos e para muitos casos de uso, ela atende bem. Em projetos novos, avalie também o **DJL (Deep Java Library)**.
-
-### 4.3. Exemplo 1: porta AND com um único neurônio
-
-É o mesmo problema do Módulo 2, agora com o DL4J. A rede tem só uma camada de saída: 2 entradas e 1 neurônio com ativação sigmoide.
-
-Arquivo `AndDL4J.java`:
-
-```java
-///usr/bin/env jbang "$0" "$@" ; exit $?
-//DEPS org.deeplearning4j:deeplearning4j-core:1.0.0-M2.1
-//DEPS org.nd4j:nd4j-native-platform:1.0.0-M2.1
-//DEPS org.slf4j:slf4j-simple:1.7.36
-
-import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
-import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
-import org.deeplearning4j.nn.conf.layers.OutputLayer;
-import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
-import org.deeplearning4j.optimize.listeners.ScoreIterationListener;
-import org.nd4j.linalg.activations.Activation;
-import org.nd4j.linalg.api.ndarray.INDArray;
-import org.nd4j.linalg.dataset.DataSet;
-import org.nd4j.linalg.factory.Nd4j;
-import org.nd4j.linalg.learning.config.Adam;
-import org.nd4j.linalg.lossfunctions.LossFunctions;
-
-public class AndDL4J {
-    public static void main(String[] args) {
-
-        // 1) Dados de treino: tabela verdade do AND
-        INDArray entradas = Nd4j.create(new double[][]{{0, 0}, {0, 1}, {1, 0}, {1, 1}});
-        INDArray saidas   = Nd4j.create(new double[][]{{0}, {0}, {0}, {1}});
-        DataSet dados = new DataSet(entradas, saidas);
-
-        // 2) Arquitetura: 2 entradas -> 1 neurônio de saída (sigmoide)
-        MultiLayerConfiguration configuracao = new NeuralNetConfiguration.Builder()
-                .seed(123)                 // semente: resultados reproduzíveis
-                .updater(new Adam(0.1))    // algoritmo que ajusta os pesos
-                .list()
-                .layer(new OutputLayer.Builder(LossFunctions.LossFunction.XENT)
-                        .nIn(2)
-                        .nOut(1)
-                        .activation(Activation.SIGMOID)
-                        .build())
-                .build();
-
-        // 3) Cria e inicializa a rede
-        MultiLayerNetwork rede = new MultiLayerNetwork(configuracao);
-        rede.init();
-        rede.setListeners(new ScoreIterationListener(100)); // mostra o erro a cada 100 iterações
-
-        // 4) Treina por 500 épocas
-        for (int epoca = 0; epoca < 500; epoca++) {
-            rede.fit(dados);
-        }
-
-        // 5) Testa
-        INDArray previsao = rede.output(entradas);
-        System.out.println("\nResultado:");
-        for (int i = 0; i < 4; i++) {
-            double p = previsao.getDouble(i, 0);
-            System.out.printf("%d AND %d = %.3f -> %d%n",
-                    (int) entradas.getDouble(i, 0),
-                    (int) entradas.getDouble(i, 1),
-                    p, p >= 0.5 ? 1 : 0);
-        }
-    }
-}
-```
-
-Execute: `jbang AndDL4J.java`
-
-Saída esperada (os números exatos variam, mas a classificação final deve ser 0, 0, 0, 1):
-
-```
-Resultado:
-0 AND 0 = 0.0xx -> 0
-0 AND 1 = 0.0xx -> 0
-1 AND 0 = 0.0xx -> 0
-1 AND 1 = 0.9xx -> 1
-```
-
-**Leia o código como uma receita:**
-
-| Passo | O que faz |
-| ----- | --------- |
-| `Nd4j.create(...)` | transforma arrays Java em `INDArray` |
-| `NeuralNetConfiguration.Builder()` | descreve como a rede é montada |
-| `OutputLayer` com `XENT` | camada final; `XENT` é a função de erro para classificação 0/1 |
-| `rede.init()` | cria os pesos iniciais |
-| `rede.fit(dados)` | uma passada de treino |
-| `rede.output(entradas)` | previsão da rede |
-
-### 4.4. Exemplo 2: XOR com camada oculta (e salvando o modelo)
-
-Aqui está a mesma rede 2 → 4 → 1 do Módulo 3, agora em poucas linhas. Ao final, o modelo treinado é **salvo em disco e carregado de volta**, o que é o primeiro passo para usá-lo em uma aplicação real.
-
-Arquivo `XorDL4J.java`:
-
-```java
-///usr/bin/env jbang "$0" "$@" ; exit $?
-//DEPS org.deeplearning4j:deeplearning4j-core:1.0.0-M2.1
-//DEPS org.nd4j:nd4j-native-platform:1.0.0-M2.1
-//DEPS org.slf4j:slf4j-simple:1.7.36
-
-import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
-import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
-import org.deeplearning4j.nn.conf.layers.DenseLayer;
-import org.deeplearning4j.nn.conf.layers.OutputLayer;
-import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
-import org.deeplearning4j.optimize.listeners.ScoreIterationListener;
-import org.deeplearning4j.util.ModelSerializer;
-import org.nd4j.linalg.activations.Activation;
-import org.nd4j.linalg.api.ndarray.INDArray;
-import org.nd4j.linalg.dataset.DataSet;
-import org.nd4j.linalg.factory.Nd4j;
-import org.nd4j.linalg.learning.config.Adam;
-import org.nd4j.linalg.lossfunctions.LossFunctions;
-
-import java.io.File;
-
-public class XorDL4J {
-    public static void main(String[] args) throws Exception {
-
-        // 1) Dados de treino: tabela verdade do XOR
-        INDArray entradas = Nd4j.create(new double[][]{{0, 0}, {0, 1}, {1, 0}, {1, 1}});
-        INDArray saidas   = Nd4j.create(new double[][]{{0}, {1}, {1}, {0}});
-        DataSet dados = new DataSet(entradas, saidas);
-
-        // 2) Arquitetura 2 -> 4 -> 1
-        MultiLayerConfiguration configuracao = new NeuralNetConfiguration.Builder()
-                .seed(123)
-                .updater(new Adam(0.1))
-                .list()
-                .layer(new DenseLayer.Builder()          // camada oculta
-                        .nIn(2)
-                        .nOut(4)
-                        .activation(Activation.TANH)
-                        .build())
-                .layer(new OutputLayer.Builder(LossFunctions.LossFunction.XENT)
-                        .nIn(4)
-                        .nOut(1)
-                        .activation(Activation.SIGMOID)
-                        .build())
-                .build();
-
-        MultiLayerNetwork rede = new MultiLayerNetwork(configuracao);
-        rede.init();
-        rede.setListeners(new ScoreIterationListener(200));
-
-        // 3) Treino
-        for (int epoca = 0; epoca < 2000; epoca++) {
-            rede.fit(dados);
-        }
-
-        // 4) Teste
-        System.out.println("\nResultado após o treino:");
-        imprimir(rede, entradas);
-
-        // 5) Salva o modelo treinado em um arquivo
-        File arquivo = new File("xor_modelo.zip");
-        ModelSerializer.writeModel(rede, arquivo, true);
-        System.out.println("\nModelo salvo em: " + arquivo.getAbsolutePath());
-
-        // 6) Carrega o modelo de volta (simula outra aplicação usando o modelo pronto)
-        MultiLayerNetwork carregada = ModelSerializer.restoreMultiLayerNetwork(arquivo);
-        System.out.println("\nResultado usando o modelo carregado do arquivo:");
-        imprimir(carregada, entradas);
-    }
-
-    static void imprimir(MultiLayerNetwork rede, INDArray entradas) {
-        INDArray previsao = rede.output(entradas);
-        for (int i = 0; i < 4; i++) {
-            double p = previsao.getDouble(i, 0);
-            System.out.printf("%d XOR %d = %.3f -> %d%n",
-                    (int) entradas.getDouble(i, 0),
-                    (int) entradas.getDouble(i, 1),
-                    p, p >= 0.5 ? 1 : 0);
-        }
-    }
-}
-```
-
-Execute: `jbang XorDL4J.java`
-
-Saída esperada (valores aproximados; a classificação final deve ser 0, 1, 1, 0 nas duas listas):
-
-```
-Resultado após o treino:
-0 XOR 0 = 0.00x -> 0
-0 XOR 1 = 0.99x -> 1
-1 XOR 0 = 0.99x -> 1
-1 XOR 1 = 0.00x -> 0
-```
-
-> 💡 Se a rede ficar "presa" e não acertar o XOR, mude `.seed(123)` para outro número e rode de novo. Pesos iniciais diferentes levam a caminhos de treino diferentes.
-
-### 4.5. Exemplo 3: um problema mais realista (aprovado ou reprovado)
-
-Agora um classificador com dados mais próximos do dia a dia: dada a **nota** (0 a 10) e a **frequência** (0 a 100%) de um aluno, prever se ele foi **aprovado (1)** ou **reprovado (0)**. A regra usada para gerar os dados de treino é: nota ≥ 6 **e** frequência ≥ 75%.
-
-Um ponto novo e muito importante: **normalização**. Redes neurais aprendem melhor quando as entradas estão em escalas parecidas. Por isso dividimos a nota por 10 e a frequência por 100, deixando tudo entre 0 e 1.
-
-Arquivo `AprovadoDL4J.java`:
-
-```java
-///usr/bin/env jbang "$0" "$@" ; exit $?
-//DEPS org.deeplearning4j:deeplearning4j-core:1.0.0-M2.1
-//DEPS org.nd4j:nd4j-native-platform:1.0.0-M2.1
-//DEPS org.slf4j:slf4j-simple:1.7.36
-
-import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
-import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
-import org.deeplearning4j.nn.conf.layers.DenseLayer;
-import org.deeplearning4j.nn.conf.layers.OutputLayer;
-import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
-import org.nd4j.linalg.activations.Activation;
-import org.nd4j.linalg.api.ndarray.INDArray;
-import org.nd4j.linalg.dataset.DataSet;
-import org.nd4j.linalg.factory.Nd4j;
-import org.nd4j.linalg.learning.config.Adam;
-import org.nd4j.linalg.lossfunctions.LossFunctions;
-
-public class AprovadoDL4J {
-
-    // Normaliza: nota (0-10) e frequência (0-100) viram valores entre 0 e 1
-    static double[] normalizar(double nota, double frequencia) {
-        return new double[]{nota / 10.0, frequencia / 100.0};
-    }
-
-    public static void main(String[] args) {
-
-        // {nota, frequência, resultado (1 = aprovado, 0 = reprovado)}
-        double[][] alunos = {
-                {8.0, 95, 1}, {7.0, 80, 1}, {6.0, 76, 1}, {9.0, 100, 1},
-                {6.5, 90, 1}, {10.0, 75, 1}, {6.0, 100, 1}, {7.5, 88, 1},
-                {5.0, 90, 0}, {4.0, 95, 0}, {3.0, 60, 0}, {8.0, 60, 0},
-                {9.0, 70, 0}, {5.5, 80, 0}, {2.0, 50, 0}, {7.0, 74, 0},
-                {5.0, 100, 0}, {8.5, 65, 0}
-        };
-
-        // Monta as matrizes de treino já normalizadas
-        double[][] x = new double[alunos.length][];
-        double[][] y = new double[alunos.length][1];
-        for (int i = 0; i < alunos.length; i++) {
-            x[i] = normalizar(alunos[i][0], alunos[i][1]);
-            y[i][0] = alunos[i][2];
-        }
-        DataSet dados = new DataSet(Nd4j.create(x), Nd4j.create(y));
-
-        // Arquitetura 2 -> 8 -> 1
-        MultiLayerConfiguration configuracao = new NeuralNetConfiguration.Builder()
-                .seed(42)
-                .updater(new Adam(0.05))
-                .list()
-                .layer(new DenseLayer.Builder().nIn(2).nOut(8)
-                        .activation(Activation.TANH).build())
-                .layer(new OutputLayer.Builder(LossFunctions.LossFunction.XENT)
-                        .nIn(8).nOut(1)
-                        .activation(Activation.SIGMOID).build())
-                .build();
-
-        MultiLayerNetwork rede = new MultiLayerNetwork(configuracao);
-        rede.init();
-
-        for (int epoca = 0; epoca < 3000; epoca++) {
-            rede.fit(dados);
-        }
-
-        // Testa com alunos que a rede NUNCA viu no treino
-        double[][] novos = {
-                {7.5, 85},   // esperado: aprovado
-                {4.0, 100},  // esperado: reprovado (nota baixa)
-                {9.0, 60},   // esperado: reprovado (frequência baixa)
-                {6.0, 75}    // esperado: aprovado (no limite)
-        };
-
-        System.out.println("Previsões para alunos novos:");
-        for (double[] aluno : novos) {
-            INDArray entrada = Nd4j.create(new double[][]{normalizar(aluno[0], aluno[1])});
-            double prob = rede.output(entrada).getDouble(0, 0);
-            System.out.printf("Nota %.1f, frequência %.0f%% -> probabilidade de aprovação: %.1f%% -> %s%n",
-                    aluno[0], aluno[1], prob * 100, prob >= 0.5 ? "APROVADO" : "REPROVADO");
-        }
-    }
-}
-```
-
-Execute: `jbang AprovadoDL4J.java`
-
-Saída esperada (as porcentagens variam; observe os veredictos):
-
-```
-Previsões para alunos novos:
-Nota 7.5, frequência 85% -> probabilidade de aprovação: ...% -> APROVADO
-Nota 4.0, frequência 100% -> probabilidade de aprovação: ...% -> REPROVADO
-Nota 9.0, frequência 60% -> probabilidade de aprovação: ...% -> REPROVADO
-Nota 6.0, frequência 75% -> probabilidade de aprovação: ...% -> APROVADO
-```
-
-> ⚠️ **Atenção ao último caso (6.0 e 75%)**: ele está exatamente na fronteira da regra, e como a rede aprende de exemplos (e não da regra), ela pode errar casos de fronteira. Isso é normal e é uma boa discussão em sala: **mais dados de treino perto da fronteira melhoram o resultado**.
-
-### 4.6. Carregando modelos treinados em Python (Keras) no Java
-
-Um fluxo muito comum: **treinar em Python** (onde há mais ferramentas) e **usar o modelo em Java** (onde está a aplicação). O DL4J importa modelos Keras.
-
-**Passo 1: treine e salve o modelo em Python** (`treinar_xor.py`):
-
-```python
-import numpy as np
-from tensorflow import keras
-
-X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]], dtype="float32")
-Y = np.array([[0], [1], [1], [0]], dtype="float32")
-
-model = keras.Sequential([
-    keras.layers.Dense(4, activation="tanh", input_shape=(2,)),
-    keras.layers.Dense(1, activation="sigmoid"),
-])
-model.compile(optimizer=keras.optimizers.Adam(0.1), loss="binary_crossentropy")
-model.fit(X, Y, epochs=500, verbose=0)
-
-model.save("xor.h5")   # formato HDF5
-print(model.predict(X))
-```
-
-> ⚠️ O DL4J lê arquivos `.h5` gerados por versões do Keras da série 2.x (TensorFlow 2.x). Modelos salvos em formatos mais novos (como `.keras` do Keras 3) **não são suportados**. Se der erro de importação, gere o modelo com `tensorflow==2.12`.
-
-**Passo 2: use o modelo em Java.** Arquivo `ImportaKeras.java`, na mesma pasta que o `xor.h5`:
-
-```java
-///usr/bin/env jbang "$0" "$@" ; exit $?
-//DEPS org.deeplearning4j:deeplearning4j-core:1.0.0-M2.1
-//DEPS org.deeplearning4j:deeplearning4j-modelimport:1.0.0-M2.1
-//DEPS org.nd4j:nd4j-native-platform:1.0.0-M2.1
-//DEPS org.slf4j:slf4j-simple:1.7.36
-
-import org.deeplearning4j.nn.modelimport.keras.KerasModelImport;
-import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
-import org.nd4j.linalg.api.ndarray.INDArray;
-import org.nd4j.linalg.factory.Nd4j;
-
-public class ImportaKeras {
-    public static void main(String[] args) throws Exception {
-        String caminho = args.length > 0 ? args[0] : "xor.h5";
-
-        // Importa a arquitetura E os pesos treinados no Python
-        MultiLayerNetwork modelo =
-                KerasModelImport.importKerasSequentialModelAndWeights(caminho);
-
-        INDArray entradas = Nd4j.create(new double[][]{{0, 0}, {0, 1}, {1, 0}, {1, 1}});
-        INDArray previsao = modelo.output(entradas);
-
-        for (int i = 0; i < 4; i++) {
-            double p = previsao.getDouble(i, 0);
-            System.out.printf("%d XOR %d = %.3f -> %d%n",
-                    (int) entradas.getDouble(i, 0),
-                    (int) entradas.getDouble(i, 1),
-                    p, p >= 0.5 ? 1 : 0);
-        }
-    }
-}
-```
-
-Execute: `jbang ImportaKeras.java` (ou `jbang ImportaKeras.java caminho/do/modelo.h5`).
-
-### ✅ Checkpoint do Módulo 4
-
-1. No `XorDL4J`, troque `Activation.TANH` por `Activation.RELU`. O que muda?
-2. No `AprovadoDL4J`, **remova a normalização** (passe nota e frequência diretamente). A rede ainda aprende? Compare.
-3. Qual a vantagem de salvar o modelo com `ModelSerializer`?
-
----
-
-## Módulo 5: Exercícios
-
-### Exercício 1: porta OR com DL4J
-
-Copie o `AndDL4J.java`, renomeie para `OrDL4J.java` e altere apenas as saídas esperadas:
-
-| Entrada 1 | Entrada 2 | Saída |
-| --------- | --------- | ----- |
-| 0         | 0         | 0     |
-| 0         | 1         | 1     |
-| 1         | 0         | 1     |
-| 1         | 1         | 1     |
-
-### Exercício 2: a dimensão da camada oculta
-
-No `XorDL4J.java`, teste `nOut` da camada oculta com 1, 2, 4 e 16. Anote quantas vezes a rede acerta o XOR com cada tamanho. Qual o menor que funciona de forma confiável?
-
-### Exercício 3: seu próprio classificador
-
-Inspirado no `AprovadoDL4J.java`, crie um classificador com 2 ou 3 entradas e uma regra sua. Sugestões:
-
-- **Levar guarda-chuva?** entradas: probabilidade de chuva e se o céu está nublado;
-- **Comprar o lanche?** entradas: fome (0-10) e dinheiro disponível;
-- **Aprovar empréstimo?** entradas: renda e valor pedido.
-
-Gere uns 15 a 20 exemplos de treino e teste com casos novos.
-
-### Exercício 4 (desafio): do Python para o Java
-
-Treine em Python um modelo Keras para o problema do Exercício 3, salve como `.h5` e carregue em Java com o `ImportaKeras.java`.
-
----
-
-## Recursos para aprofundamento
-
-1. **Documentação do DL4J:** [deeplearning4j.konduit.ai](https://deeplearning4j.konduit.ai/)
-2. **JBang:** [jbang.dev](https://www.jbang.dev/)
-3. **Livro:** *Neural Network Programming with Java*, de Fabio Soares e Alan M. F. Souza.
-4. **Projeto de exemplo:** [neuraljava no GitHub](https://github.com/cleuton/neuraljava), com exemplos de Perceptron e MLP em Java.
-5. **Alternativa moderna:** [DJL (Deep Java Library)](https://djl.ai/).
-
----
-
-## Resumo do minicurso
-
-| Módulo | Aprendemos | Arquivo |
-| ------ | ---------- | ------- |
-| 0 | Preparar JDK e JBang | |
-| 1 | O neurônio artificial | `NeuronioSimples.java` |
-| 2 | Perceptron, AND/OR e o limite do XOR | `PerceptronPortas.java` |
-| 3 | MLP, forward e backpropagation do zero | `MLPXor.java` |
-| 4 | Redes com DL4J, normalização, salvar modelo e importar do Keras | `AndDL4J.java`, `XorDL4J.java`, `AprovadoDL4J.java`, `ImportaKeras.java` |
-| 5 | Exercícios | |
+## 📝 Resumo do Minicurso
+
+| Conceito | Em uma frase |
+|----------|--------------|
+| Neurônio | Soma ponderada das entradas + bias, passada por uma função de ativação |
+| Perceptron | Neurônio com função degrau que aprende ajustando pesos a partir dos erros |
+| Função de ativação | Define a saída do neurônio (degrau, sigmoid, tanh, ReLU) |
+| MLP | Várias camadas de neurônios, capazes de resolver problemas como o XOR |
+| Backpropagation | O erro volta pela rede, ajustando os pesos |
+| DL4J | Biblioteca Java que automatiza tudo isso |
