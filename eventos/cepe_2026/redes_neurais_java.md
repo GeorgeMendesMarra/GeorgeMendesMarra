@@ -12,6 +12,8 @@ Imagine que você está ensinando uma criança a reconhecer animais. Você mostr
 
 Uma rede neural artificial funciona de forma parecida: **ela aprende com exemplos**.
 
+> 🏖️ **Fio condutor do minicurso:** vamos usar **um único exemplo do início ao fim**: decidir **"vou à praia?"**. No Módulo 1 o neurônio decide com pesos escolhidos à mão; no 2 ele aprende os pesos sozinho; no 3 chegamos ao limite dele (XOR); no 4 usamos bibliotecas; no 5 você implementa o desafio.
+
 ### 1.2. O Neurônio Artificial
 
 O cérebro humano tem neurônios que recebem sinais, processam e transmitem respostas. Um neurônio artificial faz algo parecido:
@@ -27,6 +29,68 @@ Cada entrada tem um **peso** (um número que indica sua importância). O neurôn
 3. Passa o resultado por uma **função de ativação** que decide a saída
 
 > 🎯 **Pense assim:** é como um sistema de "votação ponderada", onde cada entrada vota com um peso diferente, e no final decidimos se o resultado é "sim" ou "não".
+
+#### Exemplo em Java: o neurônio decide "vou à praia?"
+
+Três entradas (1 = sim, 0 = não): **faz sol**, **os amigos vão** e **há trânsito**. O sol e os amigos pesam a favor; o trânsito pesa contra.
+
+```java
+public class NeuronioSimples {
+
+    private double[] pesos;
+    private double bias;
+
+    public NeuronioSimples(double[] pesos, double bias) {
+        this.pesos = pesos;
+        this.bias = bias;
+    }
+
+    // Função de ativação Sigmoid: transforma qualquer número em um valor entre 0 e 1
+    private double sigmoid(double x) {
+        return 1.0 / (1.0 + Math.exp(-x));
+    }
+
+    // Entradas → multiplica pelos pesos → soma + bias → ativação
+    public double calcular(double[] entradas) {
+        double soma = bias;
+        for (int i = 0; i < entradas.length; i++) {
+            soma += entradas[i] * pesos[i];
+        }
+        return sigmoid(soma);
+    }
+
+    public static void main(String[] args) {
+        // Pesos: sol (+0.8), amigos (+0.5), trânsito (-0.6); bias = -0.4
+        NeuronioSimples neuronio = new NeuronioSimples(new double[]{0.8, 0.5, -0.6}, -0.4);
+
+        double[][] cenarios = {
+            {1, 1, 0}, // sol, amigos vão, sem trânsito
+            {0, 1, 1}, // sem sol, amigos vão, trânsito
+            {1, 0, 1}  // sol, amigos não vão, trânsito
+        };
+        String[] nomes = {"Sol + amigos + sem trânsito",
+                          "Sem sol + amigos + trânsito",
+                          "Sol + sem amigos + trânsito"};
+
+        for (int i = 0; i < cenarios.length; i++) {
+            double saida = neuronio.calcular(cenarios[i]);
+            String decisao = saida >= 0.5 ? "Vai à praia" : "Fica em casa";
+            System.out.println(nomes[i] + " → " + Math.round(saida * 100) / 100.0
+                    + " → " + decisao);
+        }
+    }
+}
+```
+
+**Saída esperada:**
+
+```
+Sol + amigos + sem trânsito → 0.71 → Vai à praia
+Sem sol + amigos + trânsito → 0.38 → Fica em casa
+Sol + sem amigos + trânsito → 0.45 → Fica em casa
+```
+
+Repare que **o neurônio ainda não aprende nada**: os pesos foram escolhidos à mão. Aprender, ou seja, encontrar bons pesos sozinho, é o assunto dos próximos módulos.
 
 ### 🌍 No mundo real (Módulo 1)
 
@@ -48,7 +112,7 @@ Proposto em 1958 por Frank Rosenblatt, o Perceptron é o modelo mais básico de 
 - Calcula uma combinação com pesos
 - Decide a saída (0 ou 1)
 
-**Exemplo prático:** classificar se algo é um "ser vivo" ou não com base em 3 bits representando palavras.
+**Exemplo prático (continuando a praia):** as mesmas 3 entradas do Módulo 1 (sol, amigos, trânsito), cada uma 0 ou 1, e a saída é 1 ("vai à praia") ou 0 ("fica em casa"). A diferença: agora usamos a função degrau, em vez da Sigmoid, e o Perceptron vai **descobrir os pesos sozinho**.
 
 ### 2.2. Como um Perceptron Aprende?
 
@@ -114,6 +178,70 @@ class Perceptron {
 
 > ⚠️ **Importante:** este código é para aprendizado. Em projetos reais, use bibliotecas como Deeplearning4j.
 
+#### Ensinando o Perceptron a decidir "vou à praia?"
+
+No Módulo 1 escolhemos os pesos à mão. Agora damos ao Perceptron a **tabela de decisões** (as 8 combinações possíveis) e deixamos que ele encontre os pesos:
+
+| Sol | Amigos | Trânsito | Decisão |
+| --- | ------ | -------- | ------- |
+| 0   | 0      | 0        | 0 (casa)  |
+| 0   | 0      | 1        | 0 (casa)  |
+| 0   | 1      | 0        | 1 (praia) |
+| 0   | 1      | 1        | 0 (casa)  |
+| 1   | 0      | 0        | 1 (praia) |
+| 1   | 0      | 1        | 0 (casa)  |
+| 1   | 1      | 0        | 1 (praia) |
+| 1   | 1      | 1        | 1 (praia) |
+
+```java
+public class TreinaPraia {
+    public static void main(String[] args) {
+        Perceptron p = new Perceptron(3);
+
+        // Colunas: sol, amigos, trânsito
+        double[][] entradas = {
+            {0, 0, 0}, {0, 0, 1}, {0, 1, 0}, {0, 1, 1},
+            {1, 0, 0}, {1, 0, 1}, {1, 1, 0}, {1, 1, 1}
+        };
+        int[] esperados = {0, 0, 1, 0, 1, 0, 1, 1};
+
+        // Treina por 1000 épocas
+        for (int epoca = 0; epoca < 1000; epoca++) {
+            for (int i = 0; i < entradas.length; i++) {
+                p.treinar(entradas[i], esperados[i]);
+            }
+        }
+
+        int acertos = 0;
+        for (int i = 0; i < entradas.length; i++) {
+            int saida = p.calcular(entradas[i]);
+            if (saida == esperados[i]) acertos++;
+            System.out.println("Sol=" + (int) entradas[i][0]
+                    + " Amigos=" + (int) entradas[i][1]
+                    + " Trânsito=" + (int) entradas[i][2]
+                    + " → " + (saida == 1 ? "Vai à praia" : "Fica em casa"));
+        }
+        System.out.println("Acertos: " + acertos + "/8");
+    }
+}
+```
+
+**Saída esperada** (os pesos finais mudam a cada execução porque começam aleatórios, mas as decisões devem bater com a tabela):
+
+```
+Sol=0 Amigos=0 Trânsito=0 → Fica em casa
+Sol=0 Amigos=0 Trânsito=1 → Fica em casa
+Sol=0 Amigos=1 Trânsito=0 → Vai à praia
+Sol=0 Amigos=1 Trânsito=1 → Fica em casa
+Sol=1 Amigos=0 Trânsito=0 → Vai à praia
+Sol=1 Amigos=0 Trânsito=1 → Fica em casa
+Sol=1 Amigos=1 Trânsito=0 → Vai à praia
+Sol=1 Amigos=1 Trânsito=1 → Vai à praia
+Acertos: 8/8
+```
+
+Isso funciona porque essa tabela pode ser separada por **um único plano** (a mesma regra do neurônio do Módulo 1). Guarde essa ideia: ela volta na seção 3.4.
+
 ### 🌍 No mundo real (Módulo 2)
 
 **Exemplo histórico e atual: decisão sim/não.** O Mark I Perceptron (final dos anos 1950) usava uma câmera de baixa resolução para distinguir formas simples. Hoje, a mesma lógica de "um neurônio que decide sim/não" aparece em filtro de spam, detecção de fraude em cartão e classificação "conteúdo permitido / não permitido".
@@ -144,8 +272,9 @@ O aprendizado em redes neurais é um processo de **tentativa e erro**:
 Um MLP é um conjunto de neurônios organizados em **camadas**: entrada, uma ou mais camadas ocultas e saída. Em código (pseudocódigo ilustrativo):
 
 ```java
-// Criando uma rede com 2 entradas, 1 camada oculta de 4 neurônios e 1 saída
-int[] arquitetura = {2, 4, 1};
+// Criando uma rede para a praia: 3 entradas (sol, amigos, trânsito),
+// 1 camada oculta de 4 neurônios e 1 saída ("vai à praia?")
+int[] arquitetura = {3, 4, 1};
 RedeNeural rede = new RedeNeural(arquitetura);
 ```
 
@@ -153,13 +282,16 @@ RedeNeural rede = new RedeNeural(arquitetura);
 
 #### 3.4.1. Começando por uma situação do dia a dia
 
-Pense em uma escada com **dois interruptores**, um embaixo e outro em cima. A lâmpada funciona assim:
+Voltemos à praia. Até agora, todas as regras eram do tipo "quanto mais sol e mais amigos, melhor". Agora, um cenário diferente: **dois amigos, Ana e Bruno, podem me convidar**, cada um para um programa diferente.
 
-- Os dois desligados: lâmpada **apagada**.
-- Só um ligado (qualquer um): lâmpada **acesa**.
-- Os dois ligados: lâmpada **apagada** de novo.
+- Ninguém me chamou: **fico em casa**.
+- Só a Ana me chamou: **vou à praia**.
+- Só o Bruno me chamou: **vou à praia**.
+- Os dois me chamaram: os programas conflitam e **acabo ficando em casa**.
 
 Isso é a operação **XOR** (OU exclusivo): a saída é 1 quando as entradas são **diferentes**.
+
+> 💡 Outra imagem clássica do XOR: uma escada com **dois interruptores** (um embaixo, outro em cima). Com os dois desligados ou os dois ligados, a lâmpada fica apagada; só acende quando **um** deles está ligado.
 
 | Entrada 1 | Entrada 2 | AND | OR | **XOR** |
 | --------- | --------- | --- | -- | ------- |
