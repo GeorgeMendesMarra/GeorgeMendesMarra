@@ -72,5 +72,3 @@ Essas unidades processam **vários dados pequenos ao mesmo tempo** (por exemplo,
 | **16** | Intermediário legado | Microcontroladores específicos (MSP430, PIC24) |
 | **32** | Equilibrado | Sistemas embarcados, IoT, celulares simples |
 | **64** | Alto desempenho e memória vasta | PCs, servidores, smartphones, nuvem |
-
-Se quiser, posso transformar esse comparativo em um arquivo `.md` no formato dos seus materiais de Arquitetura e Organização de Computadores, com exemplos em Assembly ou C.
