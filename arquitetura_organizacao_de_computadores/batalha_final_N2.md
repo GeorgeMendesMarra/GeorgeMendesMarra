@@ -1,4 +1,4 @@
-Grupo 1 - 23/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 1 - 04/11/2026 - CPU - Intel - Enviar a apresentação para: george.marra@unialfa.com.br
 
 Allisson de Sousa Santana
 
@@ -16,7 +16,7 @@ Daniel Paulo Figueredo da Silva
 
 ---
 
-Grupo 2 - 23/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 2 - 04/11/2026 - CPU - AMD - Enviar a apresentação para: george.marra@unialfa.com.br
 
 André Henrique Fornazier
 
@@ -36,7 +36,7 @@ Gabriel Fernando Freitas Silva Peixoto
 
 ---
 
-Grupo 3 - 23/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 3 - 23/09/2026 - GPU - NVDIA - Enviar a apresentação para: george.marra@unialfa.com.br
 
 Gabriel Gomes dos Santos
 
