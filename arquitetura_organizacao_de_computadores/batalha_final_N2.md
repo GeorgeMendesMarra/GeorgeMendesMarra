@@ -94,7 +94,7 @@ LUCAS ABREU DA SILVA
 
 ---
 
-Grupo 6 - 11/11/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 6 - 11/11/2026 - TPU - Enviar a apresentação para: george.marra@unialfa.com.br
 
 
 Luis Fellype Queiroz Carneiro
@@ -115,7 +115,7 @@ Murilo Luiz Pereira da Silva
 
 ---
 
-Grupo 7 - 30/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 7 - 11/11/2026 - NPU - Enviar a apresentação para: george.marra@unialfa.com.br
 
 Nathan Gabriel Lourenço Linhares
 
@@ -135,7 +135,7 @@ Rafaella Rebeca Rodrigues Ferreira
 
 ---
 
-Grupo 8 - 30/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 8 - 11/11/2026 - Comparativo: CPU x GPU x TPU x NPU - Enviar a apresentação para: george.marra@unialfa.com.br
 
 
 Rafhaela Sena Santana
@@ -156,7 +156,7 @@ Wender Alves Paiva
 
 ---
 
-Grupo 9 - Repescagem - 30/09/2026 - Análise fílmica: Os piratas do vale do silício
+Grupo 9 - Repescagem - 18/11/2026 -
 
 Daniel Martins Alves Ferreira
 
