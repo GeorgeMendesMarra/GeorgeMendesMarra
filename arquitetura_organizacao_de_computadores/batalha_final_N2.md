@@ -36,7 +36,7 @@ Gabriel Fernando Freitas Silva Peixoto
 
 ---
 
-Grupo 3 - 23/09/2026 - GPU - NVDIA - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 3 - 04/11/2026 - GPU - NVIDIA - Enviar a apresentação para: george.marra@unialfa.com.br
 
 Gabriel Gomes dos Santos
 
@@ -56,7 +56,7 @@ Hugo Soares da Silva
 
 ---
 
-Grupo 4 - 23/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 4 - 04/11/2026 - GPU - AMD - Enviar a apresentação para: george.marra@unialfa.com.br
 
 Isadora Dias De Castro Santana
 
@@ -74,7 +74,7 @@ João Vitor Rezende Barbosa
 
 ---
 
-Grupo 5 - 30/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 5 - 11/11/2026 - GPU - Intel - Enviar a apresentação para: george.marra@unialfa.com.br
 
 Juan Pablo Nunes de Oliveira
 
@@ -94,7 +94,7 @@ LUCAS ABREU DA SILVA
 
 ---
 
-Grupo 6 - 30/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 6 - 11/11/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
 
 
 Luis Fellype Queiroz Carneiro
