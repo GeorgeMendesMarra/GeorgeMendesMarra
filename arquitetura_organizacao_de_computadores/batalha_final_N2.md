@@ -1,4 +1,4 @@
-Grupo 1 - 23/09/2026 - Computadores a válvulas - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 1 - 23/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
 
 Allisson de Sousa Santana
 
@@ -16,7 +16,7 @@ Daniel Paulo Figueredo da Silva
 
 ---
 
-Grupo 2 - 23/09/2026 - Computadores analógicos - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 2 - 23/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
 
 André Henrique Fornazier
 
@@ -36,7 +36,7 @@ Gabriel Fernando Freitas Silva Peixoto
 
 ---
 
-Grupo 3 - 23/09/2026 - Computadores com circuitos integrados - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 3 - 23/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
 
 Gabriel Gomes dos Santos
 
@@ -56,7 +56,7 @@ Hugo Soares da Silva
 
 ---
 
-Grupo 4 - 23/09/2026 - Computadores mecânicos - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 4 - 23/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
 
 Isadora Dias De Castro Santana
 
@@ -74,7 +74,7 @@ João Vitor Rezende Barbosa
 
 ---
 
-Grupo 5 - 30/09/2026 - Computadores com micro-processadores - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 5 - 30/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
 
 Juan Pablo Nunes de Oliveira
 
@@ -94,7 +94,7 @@ LUCAS ABREU DA SILVA
 
 ---
 
-Grupo 6 - 30/09/2026 - Computadores com transistores - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 6 - 30/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
 
 
 Luis Fellype Queiroz Carneiro
@@ -115,7 +115,7 @@ Murilo Luiz Pereira da Silva
 
 ---
 
-Grupo 7 - 30/09/2026 - Dispositivos de Entrada e Saída - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 7 - 30/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
 
 Nathan Gabriel Lourenço Linhares
 
@@ -135,7 +135,7 @@ Rafaella Rebeca Rodrigues Ferreira
 
 ---
 
-Grupo 8 - 30/09/2026 - Modelo Harvard x Modelo von Neumann - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 8 - 30/09/2026 -  - Enviar a apresentação para: george.marra@unialfa.com.br
 
 
 Rafhaela Sena Santana
