@@ -1,0 +1,165 @@
+Grupo 1 - 23/09/2026 - Computadores a válvulas - Enviar a apresentação para: george.marra@unialfa.com.br
+
+Allisson de Sousa Santana - 8,0
+
+Ana Julia Eliezer Rodrigues - 8,0
+
+Andres Rodrigues Vaz - 8,0
+
+Anthony Joas Vieira da Silva - 8,0
+
+Bruno Leandro da Costa Cazuza- 8,0
+
+CARLOS DANIEL DIAS FREITAS- 8,0
+
+Daniel Paulo Figueredo da Silva - 8,0
+
+---
+
+Grupo 2 - 23/09/2026 - Computadores analógicos - Enviar a apresentação para: george.marra@unialfa.com.br
+
+André Henrique Fornazier - 10,0
+
+Eduardo Reis Barbosa - 10,0
+
+Eduardo Rodrigues da Costa Marinho - 10,0
+
+Fabricio Souza Guedes - 10,0
+
+Felipe José Alves Nunes - 10,0
+
+Fernando da costa quintanilha filho - 10,0
+
+Frederico Faleiro da Silva - 10,0
+
+Gabriel Fernando Freitas Silva Peixoto - 10,0
+
+---
+
+Grupo 3 - 23/09/2026 - Computadores com circuitos integrados - Enviar a apresentação para: george.marra@unialfa.com.br
+
+Gabriel Gomes dos Santos - 8,5
+
+Gabriel Pinheiro Amaral - 8,5
+
+Gabriel Rodrigues Pimenta - 8,5
+
+Guilherme Rodrigues Medeiros - 8,5
+
+Gustavo de Castro Silva - 8,5
+
+Gustavo Lemos Gonçalves - 8,5
+
+Henrique de Lima Souza - 8,5
+
+Hugo Soares da Silva - 8,5
+
+---
+
+Grupo 4 - 23/09/2026 - Computadores mecânicos - Enviar a apresentação para: george.marra@unialfa.com.br
+
+Isadora Dias De Castro Santana - 8,0
+
+Joao Gabriel Oliveira Delfino - 8,0
+
+João Pedro Fagundes Damásio - 8,0
+
+João Pedro Jacomini Amaral Nunes - 8,0
+
+JOÃO VICTOR FORTUNA COSTA - 8,0
+
+João Víctor Moreira Calaça - 8,0
+
+João Vitor Rezende Barbosa - 8,0
+
+---
+
+Grupo 5 - 30/09/2026 - Computadores com micro-processadores - Enviar a apresentação para: george.marra@unialfa.com.br
+
+Juan Pablo Nunes de Oliveira - 7,0
+
+Kaick Eduardo dos Santos Taveira - 0,0
+
+Kairo Vieira Farias - 0,0
+
+Kaua Borges do Nascimento - 7,0
+
+Kayk Siqueira de Paula - 7,0
+
+Kayque Dias dos Santos - 7,0
+
+Luan Silva Muniz - 7,0
+
+LUCAS ABREU DA SILVA - 0,0
+
+---
+
+Grupo 6 - 30/09/2026 - Computadores com transistores - Enviar a apresentação para: george.marra@unialfa.com.br
+
+
+Luis Fellype Queiroz Carneiro - 8,0
+
+Luis Gusthavo Fernandes de Carvalho - 8,0
+
+Luiz Augusto de Aguiar Moreira - 8,0
+
+Maria Eduarda Ribeiro Soares Teles - 0,0
+
+Matheus Matsuta Alcantara - 8,0
+
+Miguel Augusto Pereira - 8,0
+
+Murilo Cardoso da Silva Santos - 8,0
+
+Murilo Luiz Pereira da Silva - 8,0
+
+---
+
+Grupo 7 - 30/09/2026 - Dispositivos de Entrada e Saída - Enviar a apresentação para: george.marra@unialfa.com.br
+
+Nathan Gabriel Lourenço Linhares - 7,5
+
+Nicolas Faria Luz - 7,5
+
+Pablo Henrique de Souza Maranhão - 7,5
+
+Paulo Henrique Rodrigues de Carvalho - 7,5
+
+Pedro Augusto Lima Alves - 7,5
+
+Pedro Henrique Almeida Silva - 7,5
+
+Pedro Henryck Pires da Cunha - 7,5
+
+Rafaella Rebeca Rodrigues Ferreira - 7,5
+
+---
+
+Grupo 8 - 30/09/2026 - Modelo Harvard x Modelo von Neumann - Enviar a apresentação para: george.marra@unialfa.com.br
+
+
+Rafhaela Sena Santana - 8,0
+
+Ronilson Lima Carrias - 8,0
+
+Silvio Rocha Camelo Neto - 0,0
+
+Thiago Duarte Pinheiro Filho - 8,0
+
+Tyago Paiva da Costa - 8,0
+
+Vinícius Lemes D’Abadia Filho - 8,0
+
+Waykon Martins de Souza - 8,0
+
+Wender Alves Paiva - 8,0
+
+---
+
+Grupo 9 - Repescagem - 30/09/2026 - Análise fílmica: Os piratas do vale do silício
+
+Daniel Martins Alves Ferreira- 7,0
+
+FELIPE SILVA CARES
+
+Izabel Paiva Vieira - 8,0
