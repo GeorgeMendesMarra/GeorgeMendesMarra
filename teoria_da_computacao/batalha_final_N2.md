@@ -76,7 +76,7 @@ NÍCOLAS MOURA BARBOSA -
 
 ---
 
-Grupo 7 - 19/11/2026 - Análise tecnológica - Swordfish- **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 7 - 19/11/2026 - Tese de Church-Turing- **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 PEDRO AUGUSTO FELDMANN GOMES -
 
@@ -103,7 +103,7 @@ WILHIAN DIAS MACHADO -
 ERICK EDUARDO ALVES FERNANDES -
 
 ---
-Grupo 9 - 19/11/2026 - Análise tecnológica - O jogo da imitação - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 9 - 19/11/2026 - Análise tecnológica - Swordfish - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 GABRIEL FERREIRA GALVAO -
 
