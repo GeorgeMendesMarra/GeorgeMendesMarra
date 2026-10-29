@@ -1,4 +1,4 @@
-Grupo 1 - 17/09/2026 - A rede social - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 1 - 05/11/2026 -  - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 ANA CLARA VIANA MACEDO - 7,0
 
@@ -12,7 +12,7 @@ BRENO SILVANO GOMES MARTINS DE PAULA
 
 ---
 
-Grupo 2 - 17/09/2026 - Revolution OS - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 2 - 05/11/2026 - - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 EDUARDO PIMENTA MOREIRA - 7,0
 
@@ -26,7 +26,7 @@ GABRIEL LUCAS FREITAS CARVALHO BARBOSA - 7,0
 
 ---
 
-Grupo 3 - 17/09/2026 -O menino da Internet **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 3 - 05/11/2026 -O menino da Internet **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 GABRIEL PEREIRA MARTINS - 7,0
 
@@ -40,7 +40,7 @@ GUSTAVO DO PRADO SILVA
 
 ---
 
-Grupo 4 - 17/09/2026 - Os piratas do vale do silício - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 4 - 12/11/2026 - Os piratas do vale do silício - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 IGOR FILLIPE BRANDÃO MACHADO - 7,0
 
@@ -50,7 +50,7 @@ JANAINA BATISTA DA SILVA - 7,0
 
 ---
 
-Grupo 5 - 24/09/2026 - Comparativo: A rede social X Revolution OS - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 5 - 12/11/2026 - Comparativo: A rede social X Revolution OS - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 JOSÉ GABRIEL DE ANDRADE ALMEIDA - 6,5
 
@@ -62,7 +62,7 @@ MARCO AURELIO ALVES MELO  - 6,5
 
 ---
 
-Grupo 6 - 24/09/2026 - Comparativo: Revolution OS X O menino da Internet - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 6 - 12/11/2026 - Comparativo: Revolution OS X O menino da Internet - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 MATEUS ALVES DIAS QUEIROZ - 7,5
 
@@ -76,7 +76,7 @@ NÍCOLAS MOURA BARBOSA - 7,5
 
 ---
 
-Grupo 7 - 24/09/2026 -Comparativo: Os piratas do vale do silício X A rede social - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 7 - 19/11/2026 -Comparativo: Os piratas do vale do silício X A rede social - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 PEDRO AUGUSTO FELDMANN GOMES - 7,5
 
@@ -88,7 +88,7 @@ VICTOR ARTHUR LOPES RODRIGUES - 7,5
 
 ---
 
-Grupo 8 - 24/09/2026 - Comparativo: Atanasoff-Berry Computer (ABC) X Z3_de_Konrad_Zuse - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 8 - 1/09/2026 - Comparativo: Atanasoff-Berry Computer (ABC) X Z3_de_Konrad_Zuse - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 RYAN VITOR DE SOUZA FERREIRA - 8,0
 
