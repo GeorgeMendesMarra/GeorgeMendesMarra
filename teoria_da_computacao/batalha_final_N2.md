@@ -1,4 +1,4 @@
-Grupo 1 - 05/11/2026 -  - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 1 - 05/11/2026 - Enigma - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 ANA CLARA VIANA MACEDO -
 
@@ -12,7 +12,7 @@ BRENO SILVANO GOMES MARTINS DE PAULA
 
 ---
 
-Grupo 2 - 05/11/2026 - - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 2 - 05/11/2026 - O jogo da imitação - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 EDUARDO PIMENTA MOREIRA -
 
@@ -26,7 +26,7 @@ GABRIEL LUCAS FREITAS CARVALHO BARBOSA -
 
 ---
 
-Grupo 3 - 05/11/2026 - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 3 - 05/11/2026 - Dissertação de Mestrado do Professor George Mendes Marra - O jogo da mímese e o uso da criptografia - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 GABRIEL PEREIRA MARTINS -
 
