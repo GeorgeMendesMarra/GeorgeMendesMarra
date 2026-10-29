@@ -40,7 +40,7 @@ GUSTAVO DO PRADO SILVA
 
 ---
 
-Grupo 4 - 12/11/2026 - - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 4 - 12/11/2026 - Citizenfour- **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 IGOR FILLIPE BRANDÃO MACHADO -
 
@@ -50,7 +50,7 @@ JANAINA BATISTA DA SILVA -
 
 ---
 
-Grupo 5 - 12/11/2026 -  - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 5 - 12/11/2026 - Swordfish - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 JOSÉ GABRIEL DE ANDRADE ALMEIDA -
 
@@ -62,7 +62,7 @@ MARCO AURELIO ALVES MELO  -
 
 ---
 
-Grupo 6 - 12/11/2026 - - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 6 - 12/11/2026 - Comparativo: Citizenfour x Swordfish- **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 MATEUS ALVES DIAS QUEIROZ -
 
