@@ -201,5 +201,3 @@ E o método `moverDiscoEntre` resolve a legalidade usando `topSafe()` e `popSafe
 4. Modifique a versão recursiva para usar uma `Stack<Integer>` por pino, como na iterativa, e imprimir o estado dos pinos após cada movimento.
 
 ---
-
-Se quiser, posso transformar isto em um arquivo `.md` didático no mesmo formato do `pilhas.md` (com sumário numerado, para iniciantes), para você colocar na pasta `pilhas` ao lado dos dois arquivos de Hanói.
