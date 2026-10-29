@@ -76,7 +76,7 @@ NÍCOLAS MOURA BARBOSA -
 
 ---
 
-Grupo 7 - 19/11/2026 - - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 7 - 19/11/2026 - Análise tecnológica - Swordfish- **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 PEDRO AUGUSTO FELDMANN GOMES -
 
@@ -88,7 +88,7 @@ VICTOR ARTHUR LOPES RODRIGUES -
 
 ---
 
-Grupo 8 - 19/11/2026 -  - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 8 - 19/11/2026 - Análise tecnológica - Citizenfour- **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 RYAN VITOR DE SOUZA FERREIRA -
 
@@ -103,7 +103,7 @@ WILHIAN DIAS MACHADO -
 ERICK EDUARDO ALVES FERNANDES -
 
 ---
-Grupo 9 - 19/11/2026 -  - **Enviar a apresentação para: george.marra@unialfa.com.br**
+Grupo 9 - 19/11/2026 - Análise tecnológica - O jogo da imitação - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 GABRIEL FERREIRA GALVAO -
 
