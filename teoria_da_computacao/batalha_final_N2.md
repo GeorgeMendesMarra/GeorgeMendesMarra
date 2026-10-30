@@ -100,9 +100,9 @@ VICTOR TYMINSKI RODRIGUES -
 
 WILHIAN DIAS MACHADO -
 
-ERICK EDUARDO ALVES FERNANDES -
 
 ---
+
 Grupo 9 - 19/11/2026 - Análise tecnológica - Swordfish - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
 GABRIEL FERREIRA GALVAO -
@@ -113,6 +113,6 @@ PEDRO MENDONÇA ALENCAR
 
 Pedro Sorelly Marques
 
-NATHALIA DE PAULA FERREIRA
+ERICK EDUARDO ALVES FERNANDES -
 
 Pedro Henrique de Sousa -
