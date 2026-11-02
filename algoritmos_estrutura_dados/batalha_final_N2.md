@@ -1,4 +1,7 @@
+---
 Apresentação dos trabalhos da disciplina Algoritmos e Estrutura de Dados I
+
+---
 
 Grupo 1 - 03/11/2026 - Enviar a apresentação para: george.marra@unialfa.com.br
 
