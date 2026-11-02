@@ -24,7 +24,17 @@ GABRIEL PEREIRA MARTINS
 
 GABRIEL ROBERTO MARINHO DA SILVA REIS
 
-Grupo 3 - 03/11/2026 - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 3 - 17/11/2026 - Enviar a apresentação para: george.marra@unialfa.com.br
+
+IGOR FILLIPE BRANDÃO MACHADO
+
+JANAINA BATISTA DA SILVA
+
+JOÃO PEDRO GOMES COSTA
+
+JOSÉ GABRIEL DE ANDRADE ALMEIDA
+
+JÚLIO SANTOS BRAGA 
 
 Grupo 4 - 03/11/2026 - Enviar a apresentação para: george.marra@unialfa.com.br
 
