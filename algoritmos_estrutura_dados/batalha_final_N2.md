@@ -28,6 +28,8 @@ GABRIEL PEREIRA MARTINS
 
 GABRIEL ROBERTO MARINHO DA SILVA REIS
 
+---
+
 Grupo 3 - 10/11/2026 - Enviar a apresentação para: george.marra@unialfa.com.br
 
 IGOR FILLIPE BRANDÃO MACHADO
@@ -39,6 +41,8 @@ JOÃO PEDRO GOMES COSTA
 JOSÉ GABRIEL DE ANDRADE ALMEIDA
 
 JÚLIO SANTOS BRAGA 
+
+---
 
 Grupo 4 - 17/11/2026 - Enviar a apresentação para: george.marra@unialfa.com.br
 
@@ -52,6 +56,8 @@ PEDRO AUGUSTO FELDMANN GOMES
 
 PEDRO HENRIQUE DE SOUSA
 
+---
+
 Grupo 5 - 17/11/2026 - Enviar a apresentação para: george.marra@unialfa.com.br
 
 Pedro Sorelly Marques
@@ -63,6 +69,8 @@ RAFAEL ANTONIO FERREIRA RODRIGUES
 RAPHAEL FERNANDES DE CARVALHO
 
 RYAN VITOR DE SOUZA FERREIRA
+
+---
 
 Grupo 6 - 24/11/2026 - Enviar a apresentação para: george.marra@unialfa.com.br
 
