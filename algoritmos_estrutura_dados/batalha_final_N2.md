@@ -74,3 +74,6 @@ WESLEY MESSIAS SILVA
 
 WILHIAN DIAS MACHADO
 
+---
+01/12/2026 - Apresentação de TCC 2 na UniAlfa Perimetral - Todos estão convidados
+---
