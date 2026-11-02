@@ -36,8 +36,14 @@ JOSÉ GABRIEL DE ANDRADE ALMEIDA
 
 JÚLIO SANTOS BRAGA 
 
-Grupo 4 - 03/11/2026 - Enviar a apresentação para: george.marra@unialfa.com.br
+Grupo 4 - 24/11/2026 - Enviar a apresentação para: george.marra@unialfa.com.br
 
-Grupo 5 - 03/11/2026 - Enviar a apresentação para: george.marra@unialfa.com.br
+KAEL MARTINS STACIARINI ANDERS
+MATEUS ALVES DIAS QUEIROZ
+NATANAEL FILIPE FARIAS DA SILVA
+PEDRO AUGUSTO FELDMANN GOMES
+PEDRO HENRIQUE DE SOUSA
+
+Grupo 5 - 24/11/2026 - Enviar a apresentação para: george.marra@unialfa.com.br
 
 
