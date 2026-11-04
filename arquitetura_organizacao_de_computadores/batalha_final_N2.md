@@ -1,18 +1,16 @@
 Grupo 1 - 04/11/2026 - CPU - Intel - Enviar a apresentação para: george.marra@unialfa.com.br
 
-Allisson de Sousa Santana
+Allisson de Sousa Santana - 8,0
 
-Ana Julia Eliezer Rodrigues
+Ana Julia Eliezer Rodrigues - 8,0
 
-Andres Rodrigues Vaz
+Andres Rodrigues Vaz - 8,0
 
-Anthony Joas Vieira da Silva
+Bruno Leandro da Costa Cazuza - 0,0
 
-Bruno Leandro da Costa Cazuza
+CARLOS DANIEL DIAS FREITAS - 8,0
 
-CARLOS DANIEL DIAS FREITAS
-
-Daniel Paulo Figueredo da Silva
+Daniel Paulo Figueredo da Silva - 8,0
 
 ---
 
@@ -163,5 +161,8 @@ FELIPE SILVA CARES
 Henrique de Lima Souza
 
 João Pedro Fagundes Damásio
+
+Anthony Joas Vieira da Silva 
+
 
 
