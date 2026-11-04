@@ -60,6 +60,8 @@ Grupo 4 - 04/11/2026 - GPU - AMD - Enviar a apresentação para: george.marra@un
 
 Isadora Dias De Castro Santana
 
+Izabel Paiva Vieira
+
 Joao Gabriel Oliveira Delfino
 
 João Pedro Fagundes Damásio
@@ -161,5 +163,3 @@ Grupo 9 - Repescagem - 18/11/2026 -
 Daniel Martins Alves Ferreira
 
 FELIPE SILVA CARES
-
-Izabel Paiva Vieira
