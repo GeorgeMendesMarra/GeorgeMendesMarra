@@ -50,8 +50,6 @@ Gustavo de Castro Silva
 
 Gustavo Lemos Gonçalves
 
-Henrique de Lima Souza
-
 Hugo Soares da Silva
 
 ---
@@ -163,3 +161,6 @@ Grupo 9 - Repescagem - 18/11/2026 -
 Daniel Martins Alves Ferreira
 
 FELIPE SILVA CARES
+
+Henrique de Lima Souza
+
