@@ -58,21 +58,21 @@ Hugo Soares da Silva
 
 Grupo 4 - 04/11/2026 - GPU - AMD - Enviar a apresentação para: george.marra@unialfa.com.br
 
-Isadora Dias De Castro Santana
+Isadora Dias De Castro Santana - 9,5
 
-Izabel Paiva Vieira
+Izabel Paiva Vieira - 9,5
 
-Joao Gabriel Oliveira Delfino
+Joao Gabriel Oliveira Delfino - 9,5
 
 João Pedro Fagundes Damásio
 
-João Pedro Jacomini Amaral Nunes
+João Pedro Jacomini Amaral Nunes - 9,5
 
-JOÃO VICTOR FORTUNA COSTA
+JOÃO VICTOR FORTUNA COSTA - 9,5
 
-João Víctor Moreira Calaça
+João Víctor Moreira Calaça - 9,5
 
-João Vitor Rezende Barbosa
+João Vitor Rezende Barbosa - 9,5
 
 ---
 
