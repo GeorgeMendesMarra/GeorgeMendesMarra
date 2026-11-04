@@ -62,8 +62,6 @@ Izabel Paiva Vieira - 9,5
 
 Joao Gabriel Oliveira Delfino - 9,5
 
-João Pedro Fagundes Damásio
-
 João Pedro Jacomini Amaral Nunes - 9,5
 
 JOÃO VICTOR FORTUNA COSTA - 9,5
@@ -163,4 +161,7 @@ Daniel Martins Alves Ferreira
 FELIPE SILVA CARES
 
 Henrique de Lima Souza
+
+João Pedro Fagundes Damásio
+
 
