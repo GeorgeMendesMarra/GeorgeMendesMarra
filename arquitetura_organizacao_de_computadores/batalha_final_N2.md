@@ -38,19 +38,19 @@ Gabriel Fernando Freitas Silva Peixoto
 
 Grupo 3 - 04/11/2026 - GPU - NVIDIA - Enviar a apresentação para: george.marra@unialfa.com.br
 
-Gabriel Gomes dos Santos
+Gabriel Gomes dos Santos - 8,0
 
-Gabriel Pinheiro Amaral
+Gabriel Pinheiro Amaral - 8,0
 
-Gabriel Rodrigues Pimenta
+Gabriel Rodrigues Pimenta - 8,0
 
-Guilherme Rodrigues Medeiros
+Guilherme Rodrigues Medeiros - 8,0
 
-Gustavo de Castro Silva
+Gustavo de Castro Silva - 8,0
 
-Gustavo Lemos Gonçalves
+Gustavo Lemos Gonçalves - 8,0
 
-Hugo Soares da Silva
+Hugo Soares da Silva - 8,0
 
 ---
 
