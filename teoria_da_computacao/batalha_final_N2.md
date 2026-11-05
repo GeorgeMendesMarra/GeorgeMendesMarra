@@ -1,14 +1,14 @@
 Grupo 1 - 05/11/2026 - Enigma - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
-ANA CLARA VIANA MACEDO -
+ANA CLARA VIANA MACEDO - 8,0
 
-Arthur Alves Mesquita Fonseca -
+Arthur Alves Mesquita Fonseca -  8,0
 
-ARTHUR NUNES GUIMARÃES -
+ARTHUR NUNES GUIMARÃES -  8,0
 
-ARTHUR VIRGILIO ALBINO FERREIRA
+ARTHUR VIRGILIO ALBINO FERREIRA - 0,0
 
-BRENO SILVANO GOMES MARTINS DE PAULA
+BRENO SILVANO GOMES MARTINS DE PAULA - 0,0
 
 ---
 
