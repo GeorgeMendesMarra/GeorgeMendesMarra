@@ -74,9 +74,9 @@ Grupo 5 - 11/11/2026 - GPU - Intel - Enviar a apresentação para: george.marra@
 
 Juan Pablo Nunes de Oliveira
 
-Kaick Eduardo dos Santos Taveira
+Kaick Eduardo dos Santos Taveira - 0,0
 
-Kairo Vieira Farias
+Kairo Vieira Farias - 0,0
 
 Kaua Borges do Nascimento
 
@@ -86,7 +86,7 @@ Kayque Dias dos Santos
 
 Luan Silva Muniz
 
-LUCAS ABREU DA SILVA
+LUCAS ABREU DA SILVA - 0,0
 
 ---
 
