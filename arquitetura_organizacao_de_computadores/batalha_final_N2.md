@@ -72,19 +72,19 @@ João Vitor Rezende Barbosa - 9,5
 
 Grupo 5 - 11/11/2026 - GPU - Intel - Enviar a apresentação para: george.marra@unialfa.com.br
 
-Juan Pablo Nunes de Oliveira
+Juan Pablo Nunes de Oliveira - 8,5
 
 Kaick Eduardo dos Santos Taveira - 0,0
 
 Kairo Vieira Farias - 0,0
 
-Kaua Borges do Nascimento
+Kaua Borges do Nascimento - 8,5
 
-Kayk Siqueira de Paula
+Kayk Siqueira de Paula - 8,5
 
-Kayque Dias dos Santos
+Kayque Dias dos Santos - 8,5
 
-Luan Silva Muniz
+Luan Silva Muniz - 8,5
 
 LUCAS ABREU DA SILVA - 0,0
 
