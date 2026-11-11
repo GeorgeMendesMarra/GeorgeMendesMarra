@@ -16,21 +16,21 @@ Daniel Paulo Figueredo da Silva - 8,0
 
 Grupo 2 - 04/11/2026 - CPU - AMD - Enviar a apresentação para: george.marra@unialfa.com.br
 
-André Henrique Fornazier
+André Henrique Fornazier - 10,0
 
-Eduardo Reis Barbosa
+Eduardo Reis Barbosa - 10,0
 
-Eduardo Rodrigues da Costa Marinho
+Eduardo Rodrigues da Costa Marinho - 10,0
 
-Fabricio Souza Guedes
+Fabricio Souza Guedes - 10,0
 
-Felipe José Alves Nunes
+Felipe José Alves Nunes - 10,0
 
-Fernando da costa quintanilha filho
+Fernando da costa quintanilha filho - 10,0
 
-Frederico Faleiro da Silva
+Frederico Faleiro da Silva - 10,0
 
-Gabriel Fernando Freitas Silva Peixoto
+Gabriel Fernando Freitas Silva Peixoto - 10,0
 
 ---
 
