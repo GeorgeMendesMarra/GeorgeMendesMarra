@@ -152,7 +152,7 @@ Wender Alves Paiva
 
 ---
 
-Grupo 9 - Repescagem - 18/11/2026 -
+Grupo 9 - Repescagem - 18/11/2026 - Análise fílmica do filme: "Os piratas do vale do silício"
 
 Daniel Martins Alves Ferreira
 
