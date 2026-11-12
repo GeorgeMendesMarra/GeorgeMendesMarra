@@ -113,21 +113,21 @@ Murilo Luiz Pereira da Silva
 
 Grupo 7 - 11/11/2026 - NPU - Enviar a apresentação para: george.marra@unialfa.com.br
 
-Nathan Gabriel Lourenço Linhares
+Nathan Gabriel Lourenço Linhares  - 9,5
 
-Nicolas Faria Luz
+Nicolas Faria Luz  - 9,5
 
-Pablo Henrique de Souza Maranhão
+Pablo Henrique de Souza Maranhão  - 9,5
 
-Paulo Henrique Rodrigues de Carvalho
+Paulo Henrique Rodrigues de Carvalho  - 9,5
 
-Pedro Augusto Lima Alves
+Pedro Augusto Lima Alves  - 9,5
 
-Pedro Henrique Almeida Silva
+Pedro Henrique Almeida Silva  - 9,5
 
-Pedro Henryck Pires da Cunha
+Pedro Henryck Pires da Cunha - 9,5
 
-Rafaella Rebeca Rodrigues Ferreira
+Rafaella Rebeca Rodrigues Ferreira - 9,5
 
 ---
 
