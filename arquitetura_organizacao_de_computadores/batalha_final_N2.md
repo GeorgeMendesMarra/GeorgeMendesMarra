@@ -154,11 +154,11 @@ Wender Alves Paiva
 
 Grupo 9 - Repescagem - 18/11/2026 - Análise fílmica do filme: "Os piratas do vale do silício"
 
-Daniel Martins Alves Ferreira
+Daniel Martins Alves Ferreira - 8,0
 
 FELIPE SILVA CARES
 
-Henrique de Lima Souza
+Henrique de Lima Souza - 8,0
 
 João Pedro Fagundes Damásio
 
