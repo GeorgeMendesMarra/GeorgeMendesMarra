@@ -136,9 +136,9 @@ Grupo 8 - 11/11/2026 - Comparativo: CPU x GPU x TPU x NPU - Enviar a apresentaç
 
 Rafhaela Sena Santana
 
-Ronilson Lima Carrias
+Ronilson Lima Carrias - 0,0
 
-Silvio Rocha Camelo Neto
+Silvio Rocha Camelo Neto - 0,0
 
 Thiago Duarte Pinheiro Filho
 
