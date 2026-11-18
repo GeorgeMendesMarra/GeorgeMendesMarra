@@ -93,21 +93,21 @@ LUCAS ABREU DA SILVA - 0,0
 Grupo 6 - 11/11/2026 - TPU - Enviar a apresentação para: george.marra@unialfa.com.br
 
 
-Luis Fellype Queiroz Carneiro
+Luis Fellype Queiroz Carneiro - 0,0
 
-Luis Gusthavo Fernandes de Carvalho
+Luis Gusthavo Fernandes de Carvalho - 9,0
 
-Luiz Augusto de Aguiar Moreira
+Luiz Augusto de Aguiar Moreira - 9,0
 
-Maria Eduarda Ribeiro Soares Teles
+Maria Eduarda Ribeiro Soares Teles - 0,0
 
-Matheus Matsuta Alcantara
+Matheus Matsuta Alcantara - 9,0
 
-Miguel Augusto Pereira
+Miguel Augusto Pereira - 9,0
 
-Murilo Cardoso da Silva Santos
+Murilo Cardoso da Silva Santos - 9,0
 
-Murilo Luiz Pereira da Silva
+Murilo Luiz Pereira da Silva - 9,0
 
 ---
 
