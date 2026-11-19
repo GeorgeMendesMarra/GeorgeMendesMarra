@@ -160,7 +160,7 @@ FELIPE SILVA CARES
 
 Henrique de Lima Souza - 8,0
 
-João Pedro Fagundes Damásio
+João Pedro Fagundes Damásio - 9,5
 
 Anthony Joas Vieira da Silva 
 
