@@ -134,21 +134,21 @@ Rafaella Rebeca Rodrigues Ferreira - 9,5
 Grupo 8 - 11/11/2026 - Comparativo: CPU x GPU x TPU x NPU - Enviar a apresentação para: george.marra@unialfa.com.br
 
 
-Rafhaela Sena Santana
+Rafhaela Sena Santana - 9,5
 
 Ronilson Lima Carrias - 0,0
 
 Silvio Rocha Camelo Neto - 0,0
 
-Thiago Duarte Pinheiro Filho
+Thiago Duarte Pinheiro Filho - 9,5
 
-Tyago Paiva da Costa
+Tyago Paiva da Costa - 9,5
 
-Vinícius Lemes D’Abadia Filho
+Vinícius Lemes D’Abadia Filho - 9,5
 
-Waykon Martins de Souza
+Waykon Martins de Souza - 9,5
 
-Wender Alves Paiva
+Wender Alves Paiva - 9,5
 
 ---
 
