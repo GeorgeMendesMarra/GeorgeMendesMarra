@@ -80,7 +80,7 @@ NÍCOLAS MOURA BARBOSA - 7,5
 
 Grupo 7 - 19/11/2026 - Tese de Church-Turing- **Enviar a apresentação para: george.marra@unialfa.com.br**
 
-PEDRO AUGUSTO FELDMANN GOMES -
+PEDRO AUGUSTO FELDMANN GOMES - 8,5
 
 PEDRO VIEIRA CARVALHO - 8,5
 
@@ -105,7 +105,7 @@ WILHIAN DIAS MACHADO - 8,5
 
 Grupo 9 - 19/11/2026 - Análise tecnológica - Swordfish - **Enviar a apresentação para: george.marra@unialfa.com.br**
 
-GABRIEL FERREIRA GALVAO -
+GABRIEL FERREIRA GALVAO - 7,5
 
 VICTOR HUGO ARANTES SILVA E SOUZA - 9,0
 
