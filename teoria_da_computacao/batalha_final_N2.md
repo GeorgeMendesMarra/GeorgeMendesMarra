@@ -115,4 +115,4 @@ Pedro Sorelly Marques
 
 ERICK EDUARDO ALVES FERNANDES - 9,0
 
-Pedro Henrique de Sousa -
+Pedro Henrique de Sousa - 7,5
